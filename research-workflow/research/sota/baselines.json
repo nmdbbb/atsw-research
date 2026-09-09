@@ -95,9 +95,11 @@
    "venue": "preprint",
    "tier": "scalable_approx",
    "role_under_objective": "NEW - absent from the existing panel. Candidate scalable comparator; NOT certificate-eligible without a conversion",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "KL-penalised relaxation replaces HARD MARGINAL CONSTRAINTS with divergence penalties, converging to bicausal OT only as the penalty grows. A relaxed coupling therefore need not be feasible for the original problem, so it does NOT automatically yield an upper bound. Nonasymptotic regret guarantees are not a per-instance root certificate.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2605.17271",
+   "key_results_verified": "Bo de 1: Markov bicausal coupling = toan bo bicausal coupling khi hai bien Markov. Dinh ly 1: Gamma-hoi tu khi beta->inf (tiem can, KHONG phai can theo instance). Dinh ly 3: regret + last-iterate duoi PL. Huong KL reference||candidate buoc lien tuc tuyet doi."
   },
   {
    "name": "SVI / SPI (occupancy reformulation)",
@@ -131,9 +133,11 @@
    "venue": "Electronic Communications in Probability",
    "tier": "analytic_reference",
    "role_under_objective": "Names the previously unnamed 'Gaussian adapted-OT formulas' oracle row",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "Analytic special-case reference. True parameters cannot be granted in a paths-only timing comparison.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "doi:10.1214/25-ecp654",
+   "key_results_verified": "Thm 1.1: AW_2^2 = ||a-b||^2 + tr(A)+tr(B) - 2||diag(L^T M)||_1 (Cholesky). (5.3): d_ABW^2 = d_KR^2 - 4 sum_{t:(L^T M)_tt<0} |(L^T M)_tt| -> gap comonotone co NGHIEM DONG. Cor 4.6: KR toi uu <=> (L^T M)_tt >= 0 voi moi t."
   },
   {
    "name": "Entropic adapted Wasserstein distance on Gaussians",
@@ -143,9 +147,11 @@
    "venue": "Electronic Communications in Probability",
    "tier": "analytic_reference",
    "role_under_objective": "NEW - closed-form reference for the ENTROPIC track",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "Directly useful: lets nested Sinkhorn be validated against a closed form instead of only against a tiny exact oracle.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2412.18794v2",
+   "key_results_verified": "Thm 2.4: cong thuc dong AW^2_{2,lambda} = |a-b|^2 + tr(A+B) - 2tr(D_lambda S) - (lambda/2) log det(I - D_lambda^2); lambda=0 rut ve AW_2^2. Oracle cho track entropic."
   },
   {
    "name": "General duality and dual attainment for adapted transport",
@@ -155,9 +161,11 @@
    "venue": "Applied Mathematics & Optimization",
    "tier": "certificate_theory",
    "role_under_objective": "NEW - underpins the free lower bound mechanism (dual feasibility => valid bound)",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "Prior art for the certificate side; must be cited before claiming any duality-based bound is new.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2401.11958v2",
+   "key_results_verified": "Doi ngau VA dat cuc tri doi ngau cho causal (Thm 2.1/4.6) va bicausal (Thm 2.1/4.8). Khong co thuat toan. Remark 2.2(iii): primal khong nhat thiet dat cuc tri."
   },
   {
    "name": "A transfer principle for computing the adapted Wasserstein distance",
@@ -167,9 +175,11 @@
    "venue": "preprint",
    "tier": "certificate_theory",
    "role_under_objective": "NEW - explicitly about COMPUTING the adapted distance",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "Needs a full read before the panel is called complete.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2505.21337",
+   "key_results_verified": "Thm 4.3: cong thuc AW_2^2 qua phan tich nhan qua (K, mu) cua toan tu hiep phuong sai. Thm 1.1: AW_2(B^H1, B^H2)^2 = ||K_H1 - K_H2||_HS^2, dat boi ghep dong bo. Thm 5.5: mo rong sang fSDE. Thoi gian LIEN TUC; khong ban toc do hoi tu cua do do thuc nghiem."
   },
   {
    "name": "Convergence of the adapted empirical measure for mixing observations",
@@ -179,9 +189,11 @@
    "venue": "preprint",
    "tier": "estimator_theory",
    "role_under_objective": "NEW - bears directly on the sampling-noise-floor problem",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "The measured contrast/noise ratio at T=8 was 1.51x (ar1) and 1.31x (second-order), i.e. most of the quantity may be sampling noise. This literature is where the rate for that gap lives.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2512.18838",
+   "key_results_verified": "rate_inf(N) = N^(-1/(T+1)) khi d=1, N^(-1/(2T))log(N+1) khi d=2, N^(-1/(dT)) khi d>=3 (eq 1, 15-16; Thm 4.2/4.6). Luoi ly thuyet Delta_N = N^(-1/(T+1)) khi d=1 (eq 5). Tai T=50, N=4000-8000 thi rate = 0.838-0.850, tuc gan nhu khong hoi tu."
   },
   {
    "name": "Fast rate of convergence of the smooth adapted Wasserstein distance",
@@ -191,9 +203,20 @@
    "venue": "preprint",
    "tier": "estimator_theory",
    "role_under_objective": "NEW - convergence rate, same noise-floor question",
-   "evidence_level": "abstract_only_this_pass",
+   "evidence_level": "read_in_full_2026-09-09",
    "note": "Smoothed variant; check whether the rate transfers to the unsmoothed quantized target.",
-   "code": null
+   "code": null,
+   "identifier_fulltext": "arXiv:2503.10827",
+   "key_results_verified": "Thm 4: E[AW^(sigma)_p(mu, mu_hat_n)] <~ 1/sqrt(n) khi mu subgaussian, q > 8p(2p-1)(T+9). Khong lam min: E[AW_1] <= C n^(-1/(dT)), d>=3, va tac gia ghi ro cac ty le nay la SHARP. Chech lam min: |AW^(sigma)_p - AW_p| <= C(omega_mu(sigma)+omega_nu(sigma)) <= C sigma khi kernel Lipschitz."
   }
- ]
+ ],
+ "reading_pass": {
+  "date": "2026-09-09",
+  "papers_read_in_full": 7,
+  "pages": 242,
+  "not_read": [
+   "doi:10.1007/s10287-025-00542-5 (Kirui-Pflug-Pichler, khong OA)"
+  ],
+  "synthesis": "research/sota/DOMAIN_KNOWLEDGE.md"
+ }
 }
