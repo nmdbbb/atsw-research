@@ -1,0 +1,6 @@
+# Moi tep trong repo nay co the bi ghim sha256: workflow.py digest() bam BYTE THO
+# (hashlib.sha256(Path(path).read_bytes())). Neu git chuan hoa ket thuc dong thi
+# byte tren dia khac byte luc ghi hash, va cong verify_ledger vo tren nen tang khac
+# - da xay ra that: 5 tep ghim hash fail tren Linux nhung pass tren Windows.
+# Nen tat chuan hoa hoan toan: checkout verbatim tren moi nen tang.
+* -text
