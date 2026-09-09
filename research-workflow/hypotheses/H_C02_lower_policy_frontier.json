@@ -1,0 +1,50 @@
+{
+  "id": "H_C02_lower_policy_frontier",
+  "contract_context": {
+    "objective_id": "tree-adapted-ot-sota-v2",
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "prior_results_known": true,
+    "derived_from": "H_C01 panel revise verdict"
+  },
+  "mechanism": "Start from a proved future-marginal Bellman subsolution h. Repeatedly solve the clamped lower problem, recover its root-optimal dynamic coupling, and activate inactive pair nodes reached by that lower policy. This targets alternatives that currently depress the certified root lower bound, rather than nodes occupied by an exact or upper policy.",
+  "omitted_computation": "Local continuation-cost OT solves at inactive nodes outside the current lower-policy frontier. Every activated node is solved with its full positive successor support; no coupling alternative is deleted.",
+  "assumptions": [
+    "Corrected finite k-window model and optimized initial coupling",
+    "Fixed-depth future-marginal cost h in target units is constructed and charged",
+    "The lower-policy coupling and tie rule are deterministic and use no exact reference",
+    "Activation stops only by a preregistered work budget or a valid root interval test",
+    "Float64 development probes are not publication-grade outward certificates"
+  ],
+  "lemma_or_invariant": "For every active set, clamped backward DP produces a valid lower bound. Activating more nodes cannot decrease it. If a lower-optimal policy reaches an inactive node whose clamped value is strictly below its Bellman backup, activating at least one such reached node strictly improves that policy's evaluated lower value; whether the reoptimized root lower strictly rises requires a margin or tie condition and must be proved or falsified.",
+  "nearest_prior_art": [
+    {
+      "url": "https://cdn.aaai.org/AAAI/1998/AAAI98-058.pdf",
+      "overlap": "AO-star/LAO-star partial-state expansion under an admissible heuristic, including reach-probability priorities",
+      "remaining_question": "Whether transport-specific block backups, marginal support structure and batched frontier pricing reduce certificate cost beyond a direct LAO-star adaptation"
+    },
+    {
+      "url": "https://openreview.net/pdf?id=6Hp8ymjLjW",
+      "overlap": "Coupling-valued MDP actions, occupation flows and value/policy iteration for Markov OT",
+      "remaining_question": "Finite-horizon root-certified adaptive expansion from observed-path k-window models"
+    }
+  ],
+  "prediction": "DRAFT: on deterministic adversarial fixtures and a frozen tiny cross-family screen, lower-policy frontier activation reaches a 0.5% root interval using fewer continuation-cost entries and local OT work than full exact DP and exact-optimal-occupation activation on the same h and kernel.",
+  "falsification_rule": "Reject the stated mechanism if lower-policy frontier activation violates lower-bound validity, fails to repair the delayed-alternative fixture, or has no work advantage over exact DP on any preregistered group. A failure stops only this defined activation rule and is not an impossibility result.",
+  "probe": {
+    "command": "UNREGISTERED_DRAFT",
+    "seeds": [1000, 1001],
+    "oracle": "Exact DP is used only after candidate execution for containment and error measurement; activation and stopping cannot access it.",
+    "cost_accounting": "Charge h construction, dense/sparse scans, lower-policy recovery, every repeated clamped sweep, local OT support products, certificate witness work, upper policy, peak memory and wall time. Report cumulative work, not final active-set size.",
+    "design_needed": "Freeze tie handling, frontier batching, upper-policy source, near-zero gap convention and same-kernel baselines before registration."
+  },
+  "breadth_challenge": "The first probe must include both costs, k=1/2, both process families, coarse/fine delta and the delayed-alternative/mixed-depth fixtures. Success remains short-horizon development evidence only.",
+  "ablation": "Same h and OT kernel: lower-policy frontier versus exact-optimal-occupation mask, upper-policy occupation priority, deterministic random masks, and full exact DP. Separate h=0/1/2 construction cost from activation work.",
+  "unresolved_objections": [
+    "The mechanism may reduce exactly to LAO-star with expensive transport backups and offer no novelty.",
+    "Repeated lower-policy recovery may cost more than one full backward sweep.",
+    "Degenerate lower policies may cause unstable or broad frontier expansion.",
+    "Future-marginal h already visits every state pair and may erase the intended saving."
+  ],
+  "status": "proposed",
+  "registration_state": "PANEL_REVISE; RETAINED AS AO_OT CONTROLLER AND BASELINE, NOT REGISTERED AS NOVEL MECHANISM"
+}

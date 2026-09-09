@@ -1,0 +1,39 @@
+{
+  "id": "H_B01_temporal_block_bounds",
+  "mechanism": "Bound entire successor rectangles using per-process reachable-output envelopes across all remaining times, solve coarse lower/upper transport, and refine the hierarchy only where the root interval requires it. Singleton fallback recursively recovers full DP.",
+  "omitted_computation": "Fine cross-process continuation entries inside unresolved successor rectangles; the envelope oracle uses one-process sparse reachability extrema and never scans the hidden cross matrix.",
+  "assumptions": [
+    "The corrected common finite k-window model with additive costs at times1..T and an optimized initial coupling is the target",
+    "All positive-probability successors remain in the partitions; occupation is not used to delete alternatives",
+    "Reachability extrema are computed from every positive kernel edge and their preprocessing is fully counted",
+    "Block lower and upper costs enclose every fine successor-pair continuation cost; coarse upper plans use parent-specific conditional proportions when lifted",
+    "The numerical probe validates against an independent LP reference but is not an outward-rounded mathematical certificate"
+  ],
+  "lemma_or_invariant": "Pushing any fine coupling to block masses proves coarse OT on block lower envelopes is a lower bound. A coarse coupling lifted as gamma_AB*(a_i/a_A)*(b_j/b_B) preserves both fine marginals. Reachability distance extrema bound every remaining pathwise cost, so recursive lower/upper values contain the same finite-model root; exhaustive singleton refinement terminates at full DP.",
+  "nearest_prior_art": [
+    {"url": "https://arxiv.org/html/1510.05466v2", "overlap": "Hierarchical partitions, sparse restrictions and verification of omitted OT constraints", "remaining_question": "Can conditional future envelopes avoid cross-time continuation work beyond applying static multiscale OT inside every Bellman problem?"},
+    {"url": "https://arxiv.org/html/2509.06702", "overlap": "Quantized path trees and exact backward nested OT", "remaining_question": "Can root-directed block refinement omit certified continuation entries on the same finite k-window target?"}
+  ],
+  "prediction": "All correctness fixtures remain enclosed and singleton refinement matches the numerical reference within1e-8. In EACH of24 groups process x cost x k x delta, the two-seed median omits at least10% of distinct nonterminal fine continuation entries while reaching root relative width<=0.5%, and total candidate transport arc variables do not exceed memoized exhaustive DP.",
+  "falsification_rule": "Any reference outside a reported interval or infeasible lifted marginal is implementation_invalid. If correct runs reach the requested root width but any eligible group misses either work threshold, classify performance_prediction_falsified. If relative width is undefined because the exact target is zero, or numerical interval validity cannot be audited, classify that group inconclusive and do not promote the hypothesis.",
+  "probe": {
+    "command": "python research-workflow/probes/temporal_block_bounds.py",
+    "seeds": [20260909, 20260910],
+    "oracle": "Independent common_model exact_dp on T=4 scalar path models plus analytic continuation-order, product-lift, unequal-marginal and hidden-entry fixtures. Candidate never sees the reference value for refinement or stopping.",
+    "cost_accounting": "Count one-process reachability edge operations; envelope queries; distinct fine continuation entries materialized; distinct Bellman pair solves; all lower/upper transport arc variables including retries and fallback; policy-bound operations; hierarchy nodes; peak records; total wall time. Reference work uses a memoized exhaustive DP count. Work-count criteria do not imply speed.",
+    "development_grid": {"k": [1,2], "delta": [0.5,0.3,0.18], "T": 4, "paths_per_process": 24, "shift": 0.0, "cost": ["squared","absolute"]},
+    "generators": {
+      "ar1": "start0; X_t=.7X_(t-1)+N(0,1); Y_t=.55Y_(t-1)+1.15N(0,1)",
+      "nonmonotone_second_order": "start0; X_t=.25X_(t-1)+.7sin(2X_(t-2))+N(0,1); Y_t=.15Y_(t-1)+.6sin(2Y_(t-2))+1.15N(0,1); missing older value0"
+    },
+    "stopping": "L_root>0 and (U_root-L_root)/L_root<=0.005; no reference-value access"
+  },
+  "breadth_challenge": "Both costs, both process families and every original k/delta combination appear in the short-horizon screen. Passing licenses a later T=50 test; it does not substitute T=4 for the final scope.",
+  "ablation": "Compare identical local LP primitive under exhaustive singleton DP; universal zero/global-range envelopes; and hierarchy after deterministic random permutation. Separately report static terminal-cost pruning so temporal-envelope savings are not credited to scalar geometry alone.",
+  "unresolved_objections": [
+    "Reachability envelopes may be so loose that almost every rectangle refines; the probe is designed to falsify this",
+    "A product-form implicit upper policy can be valid but costly to evaluate; implementation must use certified block maxima or count every fine access",
+    "Passing numerical containment is not an outward-rounded certificate and cannot promote a final certified solver"
+  ],
+  "status": "proposed"
+}

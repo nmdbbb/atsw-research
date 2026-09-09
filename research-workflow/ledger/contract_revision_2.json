@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "contract_revision_2",
+  "authorized_on": "2026-09-09",
+  "authority": "User explicitly requested the agreed scope revision and a handoff prompt for the running workflow session.",
+  "prior_results_known": true,
+  "blind_preregistration_claimed": false,
+  "previous_contract": {
+    "objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+    "objective_id": "tree-adapted-ot-sota-v1"
+  },
+  "new_contract": {
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "objective_id": "tree-adapted-ot-sota-v2"
+  },
+  "previous_objective_snapshot": "ledger/contracts/objective_v1.json",
+  "new_objective_snapshot": "ledger/contracts/objective_v2.json",
+  "changes": [
+    "Prioritize cost and tightness of root certification.",
+    "Permit disclosed limited-domain results without full-domain promotion.",
+    "Add scoped negative research and evidence-based direction stopping with distinct gates.",
+    "Preserve exact competitors, timing accounting, original coverage and existing reference-audit policy."
+  ],
+  "preservation": "Existing preregistrations, frozen designs, results and their hashes remain historical evidence under their original contracts. No retroactive promotion or rehashing.",
+  "handoff": "SCOPE_REVISION_2.md",
+  "tool_boundary": "workflow.py check-report remains the conservative full-domain speed/quality screen. Separate negative or limited-domain outcomes require independent review and an explicit evidence record; no automatic promotion."
+}

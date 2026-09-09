@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "H_C01_global_subsolution_active_set",
+  "decision": "revise",
+  "scope": "Scope v2 review before registration; no performance grid was run.",
+  "mathematical_findings": [
+    "The active-subsolution lower-bound theorem is sound for a valid Bellman subsolution and an optimized dummy-root coupling.",
+    "For fixed active set A and baseline h, the global LP root optimum equals backward DP with inactive nodes clamped to h.",
+    "All-active equality is equality of the root optimum; a root-only LP need not return the exact value at every table entry.",
+    "The fixed-depth future-marginal sum of one-time OT costs is a Bellman subsolution for absolute cost and squared cost when squared-cost terms use W2 squared units."
+  ],
+  "decisive_objections": [
+    "The global LP itself supplies no tighter root bound than the cheaper same-A same-h clamped recursion.",
+    "Partial-state admissible-heuristic DP and occupation-prioritized expansion have close AO/LAO-star prior art; novelty is not established.",
+    "Exact-optimal occupation can miss inactive alternatives selected by the lower problem; a deterministic H=2 fixture gives exact 1 but lower 0.25 for absolute cost and 0.03125 for squared cost.",
+    "Current work counts omit dense h, mask, table-copy, stage-cost and verification work; the upper policy and outward numerical witness are not yet part of the API."
+  ],
+  "required_action": "Do not register the current global-LP claim. Retain the proved future-marginal subsolution and clamped recursion as components. Formulate a new hypothesis around a deployable root-lower-policy frontier activation rule, with complete work accounting and a direct LAO-star/clamped-DP comparison.",
+  "not_inferred": [
+    "No impossibility for active-set, global-dual, certified or tree algorithms.",
+    "No full-domain or SOTA conclusion.",
+    "No conclusion from distinct optimal vertices, failed occupation headroom or measured 1/w scaling."
+  ],
+  "reviews": [
+    "ledger/inbox/A/H_C01_theorem_review.md",
+    "ledger/inbox/B/H_C01_prior_art_review.md",
+    "ledger/inbox/C/H_C01_probe_review.md"
+  ]
+}

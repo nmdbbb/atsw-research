@@ -1,0 +1,50 @@
+{
+  "id": "H_D01_monotone_transport_reuse",
+  "contract_context": {
+    "objective_id": "tree-adapted-ot-sota-v2",
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "prior_results_known": true,
+    "derived_from": "H_C01/H_C02 panel findings"
+  },
+  "mechanism": "During monotone tree-value updates, cache each local OT primal plan and dual potentials. If the continuation-cost increment is nonnegative and zero on the cached plan support, the old primal and dual still certify the updated OT exactly, so the local LP is omitted.",
+  "omitted_computation": "A full unregularized transport solve at every cached parent whose changed child entries do not meet its optimal coupling support; detection uses the sparse change set and an inverse support index.",
+  "assumptions": [
+    "Child lower values increase monotonically under cumulative activation",
+    "Cached primal marginals and dual feasibility pass numerical audit",
+    "Updates and cached supports have a charged sparse inverse index",
+    "Every failed reuse test falls back to the same exact local OT kernel",
+    "All preprocessing, index, replay and fallback work is counted"
+  ],
+  "lemma_or_invariant": "Let pi and (alpha,beta) be primal/dual optimal for M. If Delta>=0 and sum(pi*Delta)=0, the old dual remains feasible for M+Delta and the old primal cost is unchanged; equality therefore certifies pi optimal for M+Delta. Reuse leaves the clamped Bellman value exact.",
+  "nearest_prior_art": [
+    {
+      "topic": "LP sensitivity, complementary slackness and dynamic min-cost flow",
+      "remaining_question": "Whether sparse inverse-support propagation across an adapted-OT Bellman tree yields a distinct algorithm and certificate-cost reduction"
+    },
+    {
+      "url": "https://cdn.aaai.org/AAAI/1998/AAAI98-058.pdf",
+      "overlap": "Incremental affected-ancestor updates in heuristic dynamic programming",
+      "remaining_question": "Exact reuse of a transport block without resolving its continuous action"
+    }
+  ],
+  "prediction": "On preregistered fixtures with localized cumulative child-value updates, cached certificates skip at least 50% of eligible local OT solves while reproducing the no-reuse incremental AO-OT values within 1e-9. Detection and index work is below 25% of skipped transport constraint-entry work.",
+  "falsification_rule": "Any invalid reused witness or value/root mismatch above 1e-9 is implementation_invalid. If correctness passes but a skip/work threshold fails, falsify only that declared performance prediction; infer no impossibility for dynamic OT reuse or tree algorithms.",
+  "probe": {
+    "command": "python research-workflow/probes/monotone_transport_reuse.py",
+    "seeds": [1000, 1001],
+    "oracle": "Fresh same-kernel local OT is run only after each decision for audit, never used by the reuse decision, and reported separately.",
+    "cost_accounting": "Count changed entries, inverse-index visits, cached support entries, primal/dual replay, fallback LP dimensions/nonzeros, h, controller work and root-gap evolution on identical update traces.",
+    "grid": "Fixture-scale only until independent review; both costs, k=1/2, branching/recombining trees, support-hit/miss updates, zero masses and degenerate optimal faces."
+  },
+  "breadth_challenge": "The lemma is cost/process agnostic, but performance depends on locality and support hits. Survival must next cross both frozen processes, both costs and k=1/2 before T=50.",
+  "ablation": "Identical update trace and OT kernel: cached AO-OT without reuse; support-disjoint reuse; dense scan versus inverse support index.",
+  "unresolved_objections": [
+    "The lemma is elementary LP sensitivity and may not be novel",
+    "Updates may hit most cached supports",
+    "Index maintenance may cost as much as sparse local OT",
+    "Degenerate optimal faces may make one cached plan a poor witness",
+    "Float64 equality needs residual correction or outward audit"
+  ],
+  "status": "proposed",
+  "registration_state": "DRAFT_AWAITING_INDEPENDENT_PANEL"
+}

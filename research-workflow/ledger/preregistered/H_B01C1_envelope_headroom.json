@@ -1,0 +1,76 @@
+{
+  "objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+  "source_sha256": "80864272c6c0ab0941e6b576c7a7501ee7b1e0f353734626765f4d92f8ef9bd2",
+  "registered_utc": "2026-09-09T06:30:06.882113+00:00",
+  "hypothesis": {
+    "id": "H_B01C1_envelope_headroom",
+    "mechanism": "Before implementing the full H-B hierarchy, test whether one-process temporal reachability envelopes leave enough root-error budget to keep a nontrivial part of an exact optimal pair-tree frontier unresolved.",
+    "omitted_computation": "Values V_t(i,j) replaced at a frontier by a reachability lower envelope computed without inspecting cross-process continuation matrices.",
+    "assumptions": [
+      "The corrected finite k-window target, costs and two-sided process laws are exactly those frozen in objective.json, frozen_design.json and frozen_design_amendment_1.json",
+      "This is a registered replication after lane C disclosed a post-hoc diagnostic; it is not a blind preregistration",
+      "The original H-B 10 percent threshold was fixed before lane C produced its diagnostic",
+      "Exact optimal occupation is used only to create an optimistic mechanism audit and is unavailable to a deployable candidate"
+    ],
+    "lemma_or_invariant": "For a cut F of the pair tree, monotonicity of the Bellman recursion gives R-L_root at least sum_{z in F} mu_star(z)(V(z)-E_lo(z)). Reachability intervals also give E_lo<=V<=E_hi pointwise. Therefore sorting frontier mass by local slack gives an optimistic upper bound on mass that can remain at the envelope within the root budget.",
+    "nearest_prior_art": [
+      {
+        "url": "https://arxiv.org/html/1510.05466v2",
+        "overlap": "Hierarchical transport partitions and certified omission of fine constraints",
+        "remaining_question": "Whether conditional temporal envelopes are tight enough before static multiscale transport is applied"
+      },
+      {
+        "url": "https://arxiv.org/html/2509.06702",
+        "overlap": "Backward nested transport on quantized path trees",
+        "remaining_question": "Whether a pair-tree frontier can remain unresolved at a 0.5 percent root certificate"
+      }
+    ],
+    "prediction": "In every one of the 12 frozen k=1 process x cost x delta groups, the two-seed median has at least one layer t<=T-2 where at least 10 percent of exact optimal occupation can remain at E_lo within epsilon*R, and the same remains true after pairs incident to out-degree-one states are excluded.",
+    "falsification_rule": "Any envelope containment or occupation-flow violation is implementation_invalid. Failure of the registered occupation prediction in any group is mechanism_headroom_falsified and keeps H-B at revise. It is NOT by itself performance_prediction_falsified because occupation mass is not the original distinct-entry metric. H-B may be called performance_prediction_falsified from this probe only if an explicitly reported optimistic upper bound on omittable distinct entries is below 10 percent under a frontier class proven to contain every H-B execution.",
+    "probe": {
+      "command": "python research-workflow/probes/envelope_headroom_c1.py",
+      "seeds": [
+        1000,
+        1001
+      ],
+      "oracle": "Independent numerical backward LP retaining V tables and optimal conditional plans; reference values are used only by this non-deployable falsification probe",
+      "cost_accounting": "Report model construction, exact-reference time, reachability preprocessing, envelope queries, number of local LPs, state-pair entries, occupation support, and total wall time. No timing number is a candidate or SOTA result.",
+      "grid": {
+        "T": 4,
+        "k": [
+          1
+        ],
+        "delta": [
+          0.5,
+          0.3,
+          0.18
+        ],
+        "cost": [
+          "squared",
+          "absolute"
+        ],
+        "process": [
+          "ar1",
+          "second_order_nonmonotone"
+        ],
+        "paths_per_side_by_delta": {
+          "0.5": 4000,
+          "0.3": 6000,
+          "0.18": 8000
+        },
+        "shift": 0.0
+      },
+      "rng_convention": "For each task seed, numpy SeedSequence(seed).spawn(2) creates independent side-A and side-B generators. The same generated paths are reused across both costs and all methods.",
+      "stopping": "Run all 12 k=1 groups and both seeds. k=2 is not run in C1 because failure at a required k=1 group is sufficient to reject this prerequisite prediction; this does not narrow any final candidate benchmark."
+    },
+    "breadth_challenge": "Both costs, both frozen process contrasts and all three required deltas are tested. C1 is a short-horizon necessary-mechanism screen and cannot replace T=50 or k=2 validation for a surviving algorithm.",
+    "ablation": "Report results with all occupied pairs and after removing any pair whose left or right state has out-degree one; also report zero-slack fractions and an optimistic entry-count bound so sample sparsity and metric mismatch are visible.",
+    "unresolved_objections": [
+      "The frontier accumulation inequality is only a necessary condition and can be loose",
+      "A low servable occupation fraction does not imply a low omittable entry fraction",
+      "Mixed-depth adaptive frontiers are not characterized by this first probe"
+    ],
+    "prior_data_disclosed": "Lane C reported a post-hoc k=1 diagnostic before this record: layer-1 occupation-weighted gap around 190-196 times the root budget and zero servable mass in its reconstruction. This run tests reproducibility under the exact synced design and independently written code.",
+    "status": "proposed"
+  }
+}

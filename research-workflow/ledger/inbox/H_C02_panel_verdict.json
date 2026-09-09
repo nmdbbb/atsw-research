@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "H_C02_lower_policy_frontier",
+  "decision": "revise",
+  "scope": "Fixture and theory review only; no registered grid.",
+  "findings": [
+    "Cumulative first-inactive-frontier expansion preserves the lower certificate and finishes after finitely many node activations.",
+    "One selected lower-optimal policy gaining value does not imply a strict root gain; every old root-optimal policy must be affected.",
+    "The loop is an AO-star/LAO-star/BRTDP adaptation and needs cached incremental AO-OT as its direct baseline.",
+    "Ten small configurations verify correctness, but plateaus and repeated sweeps can cost more work than one exact DP."
+  ],
+  "decision_detail": "Do not register H_C02 as a new mechanism. Keep it as an exact search controller/baseline and move the claim to a transport-specific operation that omits local OT solves with a replayable certificate.",
+  "not_inferred": "No impossibility claim for heuristic search, active sets, tree algorithms or certification.",
+  "reviews": [
+    "ledger/inbox/A/H_C02_theorem_review.md",
+    "ledger/inbox/B/H_C02_prior_art_review.md",
+    "ledger/inbox/C/H_C02_probe_review.md"
+  ]
+}

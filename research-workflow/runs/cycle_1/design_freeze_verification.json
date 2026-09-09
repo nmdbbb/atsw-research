@@ -1,0 +1,147 @@
+{
+  "kind": "generator_and_feasibility_verification",
+  "generators_sha256": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+  "frozen_design_sha256": "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+  "numpy": "2.4.6",
+  "checks": {
+    "ar1": {
+      "monotonicity_violations": 0,
+      "worst_decrease": 0.1574,
+      "max_step": 0.3323,
+      "stationarity": {
+        "sd_first": 1.3927,
+        "sd_last": 1.4032,
+        "sd_ratio": 1.0076,
+        "sd_max": 1.4143
+      },
+      "lag2_max_abs_z": 8.3,
+      "lag2_max_abs_diff": 0.0563,
+      "lag2_bins": 6
+    },
+    "second_order_nonmonotone": {
+      "monotonicity_violations": 4,
+      "worst_decrease": -0.4993,
+      "max_step": 0.4993,
+      "stationarity": {
+        "sd_first": 1.2754,
+        "sd_last": 1.2819,
+        "sd_ratio": 1.0051,
+        "sd_max": 1.2892
+      },
+      "lag2_max_abs_z": 278.9,
+      "lag2_max_abs_diff": 1.4955,
+      "lag2_bins": 6
+    }
+  },
+  "feasibility": [
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "max_states": 23,
+      "pairs": 20781,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.001
+    },
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.3,
+      "max_states": 37,
+      "pairs": 56637,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.004
+    },
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.18,
+      "max_states": 60,
+      "pairs": 151716,
+      "dense_kernel_GB": 0.001,
+      "est_ref_hours": 0.011
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.5,
+      "max_states": 202,
+      "pairs": 1702433,
+      "dense_kernel_GB": 0.014,
+      "est_ref_hours": 0.118
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.3,
+      "max_states": 487,
+      "pairs": 10040617,
+      "dense_kernel_GB": 0.081,
+      "est_ref_hours": 0.697
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.18,
+      "max_states": 1111,
+      "pairs": 55162532,
+      "dense_kernel_GB": 0.44,
+      "est_ref_hours": 3.831
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.5,
+      "max_states": 19,
+      "pairs": 12903,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.001
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.3,
+      "max_states": 30,
+      "pairs": 35219,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.002
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.18,
+      "max_states": 47,
+      "pairs": 94834,
+      "dense_kernel_GB": 0.001,
+      "est_ref_hours": 0.007
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.5,
+      "max_states": 150,
+      "pairs": 900154,
+      "dense_kernel_GB": 0.007,
+      "est_ref_hours": 0.063
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.3,
+      "max_states": 360,
+      "pairs": 5584128,
+      "dense_kernel_GB": 0.045,
+      "est_ref_hours": 0.388
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "max_states": 842,
+      "pairs": 31736134,
+      "dense_kernel_GB": 0.254,
+      "est_ref_hours": 2.204
+    }
+  ],
+  "interpretation": "Hai tính chất bắt buộc của họ thứ hai đã kiểm bằng số. Khả thi đo được, không suy đoán."
+}

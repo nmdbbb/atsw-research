@@ -1,0 +1,34 @@
+{
+  "kind": "small_k1_integration_smoke_not_benchmark",
+  "status": "PASS",
+  "T": 2,
+  "paths": 24,
+  "seed": 123,
+  "delta": 2.0,
+  "reference": 2.3644688644688645,
+  "result": {
+    "U0": 2.364468864468863,
+    "L0": 2.3644688644688614,
+    "cert": 7.512709793280697e-16,
+    "n_lp": 5,
+    "t_total": 0.10056649999751244,
+    "reached": true,
+    "hist": [
+      {
+        "f": 0.0,
+        "B": 4,
+        "U0": 2.364468864468863,
+        "L0": 2.3644688644688614,
+        "cert": 7.512709793280697e-16,
+        "n_lp": 5,
+        "t": 0.10056400000030408
+      }
+    ]
+  },
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.15.3",
+  "pot_version": "0.9.7.post1",
+  "source_sha256": "c617ae77008c9a8557e52c22008d2cd313e7a89f88aaceae7b293d8c19febaa7",
+  "smoke_sha256": "62dcfb0560307abe72d28970f88412de7d8fd20d7527a2413dc8fd2065360af7",
+  "interpretation": "Only numerical interval containment and import integration checked. Target bug in k2 remains unresolved."
+}

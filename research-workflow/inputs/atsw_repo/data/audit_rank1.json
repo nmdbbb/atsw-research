@@ -1,0 +1,36 @@
+[
+ {
+  "tag": "c=(x-y)^2",
+  "fracE_median": 0.012420088404554106,
+  "fracE_max": 0.027305127926608996,
+  "cos_median": 0.9675433544353539,
+  "alpha_err_median": 0.25270507966399114,
+  "rank_Rc": 1,
+  "rank_Rv": 1,
+  "inversions_median": 1.0,
+  "npair": 1132,
+  "flip_frac": 0.0,
+  "gaps": {
+   "state": 0.015426822069447928,
+   "svd_min": 0.003482405580702316,
+   "svd_heur": 0.003482405580702316
+  }
+ },
+ {
+  "tag": "c=|x-y|",
+  "fracE_median": 0.24247165249247477,
+  "fracE_max": 0.2799418219301265,
+  "cos_median": 0.9752658881248578,
+  "alpha_err_median": 0.2210349462416113,
+  "rank_Rc": 3,
+  "rank_Rv": 3,
+  "inversions_median": 1.0,
+  "npair": 1132,
+  "flip_frac": 0.0,
+  "gaps": {
+   "state": 0.023691310443576745,
+   "svd_min": 0.014006300180668592,
+   "svd_heur": 0.014006300180668592
+  }
+ }
+]

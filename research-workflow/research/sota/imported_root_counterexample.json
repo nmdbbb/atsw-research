@@ -1,0 +1,23 @@
+{
+  "diagnostic": "imported_k2_modal_root_omits_first_random_step",
+  "status": "defect_reproduced",
+  "target_equivalence_gate": "FAIL",
+  "intended_horizon": 2,
+  "returned_transition_count": 1,
+  "analytic_original_root_cost_exact": "4/3",
+  "analytic_original_root_cost_float": 1.3333333333333333,
+  "archived_modal_root_cost": 0.0,
+  "absolute_target_error": 1.3333333333333333,
+  "evaluated_node_pairs": 2,
+  "archive_source_relative": "inputs\\atsw_repo\\certify\\run_all_cells.py",
+  "archive_source_sha256": "c617ae77008c9a8557e52c22008d2cd313e7a89f88aaceae7b293d8c19febaa7",
+  "diagnostic_sha256": "3ad0f7cfde3b339f2bdb859ba0aaafc250082dc4ee618e89c787fb392ec08141",
+  "executed_archive_definitions": [
+    "build_k2",
+    "dp_generic"
+  ],
+  "archive_module_imported": false,
+  "benchmark_main_executed": false,
+  "pot_used": false,
+  "interpretation": "A candidate and reference sharing this builder can agree while both compute the wrong root target."
+}

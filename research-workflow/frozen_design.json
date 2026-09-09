@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "frozen_on": "2026-09-09",
+  "frozen_before_any_candidate_measurement": true,
+  "objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+  "process_families": {
+    "ar1": {
+      "law": "X_0=0; X_{t+1}=0.7*X_t+1.0*eps_t, eps~N(0,1) iid",
+      "role": "đối chứng"
+    },
+    "second_order_nonmonotone": {
+      "law": "X_0=0; X_1=0.7*eps_0; X_{t+1}=0.55*X_t+0.95*sin(1.7*X_t)-0.45*(X_t-X_{t-1})+0.7*eps_t",
+      "role": "họ bắt buộc thứ hai theo objective.breadth.process_requirement",
+      "declared_before_measurement": true
+    }
+  },
+  "verification": {
+    "note": "Đo trên chuỗi liên tục, 20000 đường, T=60, burn=10, 14 bin phân vị. Đại lượng phân xử là ĐỘ LỚN hiệu ứng, không phải z: với n lớn, z của AR(1) cũng khác 0 vì trong một bin hữu hạn của X_t thì X_{t-1} vẫn tương quan với X_t — đó là artifact của bin, không phải phụ thuộc bậc hai.",
+    "per_family": {
+      "ar1": {
+        "monotonicity_violations": 0,
+        "worst_decrease": 0.1574,
+        "max_step": 0.3323,
+        "stationarity": {
+          "sd_first": 1.3927,
+          "sd_last": 1.4032,
+          "sd_ratio": 1.0076,
+          "sd_max": 1.4143
+        },
+        "lag2_max_abs_z": 8.3,
+        "lag2_max_abs_diff": 0.0563,
+        "lag2_bins": 6
+      },
+      "second_order_nonmonotone": {
+        "monotonicity_violations": 4,
+        "worst_decrease": -0.4993,
+        "max_step": 0.4993,
+        "stationarity": {
+          "sd_first": 1.2754,
+          "sd_last": 1.2819,
+          "sd_ratio": 1.0051,
+          "sd_max": 1.2892
+        },
+        "lag2_max_abs_z": 278.9,
+        "lag2_max_abs_diff": 1.4955,
+        "lag2_bins": 6
+      }
+    },
+    "separation": {
+      "monotonicity_violations": {
+        "ar1": 0,
+        "second_order_nonmonotone": 4
+      },
+      "lag2_effect_size_ratio": 26.6
+    }
+  },
+  "cost_families": [
+    "squared",
+    "absolute"
+  ],
+  "grid": {
+    "k": [
+      1,
+      2
+    ],
+    "delta": [
+      0.5,
+      0.3,
+      0.18
+    ],
+    "T": 50,
+    "shifts_per_delta": {
+      "0.5": [
+        0.0,
+        0.1667,
+        0.3333
+      ],
+      "0.3": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "0.18": [
+        0.0,
+        0.06,
+        0.12
+      ]
+    },
+    "shift_rationale": "ba dịch lưới cách đều một chu kỳ ô; thời gian của CẢ BA nằm trong end-to-end",
+    "paths_per_side": {
+      "0.5": 4000,
+      "0.3": 6000,
+      "0.18": 8000
+    }
+  },
+  "splits": {
+    "development_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004
+    ],
+    "confirmation_seeds": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004
+    ],
+    "disjoint": true,
+    "paired_across_methods": true,
+    "rule": "cùng seed => cùng paths cho MỌI phương pháp; development không dùng để confirm"
+  },
+  "epsilon_relative_certificate": 0.005,
+  "timing_repeats": 5,
+  "feasibility_measured": [
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "max_states": 23,
+      "pairs": 20781,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.001
+    },
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.3,
+      "max_states": 37,
+      "pairs": 56637,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.004
+    },
+    {
+      "family": "ar1",
+      "k": 1,
+      "delta": 0.18,
+      "max_states": 60,
+      "pairs": 151716,
+      "dense_kernel_GB": 0.001,
+      "est_ref_hours": 0.011
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.5,
+      "max_states": 202,
+      "pairs": 1702433,
+      "dense_kernel_GB": 0.014,
+      "est_ref_hours": 0.118
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.3,
+      "max_states": 487,
+      "pairs": 10040617,
+      "dense_kernel_GB": 0.081,
+      "est_ref_hours": 0.697
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "delta": 0.18,
+      "max_states": 1111,
+      "pairs": 55162532,
+      "dense_kernel_GB": 0.44,
+      "est_ref_hours": 3.831
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.5,
+      "max_states": 19,
+      "pairs": 12903,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.001
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.3,
+      "max_states": 30,
+      "pairs": 35219,
+      "dense_kernel_GB": 0.0,
+      "est_ref_hours": 0.002
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.18,
+      "max_states": 47,
+      "pairs": 94834,
+      "dense_kernel_GB": 0.001,
+      "est_ref_hours": 0.007
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.5,
+      "max_states": 150,
+      "pairs": 900154,
+      "dense_kernel_GB": 0.007,
+      "est_ref_hours": 0.063
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.3,
+      "max_states": 360,
+      "pairs": 5584128,
+      "dense_kernel_GB": 0.045,
+      "est_ref_hours": 0.388
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "max_states": 842,
+      "pairs": 31736134,
+      "dense_kernel_GB": 0.254,
+      "est_ref_hours": 2.204
+    }
+  ],
+  "reference_audit_policy": {
+    "problem": "Tham chiếu LP exact ở k=2 δ∈{0.3,0.18} tốn 0.39–3.83 h cho MỘT seed/shift/cost; toàn bộ confirmation (5 seed × 3 shift) là ~6–57 h mỗi ô trên máy này.",
+    "resolution": "KHÔNG thu hẹp miền vận hành: candidate và comparator vẫn chạy đủ 24 task × 5 seed × 3 shift. Chỉ THAM CHIẾU exact bị giới hạn, vì chứng nhận [L,U] tự kiểm được và objective đã cấm candidate truy cập V*.",
+    "reference_run_where": [
+      "ar1|k=1|delta=0.5",
+      "ar1|k=1|delta=0.3",
+      "ar1|k=1|delta=0.18",
+      "ar1|k=2|delta=0.5",
+      "second_order_nonmonotone|k=1|delta=0.5",
+      "second_order_nonmonotone|k=1|delta=0.3",
+      "second_order_nonmonotone|k=1|delta=0.18",
+      "second_order_nonmonotone|k=2|delta=0.5"
+    ],
+    "reference_downscaled_twin_where": [
+      "ar1|k=2|delta=0.3",
+      "ar1|k=2|delta=0.18",
+      "second_order_nonmonotone|k=2|delta=0.3",
+      "second_order_nonmonotone|k=2|delta=0.18"
+    ],
+    "downscaled_twin_rule": "cùng luật sinh, T=12 và 1500 đường; chỉ audit tính đúng, KHÔNG báo tốc độ",
+    "budget_threshold_hours_per_seed": 0.2,
+    "declared_before_results": true
+  },
+  "memory_note": "Bảng chuyển dày đặc lớn nhất 0.44 GB (ar1 k=2 δ=0.18) — biểu diễn không phải nút thắt; số LP mới là nút thắt.",
+  "not_frozen_yet": [
+    "lịch leo thang ngân sách của candidate",
+    "danh sách eligible competitor mỗi task (chờ lane B)"
+  ]
+}

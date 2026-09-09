@@ -1,0 +1,71 @@
+{
+    "id":  "HD02_exploratory_opportunity_20260909",
+    "frozen_utc":  "2026-09-09T13:14:23.9459358Z",
+    "status":  "exploratory_after_known_fixture_results_not_hypothesis_registration",
+    "purpose":  "Bound optimistic numerical face-rescue opportunity before implementing dynamic comparator",
+    "families":  [
+                     "ar1",
+                     "second_order_nonmonotone"
+                 ],
+    "costs":  [
+                  "squared",
+                  "absolute"
+              ],
+    "k":  [
+              1,
+              2
+          ],
+    "T":  3,
+    "paths":  16,
+    "seed":  1000,
+    "delta":  0.5,
+    "shift":  0,
+    "activation_phases":  [
+                              1,
+                              2,
+                              3,
+                              4
+                          ],
+    "activation_rule":  "At each layer t, cumulative mask (17*i+31*j+13*t) mod 4 \u003c phase; zero inactive baseline; exact existing clamped recurrence; dummy root always active",
+    "workload_boundary":  "Faithful recurrence under declared deterministic schedule, not implemented H_C02 policy; tiny development subset not full operating domain",
+    "pair_parameters":  {
+                            "second_order_nonmonotone":  [
+                                                             {
+                                                                 "c":  0.95,
+                                                                 "w":  1.7,
+                                                                 "d":  -0.45,
+                                                                 "sigma":  0.7,
+                                                                 "b":  0.55
+                                                             },
+                                                             {
+                                                                 "c":  0.95,
+                                                                 "w":  1.7,
+                                                                 "d":  -0.2,
+                                                                 "sigma":  0.85,
+                                                                 "b":  0.4
+                                                             }
+                                                         ],
+                            "ar1":  [
+                                        {
+                                            "a":  0.7,
+                                            "sigma":  1
+                                        },
+                                        {
+                                            "a":  0.55,
+                                            "sigma":  1.15
+                                        }
+                                    ]
+                        },
+    "wall_budget_seconds":  60,
+    "numeric_policy":  "HiGHS primal/dual tolerance 1e-10, explicit marginal replay \u003c=1e-10; changed support uses strict positivity; comparisons scaled 1e-9; tiny increments/nonmonotonicity unresolved; zero update strict equality; even passing face witness unresolved mathematically exact",
+    "decision_rule":  "No threshold pass or falsification; report event fraction and cold reference OT-time opportunity ceiling conditional on this trace. No dynamic comparator or performance claim. Count all revisits/hits, initial solves, nontrivial dimensions, dense face, failures and ambiguous cases.",
+    "oracle":  "Fresh weighted OT followed by zero-objective old-face LP only for unchanged robust hits; do not import candidate",
+    "source_sha256":  {
+                          "probes/hd02_opportunity_screen.py":  "02b249ac554fada8c08eeb1e56f062999e12a0c542642d80c36201b7bd306f6c",
+                          "adapters/common_model.py":  "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+                          "adapters/global_subsolution.py":  "527049b57c3bb631ac8b698845434257093e0a40982c65f0ac6f021e307fb017",
+                          "generators.py":  "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+                          "frozen_design.json":  "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+                          "ledger/inbox/B/H_D01_prior_art_review.md":  "c4898c91da24a93282ef9e7d0d9920b1cef6ff4979989c42bf54a5993b95f5d3"
+                      }
+}

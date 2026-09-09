@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "frozen_design_amendment_1",
+  "amends": "frozen_design.json",
+  "amends_sha256": "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+  "amended_on": "2026-09-09",
+  "why": "Lane C phát hiện frozen_design.json KHÔNG nói quy ước lấy mẫu hai phía nên nó phải tự giả định. Đây là bổ sung chỗ thiếu TRƯỚC khi có bất kỳ kết quả candidate nào, không phải nới lỏng sau thất bại. frozen_design.json giữ nguyên để sha256 đã commit còn hiệu lực.",
+  "no_candidate_results_exist_yet": true,
+  "two_sided_sampling_convention": {
+    "primary_tasks": "hai phía là hai LUẬT KHÁC NHAU cùng họ, tham số đối lập khai dưới đây",
+    "ar1": {
+      "side_A": {
+        "a": 0.7,
+        "sigma": 1.0
+      },
+      "side_B": {
+        "a": 0.55,
+        "sigma": 1.15
+      },
+      "note": "trùng quy ước của archive nên liên tục với công việc trước"
+    },
+    "second_order_nonmonotone": {
+      "side_A": {
+        "b": 0.55,
+        "c": 0.95,
+        "w": 1.7,
+        "d": -0.45,
+        "sigma": 0.7
+      },
+      "side_B": {
+        "b": 0.4,
+        "c": 0.95,
+        "w": 1.7,
+        "d": -0.2,
+        "sigma": 0.85
+      },
+      "side_B_verified": {
+        "monotonicity_violations": 4,
+        "worst_decrease": -0.4603,
+        "lag2_max_abs_diff": 0.6248,
+        "stationarity": {
+          "sd_first": 1.2384,
+          "sd_last": 1.238,
+          "sd_ratio": 0.9997,
+          "sd_max": 1.2587
+        }
+      },
+      "note": "phía B phải GIỮ hai tính chất bắt buộc; đã kiểm bằng số, xem side_B_verified"
+    },
+    "control_task": "cặp CÙNG LUẬT (khác seed) giữ làm task ĐỐI CHỨNG bắt buộc: giá trị của nó là SÀN NHIỄU lấy mẫu; báo nó ngăn việc tuyên bố một phương pháp 'đo được adapted distance' khi phần lớn cái nó đo là nhiễu lấy mẫu"
+  },
+  "measured_evidence": {
+    "setup": "T=8, k=1, delta=0.5, shift=0, 2000 đường mỗi phía, chi phí bình phương, mô hình ĐÚNG (adapters.common_model.build_window_model + exact_dp)",
+    "V_star": {
+      "ar1_contrast": 1.532041,
+      "ar1_same": 1.016331,
+      "son_contrast": 2.711822,
+      "son_same": 2.067085
+    },
+    "seconds": {
+      "ar1_contrast": 4.01,
+      "ar1_same": 4.05,
+      "son_contrast": 2.76,
+      "son_same": 2.3
+    },
+    "ratio_contrast_over_same": {
+      "ar1": 1.51,
+      "son": 1.31
+    }
+  },
+  "prediction_that_was_refuted": {
+    "predicted": "cặp cùng luật cho V* gần 0, làm chứng nhận TƯƠNG ĐỐI vô nghĩa khi L->0, nên phải loại",
+    "measured": "KHÔNG đúng: V* cùng luật = 1.016331 (ar1) và 2.067085 (son) — bị chặn xa khỏi 0, vì hai phía là hai mô hình THỰC NGHIỆM độc lập của cùng một luật nên khác nhau đúng bằng nhiễu lấy mẫu sau lượng tử hoá",
+    "consequence": "Chứng nhận tương đối hợp lệ ở CẢ HAI quy ước nên cặp cùng luật được GIỮ làm đối chứng thay vì loại. Nhưng lộ ra vấn đề nặng hơn: tín hiệu đối lập chỉ cao hơn sàn nhiễu 1.51x (ar1) và 1.31x (son) ở thiết lập này."
+  },
+  "binding_consequence_for_comparison": {
+    "rule": "Mọi tuyên bố speed/quality phải báo KÈM giá trị task đối chứng cùng luật ở CÙNG ô.",
+    "must_remeasure": "Tỉ lệ 1.51x/1.31x đo ở T=8, 2000 đường. PHẢI đo lại ở T=50 và số đường đã đóng băng (4000/6000/8000) trước bất kỳ tuyên bố so sánh nào. KHÔNG ngoại suy."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "slides": 55,
+  "desktop_slides_requiring_vertical_scroll": [],
+  "mobile_horizontal_overflow": [],
+  "javascript_errors": [],
+  "limit_simulation": {
+    "mean": 0.45237669983698586,
+    "N": 80000
+  },
+  "checks": "navigation, search, probability coupling, epsilon, quantile, window, negative floor, 8 tables, quiz, reading mode, mobile and print"
+}

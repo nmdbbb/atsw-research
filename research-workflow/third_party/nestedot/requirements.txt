@@ -1,0 +1,9 @@
+jupyter 
+notebook
+matplotlib
+
+numpy
+pot
+tqdm
+
+pytest

@@ -1,0 +1,868 @@
+\n=== PAGE 1 ===
+Adapted Tree-Sliced Wasserstein:
+a path-only estimator for adapted optimal transport,
+with a machine-checked consistency proof
+[authors]
+[affiliations]
+Working draft — September 6, 2026
+Abstract
+Adapted (bicausal) Wasserstein distances respect the information flow of a stochastic process,
+but every published algorithm for computing them either fixes a scenario tree in advance or
+requires access to the transition kernel. We introduce Adapted Tree-Sliced Wasserstein (ATSW),
+an estimator that works from sampled paths alone: it quantises paths on a fixed grid, conditions
+on a window of the last k steps, replaces the optimal-transport problem at each node pair by a
+closed-form comonotone coupling, and averages over random grid shifts. On the scenario trees
+used by prior work ATSW is three to four orders of magnitude cheaper than exact dynamic
+programming, at the cost of a coupling-induced bias that we measure and do not yet bound.
+Our main negative finding is that a path-only estimator conditioning on the full history is
+statistically infeasible at depth: its bias decays like n−0.19, so five per cent accuracy would need
+on the order of 109 paths. Conditioning on a k-step window removes this: on a benchmark with
+analytic ground truth the bias falls from +42.4% to +1.24%, below a model-based competitor
+that uses strictly more information. We prove that the estimator is consistent, and the proof
+is machine-checked in Lean 4; formalisation forced three assumptions into the open that an
+informal argument would have left implicit. We also show that the estimator’s limit law is not
+Gaussian at parameter values where two c.d.f.s coincide, so naive normal confidence intervals
+are mis-centred rather than merely mis-scaled.
+Keywords. adapted Wasserstein distance; bicausal optimal transport; nested distance; comono-
+tone coupling; formal verification.
+MSC 2020. [to be assigned]
+1
+Introduction
+1.1
+Information flow is not captured by Wasserstein distance
+Let µ, ν be laws of discrete-time processes on RT . The Wasserstein distance W(µ, ν) treats a path
+as a point in RT and therefore cannot see when information becomes available.
+The standard
+two-period example makes this concrete. Let µ reveal a signal of size ε at time 1 and then move to
+±1 determined by that signal; let ν reveal nothing at time 1 and then move to ±1 by a fair coin.
+As ε →0 the two laws become indistinguishable in W, yet they are entirely different as filtered
+objects: under µ a decision maker knows the terminal value one step early, under ν she never does.
+The adapted distance separates them by 1 + ε while W reports ε.
+1
+
+\n=== PAGE 2 ===
+This matters wherever decisions are sequential: multistage stochastic optimisation, scenario
+tree generation and reduction, evaluation of generative models for time series, and reward shaping
+from expert trajectories.
+1.2
+Computation is the obstacle
+Exact adapted transport is a dynamic program over pairs of nodes of two scenario trees. The
+published methods fall into two families, and neither matches the situation a practitioner most
+often faces — a finite collection of sampled paths and nothing else.
+ Tree-given methods take two scenario trees as input and solve the nested recursion, exactly
+or with entropic regularisation. They say nothing about where the tree came from.
+ Model-given methods sample successor states on demand, which requires the transition
+kernel. Fitted value iteration is of this type: its inner loop draws successors from the true
+kernel.
+Table 1 collects the published operating points. No entry reports both a large horizon and a large
+sample size.
+1.3
+Contributions
+1. Readout, not structure, determines the recovered topology (Section 4.1). A time-
+first tree is necessary but not sufficient: on the same tree, a flat tree-Wasserstein readout
+converges to the wrong limit, a single lexicographic sweep collapses to static Wasserstein, and
+only a nested readout recovers the adapted distance.
+2. The ATSW estimator (Section 4): fixed-grid quantisation, k-step conditioning, closed-form
+comonotone couplings, and averaging over grid shifts. Its cost is output-sensitive.
+3. An informational, not algorithmic, limit (Section 6.2). With paths only and full-history
+conditioning the bias decays like n−0.19. Two natural repairs (coarsening with depth; data-
+adaptive cells) both fail, and we explain why.
+4. Consistency, machine-checked (Section 5). A Lean 4 development with no sorry, de-
+pending only on Lean’s three standard axioms. Formalisation forced three hypotheses into
+the open.
+5. A non-Gaussian limit law at ties (Section 5.3), with a minimal example, a hand deriva-
+tion, and a simulation that rejects normality.
+1.4
+Organisation
+Section 2 positions the work. Section 3 fixes notation. Section 4 defines the estimator, Section 5
+states and proves what we can prove, Section 6 reports experiments, Section 7 the demonstration
+application, and Section 8 discusses limitations.
+2
+
+\n=== PAGE 3 ===
+Table 1: Published operating points for adapted transport, as reported by their authors on their
+own hardware. Times are not comparable across rows; the table shows reach, not a ranking. Our
+own entry is a cost milestone only — see Section 6.2 for why it is not an accuracy milestone.
+method
+source
+T
+n
+time (s)
+note
+Nested distance, exact (Pichler)
+2102.05413
+5
+144
+10.29
+tree 144x24 leaves
+Nested Sinkhorn (same paper)
+2102.05413
+5
+144
+2.87
+same instance
+Adapted empirical measure, aggregated
+EP 2022
+3
+10000
+14.38
+1 CPU 3.1 GHz
+Adapted empirical measure, non-aggregated
+EP 2022
+3
+2000
+—
+reported as stopping here
+Fitted value iteration
+FVI 2023
+40
+4000
+257.70
+i5 + RTX 3050 Ti
+Backward-induction LP
+FVI 2023
+11
+2048
+794.00
+reported baseline
+Adapted Sinkhorn
+FVI 2023
+10
+1024
+1443.60
+reported baseline
+KL-relaxed adapted OT
+2026
+10
+2000
+31.60
+interpolated value
+ATSW (this work)
+—
+50
+10000
+6.60
+laptop CPU, cost only
+2
+Related work
+2.1
+Theory of adapted transport
+The adapted (nested) distance was introduced to make multistage stochastic programs stable under
+perturbation of the underlying process.
+On the real line and for monotone costs the Knothe–
+Rosenblatt coupling is optimal among causal couplings, which is what makes a quantile-based
+surrogate plausible in the first place. A separate line studies adapted empirical measures — how
+fast an empirical process converges in adapted distance — and it is this line that our consistency
+result speaks to.
+2.2
+Computation of adapted transport
+2.3
+Sliced and tree-sliced transport
+A large literature obtains O(Ln log n) transport by projecting to one dimension or onto a tree
+metric, where the optimal coupling is available in closed form. It is worth stating explicitly why
+these are not competitors here: their speed comes precisely from the absence of a filtration to
+respect. The contribution of the present work is to keep a closed-form coupling inside a nested
+recursion, which is where the difficulty lies.
+3
+Preliminaries
+3.1
+Notation
+For x ∈RT write x1:t for the first t coordinates. All processes take values in a finite set after
+quantisation; n and m denote the numbers of cells for the two processes, B a bound on the cost
+matrix, and ∥· ∥1 the ℓ1 norm on mass vectors.
+3
+
+\n=== PAGE 4 ===
+[figure file missing — see the caption below]
+Figure 1: The same non-anticipative tree read three ways. Only the nested readout recovers the
+adapted distance.
+3.2
+Bicausal couplings and the adapted distance
+Definition 1. A coupling π of µ, ν ∈P(RT ) is bicausal if, under π, Y1:t is conditionally independent
+of Xt+1:T given X1:t, and symmetrically. Write Cplbc(µ, ν) for the set of such couplings and
+AWp
+p(µ, ν) =
+inf
+π∈Cplbc(µ,ν)
+∫︂∑︁T
+t=1 |xt −yt|p dπ.
+3.3
+The nested recursion
+Bicausality is what makes the problem decompose. With VT ≡0,
+Vt(x1:t, y1:t) =
+inf
+πt∈Cpl(µt+1|x1:t, νt+1|y1:t)
+∫︂[︁
+ct+1(xt+1, yt+1) + Vt+1
+]︁
+dπt,
+and AWp
+p = V0. Every algorithm in this area is a way of doing something cheaper at the inner inf,
+or of visiting fewer (x1:t, y1:t) pairs. ATSW does both.
+3.4
+Comonotone couplings
+For probability vectors p, q on ordered finite supports with c.d.f.s F, G, the comonotone coupling
+assigns mass
+ℓij(p, q) =
+(︁
+min(Fi, Gj) −max(Fi−1, Gj−1)
+)︁+.
+(1)
+It costs O(b log b) for supports of size b, and is optimal in one dimension for monotone costs. Two
+properties of (1) drive everything later: it is piecewise linear in (p, q), and it is built from min and
+max, hence only directionally differentiable — the source of the non-Gaussian limit in Section 5.3.
+4
+The ATSW estimator
+4.1
+Readout determines the recovered topology
+A natural first attempt is to build a time-first tree and apply an existing tree-Wasserstein readout.
+On the two-period example of the introduction, whose adapted distance is 1 + ε = 1.30 at ε = 0.3,
+we measured three readouts on the identical tree as the cell width is refined:
+4
+
+\n=== PAGE 5 ===
+Algorithm 1 ATSW at one grid shift
+Require: paths x(1..n), y(1..n′) ∈RT ; grid width δ; shift s; window k; cost c
+1: Cx
+t ←⌊(xt −s)/δ⌋, representative = cell centre
+▷deterministic given (δ, s)
+2: group paths by the tuple of their last k cell indices at each time
+▷node = window state
+3: V ←0
+4: for t = T −1 down to 0 do
+5:
+for each pair of window states (u, v) carrying mass do
+6:
+V (u, v) ←ComonotoneCost
+(︁ˆKx(u, ·), ˆKy(v, ·), c + V
+)︁
+▷Eq. (1)
+7:
+end for
+8: end for
+9: return V at the root
+ a flat tree-Wasserstein readout (ℓ1 on cylinder-cell masses) converges to 4.0;
+ a single lexicographic sweep returns ε, the static Wasserstein value;
+ the nested readout returns 1 + ε exactly.
+The mechanism of the lexicographic failure is that it matches marginal mass before conditioning,
+and conditioning does not commute with coupling. The conclusion is structural: a time-first tree
+is necessary but not sufficient, and the nested readout is not an implementation detail.
+4.2
+Construction
+Three choices in Algorithm 1 deserve comment.
+Fixed grid rather than data-adaptive cells.
+Cell boundaries and representatives are deter-
+ministic given (δ, s). Cells built from sample quantiles are more accurate in some regimes (Sec-
+tion 6.4), but they make the cell boundaries random, and then the consistency proof of Section 5
+no longer covers the estimator that is actually run. We chose the estimator the theorem covers.
+Window of length k.
+Conditioning on the last k cell indices bounds the number of nodes by
+(number of cells)k, independent of T. Section 6.3 shows k is a two-sided knob with an interior
+optimum.
+Fallback on unvisited cells.
+If a source cell is never visited the count ratio is 0/0. The estimator
+returns the uniform row there.
+This is not cosmetic: it is what makes every estimated row a
+probability vector at every sample size, which the consistency proof requires (Remark 5).
+4.3
+Cost
+The number of visited segments grows like n1.24 at T = 10 and n1.34 at T = 50 (Table 2), i.e.
+sub-quadratic but super-linear, and the exponent itself drifts upward with depth. A configuration
+with n = 105, T = 100 completes in about ten minutes of laptop CPU. This is a cost milestone
+and not an accuracy milestone; Section 6.2 explains why the two must be reported separately.
+5
+
+\n=== PAGE 6 ===
+Table 2: Segments visited by the recursion. The cost is output-sensitive: only node pairs carrying
+mass are visited. The fitted exponent within each depth is given in the last column.
+T
+n
+segments visited
+time (s)
+fitted exponent in n
+10
+250
+15921
+0.335
+1.235
+10
+500
+38203
+0.820
+1.235
+10
+1000
+89782
+1.925
+1.235
+10
+2000
+207620
+4.464
+1.235
+50
+250
+106708
+2.143
+1.341
+50
+500
+280253
+5.677
+1.341
+50
+1000
+696908
+13.808
+1.341
+50
+2000
+1744941
+33.686
+1.341
+5
+Theory
+5.1
+Consistency
+Let ˆKM be the count-based kernel estimator from M observed transition pairs with the uniform
+fallback row, and K0 the true kernel.
+Assumption 2 (Reachability). Every source cell has strictly positive probability under the law of
+the first coordinate of a transition pair.
+Assumption 3 (Sampling). The pooled transition pairs are pairwise independent, identically
+distributed and measurable.
+Theorem 4 (Consistency). Under Assumptions 2 and 3 and a bounded cost, the backward-recursion
+value computed from ˆKM converges almost surely, as M →∞, to the value computed from K0.
+Proof sketch. The argument is a continuous-mapping argument with an explicit modulus. (i) The
+c.d.f. is 1-Lipschitz in the mass vector, hence by (1) each comonotone weight is Lipschitz in (p, q)
+with constant 2; (ii) since the coupling cost is linear in the cost matrix and the weights are bounded,
+|QC(p, q; M) −QC(p′, q′; M)| ≤2nmB(∥p −p′∥1 + ∥q −q′∥1); (iii) one recursion step is jointly
+Lipschitz in the kernel and in the continuation value; (iv) composing s steps gives a Lipschitz
+bound with an explicit, recursively defined constant; (v) a Lipschitz bound whose input vanishes
+yields convergence of the value; (vi) the strong law of large numbers gives almost-sure convergence
+of empirical frequencies, and under Assumption 2 the ratio of frequencies converges to the true
+kernel.
+5.2
+Machine-checked formalisation
+The proof above is formalised in Lean 4 with mathlib. The development is 35 results, 613 lines,
+zero sorry, and #print axioms reports only propext, Classical.choice and Quot.sound for
+every statement, including Theorem 4.
+Remark 5 (What formalisation forced into the open). Three hypotheses that an informal proof
+leaves implicit had to be stated. (i) Reachability. Without Assumption 2 the estimated kernel is
+undefined on unvisited cells and the ratio has no limit. (ii) The fallback row. For finite M the
+denominator can vanish, so the estimator must return a genuine probability vector in that case;
+otherwise the hypothesis of the composition step fails at small M and the induction does not start.
+6
+
+\n=== PAGE 7 ===
+Table 3: The Lean development. The final row is Theorem 4.
+name
+statement
+cdf lipschitz
+the c.d.f. is 1-Lipschitz in the mass vector
+ell nonneg, ell le one
+comonotone weights lie in [0, 1]
+ell lipschitz
+each weight is Lipschitz in (p, q)
+QC linear M
+the coupling cost is linear in the cost matrix
+QC lipschitz
+|QC(p, q; M) −QC(p′, q′; M)| ≤2nmB(∥p −p′∥1 + ∥q −q′∥1)
+QC step lipschitz
+one recursion step, jointly in kernel and continuation
+Vdp bound, Vdp lipschitz
+the T-step value, with explicit constants
+Vdp tendsto
+vanishing kernel error implies convergence of the value
+empirical freq ae
+strong law for empirical frequencies
+sum measure real, K0 isProb
+true kernel rows are probability vectors
+Khat isProb
+estimated rows are probability vectors for every M
+Khat ae tendsto
+the count estimator converges a.s. under reachability
+Vdp consistent ae
+a.s. convergence of the estimated value
+Convergence is unaffected because the denominator is eventually nonzero. (iii) Marginal equals
+sum of joints. Needed to show the true kernel rows are probability vectors; formally this is an
+integral identity, not an immediate rewriting.
+Remark 6 (Scope of the formal statement). The Lipschitz constant grows like (nm)s and therefore
+certifies continuity, not a rate.
+The formal statement is for a time-homogeneous kernel — the
+stationary k-Markov case used throughout — and models the pooled transition pairs as i.i.d.
+5.3
+A non-Gaussian limit at ties
+Proposition 7. Let p = (0.2, 0.5, 0.3) and q = (0.2, 0.6, 0.2) on {0, 1, 2} with cost |x −y|, so that
+the two c.d.f.s coincide at the first cut point. Let ˆV be the comonotone cost between independent
+empirical versions of p and q. Then
+√
+N( ˆV −V ) converges to |A| + B for jointly Gaussian A, B,
+whose mean is 0.4514 and is in particular nonzero.
+The mechanism is that (1) is directionally but not fully differentiable: where two c.d.f.s coin-
+cide, the min/max structure makes the first-order expansion a nonlinear function of the Gaussian
+fluctuation. Simulation with R = 200,000 replicates at N = 50,000 gives mean 0.4504 (hand deriva-
+tion 0.4514), skewness 0.239, and a Kolmogorov–Smirnov test against the centred Gaussian with
+p < 10−12.
+The practical consequence is sharper than “the limit is non-normal”: a confidence interval built
+on a naive normal approximation is mis-centred, not merely mis-scaled, and no choice of variance
+estimator repairs it.
+5.4
+Rate of convergence
+Not yet written.
+Theorem 4 gives no rate, and Remark 6 explains why the constant we prove cannot yield one.
+The target statement is a bound of the form E| ˆVM −V | ≲ρ(n, m, k, T) M−1/2 under Assumption 2
+with a quantitative lower bound on cell probabilities, obtained by replacing step (iv) of the proof
+7
+
+\n=== PAGE 8 ===
+[figure file missing — see the caption below]
+Figure 2: Limit law of
+√
+N( ˆV −V ) at a tie. The centred Gaussian that a naive delta method would
+predict is displaced from the truth by the mean of the true limit.
+sketch with a martingale argument rather than a worst-case composition. What would falsify it: the
+measured bias in Section 6.2 decays like n−0.19, far slower than M−1/2, so any claimed rate must
+be stated for the kernel error and not for the path count, and the two must be related through the
+number of realisable window states.
+5.5
+Bounding the comonotone-coupling gap
+Not yet written.
+Section 6.1 measures a 10–20% gap between the comonotone surrogate and the exact inner
+optimum on multi-branch trees. We have no bound on it. The target is a bound in terms of branching
+factor and of the departure of the conditional cost from monotonicity, recovering exactness in the
+one-dimensional monotone case. What would falsify it: an instance family on which the ratio grows
+with branching factor without bound.
+5.6
+Metric properties
+Not yet written.
+Whether the ATSW functional is a metric on the space of quantised laws — symmetry is clear,
+the triangle inequality is not — and whether the shift-averaged version metrises the same topology
+as AW on a suitable class.
+8
+
+\n=== PAGE 9 ===
+[figure file missing — see the caption below]
+Figure 3: Head-to-head on the competitor’s own instance generator.
+Table 4: Scenario trees from the competitor’s generator; nb is the branching parameter, times in
+seconds, error relative to exact dynamic programming. The support is integer-valued, so δ = 1
+is lossless and the ATSW error column isolates the cost of replacing the linear program by a
+comonotone coupling.
+T
+nb
+paths
+DPP exact
+DPP Sinkhorn
+ATSW δ=1
+ATSW err. (%)
+Sinkhorn err. (%)
+2
+10
+100
+0.05
+0.35
+0.0007
+22.6
+6.3
+2
+25
+625
+1.66
+3.72
+0.0009
+13.9
+16.3
+2
+50
+2500
+22.96
+29.74
+0.0024
+9.7
+29.1
+2
+75
+5625
+105.91
+119.48
+0.0076
+14.8
+63.8
+2
+100
+10000
+258.94
+264.25
+0.0082
+23.4
+150.5
+3
+10
+1000
+3.22
+21.87
+0.0021
+22.4
+2.2
+6
+Experiments
+Protocol.
+All timings are on the same machine. Where a competitor is compared we run their
+published code on their instance generator; a re-implementation is used only to understand mecha-
+nism, never to claim a ratio. Ground truth is analytic where available and otherwise exact dynamic
+programming with a linear-programming inner solver. Every number in the tables is generated
+from the result files at build time.
+6.1
+Given a scenario tree
+ATSW is three to four orders of magnitude cheaper. The honest counterpart is the error column:
+replacing the linear program by a comonotone coupling costs roughly ten to twenty per cent on
+these instances, and we have no bound on that gap.
+The entropic branch of the competitor’s own code is not a usable middle ground here. Its docu-
+mentation states that the method should converge to unregularised transport as ε →0, while warn-
+ing that values below roughly ε = 0.01 may cause problems in practice; our sweep (Appendix C)
+is consistent with that warning and shows the practical range to be narrow — the relative error is
++16 to +24% at ε = 10−2, passes through −4 to −16% at 10−3, and degrades monotonically to
+−92 to −96% at 10−5. The iteration breaks down numerically before the regularisation is small
+9
+
+\n=== PAGE 10 ===
+[figure file missing — see the caption below]
+Figure 4: With paths only and full-history conditioning the bias decays like n−0.19. The competitor
+samples successor states from the true kernel, i.e. it requires a model.
+Table 5: Gaussian benchmark, T = 8, analytic ground truth 17.0. FVI samples successors from
+the true kernel and therefore uses strictly more information than any path-only estimator.
+estimator
+n
+value
+bias (%)
+time (s)
+full history, δ = 0.5
+2000
+30.391
+78.77
+0.12
+full history, δ = 0.5
+10000
+27.598
+62.34
+1.02
+full history, δ = 0.5
+50000
+24.213
+42.43
+9.75
+k-Markov, quantile cells m = 40
+2000
+18.917
+11.28
+0.32
+k-Markov, quantile cells m = 40
+10000
+18.330
+7.82
+0.55
+k-Markov, quantile cells m = 40
+50000
+17.295
+1.73
+0.92
+k-Markov, fixed grid δ = 0.125
+50000
+17.211
+1.24
+1.97
+FVI, model-based (original code)
+2000
+17.484
+2.85
+14.20
+enough to be accurate, so we compare against the exact dynamic program.
+6.2
+Paths only: an informational limit
+Full-history conditioning is not merely inaccurate, it is inaccurate in a way that more data does
+not fix: fitting the three measured points gives a bias decaying like n−0.19, so five per cent would
+require on the order of 4 × 109 paths. The cause is that the number of realisable histories grows
+like (number of cells)T , so at depth almost every history is observed once and the conditional laws
+are estimated from a single sample.
+Two natural repairs fail, and their failure is informative. Coarsening the grid with depth is
+much worse (+460% at the most aggressive setting) because coarse cell centres introduce a cost
+error that dominates the sampling gain. Data-adaptive quantile cells do not help either, because
+they change where the cells are but not how many histories there are.
+6.3
+Window length is a two-sided knob
+The benchmark is deliberately non-Markov — transition probabilities depend on the whole history
+— so that a window that is too short must lose information. It does, and it biases downwards,
+10
+
+\n=== PAGE 11 ===
+[figure file missing — see the caption below]
+Figure 5: Conditioning on the last k steps.
+Too small a window under-conditions and biases
+downwards; the full history over-fragments the sample and biases upwards.
+Table 6: Non-Markov tree, T = 4, branching 3, n = 50000; ground truth 5.7947 by exact dynamic
+programming. The window length has an interior optimum.
+conditioning
+value
+bias (%)
+time (s)
+k =1, m=27
+5.637
+-2.73
+0.218
+k =2, m=27
+5.808
+0.23
+0.281
+k =3, m=27
+5.808
+0.23
+0.306
+full history, δ = 0.3
+5.862
+1.16
+—
+in the opposite direction to the over-fragmentation bias. Note that the two longer windows are
+indistinguishable at this depth, so these data locate the optimum only up to k ∈{2, 3}.
+6.4
+Fixed grid versus data-adaptive cells
+This is a deliberate trade, not an improvement: we accept more bias in the under-conditioned
+regime in exchange for an estimator the theorem covers. The grid width has an interior optimum
+for the same sampling reason as the window length — on the Gaussian benchmark δ = 0.0625 is
+worse than δ = 0.125.
+6.5
+Selecting k and δ
+Not yet written.
+Both parameters have interior optima and both are currently chosen by sweep against a ground
+truth that a user will not have. The target is a selection rule computable from the sample alone —
+a held-out split on paths, or a stability criterion across grid shifts — validated against the swept
+optimum on the benchmarks of this section. What would falsify it: a rule whose selected (k, δ) is
+worse than a fixed default across the benchmark set.
+11
+
+\n=== PAGE 12 ===
+Table 7: Every configuration run. The fixed grid is what Theorem 4 covers. It is worse in 3 of 5
+configurations and comparable at the operating point actually used (interior-optimal k, large n).
+benchmark
+conditioning
+quantile cells (%)
+fixed grid (%)
+better
+non-Markov tree T=4, n=5000
+k =1
+-1.02
+-2.68
+quantile
+non-Markov tree T=4, n=5000
+k =2
+0.69
+1.05
+quantile
+non-Markov tree T=4, n=50000
+k =1
+-2.73
+-4.17
+quantile
+non-Markov tree T=4, n=50000
+k =2
+0.23
+0.07
+fixed
+Gaussian T=8, n=50k, δ swept
+k =1
+1.73
+1.24
+fixed
+7
+Demonstration application
+Not yet written.
+The experiments above are benchmarks against ground truth, which establishes correctness but
+not usefulness. One application will be developed in full. Two candidates, both verified to be open
+in the literature survey:
+(A) Evaluation metric for generative time-series models. Current practice compares marginal or
+two-point statistics, which are blind to information flow; a generator that leaks future information
+scores well. Protocol: train several generators on the same data, rank them by ATSW against held-
+out paths, and check the ranking against a downstream sequential decision task. What would falsify
+the claim: ATSW ranking no better than a static Wasserstein baseline at predicting downstream
+performance.
+(B) Reward from expert trajectories in imitation learning. Existing OT-based rewards use static
+transport between state-visitation distributions. Protocol: substitute ATSW and measure sample
+efficiency against the static baseline on standard control tasks. What would falsify the claim: no
+improvement once the static baseline is given the same amount of tuning.
+Option (A) is closer to the estimator’s guarantees; option (B) has the wider audience.
+8
+Discussion
+8.1
+What the negative result means
+It is tempting to read Section 6.2 as a defect of ATSW. It is not: any estimator that sees only paths
+faces the same count of realisable histories, and the model-based competitor beats it precisely by
+using information ATSW is not given. The useful reading is that adapted transport from paths
+alone is feasible only under a conditioning restriction, and that choosing the restriction — rather
+than choosing the coupling — is where the accuracy is decided.
+8.2
+Limitations
+ The comonotone coupling is not optimal on multi-branch trees; on the scenario-tree bench-
+mark this costs ten to twenty per cent, and we have no bound.
+ Neither k nor δ has a data-driven selection rule; both have interior optima.
+12
+
+\n=== PAGE 13 ===
+ The consistency constant certifies continuity, not a rate.
+ The formal development treats pooled transition pairs as i.i.d.; dependence between pairs
+drawn from the same path is not treated.
+ The benchmarks use one-dimensional state; multivariate state is quantised coordinatewise
+and has not been evaluated.
+ No demonstration application is included yet.
+9
+Conclusion
+Adapted transport from sampled paths is feasible, but the binding constraint is statistical rather
+than computational, and the remedy is to condition on a bounded window rather than to improve
+the coupling. The resulting estimator is consistent, and that statement is machine-checked rather
+than argued.
+A
+Proof details
+Not yet written.
+A human-readable rendering of the Lean development: the explicit constants in steps (iii) and
+(iv) of the proof sketch, and the derivation of the limit law in Proposition 7.
+B
+The Lean development
+Built with Lean 4.33.0 and mathlib at tag v4.33.0. Reproduce with lake exe cache get &&
+lake build; Check.lean prints the axiom dependencies of every statement.
+Importing all of
+mathlib exhausts 8 GiB, so the file imports six modules selectively.
+C
+Entropic sweep
+D
+Reproducibility
+Every number in this paper is generated from result files at build time by build paper.py; no
+figure or table value is transcribed by hand.
+The estimator is atsw fixedgrid.py (fixed grid,
+the version Theorem 4 covers) with atsw kmarkov.py providing the windowed recursion, and the
+formal development is Atsw.lean.
+Data availability
+[to be completed]
+13
+
+\n=== PAGE 14 ===
+Table 8: Entropic branch of the competitor’s code across regularisation levels, two instance sizes
+and two seeds.
+nb
+seed
+ε
+exact
+Sinkhorn
+rel. err. (%)
+time (s)
+25
+0
+0.01
+0.040929
+0.047515
+16.1
+3.01
+25
+0
+0.001
+0.040929
+0.034178
+-16.5
+5.10
+25
+0
+0.0001
+0.040929
+0.012106
+-70.4
+2.56
+25
+0
+1e-05
+0.040929
+0.001713
+-95.8
+1.43
+25
+1
+0.01
+0.029506
+0.036489
+23.7
+2.99
+25
+1
+0.001
+0.029506
+0.028318
+-4.0
+5.46
+25
+1
+0.0001
+0.029506
+0.015622
+-47.1
+2.90
+25
+1
+1e-05
+0.029506
+0.002508
+-91.5
+1.50
+50
+0
+0.01
+0.041040
+0.049146
+19.8
+24.98
+50
+0
+0.001
+0.041040
+0.036870
+-10.2
+35.18
+50
+0
+0.0001
+0.041040
+0.010716
+-73.9
+24.58
+50
+0
+1e-05
+0.041040
+0.001552
+-96.2
+19.94
+50
+1
+0.01
+0.033887
+0.041579
+22.7
+22.89
+50
+1
+0.001
+0.033887
+0.031977
+-5.6
+32.59
+50
+1
+0.0001
+0.033887
+0.009850
+-70.9
+22.31
+50
+1
+1e-05
+0.033887
+0.001516
+-95.5
+18.29
+Acknowledgements
+[to be completed]
+14

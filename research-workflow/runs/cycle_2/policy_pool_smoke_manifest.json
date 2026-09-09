@@ -1,0 +1,31 @@
+{
+  "schema": "policy-pool-common-smoke-manifest-v1",
+  "frozen_before_execution": true,
+  "scientific_scope": "development correctness and scope smoke; not a benchmark, certificate, or SOTA comparison",
+  "objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+  "design_sha256": "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+  "design_amendment_sha256": "c150f7025359ea2bf33a69c408429326635d48731ce4ab9f585d331c7b6d2fa2",
+  "generators_sha256": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+  "common_model_sha256": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+  "candidate_sha256": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+  "probe_sha256": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+  "command": "python research-workflow/probes/policy_pool_common_smoke.py",
+  "grid": {
+    "process": ["ar1", "second_order_nonmonotone"],
+    "cost": ["squared", "absolute"],
+    "k": [1, 2],
+    "delta": [0.5, 0.18],
+    "T": 5,
+    "paths_per_side": 128,
+    "seed": 1000,
+    "shift": 0.0,
+    "budget_per_layer": [4, 16]
+  },
+  "pass_condition": "All 16 float64 candidate intervals contain the independent common_model exact_dp value within 1e-8 and every reusable/root dual has nonpositive recorded feasibility violation.",
+  "failure_classification": "Any containment, dual-feasibility, target, cost, root, or occupation-marginal failure is implementation_invalid. A wide valid interval is a performance diagnostic only.",
+  "nonclaims": [
+    "The smoke path count, horizon and shift do not replace the frozen final grid",
+    "Float64 feasibility is not outward-rounded certification",
+    "No timing or gap from this smoke is a SOTA result"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "HD02_root_investment_decision_20260909",
+  "user_authorized_orchestrator": true,
+  "decision": "defer_current_HD02_engineering_and_performance_registration",
+  "research_outcome": "direction_stopped_evidence_based",
+  "scope": "Current dense optimal-face feasibility implementation and declared tiny batched activation workload only.",
+  "scientific_objective_achieved": false,
+  "correctness": "Historical acceptance is invalid. New reviewed implementation passes exact local fixture gate but is not a drop-in controller certificate due marginal/guarded-dual contract mismatch.",
+  "validation": {
+    "full_test_suite": {
+      "passed": 61
+    },
+    "independent_exact_hall_cases": 64,
+    "independent_accepts": 10,
+    "independent_rejects": 54
+  },
+  "opportunity": {
+    "all_revisited_events": 1802,
+    "support_hits": 383,
+    "nontrivial_hits": 159,
+    "numerical_face_rescues": 2,
+    "hit_reference_solve_seconds": 0.8917745000003379,
+    "rescue_reference_solve_seconds": 0.005811900000026071
+  },
+  "opportunity_time_proxy_fraction": 0.006517230533081927,
+  "limitations": [
+    "T=3, 16 paths, delta=.5, seed1000, eight cells; no full-domain inference.",
+    "Deterministic batched activation and fresh-oracle witness replacement, not retained-plan H_D01 or H_C02 policy.",
+    "Two rescues are numerical, not exact certificates; timing is single-run cold-oracle proxy, not a proved bound or measured candidate saving."
+  ],
+  "budget_decision": "Do not build dynamic comparator, numerical production bridge or run large grid for this version on current evidence.",
+  "reopen_only_if": "A concrete controller-specific locality/update mechanism predicts materially greater root-certificate benefit; disclose changes and freeze a new bounded opportunity screen before spending on implementation.",
+  "retained": [
+    "H_C02 controller baseline",
+    "H_D01 standard sensitivity baseline",
+    "H_D02 exact local reference and counterexamples"
+  ],
+  "not_claimed": [
+    "H_D02 mathematical impossibility",
+    "SOTA gain",
+    "population certificate",
+    "original full-domain objective completion"
+  ],
+  "evidence": [
+    {
+      "path": "adapters/monotone_reuse_reviewed.py",
+      "sha256": "fa062fe4e462cc0df459801eb0eb634838f91734b9c26877d3b4b75217796ed2"
+    },
+    {
+      "path": "tests/test_monotone_reuse_reviewed.py",
+      "sha256": "32a4bb495d95d13eb874c18c8a45eeee3cf3aae222d4982ea4a959775625111d"
+    },
+    {
+      "path": "research/theory/HD02_independent_audit_20260909.md",
+      "sha256": "ca19b95f8b71fde93484f43d8909210087792b1ebf345642a3d92f3cd9c273bd"
+    },
+    {
+      "path": "runs/cycle_2/hd02_review/verification.json",
+      "sha256": "a0bacbb60c156fbe9f8096b19799be6d5d98e77f1db2845537621ae4d5021d65"
+    },
+    {
+      "path": "runs/cycle_2/hd02_opportunity/manifest.json",
+      "sha256": "d31855e6b7022c593b4ac4b53409f3b9f628a8339b6a0df075f727f312777609"
+    },
+    {
+      "path": "runs/cycle_2/hd02_opportunity/results.json",
+      "sha256": "900142cc866c5ca80cbbf8fc3cb5f18ef0f78091ad14eb1fba8adc69ec0deede"
+    },
+    {
+      "path": "runs/cycle_2/hd02_opportunity/trace.jsonl",
+      "sha256": "35bc84eee94e4e7f0e8cd92fe6da3fc3a6de12fbec4968757fd41c526bb22907"
+    }
+  ],
+  "integration_note": "Shared historical status/ledger not overwritten. This inbox record and status.orchestrator.json contain current root decision; ledger owner may append it preserving history."
+}

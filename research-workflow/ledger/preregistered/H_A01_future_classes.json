@@ -1,0 +1,65 @@
+{
+  "objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+  "source_sha256": "ab14455c723feb0bc33fa55820f2f9dd3d66dcb8d266b2195bd2bc8ac300e2f4",
+  "registered_utc": "2026-09-09T05:07:50.929098+00:00",
+  "hypothesis": {
+    "id": "H_A01_future_classes",
+    "mechanism": "Backwards canonical future classes F_t share the same uncharged continuation value; incoming successor atoms A_t retain both current output and F_t. Evaluate one Bellman value per F_t pair, using A_(t+1) atoms.",
+    "omitted_computation": "Repeated Bellman OT value solves for distinct history states with exactly identical distributions over future atoms; no rounding-based merging and no approximation of the finite target.",
+    "assumptions": [
+      "Finite time-indexed k-window Markov models; additive current-scalar costs at times1..T and exact initial marginal coupling",
+      "F_T is constant but A_T retains output labels; A_0 may omit output because time-zero cost is excluded",
+      "Row signatures use exact Fraction representations of the normalized declared floating probabilities, never rounded decimals or a tolerance",
+      "Numerical LP value agreement is a finite test, not exact arithmetic certification or a SOTA result"
+    ],
+    "lemma_or_invariant": "Fine coupling pushes to feasible atom coupling; every atom coupling lifts using original within-atom conditional marginals. Costs c_(t+1)+V_(t+1) are constant on each A_(t+1) pair by backward induction. Thus future-class value sharing preserves the finite-model value, with numerical conversion tracked separately.",
+    "nearest_prior_art": [
+      {
+        "url": "https://arxiv.org/html/2509.06702",
+        "overlap": "PNOT Markov collapse, quantization and backward nested OT",
+        "remaining_question": "Does additional future-equivalence sharing remove substantial work beyond a fixed k-window state representation?"
+      },
+      {
+        "url": "https://arxiv.org/html/2406.04056",
+        "overlap": "Bisimulation and occupancy formulation",
+        "remaining_question": "Finite-horizon successor atom versus future-value classes and useful exact compression on the project's finite empirical models"
+      }
+    ],
+    "prediction": "On the constructed duplicated-future fixture, both cost values equal1 and Bellman evaluations fall from12 to3. Every nonzero prescribed perturbation splits relevant X future classes; squared value becomes1+4epsilon and absolute1+epsilon. Exploratory performance continuation criterion: at least25% logical Bellman-evaluation reduction in EACH k=2 cell/process, median across seeds, in the explicitly small development data below. k=1 remains reported without a minimum. This diagnostic is not the final SOTA speed criterion.",
+    "falsification_rule": "Any analytical value mismatch above1e-8 or collapse of the true-second-order counterexample is implementation_invalid requiring review. An unsafe terminal-merge control must disagree on a one-step variable-output case. Failing the25% development work reduction rejects only the claim that exact future classes alone provide a broad performance lever; preserve the exact lemma and do not relabel the whole project dead.",
+    "probe": {
+      "command": "python research-workflow/probes/future_classes.py",
+      "seeds": [
+        20260909,
+        20260910
+      ],
+      "oracle": "Analytic duplicate/perturbation fixtures and independent SciPy HiGHS fine-model DP from common_model.exact_dp. For T50 models only structural work counts are measured; their root value/speed/certificate is NOT claimed.",
+      "cost_accounting": "Report model build time, exact signature construction time, logical fine/quotient Bellman pair counts, successor-atom counts and tiny full/reference solve times separately. Do not convert call-count ratio to a speedup claim.",
+      "development_grid": {
+        "k": [
+          1,
+          2
+        ],
+        "delta": [
+          0.5,
+          0.3,
+          0.18
+        ],
+        "T": 50,
+        "paths_per_process": 256,
+        "shift_fraction": 0.37
+      },
+      "generators": {
+        "ar1": "start0; X_t=.7X_(t-1)+N(0,1); Y_t=.55Y_(t-1)+1.15N(0,1)",
+        "nonmonotone_second_order": "start0; X_t=.25X_(t-1)+.7sin(2X_(t-2))+N(0,1); Y_t=.15Y_(t-1)+.6sin(2Y_(t-2))+1.15N(0,1); missing X_(-1)=Y_(-1)=0. Derivative of older-state effect changes sign; previous history has genuine predictive influence."
+      },
+      "analytic_fixture": "32paths: balanced X0 in{-3,3}, X1=0, X2 in{-1,1}, X3=0; conditional positive probability1/2 except X0=3 uses1/2+epsilon. Y0 in{-4,4}, Y1=0, Y2 in{-2,2} fair conditional onY0, Y3=0. epsilon={0,1/16,1/8}, k2 delta1 shift.5."
+    },
+    "breadth_challenge": "Both squared and absolute cost on tiny value probes; all six original k/delta/T cells under two process families for development compression diagnostics, using only256 paths and declared seeds. Full sample-size SOTA confirmation remains a separate unmet gate.",
+    "ablation": "Disable future classes while retaining fine finite model and the same OT oracle. Compare A-only state quotient against F-value sharing, include deliberately unsafe all-terminal merge/current-output-only variants on tiny counterexamples; they are negative controls never candidate algorithms.",
+    "unresolved_objections": [
+      "Independent proof review required for floating-model normalization and rational-signature to float conversion; this probe does not issue mathematical exact certificates."
+    ],
+    "status": "proposed"
+  }
+}

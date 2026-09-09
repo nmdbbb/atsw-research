@@ -1,0 +1,62 @@
+{
+ "schema_version": 1,
+ "id": "H_B01_decision",
+ "lane": "C",
+ "hypothesis": "H_B01_temporal_block_bounds",
+ "reviewed_on": "2026-09-09",
+ "decision": "revise",
+ "decision_scope": "Independent theory review of the H-B card and of research/theory/block_bounds_review.md. Not a registered experiment, not a benchmark, not a novelty or SOTA judgement.",
+ "reason": "The mathematics is correct and the root propagation is correct, but the quantitative premise fails on the registered development grid. L1 (block lower bound), L2 (conditional-proportion lift) and L3 (one-sided reachability envelope) are valid; enclosure verified numerically to 1.4e-14 over all 48 development cells. Root certification is sound because the relaxed Bellman maps are monotone and the induction starts at V_T=0, so a node bound is never asserted against an approximate future in isolation. What is not supported is that any positive-mass successor rectangle can stay unexpanded at eps=0.005. Replacing exact recursion by the singleton envelope at only the terminal-adjacent layer already exceeds the tolerance in 46 of 48 cells (median root relative width 0.53, max 3.44); two layers deep, 0 of 48 pass. Spending the entire root budget on a single layer, the optimal-coupling mass that may remain coarse has median 0.000 / 0.049 / 0.215 at layers 1 / 2 / 3 for k=1, which objective.json requires. The k=2 headroom (0.167 / 0.713 / 0.868) correlates r=0.788 with the fraction of empirical states having out-degree 1; in the best cells the kernels are out-degree 1.00, i.e. 24 deterministic paths, for which the envelope is exact for free. The ablation list has no degeneracy control, so the registered 10%-omission prediction cannot currently distinguish the mechanism from sample sparsity.",
+ "mandatory_answers": {
+  "does_the_envelope_hide_dense_work": "Partly. Constructing it does not: the reachability arrays are one-sided, cost O(T * sum_t nnz(P_t)) + O(T * sum_t nnz(Q_t)) = O(T^2 N) per side for N observed paths, storage O(T^2 N), query O(T-t) per rectangle, and the cross product X_t x Y_t is never scanned. But against the current dense kernel tables in adapters/common_model.py, merely locating positive entries costs Theta(sum_t |X_t||X_{t+1}| + |Y_t||Y_{t+1}|); measured median 1888 element touches per cell versus 1788 exhaustive-DP arc variables, i.e. ~1.06x the whole DP arc count. The decisive point is the second half: a block bound tight enough to matter does require the dense scan. Pricing a rectangle from the envelope is O(T-t) but leaves slack 31x to 186x the entire root budget at k=1; pricing it by the true rectangle minimum of c+L_next reads every fine entry in the rectangle, which is exactly the omitted work. Both hold only where the rectangle's members have structurally identical futures. The honest mechanism is therefore duplication of conditional futures, not temporal envelopes.",
+  "certification_cost_in_O": "Exhaustive DP: sum_t |X_t||Y_t| pair transport solves plus one root solve, and sum_t nnz(P_t)*nnz(Q_t) arc variables. H-B: two coarse transport solves (lower and upper) per visited node per refinement round, one recursive descent per singleton pair it must resolve, hierarchy construction O(sum_t |X_t| log|X_t| + |Y_t| log|Y_t|), plus two terms absent from the card's cost_accounting: ancestor re-solves after each refinement, O(refinements * T) extra transport solves, and the dense-to-sparse conversion scan above. Refinement-schedule dependence: doubling both cuts each round costs ~(4/3) n^2 arc variables at an n x n node, a 33% overhead over DP; refining one block at a time and re-solving, which is what the review's algorithm step 2 describes, costs up to Theta(n^3) at that node. The registered arc-variable criterion is therefore schedule-dependent and the schedule is not registered.",
+  "certification_cost_in_subproblems": "Measured on the development grid, per cell: exhaustive DP performs a median of 854 pair transport solves (range 241-1336) with a median 1788 arc variables. Because at k=1 at most ~5% of layer-1 and layer-2 occupation mass is servable coarse within the whole budget, essentially every positive-mass pair must be visited, so H-B pays at least 2x the DP subproblem count (lower plus upper coarse solve per node) before any refinement, ancestor re-solve or fallback is counted.",
+  "is_the_bound_propagated_to_the_root_correctly": "Yes, structurally. The argument is monotone-operator induction from V_T=0, not local bounding: L1/L2 give T_L W <= T V <= T_U W' whenever W <= V <= W' pointwise, L3 supplies base envelopes, and OT is monotone in the cost matrix with OT(M+const)=OT(M)+const. Unvisited pairs carry the L3 envelope, so pointwise validity holds on the whole support and no perturbed problem is certified. The exposure is implementational, and the card states none of the three invariants that close it (see required_revisions items 1-3)."
+ },
+ "new_result_contributed_by_this_review": {
+  "name": "frontier accumulation lemma",
+  "statement": "Let w* be the occupation measure of the exact optimal bicausal coupling and F a cut of the pair tree at which recursion stops. Then R - L_root >= sum_{node in F} w*(node) * (V - E_lo)(node), and U_root - R >= sum_{node in F} w^U(node) * (E_hi - V)(node).",
+  "proof": "V_t - L_t >= E_{pi*}[V_{t+1} - L_{t+1}] because pi*, optimal for V, is feasible for the L problem; unroll from the root. Symmetrically for U with its own optimal plan.",
+  "consequence": "Local envelope slacks add up under the occupation measure; they neither average out nor are discounted by depth. A root certificate of width eps*R forces the occupation-weighted sum of retained slacks below eps*R across the entire frontier. This turns the vague question 'are the envelopes tight enough' into a per-node budget that can be measured before any solver is written.",
+  "verification": "64 of 64 cuts checked numerically across 16 cells, 0 violations."
+ },
+ "cheapest_decisive_probe": {
+  "name": "Probe C1 - envelope headroom audit",
+  "why_cheapest": "It settles the performance question without implementing the hierarchy, the coarse LPs, the priority queue or the singleton fallback, because singleton blocks with the true V below the cut dominate every coarser partition: it computes an upper bound on the tightness any block scheme can reach. Runtime ~31 s single-core for all 48 development cells, ~200 lines, no new solver or dependency.",
+  "steps": [
+   "For each of the 24 registered groups x 2 seeds at T=4, build both models with adapters/common_model.build_window_model.",
+   "Run exact_dp while retaining every V_t table and every optimal transport plan.",
+   "Compute one-sided reachability arrays ell/h over positive kernel edges and the singleton envelopes E_lo, E_hi.",
+   "Validity gate: assert E_lo <= V_t <= E_hi at every pair of every layer.",
+   "Propagate the optimal-coupling occupation w* forward from the root plan.",
+   "Per layer, report the maximum occupation mass admissible coarse within the full budget eps*R (greedy on V - E_lo, smallest gap first), plus the out-degree-1 fraction and the zero-envelope-slack fraction."
+  ],
+  "pass_condition_to_freeze_before_running": "In every one of the 24 groups, at some layer t <= T-2, at least 10% of the optimal-coupling occupation mass is servable by the envelope within eps*R, AND that headroom survives when out-degree-1 states are excluded.",
+  "failure_classification": "Failure at k=1 alone is sufficient to classify H_B01 performance_prediction_falsified without writing the solver.",
+  "reviewer_post_hoc_result": "My own post-hoc run of exactly this audit fails the condition at k=1 in every group: median servable mass 0.000 at layer 1 and 0.049 at layer 2. This is reviewer-side diagnostic evidence only, not registered evidence."
+ },
+ "required_revisions": [
+  "Add invariant I1 to lemma_or_invariant and to the verifier: every rectangle must be priced with a continuation bound valid at every positive-probability successor pair in it, including unvisited pairs. Defaulting an unvisited pair to a sibling value, a sampled entry or zero breaks the induction silently.",
+  "Add invariant I2: the reachability and conditional-mean envelopes bound c+V directly, the recursive block bound bounds c+L_next for one specific L_next; their pointwise maximum is valid, substituting one for the other inside a rectangle minimum is not.",
+  "Add invariant I3: retaining the max of previously valid lowers and the min of previously valid uppers is safe under stale ancestors, so ancestor re-solve is a cost item, not a correctness item, and must be counted as such.",
+  "Add the frontier-budget gate as an explicit falsifier, reporting occupation-weighted retained slack per layer against eps*R.",
+  "Add a degeneracy control to the ablation list: report the out-degree distribution and the zero-envelope-slack pair fraction, and recompute every omission statistic with out-degree-1 states excluded. No omission percentage may be credited without it.",
+  "Register the refinement schedule, and add ancestor re-solves and the dense-to-sparse conversion scan to probe.cost_accounting.",
+  "Restate the mechanism as duplication of conditional futures rather than temporal envelopes if it is to survive, and register that narrower claim.",
+  "Rebuild the H-B screen on the frozen laws and frozen path counts (frozen_design.json / generators.py). The card's 24-paths-per-side screen produces out-degree-1 fractions of 0.39-0.60 against 0.06-0.10 under the frozen design, which biases every omission statistic in the mechanism's favour."
+ ],
+ "do_not_do_yet": "Do not implement or register the full hierarchy, the 48-cell breadth screen, or any T=50 run before Probe C1 is registered and passed.",
+ "evidence_status": "Reviewer-side post-hoc audit at T=4 on the development grid, generators reconstructed from the H-B card because the H-A seeding convention was not available to this lane. Provisional. Not a registered result, not a population statement, not a speed claim.",
+ "files_written_by_lane_C": [
+  "research/theory/block_bounds_verdict.C.md",
+  "ledger/inbox/C/H_B01_decision.json"
+ ],
+ "robustness_under_frozen_design": {
+  "note": "frozen_design.json and generators.py were committed by root at 12:30, mid-review, and supersede the generators written into the H-B card (different second family, 4000-8000 paths per side instead of 24, seeds 1000-1004, T=50). The audit was re-run under the frozen laws at 4000 paths per side with T reduced to 4 so the exact-DP reference stays computable.",
+  "declared_assumption": "frozen_design.json does not state the two-sided convention; both sides were taken as independent samples of the SAME frozen family under paired seeds 1000/1001.",
+  "coverage_gap": "All k=2 cells were skipped: at the frozen path counts the exact-DP reference needs 11440 to 637446 state pairs even at T=4. The k=1 results are load-bearing; k=2 is untested under the frozen laws.",
+  "result": "Every finding survives and the margins widen. Out-degree-1 fraction falls from 0.39-0.60 to 0.06-0.10 (mean out-degree 8.7-22.6), so the degeneracy confound is a criticism of the H-B screen rather than of the model: 24 paths per side is not a scaled-down frozen design in the dimension that matters and is biased in the mechanism's favour. Servable occupation mass within the full root budget is 0.000 at layer 1 and 0.000 at layer 2 in every k=1 cell, at most 0.109 at layer 3. The occupation-weighted layer-1 gap is a uniform 190x to 196x the whole budget across all 12 k=1 cells, both costs, both families. Truncating recursion at only the terminal-adjacent layer gives root relative width 13.3 to 219 against the required 0.005; the pure envelope gives L_root = 0 everywhere.",
+  "consequence_for_probe_C1": "Probe C1 must be run on the frozen laws and frozen path counts, not on the H-B card's 24-path screen, and must report mean out-degree alongside every omission statistic.",
+  "new_question_for_root_not_a_finding": "Under the same-family reading, R falls to 0.23-0.63 versus 3.1-7.2 on the card's two-law screen, which shrinks the absolute budget eps*R and pushes the setup toward the card's own declared inconclusive hazard of an undefined relative width at a near-zero target. If the intended convention is two different laws per cell, write it into frozen_design.json before any relative-certificate run; if it is the same law, register the absolute-gap fallback now."
+ }
+}

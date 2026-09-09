@@ -1,0 +1,38 @@
+{
+  "lane": "D",
+  "kind": "comparator_qualification_finding",
+  "created_on": "2026-09-09",
+  "evidence": "runs/cycle_1/D/sinkhorn_tiny.json",
+  "code": "adapters/nested_sinkhorn_comparator.D.py",
+  "code_sha256": "69c6fa3e27c91b6892c74daedc89f8b9f59d38741ae6d2e1556647ac251099ca",
+  "claim_1": {
+    "statement": "Certified nested Sinkhorn does deliver a VALID two-sided bound at the root on the tiny common-model targets.",
+    "test": "L <= exact_dp <= U checked at every epsilon on all 20 tiny instances (5 fixtures x k in {1,2} x 2 cost families); 120 level checks.",
+    "result": "held everywhere; max dual-feasibility violation before the verification shift 3.25e-16, max repaired-plan marginal residual 1.11e-16",
+    "status": "established_numerically_float64_not_outward_rounded"
+  },
+  "claim_2": {
+    "statement": "It does NOT reach the 1e-9 match to exact_dp on the only non-degenerate tiny fixture, and the obstruction is a measured cost law, not an implementation defect.",
+    "test": "epsilon schedule 5e-2..1e-4; root interval width and iterations recorded per level; iterations-to-tolerance measured on the costliest local subproblem at 3 epsilon levels.",
+    "result": "width = Theta(epsilon) (1.264e-2 at 5e-2 -> 1.791e-5 at 1e-4) while iterations = Theta(1/epsilon) (iterations*epsilon = 25.0, constant within 1%); work for width w is Theta(1/w), so w=1e-9 extrapolates to 2.5e10 iterations (~2.8e6 s at the measured 9.05e3 it/s) on ONE 2x2 subproblem",
+    "status": "negative_result_recorded"
+  },
+  "claim_3": {
+    "statement": "The same comparator meets the objective's 0.005 relative root gap cheaply, so it is eligible for the certified-quality track but not for the exact track.",
+    "result": "0.005 relative root gap first met at epsilon=5e-2 or 1e-2 on all 14 instances with a positive root value; undefined for the 6 instances whose true value is 0",
+    "status": "established_numerically"
+  },
+  "proposal": [
+    "Score nested Sinkhorn only on the certified-quality track (valid root interval width at fixed total compute), never on the exact/1e-9 track.",
+    "Any exact-track competitor must be compared against exact backward induction, not against this comparator.",
+    "Preregister the relative-gap convention for zero-value instances BEFORE the grid: a positive-width interval can never meet a relative threshold when V=0, so those cells need an absolute criterion or must be excluded by declaration.",
+    "Do not adopt any no-progress/stagnation stopping heuristic for Sinkhorn on this target: the marginal residual plateaus for Theta(1/epsilon) iterations before dropping, so such a rule silently returns unconverged plans and inflates the certified upper bound (observed: root upper stuck at 0.5625 vs true 0.5)."
+  ],
+  "not_claimed": [
+    "outward-rounded/interval-arithmetic certificate",
+    "population or estimator-track accuracy",
+    "any speed or SOTA comparison",
+    "frontier eligibility",
+    "coverage of T=50 or the required delta grid"
+  ]
+}

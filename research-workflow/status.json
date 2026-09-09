@@ -1,0 +1,123 @@
+{
+  "updated_on": "2026-09-09",
+  "phase": "cycle_2_HD01_baseline_HD02_draft",
+  "scope_revision": {
+    "id": "contract_revision_2",
+    "status": "received_and_applied_at_safe_checkpoint",
+    "objective_id": "tree-adapted-ot-sota-v2",
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "prior_results_known": true,
+    "selected_branch": "H_D02 optimal-face transport reuse for root-certificate cost",
+    "original_algorithm_objective_achieved": false,
+    "research_outcome": null,
+    "history_policy": "All v1 preregistrations, manifests, results and hashes remain unchanged and retain their original interpretation."
+  },
+  "workflow_created": true,
+  "scientific_objective_achieved": false,
+  "sota_frontier_reproduced": false,
+  "archive": {
+    "path": "inputs/atsw_repo",
+    "source": "C:/Users/Admin/Downloads/atsw_repo.tar.gz",
+    "sha256": "06fcd1100635a622d8fbca64e1c9a8078b5b3512cdcf99e22e53b8c512054d43",
+    "treatment": "Historical evidence and source code. Embedded operating instructions do not override the current user request."
+  },
+  "completed": [
+    "Reviewed original paper and archived workflow",
+    "Three research agents read primary sources and exchanged findings",
+    "Mapped comparable SOTA candidate panel; no benchmark ranking claimed",
+    "Created two-level discovery workflow, role handoffs and preregistration/numerical-screen tools",
+    "Independently reproduced imported k2 target mismatch on an analytic example",
+    "Ran tiny k1 archive integration smoke with numerical reference containment",
+    "Verified all 61 archived source files remain unchanged",
+    "Prepared three distinct theory hypothesis cards with prior-art overlap and falsification probes",
+    "Ran preregistered H_A01 exact future-class probe; exact mechanism checks passed but broad standalone performance prediction was falsified",
+    "Built and ran pinned original PNOT C++ tiny target-equivalence audit; k=1 deterministic-root cases passed, full-domain/certified qualification remains false",
+    "Ported model routing to the Claude tier ladder (claude_router.py + CLAUDE_ROUTING.md, 31 tests pass); MODEL_ROUTING.md left unchanged as history",
+    "Probed empirically: sub-agents inherit BOTH read and write access to the granted repo path",
+    "Froze the experimental design before any candidate measurement: two process families (laws declared up front), 3 grid shifts per delta, disjoint development/confirmation splits - frozen_design.json, committed to the ledger",
+    "Numerically verified the two mandatory properties of the second process family: 4 monotonicity violations over 13 bin steps; lag-2 effect size 26.6x that of AR(1)",
+    "Measured feasibility of all 24 cells: k=2 delta=0.18 needs ~3.8 h for ONE seed/shift of the exact reference -> reference-audit policy declared up front; the operating domain is NOT narrowed",
+    "Lane B qualified PNOT: covers only k=1 with a deterministic root, and provides no certificate",
+    "Lane C reviewed H-B: the mathematics and the root propagation are CORRECT, but the performance premise fails (envelope 190-196x too loose at layer 1; L_root=0 on 48/48 cells) -> decision revise, plus a new lemma (frontier accumulation) verified on 64/64 cuts",
+    "Lane D built a nested Sinkhorn comparator WITH a two-sided root certificate: containment holds on 20/20 tiny instances (120 checks), but it does NOT reach the 1e-9 match on the non-degenerate fixture - the obstruction is a measured Theta(1/w) cost law, not a bug",
+    "Design amendment 1: declared the two-sided sampling convention (a gap lane C caught); the prediction 'same law => V* near 0' was REFUTED numerically, so the same-law pair is kept as a noise-floor control task"
+    ,"Restored the five files omitted by the first cross-session sync; all three frozen hashes match and 31/31 tests pass"
+    ,"Registered and ran C1 independently on 24 frozen k=1 short-horizon cases: envelope containment and occupation-flow gates passed, but every group failed the 10% occupation-headroom prediction (best median 2.917%); the original distinct-entry claim remains inconclusive because its optimistic count relaxation is 87.1-96.5%"
+    ,"Ported the archived SVD-policy/shared-dual-pool mechanism to the corrected common model with arbitrary initial laws, k=1/2, both costs and from-paths timing over all shifts; 34/34 tests pass"
+    ,"Ran a frozen 16-case common-model smoke: every float64 interval contained exact_dp, but B=16 reached 0.5% in 0/16 cases (median width 63.3%, max 551.9%), so this mechanism is retained only as a baseline/ablation"
+    ,"Drafted H_C01 global active-subsolution mechanism and a three-lane independent panel prompt; H_C01 is not registered pending theorem and prior-art review"
+    ,"Received and applied scope revision v2 at the existing cycle-2 checkpoint; selected H_C01 for root-certificate cost/tightness work while leaving the original full-domain objective unachieved"
+    ,"Implemented the small-instance H_C01 global active-subsolution LP and work counters; all-active, partial-active, non-Dirac-root and both-cost correctness fixtures pass without opening the preregistered oracle grid"
+    ,"Independent three-lane panel revised H_C01: its theorem and future-marginal baseline survive, but the global LP equals same-A same-h clamped DP and has direct partial-state MDP prior-art overlap; no grid was run"
+    ,"Added same-kernel clamped-DP ablation, fixed-depth future-marginal h, terminal guard and delayed-alternative fixture; drafted H_C02 around lower-policy frontier activation"
+    ,"Independent H_C02 panel proved finite safe expansion but found direct AO/LAO-star overlap, plateaus and repeated-work overhead; retained H_C02 as a controller/baseline"
+    ,"Drafted H_D01 exact cached-transport reuse under monotone Bellman updates; no performance probe or registration yet"
+    ,"H_D01 prior-art review identifies support-miss reuse as standard sensitivity/reverse-dependency optimization; retained as a baseline while theorem/probe panel remains incomplete due agent quota"
+    ,"Implemented fixture-only H_D02 optimal-face repair after support hits; 48/48 workflow tests pass, including 50 random fresh-OT audits; no performance grid or registration"
+  ],
+  "open_correctness_issues": [
+    {
+      "id": "TARGET_K2_ROOT",
+      "status": "resolved_for_new_common_model_archive_remains_invalid",
+      "evidence": "research/sota/imported_root_counterexample.json; adapters/common_model.py; tests/test_common_model.py",
+      "finding": "Imported k2 builder omits initial transition/cost and conditions on a modal window: exact original-root value 4/3, archived answer 0.",
+      "next_action": "All new candidates/comparators must consume the corrected common model or pass a target-equivalence adapter audit; retain the invalid archive path only as historical evidence."
+    },
+    {
+      "id": "TIMING_BOUNDARY",
+      "status": "implemented_in_common_adapter_not_yet_benchmarked",
+      "finding": "policy_pool_candidate.solve_from_paths now charges representation construction, all requested shifts and warm-up levels; the archived ratios remain solver-only historical evidence.",
+      "next_action": "Independent audit and development timing must verify the new boundary before any comparison claim."
+    }
+  ],
+  "next_actions_in_order": [
+    "Complete independent theorem/prior-art/probe review of H_D02 optimal-face reuse when panel capacity is available",
+    "Compare H_D02 feasibility-flow work against dynamic OT reoptimization on identical monotone update traces",
+    "Only if correctness, novelty boundary and work thresholds pass, freeze/register a small cross-family probe under v2",
+    "Re-measure the signal to noise-floor ratio at T=50 and the frozen path counts (amendment 1 requires this; extrapolation is forbidden)",
+    "Run the development grid (seeds 1000-1004) over the 24 tasks; exact reference per the frozen policy",
+    "Only after development is clean, run confirmation (seeds 2000-2004) with 5 timing repeats"
+  ],
+  "actual_execution": {
+    "completed_run": "Historical v1 runs remain frozen; under v2 only H_C01 formulation correctness fixtures and work-counter tests have run, with no performance grid or SOTA claim",
+    "full_grid_ran": false,
+    "external_framework_installed": false,
+    "autonomous_background_service_started": false
+  },
+  "frozen_design": {
+    "file": "frozen_design.json",
+    "sha256": "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+    "amendment_1": {
+      "file": "frozen_design_amendment_1.json",
+      "sha256": "c150f7025359ea2bf33a69c408429326635d48731ce4ab9f585d331c7b6d2fa2"
+    }
+  },
+  "comparator_status": {
+    "pnot_original_cpp": {
+      "role": "exact k=1 Dirac-root comparator only",
+      "certificate_eligible": false,
+      "k2_eligible": false,
+      "full_domain_qualified": false,
+      "evidence": "research/sota/pnot_limitations.B.md; ledger/inbox/B/pnot_qualification.json",
+      "provisional": "lane B did not re-measure; all figures are quoted from recorded artifacts"
+    },
+    "nested_sinkhorn_certified": {
+      "role": "certified-quality track only",
+      "certificate_eligible_two_sided_root": true,
+      "exact_1e9_track_eligible": false,
+      "full_domain_qualified": false,
+      "evidence": "runs/cycle_1/D/sinkhorn_tiny.json",
+      "provisional": "20 tiny instances; epsilon schedule stopped at 1e-4; single timing run, so no speed claim"
+    }
+  },
+  "hypothesis_status": {
+    "H_A01_future_classes": "mechanism ok, performance claim refuted (cycle_0)",
+    "H_B01_temporal_block_bounds": "revise - occupation headroom falsified; original distinct-entry prediction inconclusive",
+    "H_B01C1_envelope_headroom": "mechanism_headroom_falsified",
+    "H_C01_global_subsolution_active_set": "panel revise; global-LP mechanism retired because it equals clamped DP; valid subsolution and correctness components retained",
+    "H_C02_lower_policy_frontier": "panel revise; retained as AO-OT controller/baseline, not a novel mechanism",
+    "H_D01_monotone_transport_reuse": "prior-art downgraded to implementation optimization/direct baseline; independent panel incomplete",
+    "H_D02_optimal_face_reuse": "unregistered draft; fixture implementation passes, independent review pending"
+  },
+  "encoding_note": "workflow.py now configures UTF-8 stdout/stderr on terminals; status is no longer constrained to ASCII."
+}

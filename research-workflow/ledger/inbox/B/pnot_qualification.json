@@ -1,0 +1,141 @@
+{
+  "schema": "lane-b-comparator-qualification-v1",
+  "lane": "B",
+  "created_on": "2026-09-09",
+  "subject": "PNOT / NestedOT pinned revision 9f85f18fb32b67f9ba1112cf38a97f4f98c57d8a",
+  "kind": "qualification_assessment_proposal",
+  "commit_authority": "root only; lane B does not register ledger events",
+  "sources_read": [
+    "runs/cycle_1/pnot_build.json",
+    "runs/cycle_1/pnot_cases.json",
+    "runs/cycle_1/pnot_result.json",
+    "research/sota/pnot_result_review.md",
+    "research/sota/notes.md (PNOT section)",
+    "third_party/nestedot/src/solver.cpp",
+    "third_party/nestedot/src/utils.cpp",
+    "third_party/nestedot/src/wrapper.cpp",
+    "third_party/nestedot/src/include/header_dist.h",
+    "third_party/nestedot/pnot/solver.py",
+    "third_party/nestedot/pnot/py_solver.py"
+  ],
+  "execution": {
+    "ran_any_code": false,
+    "rebuilt_binary": false,
+    "new_measurements": false,
+    "basis": "recorded artifacts plus source reading only"
+  },
+  "verdict": "Tiny PNOT audit establishes backend identity/provenance and exact k=1 agreement on deterministic-root micro-instances under V=AW_p^p. It establishes nothing about k=2, non-Dirac initial laws, certificates, required scale/breadth, or speed. Stock PNOT is NOT an eligible competitor for the objective's comparison as it stands.",
+  "three_required_answers": [
+    {
+      "question": "Does the audit cover k=2?",
+      "answer": "No. Stock PNOT cannot express a k=2 model; no k=2 value of PNOT was computed.",
+      "evidence": [
+        "third_party/nestedot/src/utils.cpp:95 - qpath2mu_x(Eigen::MatrixXi& qpath, const bool& markovian): conditioning selected by a bool, no integer memory k",
+        "utils.cpp:103-104 - if (markovian) { pre_path.push_back(qpath(i, t)); } => key is the single current state (k=1)",
+        "utils.cpp:105-109 - else { for (int k = 0; k <= t; ++k) pre_path.push_back(qpath(i, k)); } => key is the whole prefix (full history)",
+        "solver.cpp:111-117 - Nested(..., const bool& markovian, int num_threads, const int power, const bool verbose): no k argument",
+        "wrapper.cpp:11,14 and pnot/solver.py:4-6 and pnot/py_solver.py:15 - no k at any API layer, including the Python fallback",
+        "include/header_dist.h:20 - std::map<int,int> v2idx; // Only use this for markovian; utils.cpp:155 - v2idx[condition.back()] = idx => Markov continuation is keyed by a SCALAR state, so a k=2 pair is not addressable",
+        "utils.cpp:160-168 + solver.cpp:219-222 - AddDppValueMarkovian consumes next_idx built from that scalar map; solver.cpp:223-227 - full-history branch uses nv_cums prefix-tree offsets instead",
+        "pnot_result.json fixture second_order_matters: native_markov_value 0.0/0.0 vs declared k=2 reference 2/4 => Markov != k=2",
+        "pnot_result.json fixture full_history_is_not_k2: native_full_history_value 2.0/4.0 vs declared k=2 reference 0/0 => full history != k=2"
+      ]
+    },
+    {
+      "question": "Does the audit cover a random (non-deterministic) initial law?",
+      "answer": "No. The implementation returns the value at ONE lexicographically first root pair; it solves no transport problem over the initial marginals, so its scalar is the wrong quantity for a random root and is in general neither a valid upper nor lower bound.",
+      "evidence": [
+        "solver.cpp:238 - double nested_ot_value = V[0][0][0]; single root cell returned",
+        "solver.cpp:183-186 - V[t] allocated over all kernel_x[t].nc x kernel_y[t].nc root conditions, but only [0][0] is read",
+        "utils.cpp:95-98,128 - conditions enumerated in std::map key order, so index 0 is the lexicographically smallest root state (a fixed pick, not a minimum)",
+        "utils.cpp:31-33 - X_extended.row(0).setZero(): the author's own path generator forces a Dirac root",
+        "pnot_result.json fixture random_initial_law_is_rejected: native_markov_value 0.0/0.0 vs coupled-initial-law target 1/2; k1_comparator_target_eligible=false, ineligible_reason='stock selects one initial state', absolute_k1_difference 1.0 and 2.0"
+      ]
+    },
+    {
+      "question": "Does it give any certificate, or only an exact value on small instances?",
+      "answer": "Only an unqualified floating-point value, exact in exact arithmetic on the finite model. No certificate, interval, dual residual or outward rounding exists, and a non-optimal LP status is printed but never returned.",
+      "evidence": [
+        "solver.cpp:111 / wrapper.cpp:11,14 / pnot/solver.py:13-15 - return type is a bare double at every layer",
+        "solver.cpp:80-82 then solver.cpp:91-94 - coupling G and duals alpha,beta are allocated and then delete[]d; solver.cpp:97 returns only the scalar c",
+        "solver.cpp:83-89 - maxIter=100000; if (result != 1) std::cout << \"OT is not solved optimally\"; execution continues and the possibly non-optimal cost is returned; status never reaches the caller (detection requires stdout scraping)",
+        "solver.cpp:67-72 - n1==1||n2==1 branch bypasses the LP and sums wx[i]*cost[i][j]*wy[j]",
+        "solver.cpp:37-59 - AddDppValue / AddDppValueMarkovian accumulate continuation values in double with no error accounting",
+        "pnot_result.json - certificate_frontier_eligible=false, qualified_full_domain_comparator=false, scope='DEVELOPMENT_NUMERICAL_AUDIT_ONLY', units='V=AW_p^p'"
+      ]
+    }
+  ],
+  "established": [
+    "Backend identity and provenance: backend='original_pnot_cpp_Nested_via_CLI', python_fallback=false, native_threads=1, pinned revision, 19 source sha256 plus probe/dataset/executable sha256; pnot_build.json records a zero-return-code g++ 13.2.0 -O2 -std=c++17 -fopenmp -include chrono build with empty stdout/stderr and the only disclosed change being the forced <chrono> include.",
+    "Exact k=1 agreement on the 4 deterministic-root fixtures x 2 cost families = 8 comparisons; all rows native_quantization_and_k1_kernels_equal=true; largest absolute_k1_difference = 1.1102230246251565e-16.",
+    "Objective convention pinned: additive V=AW_p^p, no final p-th root, no time-zero charge (solver.cpp:202-232, 238).",
+    "Two-sided k=2 separation (Markov != k=2 and full history != k=2) and a working eligibility-rejection mechanism for the random-root fixture."
+  ],
+  "not_established": [
+    "k=2 in any form: no adapter exists and the source has no k parameter.",
+    "Non-Dirac initial laws: stock output is the wrong quantity there.",
+    "Any certificate/interval/dual residual; objective epsilon=0.005 relative root gap is not producible by stock PNOT.",
+    "Required scale and breadth: fixture T in {1,2,3,4,5} with 2-4 sample paths vs required_T=50; fixture delta in {1.0,0.5} vs required_delta [0.5,0.3,0.18] (only 0.5 appears, in one fixture); hand-made fixtures, not ar1 / nonmonotone_second_order. ZERO of the six core cells is covered.",
+    "Any speed or quality result: times recorded as native_process_seconds_diagnostic_only, single-threaded, one repeat, no end_to_end / solver_only / cold_start split, vs engineering defaults of 5 timing repeats and 5 confirmation seeds.",
+    "General quantization equivalence: agreement holds for binary-exact grid values only; utils.cpp:42 is round-half-up (floor(x/delta+0.5)*delta), there is no grid-shift parameter in the C++ (the caller must push the shift into coordinates; fixtures use shift in {0.5,0.125,-0.5}), and delta=0.3/0.18 tie and drift behaviour is untested.",
+    "Preregistration chronology: pnot_cases.json registered_before_execution=true is self-attestation with no immutable pre-execution ledger (per pnot_result_review.md); treat the five cases as fixed development fixtures only.",
+    "Population / statistical claims: a finite-model exact value is not a population certificate.",
+    "Backend assertion robustness for future runs: pnot/solver.py:16 is a bare 'except:' that silently falls back to the slow Python solver (pnot/solver.py:17-23); this audit bypassed the wrapper via a direct Nested(...) CLI harness."
+  ],
+  "eligibility_conditions_from_objective_comparison": [
+    {
+      "id": "E1_same_task",
+      "requirement": "Output V=AW_p^p on the SAME finite quantized k-window model for k in {1,2}, delta in {0.5,0.3,0.18}, T=50, both squared and absolute cost, crossed over ar1 and nonmonotone_second_order, every cell reported (no_cross_cell_compensation).",
+      "met": false
+    },
+    {
+      "id": "E2_same_information",
+      "requirement": "Observed paths only (target.input_access); no true kernels; reference value withheld from the candidate (reference_value_not_available_to_candidate). Kernel-oracle use moves it to a separately labelled track.",
+      "met": false
+    },
+    {
+      "id": "E3_k2_adapter_reported_separately",
+      "requirement": "A mandatory k-window adapter that (a) builds the same k=2 conditional model as the common builder (key = last k states, empirical conditional probabilities as in utils.cpp:136-145), (b) keeps the original scalar successor-state stage cost (solver.cpp:25-35 SquareCost on cost_matrix[vx[i]][vy[j]]) rather than a Euclidean distance between history vectors, (c) passes an independent k=2 kernel-key/probability equality audit analogous to the recorded k=1 check, (d) is labelled 'PNOT + our k=2 adapter' and never 'stock PNOT' or 'the published method', and (e) has all construction time charged to PNOT under comparison.time_includes (representation construction, all grid shifts, repair/fallback, warm-up).",
+      "met": false
+    },
+    {
+      "id": "E4_root_handling",
+      "requirement": "Either restrict to Dirac-root instances - which narrows the operating domain and therefore cannot qualify PNOT for the general task - or have the adapter add the missing time-0 transport over the two initial marginals on top of V[0][.][.], again separately labelled and separately timed.",
+      "met": false
+    },
+    {
+      "id": "E5_track_separation",
+      "requirement": "exact_and_certified_results_separate: stock PNOT may enter only the exact speed track (time-to-exact on instances where exact DP is feasible). Entry to the certified-quality track requires a wrapper emitting a valid root interval [L,U] with (U-L)/L <= 0.005 with all certification time counted; nothing in the source can supply that.",
+      "met": false
+    },
+    {
+      "id": "E6_timing_hygiene",
+      "requirement": "Pinned threads, asserted compiled backend (python_fallback=false), 5 timing repeats, 5 confirmation seeds, and the four separate reports end_to_end_from_paths / solver_only_on_fixed_representation / cold_start / amortized_if_applicable, with quantization, grid shifts and kernel construction inside the end-to-end number.",
+      "met": false
+    },
+    {
+      "id": "E7_per_solve_validity_gating",
+      "requirement": "Because a non-optimal LP status is only printed (solver.cpp:87-89) and never returned, every eligible run must capture stdout and fail on 'OT is not solved optimally', and must record external marginal/dual residual checks; otherwise the value cannot be used as a reference.",
+      "met": false
+    }
+  ],
+  "proposed_status_for_pnot": {
+    "role": "priority exact k=1 comparator on Dirac-root instances only",
+    "certificate_frontier_eligible": false,
+    "qualified_full_domain_comparator": false,
+    "k2_eligible": false,
+    "random_root_eligible": false,
+    "may_be_quoted_for_speed": false
+  },
+  "explicit_non_claims": [
+    "No SOTA was reproduced.",
+    "No PNOT number may be reported for k=2, for non-Dirac roots, or in the certified-quality track.",
+    "A missing PNOT adapter is a gap in the comparison, not evidence for our candidate."
+  ],
+  "requested_root_action": "Register this qualification assessment; keep PNOT out of the k=2 and certified tracks until an audited, separately labelled adapter exists.",
+  "lane_b_files_written": [
+    "research/sota/pnot_limitations.B.md",
+    "ledger/inbox/B/pnot_qualification.json"
+  ],
+  "companion_note_sha256": "432615ae005fa695709dddde9aa9e2bb78727bb2673a2dbe0bfc0462e23384f6"
+}

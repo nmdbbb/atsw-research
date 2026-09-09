@@ -1,0 +1,76 @@
+{
+  "id": "H_C01_global_subsolution_active_set",
+  "contract_context": {
+    "objective_id": "tree-adapted-ot-sota-v2",
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "bridge_record": "ledger/scope_bridges/H_C01_v2.json",
+    "prior_results_known": true,
+    "original_full_domain_objective_remains_unachieved": true
+  },
+  "mechanism": "Use a globally valid Bellman subsolution h on the entire finite pair tree, then raise values only on an active set through one coupled dynamic-dual LP. Inactive pair nodes remain fixed at h, so they stay certified without local OT solves; a feasible policy supplies the root upper bound.",
+  "omitted_computation": "All local Bellman transport solves and local dual variables at inactive state-pair nodes, plus their successor cross-arcs. Active nodes retain every required successor inequality unless a separate verified group-pricing rule is later added.",
+  "assumptions": [
+    "The target is the corrected finite k-window model in objective.json with an optimized initial coupling and costs at times 1 through T",
+    "The baseline h is verified pointwise to satisfy h_t<=T_t h_{t+1}, with h_T=0",
+    "Every active value variable is constrained to be at least h, and every active local dual inequality covers all positive successor pairs",
+    "Inactive values are exactly h; occupation chooses activation priority only and never deletes an unbounded alternative",
+    "The root is represented by an active dummy node whose successor marginals are the two initial laws",
+    "Float64 probes test the formulation numerically but do not constitute outward-rounded certification"
+  ],
+  "lemma_or_invariant": "Let h be a Bellman subsolution. Fix active sets A_t and define v=h off A and v>=h on A. For every active z=(x,y), if there exist local dual potentials alpha_z,beta_z with v_t(z)<=P_t(x)alpha_z+Q_t(y)beta_z and alpha_z(a)+beta_z(b)<=c_{t+1}(a,b)+v_{t+1}(a,b) for every positive successor pair, then v<=V by backward induction. At an inactive node h_t<=T_t h_{t+1}<=T_t v_{t+1}; at an active node weak OT duality gives v_t<=T_t v_{t+1}. Applying the same construction to the dummy root yields a root lower bound. Any feasible dynamic coupling policy yields an upper bound. With every pair active, the LP has the same optimum as exact backward DP.",
+  "nearest_prior_art": [
+    {
+      "url": "https://openreview.net/pdf?id=6Hp8ymjLjW",
+      "overlap": "Occupancy couplings, Bellman flow equations and Sinkhorn value/policy iteration for discounted stationary Markov-chain OT",
+      "remaining_question": "Finite-horizon undiscounted active-subsolution restriction with an original-target root certificate and paths-only k-window construction"
+    },
+    {
+      "url": "https://cdn.aaai.org/AAAI/1998/AAAI98-058.pdf",
+      "overlap": "LAO* expands a partial policy graph guided by an admissible heuristic instead of evaluating the entire MDP state space",
+      "remaining_question": "Transport-valued actions have continuous coupling polytopes; the active dual and omitted successor constraints need a separate proof and work audit"
+    },
+    {
+      "url": "https://arxiv.org/abs/1510.05466",
+      "overlap": "Sparse restricted OT plus global verification of omitted constraints and hierarchical acceleration",
+      "remaining_question": "Whether a temporal Bellman subsolution can certify whole inactive pair nodes before static shielding inside active transports"
+    }
+  ],
+  "prediction": "On every case of the frozen short-horizon oracle grid, an exact-optimal-occupation active set plus the dummy root, using the stronger of H=0,1,2 future-marginal subsolutions, attains root relative width<=0.5% while instantiating at most 75% of the successor cross-arc inequalities required by the all-active global LP. Full activation matches exact backward DP within 1e-8 on every correctness fixture.",
+  "falsification_rule": "Any h-subsolution violation, root lower above exact DP, infeasible recovered policy, or all-active mismatch is implementation_invalid. If the oracle active set is valid but any grid group misses either the 0.5% width or 25% arc-omission threshold, classify the stated active-set performance prediction as falsified; do not infer that every global-dual or pricing scheme is impossible. A successful oracle probe licenses an implementable pricing probe but is not a candidate or SOTA result.",
+  "probe": {
+    "command": "python research-workflow/probes/global_subsolution_oracle.py",
+    "seeds": [1000, 1001],
+    "oracle": "Independent exact common-model DP retaining optimal conditional plans. Exact occupation selects the active set only in this non-deployable headroom probe and never in a later candidate.",
+    "cost_accounting": "Primary v2 output is the root certificate gap versus active value variables, dual variables, active successor inequalities, LP nonzeros and same-kernel transport-equivalent work. Count h construction including future marginal propagation and scalar OT, root constraints, exact-oracle work separately, peak memory and wall time. Compare against both the all-active global LP and exact backward DP; no solver timing from this probe is a SOTA speed claim.",
+    "grid": {
+      "T": 5,
+      "paths_per_side": 128,
+      "process": ["ar1", "second_order_nonmonotone"],
+      "cost": ["squared", "absolute"],
+      "k": [1, 2],
+      "delta": [0.5, 0.18],
+      "shift": 0.0,
+      "future_marginal_depth_H": [0, 1, 2]
+    },
+    "correctness_fixtures": [
+      "non-Dirac initial coupling",
+      "the imported k=2 root counterexample",
+      "an inactive zero-occupation node hiding a low-cost alternative",
+      "absolute and squared non-Monge continuation matrices",
+      "full activation versus exact backward DP"
+    ],
+    "stopping": "Run the complete 16-case grid and both seeds after theorem/panel review. Candidate never uses the reference value for a deployable stopping rule because this first probe is explicitly oracle-only."
+  },
+  "breadth_challenge": "The oracle screen crosses both costs, both frozen process families, k=1/2 and coarse/fine deltas. It is deliberately short horizon and small sample count; survival licenses, but cannot replace, T=50 tests at frozen path counts and all three deltas/shifts.",
+  "v2_outcome_rule": "Passing the oracle probe only licenses a deployable activation/pricing probe. Failing it can stop this defined active-subsolution direction on cost evidence, but cannot establish impossibility for tree algorithms, global dual methods or certification in general. A limited-domain success must remain labelled with its exact restrictions and cannot set scientific_objective_achieved=true.",
+  "ablation": "Compare h=0, H=1 and H=2; exact-occupation active set versus equal-size deterministic random active sets; active global LP versus the local shared-dual pool using identical float64 LP primitives; and active constraints with versus without time coupling. Report arc omission separately from wall time.",
+  "unresolved_objections": [
+    "The future-marginal h may cost O(H times the number of state pairs) and still be too weak",
+    "Active-node successor inequalities can dominate the full DP work even when few pair nodes are active",
+    "Exact optimal occupation may be a poor oracle active set because inactive low h values can create alternative cheap policies",
+    "The construction overlaps strongly with admissible-heuristic MDP search, occupancy LP and sparse constraint generation; novelty is unestablished",
+    "An implementable pricing rule may secretly enumerate every inactive node or successor arc"
+  ],
+  "status": "proposed",
+  "registration_state": "PANEL_REVISE_NOT_REGISTERED; GLOBAL_LP CLAIM RETIRED, COMPONENTS RETAINED"
+}

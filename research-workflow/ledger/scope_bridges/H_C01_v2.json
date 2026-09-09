@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "H_C01_v2_bridge",
+  "hypothesis_id": "H_C01_global_subsolution_active_set",
+  "draft_v1_sha256": "422d81c953082867b355011ba03816aec450ccc11f82efeb916a96a841b2a50b",
+  "previous_objective_sha256": "c09ae45bbfcfe150688337a5bd5cce6ebc02e1ff5f4dbc14ba92205c29415c8e",
+  "new_objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+  "status_at_revision": "Unregistered draft awaiting independent theorem, prior-art and probe review.",
+  "known_evidence": [
+    "runs/cycle_2/H_B01C1_verdict.md",
+    "runs/cycle_2/policy_pool_smoke_verdict.md"
+  ],
+  "v2_change": "Evaluate H_C01 first by valid root-gap tightness versus explicit LP variables, constraints, nonzeros and same-kernel work. Do not infer an impossibility result if the active-set prediction fails.",
+  "preservation": "No v1 preregistration or result is changed. H_C01 was not registered, so its revised v2 card will receive the v2 objective hash only if the independent panel accepts it for registration.",
+  "authorized_by": "contract_revision_2"
+}

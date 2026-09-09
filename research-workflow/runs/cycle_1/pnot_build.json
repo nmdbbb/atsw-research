@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\msys64\\ucrt64\\bin\\g++.exe",
+    "-O2",
+    "-std=c++17",
+    "-fopenmp",
+    "-include",
+    "chrono",
+    "-IC:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\extern",
+    "-IC:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\src\\include",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\runs\\cycle_1\\pnot_native\\pnot_harness.cpp",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\src\\solver.cpp",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\src\\utils.cpp",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\src\\emd_wrap.cpp",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\third_party\\nestedot\\src\\printer.cpp",
+    "-o",
+    "C:\\Users\\Admin\\Downloads\\build\\research-workflow\\runs\\cycle_1\\pnot_native\\pnot_harness.exe"
+  ],
+  "compiler_version": "g++.exe (Rev3, Built by MSYS2 project) 13.2.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "seconds": 8.645437900006073,
+  "harness_sha256": "0203d8bdb55bfbc9fa6a3bbbe63d3582163540f805f468269ea22da80c486a1f",
+  "compatibility_change": "forced include chrono; original source bytes unchanged"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "tree-adapted-ot-sota-v1",
+  "created_on": "2026-09-09",
+  "user_objective": "Find a tree/filtration-based algorithm for adapted optimal transport from paths that is faster or demonstrably better than the strongest comparable methods, without narrowing the original operating domain.",
+  "pot_role": "Implementation baseline and small-instance oracle; never a synonym for SOTA.",
+  "target": {
+    "solver_track": "Unregularized bicausal/nested OT value on the SAME finite, quantized k-window model, with the output convention V=AW_p^p fixed per task.",
+    "estimator_track": "Population adapted distance from the SAME observed paths; report sampling, grid/window, slicing and solver errors separately. Finite-model certification is not a population certificate.",
+    "input_access": "Observed paths only. Kernel-oracle methods belong to a separately labelled track unless adapted to the same observed information.",
+    "required_k": [1, 2],
+    "required_delta": [0.5, 0.3, 0.18],
+    "required_T": 50,
+    "outputs": ["exact", "certified_relative_gap_at_root"],
+    "epsilon": 0.005
+  },
+  "breadth": {
+    "status": "Required coverage; concrete generators and parameters must be frozen before experiments.",
+    "cost_families": ["squared_distance", "absolute_distance"],
+    "process_families": ["ar1", "nonmonotone_second_order"],
+    "cross_with_all_six_core_cells": true,
+    "restrictions_not_allowed": ["k=1 only", "coarse delta only", "rank-one residual required", "quadratic cost only", "AR(1) only"],
+    "process_requirement": "The second family must have observable non-monotone conditional transitions and true dependence beyond the current state; specify the data-generating law before running. A weakly non-linear relabelling of AR(1) is not sufficient."
+  },
+  "comparison": {
+    "same_task_and_information_required": true,
+    "time_includes": ["representation construction", "all grid shifts", "policy construction", "SVD", "occupancy", "lower bounds", "certification", "repair/fallback", "all warm-up budgets used by a standalone solve"],
+    "separate_reports": ["end_to_end_from_paths", "solver_only_on_fixed_representation", "cold_start", "amortized_if_applicable"],
+    "speed_track": "At the same preregistered accuracy/guarantee, compare time-to-certificate against the per-instance fastest eligible competitor.",
+    "quality_track": "At the same preregistered total compute budget, compare valid root interval width against the smallest width among eligible competitors. This does not assert smaller unknown true error.",
+    "no_cross_cell_compensation": true,
+    "exact_and_certified_results_separate": true,
+    "reference_value_not_available_to_candidate": true
+  },
+  "engineering_defaults": {
+    "note": "Proposed reproducibility defaults, not mathematical constants or extra user requirements. Freeze revisions with reasons BEFORE results; never silently relax after failures.",
+    "confirmation_seeds_per_task": 5,
+    "timing_repeats": 5,
+    "material_improvement_fraction": 0.05,
+    "confidence_level": 0.95,
+    "candidate_minimum_relative_certificate": 0.005,
+    "micro_budget_fraction_cap": 0.25,
+    "macro_hypotheses_per_cycle": 3,
+    "concurrent_agents_including_orchestrator": 4
+  },
+  "completion": {
+    "empirical": "A frozen implementation passes all required tasks and independent certification checks, has no confirmed regression against the qualified comparison frontier, and a preregistered material speed OR certified-quality gain survives held-out replication.",
+    "tree_mechanism": "A precise mechanism connects temporal/conditional structure to omitted or shared computation; independent proof review, adversarial tests, work counts and an ablation support this mechanism.",
+    "novelty": "Closest prior art and overlap are documented and independently reviewed. A new combination is not called novel merely because its score improved.",
+    "not_completion": ["beating POT alone", "one easy cell", "local-node certificate only", "measured error without a certificate", "purely lower scalar score", "running out of cycles"]
+  }
+}

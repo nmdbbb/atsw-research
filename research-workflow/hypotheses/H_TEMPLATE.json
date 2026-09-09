@@ -1,0 +1,15 @@
+{
+  "id": "H_REPLACE",
+  "mechanism": "TODO: specify structural operation, not a solver parameter",
+  "omitted_computation": "TODO",
+  "assumptions": ["TODO"],
+  "lemma_or_invariant": "TODO",
+  "nearest_prior_art": [{"url": "TODO", "overlap": "TODO", "remaining_question": "TODO"}],
+  "prediction": "TODO: quantitative, on an explicitly defined test distribution",
+  "falsification_rule": "TODO: define rejection before running",
+  "probe": {"command": "TODO", "seeds": [], "oracle": "TODO", "cost_accounting": "TODO"},
+  "breadth_challenge": "TODO",
+  "ablation": "TODO",
+  "unresolved_objections": [],
+  "status": "proposed"
+}

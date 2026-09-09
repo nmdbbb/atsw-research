@@ -1,0 +1,47 @@
+{
+  "schema": "pnot-handcrafted-equivalence-v1",
+  "purpose": "Separate development-only fixtures, not performance or confirmation data.",
+  "registered_before_execution": true,
+  "cases": [
+    {
+      "name": "preserve_first_cost",
+      "delta": 1.0,
+      "shift": 0.5,
+      "left": [[0, 0, 0], [0, 0, 0], [0, 2, 0]],
+      "right": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+      "expected": {"k1_absolute": 0.6666666666666666, "k1_squared": 1.3333333333333333}
+    },
+    {
+      "name": "shifted_branching",
+      "delta": 0.5,
+      "shift": 0.125,
+      "left": [[0.125, 0.125, 0.625, 1.125], [0.125, 0.625, 0.125, 0.625], [0.125, 0.625, 0.625, 0.125], [0.125, 1.125, 0.625, 0.625]],
+      "right": [[0.125, 0.125, 0.125, 0.625], [0.125, 0.125, 0.625, 1.125], [0.125, 0.625, 1.125, 0.125], [0.125, 1.125, 0.125, 0.625]],
+      "expected": {}
+    },
+    {
+      "name": "second_order_matters",
+      "delta": 1.0,
+      "shift": -0.5,
+      "left": [[0, -1, 0, -1, 0], [0, 1, 0, 1, 0]],
+      "right": [[0, -1, 0, 1, 0], [0, 1, 0, -1, 0]],
+      "expected": {"k1_absolute": 0, "k1_squared": 0, "k2_absolute": 2, "k2_squared": 4, "full_absolute": 2, "full_squared": 4}
+    },
+    {
+      "name": "full_history_is_not_k2",
+      "delta": 1.0,
+      "shift": -0.5,
+      "left": [[0, -1, 0, 0, -1, 0], [0, 1, 0, 0, 1, 0]],
+      "right": [[0, -1, 0, 0, 1, 0], [0, 1, 0, 0, -1, 0]],
+      "expected": {"k1_absolute": 0, "k1_squared": 0, "k2_absolute": 0, "k2_squared": 0, "full_absolute": 2, "full_squared": 4}
+    },
+    {
+      "name": "random_initial_law_is_rejected",
+      "delta": 1.0,
+      "shift": -0.5,
+      "left": [[0, 0], [2, 2]],
+      "right": [[0, 0], [0, 0]],
+      "expected": {"k1_absolute": 1, "k1_squared": 2, "stock_absolute": 0, "stock_squared": 0}
+    }
+  ]
+}

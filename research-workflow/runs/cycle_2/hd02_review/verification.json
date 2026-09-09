@@ -1,0 +1,46 @@
+{
+  "purpose": "independent local correctness and compatibility gate",
+  "registration": "unregistered development audit; no speed or SOTA claim",
+  "module": "monotone_reuse_reviewed",
+  "module_sha256": "fa062fe4e462cc0df459801eb0eb634838f91734b9c26877d3b4b75217796ed2",
+  "oracle": "exact Fraction arithmetic and exhaustive rational Hall inequalities",
+  "positive_tiny_update": {
+    "support_miss_reuse": {
+      "old_false_acceptance": true,
+      "reviewed_rejected": true
+    },
+    "optimal_face_reuse": {
+      "old_false_acceptance": true,
+      "reviewed_rejected": true
+    }
+  },
+  "dyadic_unavoidable_small_mass": {
+    "exact_updated_value": "1/134217728",
+    "old_false_acceptance": true,
+    "reviewed_rejected": true,
+    "reason": "LP candidate: primal feasibility not certified exactly"
+  },
+  "dyadic_additive_cost_hall_screen": {
+    "true_reject": 54,
+    "true_accept": 10
+  },
+  "unique_optimum_support_hit": "correctly rejected",
+  "upstream_dual_guard_only": {
+    "exact_gap": "1/140737488355328",
+    "rejected": true,
+    "reason": "old optimality not certified exactly"
+  },
+  "ordinary_float_mass_screen": {
+    "cases": 64,
+    "exact_equal_total_mass": 3,
+    "exact_unequal_total_mass": 61,
+    "interpretation": "Unequal binary64 totals make the exact-input transport problem infeasible; numerical normalization does not silently change this target."
+  },
+  "verdict": "pass_local_exact_fixture_gate_only; revise_before_controller_promotion",
+  "limits": [
+    "Not a root certificate or population guarantee",
+    "Does not establish completeness on all floating solver outputs",
+    "Current upstream guarded duals are incompatible even with dyadic masses",
+    "No timing/work advantage measured; no broad float transport adapter built"
+  ]
+}

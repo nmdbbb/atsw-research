@@ -1,0 +1,316 @@
+{
+  "manifest_sha256": "d31855e6b7022c593b4ac4b53409f3b9f628a8339b6a0df075f727f312777609",
+  "partial": false,
+  "wall_seconds": 8.857494299999985,
+  "completed_cells": [
+    {
+      "family": "ar1",
+      "k": 1,
+      "cost": "squared",
+      "all_revisited_events": 163,
+      "changed_events": 64,
+      "support_hits": 61,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 41,
+      "nontrivial_hits": 14,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 48,
+      "mean_old_face_density_on_hits": 0.8969359875097581,
+      "all_reference_solves": 270,
+      "all_reference_solve_seconds": 0.5691396000007671,
+      "initial_solves": 107,
+      "initial_solve_seconds": 0.22240560000000187,
+      "controller_materialization_trace_seconds": 0.03306129999930363,
+      "independent_clamped_replay_seconds": 0.14558019999992666,
+      "hit_reference_solve_seconds": 0.13253720000045632,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.8575954861111111,
+        1.0600694444444445,
+        1.51515625,
+        3.3423958333333337
+      ],
+      "model_hashes": [
+        "e8c734e6130ab5d6ef197a17ef73824e463df4eba03dc246f313c571a5e71ebb",
+        "cfe026143cb6be8747906fd45ac422d222033d4291913a2dadce3a0303420f14"
+      ],
+      "decisions": {
+        "no_update": 99,
+        "support_miss": 3,
+        "value_increased_numerically": 61
+      }
+    },
+    {
+      "family": "ar1",
+      "k": 1,
+      "cost": "absolute",
+      "all_revisited_events": 163,
+      "changed_events": 64,
+      "support_hits": 63,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 41,
+      "nontrivial_hits": 16,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 48,
+      "mean_old_face_density_on_hits": 0.8949546485260771,
+      "all_reference_solves": 270,
+      "all_reference_solve_seconds": 0.5549530000000686,
+      "initial_solves": 107,
+      "initial_solve_seconds": 0.21719970000049216,
+      "controller_materialization_trace_seconds": 0.03139619999990373,
+      "independent_clamped_replay_seconds": 0.13945960000000923,
+      "hit_reference_solve_seconds": 0.13448310000023866,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.8096354166666667,
+        0.9276041666666668,
+        1.1307291666666668,
+        2.3546875000000003
+      ],
+      "model_hashes": [
+        "e8c734e6130ab5d6ef197a17ef73824e463df4eba03dc246f313c571a5e71ebb",
+        "cfe026143cb6be8747906fd45ac422d222033d4291913a2dadce3a0303420f14"
+      ],
+      "decisions": {
+        "no_update": 99,
+        "support_miss": 1,
+        "value_increased_numerically": 63
+      }
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "cost": "squared",
+      "all_revisited_events": 364,
+      "changed_events": 56,
+      "support_hits": 54,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 22,
+      "nontrivial_hits": 12,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 43,
+      "mean_old_face_density_on_hits": 0.8949074074074075,
+      "all_reference_solves": 605,
+      "all_reference_solve_seconds": 1.2690731000000142,
+      "initial_solves": 241,
+      "initial_solve_seconds": 0.5012754000002815,
+      "controller_materialization_trace_seconds": 0.06887659999995321,
+      "independent_clamped_replay_seconds": 0.09531670000001213,
+      "hit_reference_solve_seconds": 0.1275351999998975,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.8,
+        1.0950520833333335,
+        1.8578125,
+        3.9218750000000004
+      ],
+      "model_hashes": [
+        "4e9769269352e3798654cf42aee7d6253b6cae426a5e9aefee91b43afed4da69",
+        "02020a6c1dedfee5b0bf60313bee0e5d431b36bafc74b72f5354ef06b07a837c"
+      ],
+      "decisions": {
+        "no_update": 308,
+        "support_miss": 2,
+        "value_increased_numerically": 54
+      }
+    },
+    {
+      "family": "ar1",
+      "k": 2,
+      "cost": "absolute",
+      "all_revisited_events": 364,
+      "changed_events": 56,
+      "support_hits": 55,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 22,
+      "nontrivial_hits": 13,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 43,
+      "mean_old_face_density_on_hits": 0.8958225108225109,
+      "all_reference_solves": 605,
+      "all_reference_solve_seconds": 1.2707003999988729,
+      "initial_solves": 241,
+      "initial_solve_seconds": 0.5023764999995137,
+      "controller_materialization_trace_seconds": 0.0692143000011356,
+      "independent_clamped_replay_seconds": 0.08987930000000688,
+      "hit_reference_solve_seconds": 0.11431309999989026,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.775,
+        0.9343750000000001,
+        1.2803819444444444,
+        2.4
+      ],
+      "model_hashes": [
+        "4e9769269352e3798654cf42aee7d6253b6cae426a5e9aefee91b43afed4da69",
+        "02020a6c1dedfee5b0bf60313bee0e5d431b36bafc74b72f5354ef06b07a837c"
+      ],
+      "decisions": {
+        "no_update": 308,
+        "support_miss": 1,
+        "value_increased_numerically": 55
+      }
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "cost": "squared",
+      "all_revisited_events": 105,
+      "changed_events": 43,
+      "support_hits": 41,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 48,
+      "nontrivial_hits": 29,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 13,
+      "mean_old_face_density_on_hits": 0.7430894308943089,
+      "all_reference_solves": 172,
+      "all_reference_solve_seconds": 0.37208370000064406,
+      "initial_solves": 67,
+      "initial_solve_seconds": 0.1463005000002795,
+      "controller_materialization_trace_seconds": 0.021990499999333224,
+      "independent_clamped_replay_seconds": 0.1725979999999936,
+      "hit_reference_solve_seconds": 0.09028020000016568,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.6666666666666666,
+        1.1928819444444445,
+        1.635076884920635,
+        3.4199900793650793
+      ],
+      "model_hashes": [
+        "683b308fefb8cbaaa1e78ac690707dd2f208056883248ad1a341ec82d28ae8d4",
+        "82b102351f4ffa1ce7de2597f92ac4aaee76152692d745bdd104651cc6eec995"
+      ],
+      "decisions": {
+        "no_update": 62,
+        "support_miss": 2,
+        "value_increased_numerically": 41
+      }
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 1,
+      "cost": "absolute",
+      "all_revisited_events": 105,
+      "changed_events": 43,
+      "support_hits": 40,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 48,
+      "nontrivial_hits": 28,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 13,
+      "mean_old_face_density_on_hits": 0.746875,
+      "all_reference_solves": 172,
+      "all_reference_solve_seconds": 0.4235437999993792,
+      "initial_solves": 67,
+      "initial_solve_seconds": 0.18101499999977477,
+      "controller_materialization_trace_seconds": 0.02323750000050495,
+      "independent_clamped_replay_seconds": 0.18404580000014903,
+      "hit_reference_solve_seconds": 0.08719139999971048,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.46875,
+        0.9832738095238095,
+        1.2799900793650794,
+        2.125892857142857
+      ],
+      "model_hashes": [
+        "683b308fefb8cbaaa1e78ac690707dd2f208056883248ad1a341ec82d28ae8d4",
+        "82b102351f4ffa1ce7de2597f92ac4aaee76152692d745bdd104651cc6eec995"
+      ],
+      "decisions": {
+        "no_update": 62,
+        "support_miss": 3,
+        "value_increased_numerically": 40
+      }
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "cost": "squared",
+      "all_revisited_events": 269,
+      "changed_events": 40,
+      "support_hits": 33,
+      "numerical_face_rescues": 0,
+      "nontrivial_revisited_events": 57,
+      "nontrivial_hits": 22,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 12,
+      "mean_old_face_density_on_hits": 0.7473063973063974,
+      "all_reference_solves": 445,
+      "all_reference_solve_seconds": 1.2603317999994488,
+      "initial_solves": 176,
+      "initial_solve_seconds": 0.4895226000006687,
+      "controller_materialization_trace_seconds": 0.06953990000056365,
+      "independent_clamped_replay_seconds": 0.3111536999999771,
+      "hit_reference_solve_seconds": 0.09515419999991082,
+      "rescue_reference_solve_seconds": 0,
+      "face_audit_seconds": 0.0,
+      "root_values_by_phase": [
+        0.6666666666666666,
+        1.1614583333333333,
+        1.68359375,
+        3.480208333333333
+      ],
+      "model_hashes": [
+        "81b13e9102f86f4a302cc8a05e24ef99c006496e0dda31427beee1dacf3d46a5",
+        "3c52f18f8e571f53f5484333c62f15d414875556b35ac134e6c75f5b16b42c80"
+      ],
+      "decisions": {
+        "no_update": 229,
+        "support_miss": 7,
+        "value_increased_numerically": 33
+      }
+    },
+    {
+      "family": "second_order_nonmonotone",
+      "k": 2,
+      "cost": "absolute",
+      "all_revisited_events": 269,
+      "changed_events": 40,
+      "support_hits": 36,
+      "numerical_face_rescues": 2,
+      "nontrivial_revisited_events": 57,
+      "nontrivial_hits": 25,
+      "ambiguous_events": 0,
+      "unavoidable_by_row_column": 12,
+      "mean_old_face_density_on_hits": 0.7716049382716048,
+      "all_reference_solves": 445,
+      "all_reference_solve_seconds": 1.323386199999618,
+      "initial_solves": 176,
+      "initial_solve_seconds": 0.5523902999998427,
+      "controller_materialization_trace_seconds": 0.07048700000041208,
+      "independent_clamped_replay_seconds": 0.2759079999999585,
+      "hit_reference_solve_seconds": 0.11028010000006816,
+      "rescue_reference_solve_seconds": 0.005811900000026071,
+      "face_audit_seconds": 0.004905100000087259,
+      "root_values_by_phase": [
+        0.46875,
+        0.9791666666666666,
+        1.2677083333333332,
+        2.0791666666666666
+      ],
+      "model_hashes": [
+        "81b13e9102f86f4a302cc8a05e24ef99c006496e0dda31427beee1dacf3d46a5",
+        "3c52f18f8e571f53f5484333c62f15d414875556b35ac134e6c75f5b16b42c80"
+      ],
+      "decisions": {
+        "no_update": 229,
+        "numerical_face_rescue_unresolved_exact": 2,
+        "support_miss": 4,
+        "value_increased_numerically": 34
+      }
+    }
+  ],
+  "partial_cell_events": [],
+  "exact_certificate_claim": false,
+  "runtime_savings_claim": false,
+  "interpretation": "Numerical optimistic opportunity screen; unresolved exactness and controller-policy representativeness."
+}

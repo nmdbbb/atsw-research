@@ -1,0 +1,44 @@
+{
+  "session": "codex_root_20260909",
+  "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
+  "purpose": "Decide whether H_D02 deserves further investment in root-certification cost reduction.",
+  "phase": "HD02_review_cycle_complete_engineering_deferred",
+  "scientific_objective_achieved": false,
+  "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
+  "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
+  "agents": {
+    "reuse_fix": {
+      "owns": [
+        "adapters/monotone_reuse_reviewed.py",
+        "tests/test_monotone_reuse_reviewed.py"
+      ],
+      "question": "Can false acceptance be eliminated with explicit numerical semantics?",
+      "status": "bounded_artifacts_delivered"
+    },
+    "reuse_verify": {
+      "owns": [
+        "research/theory/HD02_independent_audit_20260909.md",
+        "probes/hd02_independent_audit.py",
+        "runs/cycle_2/hd02_review/verification.json"
+      ],
+      "question": "Does the new acceptance rule survive independent analytic/adversarial checks?",
+      "status": "bounded_artifacts_delivered"
+    },
+    "reuse_opportunity": {
+      "owns": [
+        "probes/hd02_opportunity_screen.py",
+        "runs/cycle_2/hd02_opportunity/",
+        "research/theory/HD02_opportunity_decision.md"
+      ],
+      "question": "Do actual tiny recurrence updates offer enough additional rescue after support hits to justify more work?",
+      "status": "bounded_artifacts_delivered"
+    }
+  },
+  "known_blocker": "Original optimal_face_reuse falsely accepts value 0 on analytic unavoidable update with true value 1e-8.",
+  "next_decision": "Choose a structural question with a concrete route to root-certificate benefit. Do not reopen dense face reuse without controller-specific headroom evidence.",
+  "decision_record": "ledger/inbox/codex_orchestrator/HD02_investment_decision_20260909.json",
+  "decision": "defer_current_HD02_engineering_and_performance_registration",
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Current dense optimal-face feasibility implementation and declared tiny batched activation workload only.",
+  "automatic_large_grid_authorized_by_this_result": false
+}
