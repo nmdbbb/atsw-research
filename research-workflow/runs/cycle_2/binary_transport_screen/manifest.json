@@ -1,0 +1,47 @@
+{
+  "schema": "binary-transport-screen-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "design": "posthoc two selected historical cases; structural count known before design; freeze before timings",
+  "arms": [
+    "LP",
+    "binary_per_pair",
+    "binary_shared_support"
+  ],
+  "method": "Full original-target backward DP, singleton exact expectation in all arms, identical general LP fallback; binary arms use same local solver, differ only cache of order for identical support pair and immutable matrix.",
+  "deadline_seconds": 60,
+  "deadline_rule": "cooperative each layer and128 parentpairs; no rerun or downsize",
+  "checks": "every table agrees with same-run LP within1e-8 and root matches archived numerical DP within1e-8; binary primal/dual local gates active",
+  "opportunity_gate": "shared-support arm saves at least20% of binary sort calls vs binary-per-pair on EACH case; passing is structural opportunity only, not speed or novelty",
+  "nonclaims": [
+    "not exact arithmetic or outward certificate",
+    "binary special-case algorithm is a baseline; novelty unestablished",
+    "one repeat per arm, fixed order, no speed significance or SOTA claim"
+  ],
+  "timing": "models constructed once and reported separately; each arm includes stage-costs, support preparation, matrix snapshots, binary order lookup/validation, local solves, and root; validation outside each arm separately charged",
+  "hashes": {
+    "probes/binary_transport_screen.py": "d780314feb52ace5aa19a71250733b2dca2b5d063d4b54a7d60ee1b5cf40faee",
+    "adapters/binary_transport.py": "45955db3cf7a156650b16f95c09d706f70886cffae55aea8d224a47599b00cba",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf"
+  }
+}

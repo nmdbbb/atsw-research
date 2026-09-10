@@ -1,8 +1,8 @@
 {
   "session": "codex_root_20260910",
   "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
-  "purpose": "Test concentration of remaining root gap and one computable local-residual ranking variant.",
-  "phase": "root_gap_localized_priority_rejected_joint_mechanism_needed",
+  "purpose": "Strengthen the exact numerical baseline and screen structural skipping on general supports.",
+  "phase": "structured_local_baselines_verified_general_support_mechanism_open",
   "scientific_objective_achieved": false,
   "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
   "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
@@ -55,14 +55,22 @@
       "owns": [
         "research/theory/root_gap_decomposition_review_20260910.md"
       ]
+    },
+    "binary_transport_review": {
+      "status": "completed",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "owns": [
+        "research/theory/binary_transport_review_20260910.md"
+      ]
     }
   },
-  "known_blocker": "Fine improved-policy control numerical width24.162%; local-residual priority fails. Fixed fine upper alone5.178% above reference blocks0.5%. Need distinct joint upper/lower mechanism; no outward certificate or novelty established.",
-  "next_decision": "Distinct mechanism addressing both upper policy quality and lower tightness, with falsifiable work/root-gap prediction. No further fixed-upper lower-only tuning or budget/grid escalation.",
-  "decision_record": "ledger/inbox/codex_orchestrator/root_gap_priority_gate_20260910.json",
-  "decision": "reject_local_residual_priority_retain_improved_occupation_control",
+  "known_blocker": "No outward root certificate or novel shared-work mechanism. Binary/Monge gates fail broad promotion; sample-scale audit reduces apparent sparse-support opportunity.",
+  "next_decision": "Require work savings on still-general support pairs with original-root upper/lower control; benchmark against strengthened directbinary/Monge baselines.",
+  "decision_record": "ledger/inbox/codex_orchestrator/structured_local_ot_gate_20260910.json",
+  "decision": "retain_structured_numerical_baselines_reject_screened_broad_reuse",
   "research_outcome": "direction_stopped_evidence_based",
-  "outcome_scope": "Local-residual lower-selection variant on one selected fine T5/n128 case, no general impossibility claim.",
+  "outcome_scope": "Identical-support binary order cache, broad strict Monge dispatch promotion, and near-Monge 1e-10 relaxation; no impossibility theorem.",
   "automatic_large_grid_authorized_by_this_result": false,
   "updated_on": "2026-09-10",
   "git_pull": {
@@ -72,12 +80,14 @@
     "result": "fast_forward_local_research_preserved"
   },
   "bounded_cycle_results": {
-    "tests_passed": 79,
+    "tests_passed": 85,
     "sparse_policy": "numerical equivalence passed; initializer about2.9x coarse and7.1-7.6x fine on two selected cases",
     "gaussian_oracle": "Independent review passed; T5 population 0.255519693; archived finite values 15.01-27.24 times population on 128 paths, one seed/shift.",
     "forced_transport": "Reference deficits reduced21.83%/34.28% but matched sweep cost increased; reference baseline only.",
     "forced_frontier": "Direct dynamic links646/2730 versus compiled709/2080; expanded solver deferred.",
-    "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%."
+    "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%.",
+    "structured_local_OT": "Binary direct eliminates132/759 LPs; strict Monge adds247/10 avoided LPs on two tiny cases; cache and broad gates fail.",
+    "support_scale": "T50 frozen n binary fractions10.23%/27.62% amongnonforced; one seedshift support audit only."
   },
   "current_cycle_routing": {
     "reviewer": "gpt-6-astra high; fresh narrow packet",

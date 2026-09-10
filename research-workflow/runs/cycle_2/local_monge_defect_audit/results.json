@@ -1,0 +1,7397 @@
+{
+  "status": "completed",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared",
+      "defects": [
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.20773809523809472,
+          "sum_exact": "233892302076235/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.20773809523809472,
+          "sum_exact": "233892302076235/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.20773809523809472,
+          "sum_exact": "233892302076235/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.20773809523809472,
+          "sum_exact": "233892302076235/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            6
+          ],
+          "sum_positive_defects": 0.013888888888889173,
+          "sum_exact": "125099989649183/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 0.27790404040404043,
+          "sum_exact": "5006274131233567/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            5
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            8
+          ],
+          "sum_positive_defects": 0.27790404040404043,
+          "sum_exact": "5006274131233567/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            8
+          ],
+          "sum_positive_defects": 1.2029040404040403,
+          "sum_exact": "21669592752504399/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            8
+          ],
+          "sum_positive_defects": 1.189015151515151,
+          "sum_exact": "21419392773206033/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.471753246753246,
+          "sum_exact": "8498350985154961/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.471753246753246,
+          "sum_exact": "8498350985154961/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.26401515151515126,
+          "sum_exact": "4756074151935201/18014398509481984",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.3545487162205949,
+          "sum_exact": "1596745466255759/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.31700294309624444,
+          "sum_exact": "1427654336403597/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            10
+          ],
+          "sum_positive_defects": 0.6229579080593084,
+          "sum_exact": "2805553002603405/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 0.23732450545406003,
+          "sum_exact": "133601819291099/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 2.60771867383509,
+          "sum_exact": "2936030211942699/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.8978281866377189,
+          "sum_exact": "4043458686784359/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.543279470417124,
+          "sum_exact": "305839152566075/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 2.37039416838103,
+          "sum_exact": "2668826573360501/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.3545487162205949,
+          "sum_exact": "1596745466255759/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.31700294309624444,
+          "sum_exact": "1427654336403597/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            10
+          ],
+          "sum_positive_defects": 0.6229579080593084,
+          "sum_exact": "2805553002603405/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.23732450545406003,
+          "sum_exact": "133601819291099/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 1.1929883650637967,
+          "sum_exact": "1343185489089663/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.8978281866377189,
+          "sum_exact": "4043458686784359/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.543279470417124,
+          "sum_exact": "305839152566075/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.9556638596097367,
+          "sum_exact": "1075981850507465/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.025270246322877554,
+          "sum_exact": "14225883990409/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            10
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 1.129396643891476,
+          "sum_exact": "1271587576145785/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 1.129396643891476,
+          "sum_exact": "1271587576145785/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.025270246322877554,
+          "sum_exact": "14225883990409/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            10
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 1.129396643891476,
+          "sum_exact": "1271587576145785/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.37940344630628076,
+          "sum_exact": "106792576213003/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 1.129396643891476,
+          "sum_exact": "1271587576145785/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            3
+          ],
+          "sum_positive_defects": 1.082213467405088,
+          "sum_exact": "4873856168540887/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            6
+          ],
+          "sum_positive_defects": 0.5248977306511222,
+          "sum_exact": "2363929224168013/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            10
+          ],
+          "sum_positive_defects": 2.9384560199878527,
+          "sum_exact": "13233629436661885/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            6
+          ],
+          "sum_positive_defects": 0.23732450545406003,
+          "sum_exact": "133601819291099/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 3.1446317906975945,
+          "sum_exact": "7081081280401551/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            8
+          ],
+          "sum_positive_defects": 1.6736711728425513,
+          "sum_exact": "7537544870354455/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 0.6167279517603408,
+          "sum_exact": "347186971717105/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            4
+          ],
+          "sum_positive_defects": 2.873851153980386,
+          "sum_exact": "12942674986184335/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.37981896254347247,
+          "sum_exact": "1710552538179031/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.31700294309624444,
+          "sum_exact": "1427654336403597/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            10
+          ],
+          "sum_positive_defects": 1.0711684322506934,
+          "sum_exact": "4824113752335261/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.23732450545406003,
+          "sum_exact": "133601819291099/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 1.8635338811347721,
+          "sum_exact": "4196305246335427/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 0.9712766679809357,
+          "sum_exact": "4374241239992599/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.6167279517603408,
+          "sum_exact": "347186971717105/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 1.626209375680712,
+          "sum_exact": "3661897969171031/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 0.7276647511844931,
+          "sum_exact": "409638837785641/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.20789478755487778,
+          "sum_exact": "14629295121319/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            10
+          ],
+          "sum_positive_defects": 3.5178638748206232,
+          "sum_exact": "990190652236393/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 1.6596655069438608,
+          "sum_exact": "7474468958632037/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 0.7758429862048324,
+          "sum_exact": "218380386473131/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 0.0734484813432168,
+          "sum_exact": "20673909575515/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 1.626209375680712,
+          "sum_exact": "3661897969171031/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.7023945048616156,
+          "sum_exact": "12356654806101/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.33353342092630456,
+          "sum_exact": "93881311887457/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            10
+          ],
+          "sum_positive_defects": 3.5425749569863907,
+          "sum_exact": "1994292407026995/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 0.12563863337142678,
+          "sum_exact": "35364131402181/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 1.406736542934249,
+          "sum_exact": "791922271320893/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 1.175316111218768,
+          "sum_exact": "661644150065923/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 0.4729216063571524,
+          "sum_exact": "266231196270691/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 1.2476417782996736,
+          "sum_exact": "5618879047842273/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.7023945048616156,
+          "sum_exact": "12356654806101/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.20789478755487778,
+          "sum_exact": "14629295121319/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            10
+          ],
+          "sum_positive_defects": 0.20789478755487778,
+          "sum_exact": "14629295121319/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 0.033456131263148725,
+          "sum_exact": "150673020289975/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            8
+          ],
+          "sum_positive_defects": 0.7023945048616156,
+          "sum_exact": "12356654806101/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 1.879961282625752,
+          "sum_exact": "1058324116488037/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 0.46408109368888617,
+          "sum_exact": "130627215037935/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            10
+          ],
+          "sum_positive_defects": 3.6731226297489723,
+          "sum_exact": "2067784213327951/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 0.12563863337142678,
+          "sum_exact": "35364131402181/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 2.596165049050569,
+          "sum_exact": "11692087947496449/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 2.039141844452386,
+          "sum_exact": "1147934806353919/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 0.4729216063571524,
+          "sum_exact": "266231196270691/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 2.3770384221911494,
+          "sum_exact": "10705229352425413/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.06993759127632693,
+          "sum_exact": "39371363751407/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 1.608223496432147,
+          "sum_exact": "7242794739260293/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 1.3770086082895738,
+          "sum_exact": "3100747727589445/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.9866187695275432,
+          "sum_exact": "4443335922800981/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 1.608223496432147,
+          "sum_exact": "7242794739260293/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 1.2827620718379884,
+          "sum_exact": "2888523394367285/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.6216047269046037,
+          "sum_exact": "174966176028707/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.6216047269046037,
+          "sum_exact": "174966176028707/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.09424653645158543,
+          "sum_exact": "13264020826385/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 0.7656289076845395,
+          "sum_exact": "862021515838043/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 2.5173027771795553,
+          "sum_exact": "11336923849284559/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            8
+          ],
+          "sum_positive_defects": 2.8730962533069193,
+          "sum_exact": "6469637607896305/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 1.8956980502749514,
+          "sum_exact": "8537465032825247/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 2.5173027771795553,
+          "sum_exact": "11336923849284559/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 1.5472749133487378,
+          "sum_exact": "1742076680799273/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 0.6216047269046037,
+          "sum_exact": "174966176028707/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 2.003854319793842,
+          "sum_exact": "4512278783964153/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 1.590334181468931,
+          "sum_exact": "895278553382255/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 0.9931989438804703,
+          "sum_exact": "559121299195607/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 2.287595461053223,
+          "sum_exact": "5151207032986867/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            8
+          ],
+          "sum_positive_defects": 7.172583780570792,
+          "sum_exact": "8075611410365571/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 1.7033084679919388,
+          "sum_exact": "3835509690872753/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            9
+          ],
+          "sum_positive_defects": 2.287595461053223,
+          "sum_exact": "5151207032986867/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            9
+          ],
+          "sum_positive_defects": 1.6430290218165644,
+          "sum_exact": "3699772445205995/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 0.6596931455416319,
+          "sum_exact": "742748451110041/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 4.813100606353396,
+          "sum_exact": "10838139048634933/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 5.794067600264977,
+          "sum_exact": "1630885042844551/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            4
+          ],
+          "sum_positive_defects": 0.7656289076845395,
+          "sum_exact": "862021515838043/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 2.5173027771795553,
+          "sum_exact": "11336923849284559/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            8
+          ],
+          "sum_positive_defects": 5.119746107017036,
+          "sum_exact": "11528643329896735/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 1.8956980502749514,
+          "sum_exact": "8537465032825247/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            9
+          ],
+          "sum_positive_defects": 2.988107449749948,
+          "sum_exact": "13457239597236867/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            9
+          ],
+          "sum_positive_defects": 1.873867180894944,
+          "sum_exact": "527446721101267/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 0.94819699445081,
+          "sum_exact": "1067574907720623/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 7.532841628570976,
+          "sum_exact": "16962451375736605/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 3.510391767632841,
+          "sum_exact": "1976174882079465/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            3
+          ],
+          "sum_positive_defects": 8.976404022132996,
+          "sum_exact": "631658278268831/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            4
+          ],
+          "sum_positive_defects": 18.036875539994345,
+          "sum_exact": "20307716490211635/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 21.649581636046694,
+          "sum_exact": "97501047788827023/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            8
+          ],
+          "sum_positive_defects": 16.01558746479367,
+          "sum_exact": "36063896869282175/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 21.02797690914209,
+          "sum_exact": "94701588972367711/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            9
+          ],
+          "sum_positive_defects": 28.565472537447317,
+          "sum_exact": "128647451475309867/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            9
+          ],
+          "sum_positive_defects": 23.654136068155324,
+          "sum_exact": "53264379191157665/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            5
+          ],
+          "sum_positive_defects": 13.764095938391353,
+          "sum_exact": "15496994334807763/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            7
+          ],
+          "sum_positive_defects": 23.176745873259424,
+          "sum_exact": "6523674004904489/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            10,
+            3
+          ],
+          "sum_positive_defects": 7.779585259966436,
+          "sum_exact": "8759034319470461/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 0.9931989438804703,
+          "sum_exact": "559121299195607/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 2.287595461053223,
+          "sum_exact": "5151207032986867/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            8
+          ],
+          "sum_positive_defects": 7.499176048116999,
+          "sum_exact": "4221660806985683/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 1.7033084679919388,
+          "sum_exact": "3835509690872753/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 2.7584001336236157,
+          "sum_exact": "6211364906963021/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 1.9696212893627707,
+          "sum_exact": "4435192852417585/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 0.9862854130878382,
+          "sum_exact": "277614663678959/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 10.34208791513053,
+          "sum_exact": "23288311640407385/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 5.794067600264977,
+          "sum_exact": "1630885042844551/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.2975076274722577,
+          "sum_exact": "334963810055985/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 1.378516180305815,
+          "sum_exact": "1552071238987367/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 6.003088403099653,
+          "sum_exact": "422429792113621/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.7942291872445306,
+          "sum_exact": "447111283965155/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 1.8493208528762075,
+          "sum_exact": "520537543993861/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 1.7051084478520213,
+          "sum_exact": "959890721296581/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.9862854130878382,
+          "sum_exact": "277614663678959/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 8.959838322241293,
+          "sum_exact": "2521970283084111/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 4.297979955247632,
+          "sum_exact": "2419547615612387/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            8
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            8
+          ],
+          "sum_positive_defects": 1.2434089503139782,
+          "sum_exact": "1399954021325793/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 1.2434089503139782,
+          "sum_exact": "1399954021325793/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            11,
+            12
+          ],
+          "sum_positive_defects": 29.40781659328235,
+          "sum_exact": "8277564490705393/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        }
+      ],
+      "matrix_audit_seconds": 0.06182059998900513,
+      "status": "completed",
+      "strict_monge": 247,
+      "strict_rejected": 164,
+      "positive_small": 0,
+      "fraction_rejected_small": 0.0,
+      "root_error": 0.0,
+      "arm": {
+        "mode": "binary_per_pair",
+        "root": 3.8361426721859084,
+        "seconds": 0.9057535000001735,
+        "counts": {
+          "parentpairs": 748,
+          "singleton_calls": 205,
+          "LP_calls": 411,
+          "binary_calls": 132,
+          "sort_calls": 132,
+          "sort_entries": 769,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 769,
+          "cost_entries_read": 1538,
+          "matrix_snapshot_entries": 972,
+          "marginal_entries_scanned": 1613
+        },
+        "layers": [
+          {
+            "calls": 33,
+            "sort_calls": 33,
+            "sort_entries": 198,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 198,
+            "cost_entries_read": 396,
+            "matrix_snapshot_entries": 225
+          },
+          {
+            "calls": 58,
+            "sort_calls": 58,
+            "sort_entries": 328,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 328,
+            "cost_entries_read": 656,
+            "matrix_snapshot_entries": 208
+          },
+          {
+            "calls": 32,
+            "sort_calls": 32,
+            "sort_entries": 185,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 185,
+            "cost_entries_read": 370,
+            "matrix_snapshot_entries": 224
+          },
+          {
+            "calls": 9,
+            "sort_calls": 9,
+            "sort_entries": 58,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 58,
+            "cost_entries_read": 116,
+            "matrix_snapshot_entries": 182
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 132
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.1102230246251565e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 8.526512829121202e-13
+      },
+      "local_fixture_gate_passed": false
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute",
+      "defects": [
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.1102230246251565e-16,
+          "sum_exact": "1/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 2.220446049250313e-16,
+          "sum_exact": "1/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 4.440892098500626e-16,
+          "sum_exact": "1/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 3.3306690738754696e-16,
+          "sum_exact": "3/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.1102230246251565e-16,
+          "sum_exact": "1/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 2.220446049250313e-16,
+          "sum_exact": "1/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 7.771561172376096e-16,
+          "sum_exact": "7/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 8.881784197001252e-16,
+          "sum_exact": "1/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 4.440892098500626e-16,
+          "sum_exact": "1/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.1102230246251565e-16,
+          "sum_exact": "1/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.1102230246251565e-16,
+          "sum_exact": "1/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.6800000000000002,
+          "sum_exact": "3783023686991217/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.53,
+          "sum_exact": "6890507429876859/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 2.52,
+          "sum_exact": "5674535530486825/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.1800000000000006,
+          "sum_exact": "202661983231673/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.08999999999999986,
+          "sum_exact": "25332747903959/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.08999999999999897,
+          "sum_exact": "101330991615835/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.0799999999999992,
+          "sum_exact": "1215971899390033/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 3.4799999999999995,
+          "sum_exact": "3918131675812331/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.4800000000000013,
+          "sum_exact": "1666331862127085/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 1.8000000000000012,
+          "sum_exact": "4053239664633449/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 1.4400000000000013,
+          "sum_exact": "405323966463345/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 5.76,
+          "sum_exact": "25940733853654057/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 8.881784197001252e-16,
+          "sum_exact": "1/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": true
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 1.080000000000001,
+          "sum_exact": "1215971899390035/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 3.7199999999999998,
+          "sum_exact": "4188347653454561/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 2.520000000000001,
+          "sum_exact": "5674535530486827/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 14.759999999999998,
+          "sum_exact": "2077285328124641/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 6.299999999999999,
+          "sum_exact": "3546584706554265/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 6.750000000000002,
+          "sum_exact": "3799912185593857/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 6.119999999999997,
+          "sum_exact": "861313428734607/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 7.949999999999999,
+          "sum_exact": "2237726064849715/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 6.960000000000001,
+          "sum_exact": "31345053406498655/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 10.98,
+          "sum_exact": "24724761954264023/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            11
+          ],
+          "sum_positive_defects": 11.129999999999995,
+          "sum_exact": "97900515337175/8796093022208",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            9
+          ],
+          "sum_positive_defects": 10.889999999999997,
+          "sum_exact": "24522099971032345/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 5.370000000000004,
+          "sum_exact": "6046082499744895/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            10
+          ],
+          "sum_positive_defects": 12.869999999999997,
+          "sum_exact": "14490331801064567/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.9000000000000004,
+          "sum_exact": "506654958079181/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 9.720000000000002,
+          "sum_exact": "10943747094510307/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 0.7800000000000029,
+          "sum_exact": "439100963668625/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.4399999999999977,
+          "sum_exact": "25332747903959/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 3.030000000000001,
+          "sum_exact": "106608647429161/35184372088832",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 4.59,
+          "sum_exact": "1291970143101911/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 11.879999999999999,
+          "sum_exact": "26751381786580745/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 14.819999999999999,
+          "sum_exact": "8342918309703843/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 8.700000000000001,
+          "sum_exact": "19590658379061661/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 11.700000000000001,
+          "sum_exact": "52692115640234807/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 9.599999999999998,
+          "sum_exact": "10808639105689189/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 11.94,
+          "sum_exact": "26886489775401859/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 12.059999999999995,
+          "sum_exact": "13578352876522041/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            11
+          ],
+          "sum_positive_defects": 17.894999999999996,
+          "sum_exact": "10073989416474377/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 16.574999999999996,
+          "sum_exact": "37323581911832979/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 14.790000000000006,
+          "sum_exact": "16652059622202415/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            10
+          ],
+          "sum_positive_defects": 16.095,
+          "sum_exact": "9060679500316015/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 4.14,
+          "sum_exact": "4661225614328463/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 12.420000000000009,
+          "sum_exact": "1747959605373175/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 5.0400000000000045,
+          "sum_exact": "11349071060973661/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 5.579999999999999,
+          "sum_exact": "6282521480181841/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 2.9400000000000004,
+          "sum_exact": "3310145726117315/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 3.5100000000000007,
+          "sum_exact": "15807634692070443/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 5.220000000000001,
+          "sum_exact": "2938598756859249/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 8.670000000000002,
+          "sum_exact": "610097012020347/70368744177664",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 10.14,
+          "sum_exact": "45666500221536831/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            4
+          ],
+          "sum_positive_defects": 5.759999999999999,
+          "sum_exact": "6485183463413513/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 4.920000000000009,
+          "sum_exact": "11078855083331439/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            5
+          ],
+          "sum_positive_defects": 6.060000000000001,
+          "sum_exact": "27291813741865211/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 11.565000000000001,
+          "sum_exact": "13021032422634949/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            11
+          ],
+          "sum_positive_defects": 8.534999999999997,
+          "sum_exact": "38438222819607171/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            9
+          ],
+          "sum_positive_defects": 8.820000000000004,
+          "sum_exact": "19860874356703895/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 7.979999999999999,
+          "sum_exact": "4492340628302069/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            10
+          ],
+          "sum_positive_defects": 11.160000000000007,
+          "sum_exact": "3141260740090923/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 2.7,
+          "sum_exact": "3039929748475085/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            7
+          ],
+          "sum_positive_defects": 10.260000000000005,
+          "sum_exact": "23103466088410657/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            6
+          ],
+          "sum_positive_defects": 2.565000000000002,
+          "sum_exact": "2887933261051333/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 2.16,
+          "sum_exact": "607985949695017/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            5,
+            3
+          ],
+          "sum_positive_defects": 3.030000000000002,
+          "sum_exact": "3411476717733153/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 9.179999999999998,
+          "sum_exact": "20671522289630573/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 9.799999999999999,
+          "sum_exact": "5516909543528857/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 27.96,
+          "sum_exact": "3935020174414971/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 9.710000000000004,
+          "sum_exact": "10932488095441883/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            4
+          ],
+          "sum_positive_defects": 21.599999999999994,
+          "sum_exact": "48638875975601345/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 16.3,
+          "sum_exact": "4588042120383693/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            5
+          ],
+          "sum_positive_defects": 8.310000000000002,
+          "sum_exact": "9356228225862207/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 30.54,
+          "sum_exact": "17192491577486869/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            11
+          ],
+          "sum_positive_defects": 37.54,
+          "sum_exact": "42266282502872105/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            9
+          ],
+          "sum_positive_defects": 32.90999999999999,
+          "sum_exact": "74106731868381493/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 24.905000000000005,
+          "sum_exact": "224324297439324437/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            10
+          ],
+          "sum_positive_defects": 45.03000000000001,
+          "sum_exact": "202797091220493461/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 4.949999999999999,
+          "sum_exact": "1393301134717747/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            7
+          ],
+          "sum_positive_defects": 34.440000000000005,
+          "sum_exact": "77551985583319953/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            6
+          ],
+          "sum_positive_defects": 19.499999999999996,
+          "sum_exact": "43910096366862327/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 11.52,
+          "sum_exact": "25940733853654057/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            6,
+            3
+          ],
+          "sum_positive_defects": 11.069999999999999,
+          "sum_exact": "6231855984373923/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 3.539999999999997,
+          "sum_exact": "7971371340445771/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 8.273333333333333,
+          "sum_exact": "9314945229277977/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 21.44833333333333,
+          "sum_exact": "48297353003859085/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 11.619999999999997,
+          "sum_exact": "104663655340090299/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            4
+          ],
+          "sum_positive_defects": 12.850000000000001,
+          "sum_exact": "14467813802927719/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 10.211666666666666,
+          "sum_exact": "22994629097415857/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            5
+          ],
+          "sum_positive_defects": 13.899999999999999,
+          "sum_exact": "15650008705112471/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 20.309999999999995,
+          "sum_exact": "91468108431894759/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            11
+          ],
+          "sum_positive_defects": 25.676666666666673,
+          "sum_exact": "57818713216058229/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            9
+          ],
+          "sum_positive_defects": 23.811666666666667,
+          "sum_exact": "26809553281767615/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 13.686666666666667,
+          "sum_exact": "240778386327907/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            10
+          ],
+          "sum_positive_defects": 19.69833333333333,
+          "sum_exact": "44356703329909903/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 4.310000000000001,
+          "sum_exact": "4852628598491711/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            7
+          ],
+          "sum_positive_defects": 14.363333333333344,
+          "sum_exact": "16171675661949567/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            6
+          ],
+          "sum_positive_defects": 5.000000000000008,
+          "sum_exact": "22517998136852515/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 15.316666666666666,
+          "sum_exact": "34490067146279049/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            8,
+            3
+          ],
+          "sum_positive_defects": 3.0749999999999993,
+          "sum_exact": "865535553385267/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 3.600000000000001,
+          "sum_exact": "8106479329266895/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 20.400000000000002,
+          "sum_exact": "45936716199179067/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            6
+          ],
+          "sum_positive_defects": 20.44,
+          "sum_exact": "23013394095863235/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 12.210000000000004,
+          "sum_exact": "54988951450193775/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            4
+          ],
+          "sum_positive_defects": 12.24,
+          "sum_exact": "55124059439014871/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 12.364999999999998,
+          "sum_exact": "55687009392436177/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            5
+          ],
+          "sum_positive_defects": 12.810000000000002,
+          "sum_exact": "14422777806654015/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 27.78,
+          "sum_exact": "15638749706044047/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            11
+          ],
+          "sum_positive_defects": 29.935000000000016,
+          "sum_exact": "134815254845335875/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            9
+          ],
+          "sum_positive_defects": 28.115000000000013,
+          "sum_exact": "63309351761760777/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            6
+          ],
+          "sum_positive_defects": 11.490000000000002,
+          "sum_exact": "12936589929621753/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            10
+          ],
+          "sum_positive_defects": 30.794999999999998,
+          "sum_exact": "138688350524874423/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 3.8399999999999985,
+          "sum_exact": "8646911284551349/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            7
+          ],
+          "sum_positive_defects": 22.150000000000002,
+          "sum_exact": "24938682936564125/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            6
+          ],
+          "sum_positive_defects": 9.88,
+          "sum_exact": "44495564318420501/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 11.370000000000001,
+          "sum_exact": "51205927763202543/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            9,
+            3
+          ],
+          "sum_positive_defects": 3.6,
+          "sum_exact": "8106479329266893/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 1.4199999999999993,
+          "sum_exact": "6395111470866101/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 11.480000000000002,
+          "sum_exact": "25850661861106651/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 18.175,
+          "sum_exact": "81852923227458769/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 9.715,
+          "sum_exact": "43752470379904367/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 8.479999999999997,
+          "sum_exact": "38190524840101793/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 9.375000000000002,
+          "sum_exact": "5277655813324801/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 11.42,
+          "sum_exact": "51431107744571065/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 19.96,
+          "sum_exact": "22472962140578777/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            11
+          ],
+          "sum_positive_defects": 23.680000000000003,
+          "sum_exact": "106645239176133363/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 18.790000000000003,
+          "sum_exact": "84622636998291633/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 13.28333333333333,
+          "sum_exact": "29911407525119035/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            10
+          ],
+          "sum_positive_defects": 22.365000000000002,
+          "sum_exact": "3147593927066911/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 2.5749999999999984,
+          "sum_exact": "2899192260119755/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 15.585000000000008,
+          "sum_exact": "17547150048142303/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 6.07,
+          "sum_exact": "27336849738138913/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 12.740000000000002,
+          "sum_exact": "57375859252700129/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 2.9233333333333333,
+          "sum_exact": "6582761455339875/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            3
+          ],
+          "sum_positive_defects": 11.340000000000003,
+          "sum_exact": "398990779487355/35184372088832",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            5
+          ],
+          "sum_positive_defects": 21.68,
+          "sum_exact": "97638039921392355/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            6
+          ],
+          "sum_positive_defects": 40.080000000000005,
+          "sum_exact": "180504273065009491/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            5
+          ],
+          "sum_positive_defects": 22.48,
+          "sum_exact": "101240919623288759/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            4
+          ],
+          "sum_positive_defects": 23.880000000000003,
+          "sum_exact": "13443244887700931/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            7
+          ],
+          "sum_positive_defects": 25.843333333333334,
+          "sum_exact": "116388026370011517/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            5
+          ],
+          "sum_positive_defects": 20.040000000000006,
+          "sum_exact": "45126068266252381/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            7
+          ],
+          "sum_positive_defects": 44.92999999999999,
+          "sum_exact": "101173365628878181/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            11
+          ],
+          "sum_positive_defects": 52.650000000000006,
+          "sum_exact": "29639315047632079/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            9
+          ],
+          "sum_positive_defects": 50.550000000000004,
+          "sum_exact": "28457120145447323/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            6
+          ],
+          "sum_positive_defects": 35.955,
+          "sum_exact": "80963462301053081/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            10
+          ],
+          "sum_positive_defects": 43.790000000000006,
+          "sum_exact": "197212627682554035/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            3
+          ],
+          "sum_positive_defects": 5.76,
+          "sum_exact": "12970366926827027/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            7
+          ],
+          "sum_positive_defects": 35.93000000000001,
+          "sum_exact": "80907167305710977/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            6
+          ],
+          "sum_positive_defects": 20.37,
+          "sum_exact": "91738324409537013/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            3
+          ],
+          "sum_positive_defects": 21.439999999999998,
+          "sum_exact": "24139294002705857/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            12,
+            3
+          ],
+          "sum_positive_defects": 10.96,
+          "sum_exact": "24679725957990319/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 1.8000000000000007,
+          "sum_exact": "506654958079181/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 17.439999999999998,
+          "sum_exact": "306807724614615/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 22.55,
+          "sum_exact": "101556171597204691/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 10.735000000000003,
+          "sum_exact": "24173070999911143/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 11.759999999999998,
+          "sum_exact": "1655072863058657/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 13.830000000000004,
+          "sum_exact": "62284782846533975/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 12.733333333333338,
+          "sum_exact": "14336458813796083/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 24.045,
+          "sum_exact": "54144526520061791/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            11
+          ],
+          "sum_positive_defects": 36.75083333333333,
+          "sum_exact": "165511039305555201/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 29.385000000000005,
+          "sum_exact": "33084568762570511/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 16.895000000000007,
+          "sum_exact": "19022078926106139/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            10
+          ],
+          "sum_positive_defects": 36.69,
+          "sum_exact": "165237070328223501/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 4.260000000000002,
+          "sum_exact": "9592667206299161/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 26.534999999999997,
+          "sum_exact": "29875754028069025/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 9.389999999999999,
+          "sum_exact": "21144400250504477/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 14.849999999999996,
+          "sum_exact": "33439227233225925/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 6.659999999999998,
+          "sum_exact": "14996986759143747/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 2.130000000000003,
+          "sum_exact": "4796333603149585/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 6.105000000000007,
+          "sum_exact": "6873618931274227/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 9.645,
+          "sum_exact": "43437218405988429/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 4.83000000000001,
+          "sum_exact": "5438096550049885/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 6.895000000000001,
+          "sum_exact": "15526159715359789/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 7.090000000000013,
+          "sum_exact": "31930521358056875/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 1.4400000000000102,
+          "sum_exact": "810647932926695/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 12.670000000000007,
+          "sum_exact": "57060607278784213/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            11
+          ],
+          "sum_positive_defects": 22.685000000000006,
+          "sum_exact": "25541039386724931/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 14.765000000000004,
+          "sum_exact": "4155978031132837/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 7.755000000000002,
+          "sum_exact": "8731353777564551/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            10
+          ],
+          "sum_positive_defects": 25.085,
+          "sum_exact": "112972796652588893/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 3.6300000000000003,
+          "sum_exact": "8174033323677451/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 15.535000000000004,
+          "sum_exact": "17490855052800167/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 11.375,
+          "sum_exact": "25614222880669697/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 4.395000000000003,
+          "sum_exact": "9896660181146673/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 4.890000000000002,
+          "sum_exact": "22022602177841737/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 2.61,
+          "sum_exact": "5877197513718497/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 9.090000000000003,
+          "sum_exact": "319825942287483/35184372088832",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 12.540000000000004,
+          "sum_exact": "56475139327226039/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 6.15,
+          "sum_exact": "3462142213541069/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            4
+          ],
+          "sum_positive_defects": 6.659999999999996,
+          "sum_exact": "7498493379571871/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 9.480000000000004,
+          "sum_exact": "85388248934944639/9007199254740992",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            5
+          ],
+          "sum_positive_defects": 2.580000000000002,
+          "sum_exact": "726205439913493/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 14.835000000000004,
+          "sum_exact": "33405450236020663/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            11
+          ],
+          "sum_positive_defects": 28.45500000000001,
+          "sum_exact": "128149927396827499/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            9
+          ],
+          "sum_positive_defects": 19.545000000000012,
+          "sum_exact": "22005713679239099/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 10.499999999999998,
+          "sum_exact": "5910974510923775/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            10
+          ],
+          "sum_positive_defects": 29.069999999999993,
+          "sum_exact": "511404848311173/17592186044416",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 4.965,
+          "sum_exact": "22360372149894511/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "sum_positive_defects": 26.699999999999996,
+          "sum_exact": "60123055025396111/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            6
+          ],
+          "sum_positive_defects": 14.819999999999997,
+          "sum_exact": "4171459154851921/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 6.420000000000002,
+          "sum_exact": "14456554803859295/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            7,
+            3
+          ],
+          "sum_positive_defects": 6.449999999999999,
+          "sum_exact": "14524108798269847/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.36000000000000076,
+          "sum_exact": "810647932926691/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 5.3999999999999995,
+          "sum_exact": "6079859496950169/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 5.94,
+          "sum_exact": "6687845446645187/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 1.2600000000000007,
+          "sum_exact": "1418633882621707/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 4.2,
+          "sum_exact": "4728779608739021/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 5.039999999999995,
+          "sum_exact": "5674535530486819/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 0.479999999999996,
+          "sum_exact": "540431955284455/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 5.940000000000005,
+          "sum_exact": "835980680830649/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            11
+          ],
+          "sum_positive_defects": 11.939999999999998,
+          "sum_exact": "53772979550803715/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            9
+          ],
+          "sum_positive_defects": 6.3000000000000025,
+          "sum_exact": "3546584706554267/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 3.8700000000000028,
+          "sum_exact": "2178616319740479/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            10
+          ],
+          "sum_positive_defects": 13.319999999999999,
+          "sum_exact": "59987947036575001/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.0,
+          "sum_exact": "0",
+          "strict_monge": true,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 5.219999999999999,
+          "sum_exact": "11754395027436993/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 5.400000000000001,
+          "sum_exact": "6079859496950171/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.54,
+          "sum_exact": "607985949695017/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 3.5999999999999988,
+          "sum_exact": "4053239664633445/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 4.920000000000002,
+          "sum_exact": "11078855083331425/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 7.0200000000000005,
+          "sum_exact": "7903817346035221/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 11.760000000000002,
+          "sum_exact": "3310145726117315/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 4.080000000000001,
+          "sum_exact": "4593671619917907/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 10.920000000000002,
+          "sum_exact": "24589653965442911/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 8.16,
+          "sum_exact": "9187343239835813/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 2.42,
+          "sum_exact": "1362338887279575/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 15.030000000000003,
+          "sum_exact": "33844551199689283/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            11
+          ],
+          "sum_positive_defects": 22.799999999999997,
+          "sum_exact": "51341035752023651/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 19.920000000000005,
+          "sum_exact": "22427926144305077/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 8.46,
+          "sum_exact": "9525113211888599/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            10
+          ],
+          "sum_positive_defects": 28.919999999999998,
+          "sum_exact": "130244101223554731/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 2.16,
+          "sum_exact": "9727775195120271/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 18.059999999999995,
+          "sum_exact": "81335009270311141/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 10.979999999999999,
+          "sum_exact": "6181190488566005/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 2.5199999999999996,
+          "sum_exact": "709316941310853/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 8.07,
+          "sum_exact": "1135751531027497/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 5.399999999999999,
+          "sum_exact": "759982437118771/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 5.580000000000006,
+          "sum_exact": "6282521480181849/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 19.439999999999998,
+          "sum_exact": "43774988378041217/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 5.040000000000002,
+          "sum_exact": "5674535530486827/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 10.859999999999996,
+          "sum_exact": "3056818247077723/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 9.27,
+          "sum_exact": "10437092136431125/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 4.5,
+          "sum_exact": "9/2",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 20.07,
+          "sum_exact": "22596811130331463/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            11
+          ],
+          "sum_positive_defects": 16.560000000000002,
+          "sum_exact": "18644902457313855/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            9
+          ],
+          "sum_positive_defects": 24.090000000000003,
+          "sum_exact": "54245857511677633/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 10.620000000000003,
+          "sum_exact": "23914114021337339/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            10
+          ],
+          "sum_positive_defects": 18.599999999999998,
+          "sum_exact": "83766953069091223/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 2.1599999999999997,
+          "sum_exact": "4863887597560135/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 18.9,
+          "sum_exact": "2659938529915699/140737488355328",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 9.179999999999998,
+          "sum_exact": "20671522289630571/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 7.1099999999999985,
+          "sum_exact": "8005148337651055/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 5.67,
+          "sum_exact": "3191926235898839/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.3599999999999999,
+          "sum_exact": "810647932926689/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 4.320000000000002,
+          "sum_exact": "2431943798780069/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 4.68,
+          "sum_exact": "10538423128046961/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 1.800000000000007,
+          "sum_exact": "2026619832316731/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            4
+          ],
+          "sum_positive_defects": 0.7200000000000024,
+          "sum_exact": "202661983231673/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 2.9699999999999958,
+          "sum_exact": "6687845446645177/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            5
+          ],
+          "sum_positive_defects": 0.9600000000000044,
+          "sum_exact": "270215977642231/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 1.9800000000000013,
+          "sum_exact": "2229281815548397/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            11
+          ],
+          "sum_positive_defects": 7.170000000000005,
+          "sum_exact": "16145404664123239/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            9
+          ],
+          "sum_positive_defects": 7.770000000000001,
+          "sum_exact": "4374121138083595/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 3.45,
+          "sum_exact": "3884354678607053/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            10
+          ],
+          "sum_positive_defects": 10.979999999999999,
+          "sum_exact": "6181190488566005/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.4500000000000006,
+          "sum_exact": "1013309916158363/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            7
+          ],
+          "sum_positive_defects": 7.02,
+          "sum_exact": "15807634692070441/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            6
+          ],
+          "sum_positive_defects": 2.1600000000000006,
+          "sum_exact": "4863887597560137/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 1.3499999999999988,
+          "sum_exact": "1519964874237541/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            3,
+            3
+          ],
+          "sum_positive_defects": 0.6000000000000001,
+          "sum_exact": "1351079888211149/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 3.6,
+          "sum_exact": "8106479329266893/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 7.650000000000002,
+          "sum_exact": "2153283571836519/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 13.815000000000001,
+          "sum_exact": "31108614426061703/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 9.540000000000006,
+          "sum_exact": "10741085111278639/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            4
+          ],
+          "sum_positive_defects": 6.990000000000004,
+          "sum_exact": "15740080697659891/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 9.99,
+          "sum_exact": "44990960277431259/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            5
+          ],
+          "sum_positive_defects": 5.160000000000005,
+          "sum_exact": "5809643519307945/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 15.66,
+          "sum_exact": "35263185082310985/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            11
+          ],
+          "sum_positive_defects": 22.230000000000004,
+          "sum_exact": "12514377464555769/562949953421312",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            9
+          ],
+          "sum_positive_defects": 12.120000000000006,
+          "sum_exact": "54583627483730437/4503599627370496",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 10.620000000000001,
+          "sum_exact": "2989264252667167/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            10
+          ],
+          "sum_positive_defects": 23.189999999999998,
+          "sum_exact": "26109618839680449/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 6.12,
+          "sum_exact": "6890507429876859/1125899906842624",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            7
+          ],
+          "sum_positive_defects": 23.220000000000002,
+          "sum_exact": "52286791673771463/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            6
+          ],
+          "sum_positive_defects": 10.035,
+          "sum_exact": "22596811130331463/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 8.46,
+          "sum_exact": "19050226423777199/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            4,
+            3
+          ],
+          "sum_positive_defects": 7.199999999999999,
+          "sum_exact": "2026619832316723/281474976710656",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        },
+        {
+          "shape": [
+            20,
+            22
+          ],
+          "sum_positive_defects": 101.6741321040071,
+          "sum_exact": "228949791728412493/2251799813685248",
+          "strict_monge": false,
+          "positive_below_threshold": false
+        }
+      ],
+      "matrix_audit_seconds": 0.043853499998476764,
+      "status": "completed",
+      "strict_monge": 10,
+      "strict_rejected": 298,
+      "positive_small": 12,
+      "fraction_rejected_small": 0.040268456375838924,
+      "root_error": 0.0,
+      "arm": {
+        "mode": "binary_per_pair",
+        "root": 3.451266103254384,
+        "seconds": 0.888890199999878,
+        "counts": {
+          "parentpairs": 35007,
+          "singleton_calls": 33940,
+          "LP_calls": 308,
+          "binary_calls": 759,
+          "sort_calls": 759,
+          "sort_entries": 1950,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 1950,
+          "cost_entries_read": 3900,
+          "matrix_snapshot_entries": 47858,
+          "marginal_entries_scanned": 75934
+        },
+        "layers": [
+          {
+            "calls": 179,
+            "sort_calls": 179,
+            "sort_entries": 438,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 438,
+            "cost_entries_read": 876,
+            "matrix_snapshot_entries": 12852
+          },
+          {
+            "calls": 220,
+            "sort_calls": 220,
+            "sort_entries": 468,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 468,
+            "cost_entries_read": 936,
+            "matrix_snapshot_entries": 11880
+          },
+          {
+            "calls": 312,
+            "sort_calls": 312,
+            "sort_entries": 768,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 768,
+            "cost_entries_read": 1536,
+            "matrix_snapshot_entries": 12317
+          },
+          {
+            "calls": 48,
+            "sort_calls": 48,
+            "sort_entries": 276,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 276,
+            "cost_entries_read": 552,
+            "matrix_snapshot_entries": 10368
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 440
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.6653345369377348e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 9.059419880941277e-14
+      },
+      "local_fixture_gate_passed": false
+    }
+  ],
+  "manifest_sha256": "124ac74b4b78b1f689b77566391ba1e1f5fe39a29e1bca90ff61d5ef8e5acd72",
+  "total_seconds": 1.7980201000000307
+}

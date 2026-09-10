@@ -1,0 +1,2468 @@
+{
+  "status": "completed",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "T": 50,
+      "paths_per_side": 4000,
+      "seed": 1000,
+      "shift": 0.0,
+      "tiny": {
+        "layers": [
+          {
+            "t": 0,
+            "total": 1,
+            "forced": 0,
+            "binary": 0,
+            "general": 1
+          },
+          {
+            "t": 1,
+            "total": 132,
+            "forced": 33,
+            "binary": 9,
+            "general": 90
+          },
+          {
+            "t": 2,
+            "total": 182,
+            "forced": 50,
+            "binary": 32,
+            "general": 100
+          },
+          {
+            "t": 3,
+            "total": 224,
+            "forced": 56,
+            "binary": 58,
+            "general": 110
+          },
+          {
+            "t": 4,
+            "total": 208,
+            "forced": 65,
+            "binary": 33,
+            "general": 110
+          }
+        ],
+        "totals": {
+          "total": 747,
+          "forced": 204,
+          "binary": 132,
+          "general": 411
+        },
+        "binary_fraction_nonforced": 0.2430939226519337,
+        "forced_fraction": 0.27309236947791166
+      },
+      "full_horizon": {
+        "layers": [
+          {
+            "t": 0,
+            "total": 1,
+            "forced": 0,
+            "binary": 0,
+            "general": 1
+          },
+          {
+            "t": 1,
+            "total": 272,
+            "forced": 32,
+            "binary": 16,
+            "general": 224
+          },
+          {
+            "t": 2,
+            "total": 418,
+            "forced": 76,
+            "binary": 54,
+            "general": 288
+          },
+          {
+            "t": 3,
+            "total": 380,
+            "forced": 57,
+            "binary": 0,
+            "general": 323
+          },
+          {
+            "t": 4,
+            "total": 380,
+            "forced": 56,
+            "binary": 18,
+            "general": 306
+          },
+          {
+            "t": 5,
+            "total": 399,
+            "forced": 93,
+            "binary": 17,
+            "general": 289
+          },
+          {
+            "t": 6,
+            "total": 420,
+            "forced": 40,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 7,
+            "total": 462,
+            "forced": 82,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 8,
+            "total": 420,
+            "forced": 40,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 9,
+            "total": 400,
+            "forced": 58,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 10,
+            "total": 420,
+            "forced": 60,
+            "binary": 54,
+            "general": 306
+          },
+          {
+            "t": 11,
+            "total": 400,
+            "forced": 58,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 12,
+            "total": 420,
+            "forced": 78,
+            "binary": 36,
+            "general": 306
+          },
+          {
+            "t": 13,
+            "total": 462,
+            "forced": 82,
+            "binary": 57,
+            "general": 323
+          },
+          {
+            "t": 14,
+            "total": 440,
+            "forced": 79,
+            "binary": 19,
+            "general": 342
+          },
+          {
+            "t": 15,
+            "total": 440,
+            "forced": 60,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 16,
+            "total": 420,
+            "forced": 59,
+            "binary": 0,
+            "general": 361
+          },
+          {
+            "t": 17,
+            "total": 420,
+            "forced": 78,
+            "binary": 53,
+            "general": 289
+          },
+          {
+            "t": 18,
+            "total": 380,
+            "forced": 57,
+            "binary": 19,
+            "general": 304
+          },
+          {
+            "t": 19,
+            "total": 440,
+            "forced": 79,
+            "binary": 37,
+            "general": 324
+          },
+          {
+            "t": 20,
+            "total": 400,
+            "forced": 58,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 21,
+            "total": 460,
+            "forced": 118,
+            "binary": 36,
+            "general": 306
+          },
+          {
+            "t": 22,
+            "total": 400,
+            "forced": 58,
+            "binary": 0,
+            "general": 342
+          },
+          {
+            "t": 23,
+            "total": 462,
+            "forced": 120,
+            "binary": 0,
+            "general": 342
+          },
+          {
+            "t": 24,
+            "total": 440,
+            "forced": 60,
+            "binary": 74,
+            "general": 306
+          },
+          {
+            "t": 25,
+            "total": 420,
+            "forced": 80,
+            "binary": 17,
+            "general": 323
+          },
+          {
+            "t": 26,
+            "total": 462,
+            "forced": 63,
+            "binary": 76,
+            "general": 323
+          },
+          {
+            "t": 27,
+            "total": 420,
+            "forced": 40,
+            "binary": 38,
+            "general": 342
+          },
+          {
+            "t": 28,
+            "total": 460,
+            "forced": 80,
+            "binary": 40,
+            "general": 340
+          },
+          {
+            "t": 29,
+            "total": 420,
+            "forced": 20,
+            "binary": 58,
+            "general": 342
+          },
+          {
+            "t": 30,
+            "total": 441,
+            "forced": 117,
+            "binary": 18,
+            "general": 306
+          },
+          {
+            "t": 31,
+            "total": 460,
+            "forced": 99,
+            "binary": 19,
+            "general": 342
+          },
+          {
+            "t": 32,
+            "total": 441,
+            "forced": 81,
+            "binary": 18,
+            "general": 342
+          },
+          {
+            "t": 33,
+            "total": 440,
+            "forced": 60,
+            "binary": 20,
+            "general": 360
+          },
+          {
+            "t": 34,
+            "total": 378,
+            "forced": 0,
+            "binary": 72,
+            "general": 306
+          },
+          {
+            "t": 35,
+            "total": 462,
+            "forced": 42,
+            "binary": 114,
+            "general": 306
+          },
+          {
+            "t": 36,
+            "total": 480,
+            "forced": 102,
+            "binary": 54,
+            "general": 324
+          },
+          {
+            "t": 37,
+            "total": 437,
+            "forced": 77,
+            "binary": 36,
+            "general": 324
+          },
+          {
+            "t": 38,
+            "total": 418,
+            "forced": 58,
+            "binary": 18,
+            "general": 342
+          },
+          {
+            "t": 39,
+            "total": 400,
+            "forced": 39,
+            "binary": 19,
+            "general": 342
+          },
+          {
+            "t": 40,
+            "total": 400,
+            "forced": 40,
+            "binary": 36,
+            "general": 324
+          },
+          {
+            "t": 41,
+            "total": 441,
+            "forced": 99,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 42,
+            "total": 400,
+            "forced": 20,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 43,
+            "total": 420,
+            "forced": 40,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 44,
+            "total": 400,
+            "forced": 39,
+            "binary": 55,
+            "general": 306
+          },
+          {
+            "t": 45,
+            "total": 400,
+            "forced": 20,
+            "binary": 56,
+            "general": 324
+          },
+          {
+            "t": 46,
+            "total": 441,
+            "forced": 80,
+            "binary": 37,
+            "general": 324
+          },
+          {
+            "t": 47,
+            "total": 440,
+            "forced": 98,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 48,
+            "total": 420,
+            "forced": 78,
+            "binary": 18,
+            "general": 324
+          },
+          {
+            "t": 49,
+            "total": 342,
+            "forced": 0,
+            "binary": 54,
+            "general": 288
+          }
+        ],
+        "totals": {
+          "total": 20599,
+          "forced": 3110,
+          "binary": 1789,
+          "general": 15700
+        },
+        "binary_fraction_nonforced": 0.10229286980387672,
+        "forced_fraction": 0.15097820282537988
+      },
+      "sides": [
+        [
+          {
+            "states": 1,
+            "singleton": 0,
+            "binary": 0,
+            "general": 1,
+            "edges": 16,
+            "max_degree": 16
+          },
+          {
+            "states": 16,
+            "singleton": 1,
+            "binary": 1,
+            "general": 14,
+            "edges": 152,
+            "max_degree": 14
+          },
+          {
+            "states": 19,
+            "singleton": 1,
+            "binary": 2,
+            "general": 16,
+            "edges": 175,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 3,
+            "binary": 0,
+            "general": 17,
+            "edges": 176,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 1,
+            "general": 17,
+            "edges": 178,
+            "max_degree": 14
+          },
+          {
+            "states": 19,
+            "singleton": 2,
+            "binary": 0,
+            "general": 17,
+            "edges": 181,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 190,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 196,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 2,
+            "general": 18,
+            "edges": 190,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 189,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 2,
+            "general": 18,
+            "edges": 180,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 183,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 188,
+            "max_degree": 14
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 0,
+            "general": 19,
+            "edges": 190,
+            "max_degree": 15
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 0,
+            "general": 19,
+            "edges": 192,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 193,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 0,
+            "general": 19,
+            "edges": 186,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 2,
+            "general": 17,
+            "edges": 185,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 0,
+            "general": 19,
+            "edges": 194,
+            "max_degree": 15
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 1,
+            "general": 18,
+            "edges": 187,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 183,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 182,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 0,
+            "general": 19,
+            "edges": 187,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 0,
+            "general": 18,
+            "edges": 186,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 2,
+            "general": 17,
+            "edges": 186,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 3,
+            "binary": 0,
+            "general": 17,
+            "edges": 179,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 0,
+            "general": 19,
+            "edges": 190,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 191,
+            "max_degree": 14
+          },
+          {
+            "states": 23,
+            "singleton": 3,
+            "binary": 0,
+            "general": 20,
+            "edges": 197,
+            "max_degree": 13
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 2,
+            "general": 18,
+            "edges": 189,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 1,
+            "general": 17,
+            "edges": 186,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 0,
+            "general": 19,
+            "edges": 193,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 0,
+            "general": 18,
+            "edges": 201,
+            "max_degree": 15
+          },
+          {
+            "states": 22,
+            "singleton": 2,
+            "binary": 0,
+            "general": 20,
+            "edges": 193,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 0,
+            "binary": 3,
+            "general": 18,
+            "edges": 194,
+            "max_degree": 14
+          },
+          {
+            "states": 22,
+            "singleton": 2,
+            "binary": 2,
+            "general": 18,
+            "edges": 194,
+            "max_degree": 14
+          },
+          {
+            "states": 24,
+            "singleton": 3,
+            "binary": 3,
+            "general": 18,
+            "edges": 197,
+            "max_degree": 14
+          },
+          {
+            "states": 23,
+            "singleton": 3,
+            "binary": 2,
+            "general": 18,
+            "edges": 195,
+            "max_degree": 14
+          },
+          {
+            "states": 22,
+            "singleton": 2,
+            "binary": 1,
+            "general": 19,
+            "edges": 192,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 191,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 184,
+            "max_degree": 13
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 191,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 186,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 191,
+            "max_degree": 14
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 2,
+            "general": 17,
+            "edges": 185,
+            "max_degree": 13
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 186,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 183,
+            "max_degree": 14
+          },
+          {
+            "states": 22,
+            "singleton": 4,
+            "binary": 0,
+            "general": 18,
+            "edges": 190,
+            "max_degree": 14
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 0,
+            "general": 18,
+            "edges": 180,
+            "max_degree": 14
+          },
+          {
+            "states": 18,
+            "singleton": 0,
+            "binary": 0,
+            "general": 18,
+            "edges": 183,
+            "max_degree": 14
+          }
+        ],
+        [
+          {
+            "states": 1,
+            "singleton": 0,
+            "binary": 0,
+            "general": 1,
+            "edges": 17,
+            "max_degree": 17
+          },
+          {
+            "states": 17,
+            "singleton": 1,
+            "binary": 0,
+            "general": 16,
+            "edges": 187,
+            "max_degree": 16
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 1,
+            "general": 18,
+            "edges": 205,
+            "max_degree": 15
+          },
+          {
+            "states": 19,
+            "singleton": 0,
+            "binary": 0,
+            "general": 19,
+            "edges": 202,
+            "max_degree": 15
+          },
+          {
+            "states": 19,
+            "singleton": 1,
+            "binary": 0,
+            "general": 18,
+            "edges": 201,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 1,
+            "general": 17,
+            "edges": 209,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 215,
+            "max_degree": 17
+          },
+          {
+            "states": 22,
+            "singleton": 2,
+            "binary": 2,
+            "general": 18,
+            "edges": 209,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 211,
+            "max_degree": 17
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 211,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 1,
+            "general": 17,
+            "edges": 210,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 204,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 2,
+            "general": 17,
+            "edges": 207,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 3,
+            "general": 17,
+            "edges": 211,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 207,
+            "max_degree": 15
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 1,
+            "general": 18,
+            "edges": 207,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 0,
+            "general": 19,
+            "edges": 209,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 1,
+            "general": 17,
+            "edges": 194,
+            "max_degree": 15
+          },
+          {
+            "states": 19,
+            "singleton": 2,
+            "binary": 1,
+            "general": 16,
+            "edges": 197,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 210,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 207,
+            "max_degree": 16
+          },
+          {
+            "states": 23,
+            "singleton": 4,
+            "binary": 2,
+            "general": 17,
+            "edges": 201,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 213,
+            "max_degree": 16
+          },
+          {
+            "states": 22,
+            "singleton": 3,
+            "binary": 0,
+            "general": 19,
+            "edges": 211,
+            "max_degree": 16
+          },
+          {
+            "states": 22,
+            "singleton": 2,
+            "binary": 2,
+            "general": 18,
+            "edges": 214,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 1,
+            "general": 19,
+            "edges": 212,
+            "max_degree": 18
+          },
+          {
+            "states": 22,
+            "singleton": 1,
+            "binary": 4,
+            "general": 17,
+            "edges": 212,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 0,
+            "general": 19,
+            "edges": 214,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 2,
+            "general": 17,
+            "edges": 208,
+            "max_degree": 17
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 1,
+            "general": 19,
+            "edges": 207,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 0,
+            "general": 18,
+            "edges": 212,
+            "max_degree": 16
+          },
+          {
+            "states": 23,
+            "singleton": 4,
+            "binary": 1,
+            "general": 18,
+            "edges": 215,
+            "max_degree": 16
+          },
+          {
+            "states": 21,
+            "singleton": 1,
+            "binary": 1,
+            "general": 19,
+            "edges": 210,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 197,
+            "max_degree": 15
+          },
+          {
+            "states": 18,
+            "singleton": 0,
+            "binary": 1,
+            "general": 17,
+            "edges": 206,
+            "max_degree": 17
+          },
+          {
+            "states": 21,
+            "singleton": 0,
+            "binary": 4,
+            "general": 17,
+            "edges": 208,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 2,
+            "binary": 0,
+            "general": 18,
+            "edges": 200,
+            "max_degree": 15
+          },
+          {
+            "states": 19,
+            "singleton": 1,
+            "binary": 0,
+            "general": 18,
+            "edges": 194,
+            "max_degree": 15
+          },
+          {
+            "states": 19,
+            "singleton": 1,
+            "binary": 0,
+            "general": 18,
+            "edges": 211,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 0,
+            "general": 19,
+            "edges": 208,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 218,
+            "max_degree": 17
+          },
+          {
+            "states": 21,
+            "singleton": 3,
+            "binary": 0,
+            "general": 18,
+            "edges": 210,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 205,
+            "max_degree": 17
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 222,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 211,
+            "max_degree": 15
+          },
+          {
+            "states": 20,
+            "singleton": 0,
+            "binary": 2,
+            "general": 18,
+            "edges": 203,
+            "max_degree": 15
+          },
+          {
+            "states": 21,
+            "singleton": 2,
+            "binary": 1,
+            "general": 18,
+            "edges": 210,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 209,
+            "max_degree": 16
+          },
+          {
+            "states": 20,
+            "singleton": 1,
+            "binary": 1,
+            "general": 18,
+            "edges": 205,
+            "max_degree": 16
+          },
+          {
+            "states": 19,
+            "singleton": 0,
+            "binary": 3,
+            "general": 16,
+            "edges": 204,
+            "max_degree": 17
+          }
+        ]
+      ],
+      "path_array_sha256": [
+        "e5222a7d62c4adcf856851a5e364b6d976a591909e39cb066380f2af25745f51",
+        "cc5b97971d967c838919bfd33d59192dc04710a7c04df8f478388af7500c463e"
+      ],
+      "small_model_verification": "passed",
+      "coverage_gate_passed": false
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "T": 50,
+      "paths_per_side": 8000,
+      "seed": 1000,
+      "shift": 0.0,
+      "tiny": {
+        "layers": [
+          {
+            "t": 0,
+            "total": 1,
+            "forced": 0,
+            "binary": 0,
+            "general": 1
+          },
+          {
+            "t": 1,
+            "total": 440,
+            "forced": 120,
+            "binary": 48,
+            "general": 272
+          },
+          {
+            "t": 2,
+            "total": 10368,
+            "forced": 10038,
+            "binary": 312,
+            "general": 18
+          },
+          {
+            "t": 3,
+            "total": 12317,
+            "forced": 12096,
+            "binary": 220,
+            "general": 1
+          },
+          {
+            "t": 4,
+            "total": 11880,
+            "forced": 11685,
+            "binary": 179,
+            "general": 16
+          }
+        ],
+        "totals": {
+          "total": 35006,
+          "forced": 33939,
+          "binary": 759,
+          "general": 308
+        },
+        "binary_fraction_nonforced": 0.711340206185567,
+        "forced_fraction": 0.9695195109409815
+      },
+      "full_horizon": {
+        "layers": [
+          {
+            "t": 0,
+            "total": 1,
+            "forced": 0,
+            "binary": 0,
+            "general": 1
+          },
+          {
+            "t": 1,
+            "total": 1140,
+            "forced": 249,
+            "binary": 85,
+            "general": 806
+          },
+          {
+            "t": 2,
+            "total": 319472,
+            "forced": 125314,
+            "binary": 48638,
+            "general": 145520
+          },
+          {
+            "t": 3,
+            "total": 541030,
+            "forced": 217190,
+            "binary": 92618,
+            "general": 231222
+          },
+          {
+            "t": 4,
+            "total": 651020,
+            "forced": 271606,
+            "binary": 101032,
+            "general": 278382
+          },
+          {
+            "t": 5,
+            "total": 674528,
+            "forced": 268304,
+            "binary": 107856,
+            "general": 298368
+          },
+          {
+            "t": 6,
+            "total": 697358,
+            "forced": 262658,
+            "binary": 115511,
+            "general": 319189
+          },
+          {
+            "t": 7,
+            "total": 697161,
+            "forced": 255607,
+            "binary": 124034,
+            "general": 317520
+          },
+          {
+            "t": 8,
+            "total": 710288,
+            "forced": 293638,
+            "binary": 102622,
+            "general": 314028
+          },
+          {
+            "t": 9,
+            "total": 709696,
+            "forced": 279369,
+            "binary": 108854,
+            "general": 321473
+          },
+          {
+            "t": 10,
+            "total": 706330,
+            "forced": 275394,
+            "binary": 110580,
+            "general": 320356
+          },
+          {
+            "t": 11,
+            "total": 724710,
+            "forced": 313833,
+            "binary": 107827,
+            "general": 303050
+          },
+          {
+            "t": 12,
+            "total": 707616,
+            "forced": 278847,
+            "binary": 116292,
+            "general": 312477
+          },
+          {
+            "t": 13,
+            "total": 716182,
+            "forced": 283918,
+            "binary": 117559,
+            "general": 314705
+          },
+          {
+            "t": 14,
+            "total": 687764,
+            "forced": 262038,
+            "binary": 115481,
+            "general": 310245
+          },
+          {
+            "t": 15,
+            "total": 678876,
+            "forced": 249887,
+            "binary": 123865,
+            "general": 305124
+          },
+          {
+            "t": 16,
+            "total": 742850,
+            "forced": 302054,
+            "binary": 131116,
+            "general": 309680
+          },
+          {
+            "t": 17,
+            "total": 727320,
+            "forced": 279903,
+            "binary": 134379,
+            "general": 313038
+          },
+          {
+            "t": 18,
+            "total": 714564,
+            "forced": 278973,
+            "binary": 128819,
+            "general": 306772
+          },
+          {
+            "t": 19,
+            "total": 719880,
+            "forced": 286932,
+            "binary": 123258,
+            "general": 309690
+          },
+          {
+            "t": 20,
+            "total": 728120,
+            "forced": 285232,
+            "binary": 127053,
+            "general": 315835
+          },
+          {
+            "t": 21,
+            "total": 723717,
+            "forced": 276957,
+            "binary": 131634,
+            "general": 315126
+          },
+          {
+            "t": 22,
+            "total": 713664,
+            "forced": 278100,
+            "binary": 125064,
+            "general": 310500
+          },
+          {
+            "t": 23,
+            "total": 687980,
+            "forced": 271690,
+            "binary": 114396,
+            "general": 301894
+          },
+          {
+            "t": 24,
+            "total": 690336,
+            "forced": 263546,
+            "binary": 120458,
+            "general": 306332
+          },
+          {
+            "t": 25,
+            "total": 705790,
+            "forced": 264919,
+            "binary": 130647,
+            "general": 310224
+          },
+          {
+            "t": 26,
+            "total": 712047,
+            "forced": 269177,
+            "binary": 130438,
+            "general": 312432
+          },
+          {
+            "t": 27,
+            "total": 729267,
+            "forced": 297667,
+            "binary": 120800,
+            "general": 310800
+          },
+          {
+            "t": 28,
+            "total": 728042,
+            "forced": 287342,
+            "binary": 130134,
+            "general": 310566
+          },
+          {
+            "t": 29,
+            "total": 724943,
+            "forced": 288839,
+            "binary": 121383,
+            "general": 314721
+          },
+          {
+            "t": 30,
+            "total": 706840,
+            "forced": 288950,
+            "binary": 115391,
+            "general": 302499
+          },
+          {
+            "t": 31,
+            "total": 716220,
+            "forced": 287906,
+            "binary": 107050,
+            "general": 321264
+          },
+          {
+            "t": 32,
+            "total": 725063,
+            "forced": 289607,
+            "binary": 106029,
+            "general": 329427
+          },
+          {
+            "t": 33,
+            "total": 711220,
+            "forced": 281596,
+            "binary": 117704,
+            "general": 311920
+          },
+          {
+            "t": 34,
+            "total": 712940,
+            "forced": 268087,
+            "binary": 118283,
+            "general": 326570
+          },
+          {
+            "t": 35,
+            "total": 726666,
+            "forced": 282002,
+            "binary": 128300,
+            "general": 316364
+          },
+          {
+            "t": 36,
+            "total": 717704,
+            "forced": 287657,
+            "binary": 111399,
+            "general": 318648
+          },
+          {
+            "t": 37,
+            "total": 730449,
+            "forced": 301568,
+            "binary": 122525,
+            "general": 306356
+          },
+          {
+            "t": 38,
+            "total": 717009,
+            "forced": 271759,
+            "binary": 130078,
+            "general": 315172
+          },
+          {
+            "t": 39,
+            "total": 717134,
+            "forced": 276494,
+            "binary": 120960,
+            "general": 319680
+          },
+          {
+            "t": 40,
+            "total": 711382,
+            "forced": 275128,
+            "binary": 117093,
+            "general": 319161
+          },
+          {
+            "t": 41,
+            "total": 707200,
+            "forced": 277520,
+            "binary": 114454,
+            "general": 315226
+          },
+          {
+            "t": 42,
+            "total": 697950,
+            "forced": 273135,
+            "binary": 113647,
+            "general": 311168
+          },
+          {
+            "t": 43,
+            "total": 683090,
+            "forced": 262568,
+            "binary": 107482,
+            "general": 313040
+          },
+          {
+            "t": 44,
+            "total": 720477,
+            "forced": 281811,
+            "binary": 118431,
+            "general": 320235
+          },
+          {
+            "t": 45,
+            "total": 704418,
+            "forced": 278045,
+            "binary": 119466,
+            "general": 306907
+          },
+          {
+            "t": 46,
+            "total": 699426,
+            "forced": 260630,
+            "binary": 126316,
+            "general": 312480
+          },
+          {
+            "t": 47,
+            "total": 696280,
+            "forced": 262670,
+            "binary": 122824,
+            "general": 310786
+          },
+          {
+            "t": 48,
+            "total": 691824,
+            "forced": 262863,
+            "binary": 117039,
+            "general": 311922
+          },
+          {
+            "t": 49,
+            "total": 707570,
+            "forced": 279850,
+            "binary": 124443,
+            "general": 303277
+          }
+        ],
+        "totals": {
+          "total": 33472554,
+          "forced": 13119029,
+          "binary": 5621347,
+          "general": 14732178
+        },
+        "binary_fraction_nonforced": 0.27618542733998164,
+        "forced_fraction": 0.3919339109886864
+      },
+      "sides": [
+        [
+          {
+            "states": 1,
+            "singleton": 0,
+            "binary": 0,
+            "general": 1,
+            "edges": 30,
+            "max_degree": 30
+          },
+          {
+            "states": 30,
+            "singleton": 3,
+            "binary": 1,
+            "general": 26,
+            "edges": 487,
+            "max_degree": 27
+          },
+          {
+            "states": 487,
+            "singleton": 101,
+            "binary": 46,
+            "general": 340,
+            "edges": 3497,
+            "max_degree": 19
+          },
+          {
+            "states": 655,
+            "singleton": 149,
+            "binary": 73,
+            "general": 433,
+            "edges": 4181,
+            "max_degree": 20
+          },
+          {
+            "states": 757,
+            "singleton": 183,
+            "binary": 76,
+            "general": 498,
+            "edges": 4548,
+            "max_degree": 17
+          },
+          {
+            "states": 788,
+            "singleton": 164,
+            "binary": 106,
+            "general": 518,
+            "edges": 4740,
+            "max_degree": 17
+          },
+          {
+            "states": 809,
+            "singleton": 165,
+            "binary": 85,
+            "general": 559,
+            "edges": 4841,
+            "max_degree": 17
+          },
+          {
+            "states": 827,
+            "singleton": 160,
+            "binary": 107,
+            "general": 560,
+            "edges": 4896,
+            "max_degree": 18
+          },
+          {
+            "states": 824,
+            "singleton": 183,
+            "binary": 92,
+            "general": 549,
+            "edges": 4851,
+            "max_degree": 17
+          },
+          {
+            "states": 832,
+            "singleton": 179,
+            "binary": 90,
+            "general": 563,
+            "edges": 4881,
+            "max_degree": 17
+          },
+          {
+            "states": 830,
+            "singleton": 181,
+            "binary": 83,
+            "general": 566,
+            "edges": 4903,
+            "max_degree": 17
+          },
+          {
+            "states": 833,
+            "singleton": 194,
+            "binary": 89,
+            "general": 550,
+            "edges": 4922,
+            "max_degree": 18
+          },
+          {
+            "states": 819,
+            "singleton": 180,
+            "binary": 82,
+            "general": 557,
+            "edges": 4874,
+            "max_degree": 19
+          },
+          {
+            "states": 827,
+            "singleton": 176,
+            "binary": 94,
+            "general": 557,
+            "edges": 4915,
+            "max_degree": 20
+          },
+          {
+            "states": 812,
+            "singleton": 165,
+            "binary": 92,
+            "general": 555,
+            "edges": 4811,
+            "max_degree": 19
+          },
+          {
+            "states": 814,
+            "singleton": 165,
+            "binary": 108,
+            "general": 541,
+            "edges": 4852,
+            "max_degree": 17
+          },
+          {
+            "states": 830,
+            "singleton": 176,
+            "binary": 94,
+            "general": 560,
+            "edges": 4906,
+            "max_degree": 17
+          },
+          {
+            "states": 836,
+            "singleton": 179,
+            "binary": 99,
+            "general": 558,
+            "edges": 4928,
+            "max_degree": 17
+          },
+          {
+            "states": 828,
+            "singleton": 165,
+            "binary": 97,
+            "general": 566,
+            "edges": 4926,
+            "max_degree": 17
+          },
+          {
+            "states": 840,
+            "singleton": 178,
+            "binary": 104,
+            "general": 558,
+            "edges": 4926,
+            "max_degree": 19
+          },
+          {
+            "states": 835,
+            "singleton": 168,
+            "binary": 108,
+            "general": 559,
+            "edges": 4902,
+            "max_degree": 19
+          },
+          {
+            "states": 829,
+            "singleton": 172,
+            "binary": 108,
+            "general": 549,
+            "edges": 4855,
+            "max_degree": 17
+          },
+          {
+            "states": 826,
+            "singleton": 172,
+            "binary": 114,
+            "general": 540,
+            "edges": 4869,
+            "max_degree": 17
+          },
+          {
+            "states": 820,
+            "singleton": 194,
+            "binary": 84,
+            "general": 542,
+            "edges": 4862,
+            "max_degree": 17
+          },
+          {
+            "states": 816,
+            "singleton": 179,
+            "binary": 89,
+            "general": 548,
+            "edges": 4800,
+            "max_degree": 18
+          },
+          {
+            "states": 815,
+            "singleton": 156,
+            "binary": 97,
+            "general": 562,
+            "edges": 4915,
+            "max_degree": 17
+          },
+          {
+            "states": 827,
+            "singleton": 166,
+            "binary": 95,
+            "general": 566,
+            "edges": 4927,
+            "max_degree": 16
+          },
+          {
+            "states": 847,
+            "singleton": 197,
+            "binary": 90,
+            "general": 560,
+            "edges": 4931,
+            "max_degree": 17
+          },
+          {
+            "states": 833,
+            "singleton": 183,
+            "binary": 108,
+            "general": 542,
+            "edges": 4873,
+            "max_degree": 17
+          },
+          {
+            "states": 821,
+            "singleton": 173,
+            "binary": 87,
+            "general": 561,
+            "edges": 4856,
+            "max_degree": 16
+          },
+          {
+            "states": 820,
+            "singleton": 182,
+            "binary": 87,
+            "general": 551,
+            "edges": 4809,
+            "max_degree": 19
+          },
+          {
+            "states": 828,
+            "singleton": 181,
+            "binary": 95,
+            "general": 552,
+            "edges": 4860,
+            "max_degree": 18
+          },
+          {
+            "states": 823,
+            "singleton": 175,
+            "binary": 81,
+            "general": 567,
+            "edges": 4866,
+            "max_degree": 17
+          },
+          {
+            "states": 827,
+            "singleton": 179,
+            "binary": 88,
+            "general": 560,
+            "edges": 4898,
+            "max_degree": 17
+          },
+          {
+            "states": 829,
+            "singleton": 168,
+            "binary": 96,
+            "general": 565,
+            "edges": 4940,
+            "max_degree": 18
+          },
+          {
+            "states": 843,
+            "singleton": 191,
+            "binary": 96,
+            "general": 556,
+            "edges": 4882,
+            "max_degree": 17
+          },
+          {
+            "states": 824,
+            "singleton": 185,
+            "binary": 78,
+            "general": 561,
+            "edges": 4919,
+            "max_degree": 17
+          },
+          {
+            "states": 831,
+            "singleton": 188,
+            "binary": 92,
+            "general": 551,
+            "edges": 4853,
+            "max_degree": 18
+          },
+          {
+            "states": 827,
+            "singleton": 177,
+            "binary": 99,
+            "general": 551,
+            "edges": 4848,
+            "max_degree": 16
+          },
+          {
+            "states": 814,
+            "singleton": 166,
+            "binary": 93,
+            "general": 555,
+            "edges": 4926,
+            "max_degree": 17
+          },
+          {
+            "states": 833,
+            "singleton": 175,
+            "binary": 101,
+            "general": 557,
+            "edges": 4903,
+            "max_degree": 17
+          },
+          {
+            "states": 832,
+            "singleton": 176,
+            "binary": 102,
+            "general": 554,
+            "edges": 4872,
+            "max_degree": 17
+          },
+          {
+            "states": 825,
+            "singleton": 190,
+            "binary": 91,
+            "general": 544,
+            "edges": 4815,
+            "max_degree": 17
+          },
+          {
+            "states": 823,
+            "singleton": 169,
+            "binary": 94,
+            "general": 560,
+            "edges": 4840,
+            "max_degree": 16
+          },
+          {
+            "states": 831,
+            "singleton": 184,
+            "binary": 92,
+            "general": 555,
+            "edges": 4875,
+            "max_degree": 16
+          },
+          {
+            "states": 821,
+            "singleton": 174,
+            "binary": 90,
+            "general": 557,
+            "edges": 4886,
+            "max_degree": 17
+          },
+          {
+            "states": 819,
+            "singleton": 167,
+            "binary": 92,
+            "general": 560,
+            "edges": 4851,
+            "max_degree": 16
+          },
+          {
+            "states": 824,
+            "singleton": 169,
+            "binary": 93,
+            "general": 562,
+            "edges": 4925,
+            "max_degree": 17
+          },
+          {
+            "states": 812,
+            "singleton": 165,
+            "binary": 89,
+            "general": 558,
+            "edges": 4873,
+            "max_degree": 17
+          },
+          {
+            "states": 818,
+            "singleton": 189,
+            "binary": 96,
+            "general": 533,
+            "edges": 4808,
+            "max_degree": 17
+          }
+        ],
+        [
+          {
+            "states": 1,
+            "singleton": 0,
+            "binary": 0,
+            "general": 1,
+            "edges": 38,
+            "max_degree": 38
+          },
+          {
+            "states": 38,
+            "singleton": 5,
+            "binary": 2,
+            "general": 31,
+            "edges": 656,
+            "max_degree": 31
+          },
+          {
+            "states": 656,
+            "singleton": 153,
+            "binary": 75,
+            "general": 428,
+            "edges": 4427,
+            "max_degree": 22
+          },
+          {
+            "states": 826,
+            "singleton": 186,
+            "binary": 106,
+            "general": 534,
+            "edges": 5111,
+            "max_degree": 20
+          },
+          {
+            "states": 860,
+            "singleton": 199,
+            "binary": 102,
+            "general": 559,
+            "edges": 5180,
+            "max_degree": 18
+          },
+          {
+            "states": 856,
+            "singleton": 205,
+            "binary": 75,
+            "general": 576,
+            "edges": 5240,
+            "max_degree": 19
+          },
+          {
+            "states": 862,
+            "singleton": 187,
+            "binary": 104,
+            "general": 571,
+            "edges": 5266,
+            "max_degree": 21
+          },
+          {
+            "states": 843,
+            "singleton": 181,
+            "binary": 95,
+            "general": 567,
+            "edges": 5214,
+            "max_degree": 20
+          },
+          {
+            "states": 862,
+            "singleton": 212,
+            "binary": 78,
+            "general": 572,
+            "edges": 5217,
+            "max_degree": 19
+          },
+          {
+            "states": 853,
+            "singleton": 194,
+            "binary": 88,
+            "general": 571,
+            "edges": 5203,
+            "max_degree": 20
+          },
+          {
+            "states": 851,
+            "singleton": 187,
+            "binary": 98,
+            "general": 566,
+            "edges": 5198,
+            "max_degree": 20
+          },
+          {
+            "states": 870,
+            "singleton": 227,
+            "binary": 92,
+            "general": 551,
+            "edges": 5187,
+            "max_degree": 21
+          },
+          {
+            "states": 864,
+            "singleton": 193,
+            "binary": 110,
+            "general": 561,
+            "edges": 5219,
+            "max_degree": 21
+          },
+          {
+            "states": 866,
+            "singleton": 202,
+            "binary": 99,
+            "general": 565,
+            "edges": 5223,
+            "max_degree": 19
+          },
+          {
+            "states": 847,
+            "singleton": 189,
+            "binary": 99,
+            "general": 559,
+            "edges": 5242,
+            "max_degree": 19
+          },
+          {
+            "states": 834,
+            "singleton": 173,
+            "binary": 97,
+            "general": 564,
+            "edges": 5232,
+            "max_degree": 20
+          },
+          {
+            "states": 895,
+            "singleton": 221,
+            "binary": 121,
+            "general": 553,
+            "edges": 5207,
+            "max_degree": 19
+          },
+          {
+            "states": 870,
+            "singleton": 189,
+            "binary": 120,
+            "general": 561,
+            "edges": 5218,
+            "max_degree": 20
+          },
+          {
+            "states": 863,
+            "singleton": 206,
+            "binary": 115,
+            "general": 542,
+            "edges": 5224,
+            "max_degree": 20
+          },
+          {
+            "states": 857,
+            "singleton": 203,
+            "binary": 99,
+            "general": 555,
+            "edges": 5274,
+            "max_degree": 19
+          },
+          {
+            "states": 872,
+            "singleton": 208,
+            "binary": 99,
+            "general": 565,
+            "edges": 5255,
+            "max_degree": 20
+          },
+          {
+            "states": 873,
+            "singleton": 193,
+            "binary": 106,
+            "general": 574,
+            "edges": 5248,
+            "max_degree": 20
+          },
+          {
+            "states": 864,
+            "singleton": 198,
+            "binary": 91,
+            "general": 575,
+            "edges": 5258,
+            "max_degree": 19
+          },
+          {
+            "states": 839,
+            "singleton": 174,
+            "binary": 108,
+            "general": 557,
+            "edges": 5221,
+            "max_degree": 20
+          },
+          {
+            "states": 846,
+            "singleton": 176,
+            "binary": 111,
+            "general": 559,
+            "edges": 5210,
+            "max_degree": 19
+          },
+          {
+            "states": 866,
+            "singleton": 197,
+            "binary": 117,
+            "general": 552,
+            "edges": 5236,
+            "max_degree": 19
+          },
+          {
+            "states": 861,
+            "singleton": 191,
+            "binary": 118,
+            "general": 552,
+            "edges": 5217,
+            "max_degree": 20
+          },
+          {
+            "states": 861,
+            "singleton": 197,
+            "binary": 109,
+            "general": 555,
+            "edges": 5156,
+            "max_degree": 20
+          },
+          {
+            "states": 874,
+            "singleton": 196,
+            "binary": 105,
+            "general": 573,
+            "edges": 5234,
+            "max_degree": 21
+          },
+          {
+            "states": 883,
+            "singleton": 210,
+            "binary": 112,
+            "general": 561,
+            "edges": 5261,
+            "max_degree": 21
+          },
+          {
+            "states": 862,
+            "singleton": 207,
+            "binary": 106,
+            "general": 549,
+            "edges": 5236,
+            "max_degree": 20
+          },
+          {
+            "states": 865,
+            "singleton": 203,
+            "binary": 80,
+            "general": 582,
+            "edges": 5268,
+            "max_degree": 20
+          },
+          {
+            "states": 881,
+            "singleton": 209,
+            "binary": 91,
+            "general": 581,
+            "edges": 5305,
+            "max_degree": 21
+          },
+          {
+            "states": 860,
+            "singleton": 197,
+            "binary": 106,
+            "general": 557,
+            "edges": 5252,
+            "max_degree": 20
+          },
+          {
+            "states": 860,
+            "singleton": 187,
+            "binary": 95,
+            "general": 578,
+            "edges": 5256,
+            "max_degree": 22
+          },
+          {
+            "states": 862,
+            "singleton": 180,
+            "binary": 113,
+            "general": 569,
+            "edges": 5220,
+            "max_degree": 20
+          },
+          {
+            "states": 871,
+            "singleton": 198,
+            "binary": 105,
+            "general": 568,
+            "edges": 5268,
+            "max_degree": 19
+          },
+          {
+            "states": 879,
+            "singleton": 212,
+            "binary": 111,
+            "general": 556,
+            "edges": 5274,
+            "max_degree": 19
+          },
+          {
+            "states": 867,
+            "singleton": 182,
+            "binary": 113,
+            "general": 572,
+            "edges": 5287,
+            "max_degree": 19
+          },
+          {
+            "states": 881,
+            "singleton": 201,
+            "binary": 104,
+            "general": 576,
+            "edges": 5277,
+            "max_degree": 20
+          },
+          {
+            "states": 854,
+            "singleton": 191,
+            "binary": 90,
+            "general": 573,
+            "edges": 5274,
+            "max_degree": 20
+          },
+          {
+            "states": 850,
+            "singleton": 195,
+            "binary": 86,
+            "general": 569,
+            "edges": 5200,
+            "max_degree": 20
+          },
+          {
+            "states": 846,
+            "singleton": 177,
+            "binary": 97,
+            "general": 572,
+            "edges": 5187,
+            "max_degree": 19
+          },
+          {
+            "states": 830,
+            "singleton": 187,
+            "binary": 84,
+            "general": 559,
+            "edges": 5154,
+            "max_degree": 20
+          },
+          {
+            "states": 867,
+            "singleton": 189,
+            "binary": 101,
+            "general": 577,
+            "edges": 5222,
+            "max_degree": 20
+          },
+          {
+            "states": 858,
+            "singleton": 199,
+            "binary": 108,
+            "general": 551,
+            "edges": 5215,
+            "max_degree": 21
+          },
+          {
+            "states": 854,
+            "singleton": 181,
+            "binary": 115,
+            "general": 558,
+            "edges": 5228,
+            "max_degree": 20
+          },
+          {
+            "states": 845,
+            "singleton": 183,
+            "binary": 109,
+            "general": 553,
+            "edges": 5171,
+            "max_degree": 19
+          },
+          {
+            "states": 852,
+            "singleton": 189,
+            "binary": 104,
+            "general": 559,
+            "edges": 5211,
+            "max_degree": 21
+          },
+          {
+            "states": 865,
+            "singleton": 185,
+            "binary": 111,
+            "general": 569,
+            "edges": 5212,
+            "max_degree": 20
+          }
+        ]
+      ],
+      "path_array_sha256": [
+        "0bc47c19ac1330f050a334dfb3ea5538bbdfa2011b2e1e900c97346c185a3e3f",
+        "8ed573c3b9786ecba69ad30d48d90c9eed64d7a3fd9af3197117175d6483c548"
+      ],
+      "small_model_verification": "passed",
+      "coverage_gate_passed": true
+    }
+  ],
+  "manifest_sha256": "1daab6493376885878fd97b87d1151d782362657058c90f795074dc4e65d460a",
+  "both_cases_coverage_gate_passed": false,
+  "total_seconds": 0.8390620000000126
+}

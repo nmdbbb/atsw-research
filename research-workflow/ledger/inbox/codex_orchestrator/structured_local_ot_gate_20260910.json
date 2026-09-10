@@ -1,0 +1,74 @@
+{
+  "id": "structured_local_ot_gate_20260910",
+  "date": "2026-09-10",
+  "prior_decision": "ledger/inbox/codex_orchestrator/root_gap_priority_gate_20260910.json",
+  "decision": "retain_structured_numerical_baselines_reject_screened_broad_reuse",
+  "scientific_objective_achieved": false,
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Identical-support binary order cache, broad strict Monge dispatch promotion, and near-Monge 1e-10 relaxation; no impossibility theorem.",
+  "evidence": {
+    "binary_direct_LP_before": [
+      543,
+      1067
+    ],
+    "binary_direct_LP_after": [
+      411,
+      308
+    ],
+    "binary_cache_sort_savings": [
+      0.015151515151515138,
+      0.022397891963109373
+    ],
+    "strict_monge_LP_after": [
+      164,
+      298
+    ],
+    "fine_near_monge_rescue_fraction": 0.040268456375838924,
+    "T50_binary_fraction_nonforced": [
+      0.10229286980387672,
+      0.27618542733998164
+    ],
+    "T50_paths_per_side": [
+      4000,
+      8000
+    ],
+    "T50_scope": "support counts only, seed1000shift0, no OT benchmark grid"
+  },
+  "validation": {
+    "unit_tests": 85,
+    "legacy_pins": {
+      "matching": 24,
+      "historical": 1
+    },
+    "NW_supplemental_source_pin": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008"
+  },
+  "limits": [
+    "float64 DP, no outward original-root certificate",
+    "NW can lose interior tiny mass through cumulative rounding",
+    "binary permutation-validation sorting not counted in delta-sort count",
+    "extreme derived arithmetic overflow not generally guarded",
+    "Monge NW dependency omitted from frozen screen; historical matching pin verified separately"
+  ],
+  "next_gate": "Require work savings on still-general support pairs with original-root upper/lower control; benchmark against strengthened directbinary/Monge baselines.",
+  "routing": "one Astra/high reviewer, root implementation, no fan-out",
+  "artifact_sha256": {
+    "adapters/binary_transport.py": "45955db3cf7a156650b16f95c09d706f70886cffae55aea8d224a47599b00cba",
+    "tests/test_binary_transport.py": "f8b5c5b708382a7f8d59cbc8adf3acaf11d81ad7e394bb0ce53ba85684b5d50b",
+    "adapters/support_monge.py": "2bd2d190526532c2d3ad65c77f390c80b54f60ca5386db7e495175bcafe1210c",
+    "tests/test_support_monge.py": "4d28fac2ed0536926171ce49d07e5865e51d8d9cbf43d20d326ba3eef3140db5",
+    "research/theory/binary_transport_review_20260910.md": "9a860505c819aa1d0e2961122f3bf69e75fa8bba47276233cb7f1ace97cc1455",
+    "research/theory/structured_local_ot_decision_20260910.md": "a5e65ef93104218b90deb69cdbd4d88ace1a3387026521bab964406079de3968",
+    "probes/binary_transport_screen.py": "d780314feb52ace5aa19a71250733b2dca2b5d063d4b54a7d60ee1b5cf40faee",
+    "runs/cycle_2/binary_transport_screen/manifest.json": "e63a0808a50f9b86ce802304a1cece02df7d328c3e0c8932b705ca0560d51eae",
+    "runs/cycle_2/binary_transport_screen/results.json": "92df9f26768ecd6f61ceedf46a379fe57c5f683e91cfa963f8b3219689171f74",
+    "probes/support_monge_screen.py": "245182257ee4ecfe79b8e5b7b3d8d50be460063ad046e398b3b6a2c1561cb25e",
+    "runs/cycle_2/support_monge_screen/manifest.json": "e762e61bdb6bedd131b0e216fd563118c7b45f3fa0573707e18534cfe36ea1fa",
+    "runs/cycle_2/support_monge_screen/results.json": "af60ba98d4873ce3dd670a2c6d9e8c1579fbb11e2a0604bad6992cd6d707d6d9",
+    "probes/local_monge_defect_audit.py": "ec3abc2cbfb6357219ab018ed843749e0945cf585425f4d7a917e42da17bc21e",
+    "runs/cycle_2/local_monge_defect_audit/manifest.json": "124ac74b4b78b1f689b77566391ba1e1f5fe39a29e1bca90ff61d5ef8e5acd72",
+    "runs/cycle_2/local_monge_defect_audit/results.json": "4c3b2eb52f4921d0b41f9bee04485aaa4a91bd42c38818e2416587fde3d81ad2",
+    "probes/support_scale_audit.py": "ed1c787f01052abe2441c0b69d58d4aad256ce6df05838e682d67311eab4b808",
+    "runs/cycle_2/support_scale_audit/manifest.json": "1daab6493376885878fd97b87d1151d782362657058c90f795074dc4e65d460a",
+    "runs/cycle_2/support_scale_audit/results.json": "ef7f278d63e3bdff1248156078df5d7c822d7bd5e2ecf792958a16b205739a85"
+  }
+}

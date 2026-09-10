@@ -1,0 +1,45 @@
+{
+  "schema": "support-monge-screen-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "design": "posthoc local structural screen following binary-direct baseline; before timing, terminal Monge applicability known",
+  "method": "Same binary_per_pair DP both arms; on remaining general support matrices, Fraction-exact adjacent Monge check then numeric NW if passed, otherwise identical LP fallback.",
+  "gate": "Opportunity if at least20% of remaining general LP calls avoided on EACH case; one-repeat times descriptive, not speed claim.",
+  "deadline_seconds": 45,
+  "deadline_rule": "cooperative each layer/128pairs and before each structural check; no rerun/downsize",
+  "checks": "all continuation tables and roots agree with current binary baseline and archived roots within1e-8",
+  "nonclaims": [
+    "classical Monge NW condition, not novelty",
+    "predicate exact on represented matrix; recurrence remains float64 without outward certificate",
+    "no full-grid or SOTA claim"
+  ],
+  "hashes": {
+    "probes/binary_transport_screen.py": "d780314feb52ace5aa19a71250733b2dca2b5d063d4b54a7d60ee1b5cf40faee",
+    "adapters/binary_transport.py": "45955db3cf7a156650b16f95c09d706f70886cffae55aea8d224a47599b00cba",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf",
+    "probes/support_monge_screen.py": "245182257ee4ecfe79b8e5b7b3d8d50be460063ad046e398b3b6a2c1561cb25e",
+    "adapters/support_monge.py": "2bd2d190526532c2d3ad65c77f390c80b54f60ca5386db7e495175bcafe1210c",
+    "runs/cycle_2/binary_transport_screen/manifest.json": "e63a0808a50f9b86ce802304a1cece02df7d328c3e0c8932b705ca0560d51eae",
+    "runs/cycle_2/binary_transport_screen/results.json": "92df9f26768ecd6f61ceedf46a379fe57c5f683e91cfa963f8b3219689171f74"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "status": "completed",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared",
+      "model_seconds": 0.0015065000006870832,
+      "model_hashes": [
+        "c807df83706931a5bc142c9509d7bf5450144dcc357005609672111f3c349493",
+        "8281e8ab240e5c615435b6c427bd9ff5b14f7480b2465fbfb30cf4ad87eba572"
+      ],
+      "control": {
+        "mode": "binary_per_pair",
+        "root": 3.8361426721859084,
+        "seconds": 0.8317111999995177,
+        "counts": {
+          "parentpairs": 748,
+          "singleton_calls": 205,
+          "LP_calls": 411,
+          "binary_calls": 132,
+          "sort_calls": 132,
+          "sort_entries": 769,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 769,
+          "cost_entries_read": 1538,
+          "matrix_snapshot_entries": 972,
+          "marginal_entries_scanned": 1613
+        },
+        "layers": [
+          {
+            "calls": 33,
+            "sort_calls": 33,
+            "sort_entries": 198,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 198,
+            "cost_entries_read": 396,
+            "matrix_snapshot_entries": 225
+          },
+          {
+            "calls": 58,
+            "sort_calls": 58,
+            "sort_entries": 328,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 328,
+            "cost_entries_read": 656,
+            "matrix_snapshot_entries": 208
+          },
+          {
+            "calls": 32,
+            "sort_calls": 32,
+            "sort_entries": 185,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 185,
+            "cost_entries_read": 370,
+            "matrix_snapshot_entries": 224
+          },
+          {
+            "calls": 9,
+            "sort_calls": 9,
+            "sort_entries": 58,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 58,
+            "cost_entries_read": 116,
+            "matrix_snapshot_entries": 182
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 132
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.1102230246251565e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 8.526512829121202e-13
+      },
+      "candidate": {
+        "mode": "binary_per_pair",
+        "root": 3.8361426721859084,
+        "seconds": 0.3909944999995787,
+        "counts": {
+          "parentpairs": 748,
+          "singleton_calls": 205,
+          "LP_calls": 411,
+          "binary_calls": 132,
+          "sort_calls": 132,
+          "sort_entries": 769,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 769,
+          "cost_entries_read": 1538,
+          "matrix_snapshot_entries": 972,
+          "marginal_entries_scanned": 1613
+        },
+        "layers": [
+          {
+            "calls": 33,
+            "sort_calls": 33,
+            "sort_entries": 198,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 198,
+            "cost_entries_read": 396,
+            "matrix_snapshot_entries": 225
+          },
+          {
+            "calls": 58,
+            "sort_calls": 58,
+            "sort_entries": 328,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 328,
+            "cost_entries_read": 656,
+            "matrix_snapshot_entries": 208
+          },
+          {
+            "calls": 32,
+            "sort_calls": 32,
+            "sort_entries": 185,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 185,
+            "cost_entries_read": 370,
+            "matrix_snapshot_entries": 224
+          },
+          {
+            "calls": 9,
+            "sort_calls": 9,
+            "sort_entries": 58,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 58,
+            "cost_entries_read": 116,
+            "matrix_snapshot_entries": 182
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 132
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.1102230246251565e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 8.526512829121202e-13
+      },
+      "dispatch": {
+        "check_calls": 411,
+        "accepted": 247,
+        "rejected": 164,
+        "adjacent_checks": 7475,
+        "dyadic_entries": 11419,
+        "check_and_NW_seconds": 0.04454479999913019
+      },
+      "table_max_error": 1.4210854715202004e-14,
+      "root_error": 0.0,
+      "actual_candidate_LP_calls": 164,
+      "general_LP_calls_avoided_fraction": 0.6009732360097324,
+      "candidate_over_control_seconds": 0.4701084943906075,
+      "status": "completed",
+      "counter_note": "candidate.counts.LP_calls counts general dispatches, actual LP calls are dispatch.rejected",
+      "opportunity_gate_passed": true
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute",
+      "model_seconds": 0.0015062000002217246,
+      "model_hashes": [
+        "e0523787031c42a778602c0b04fcbf8dfca5e2a10196b7984063eab38d37f611",
+        "f99673fe26e53762f47d55bb979bdfd54f82eb849fdcfc9bbdc4c5a15fdb86fd"
+      ],
+      "control": {
+        "mode": "binary_per_pair",
+        "root": 3.451266103254384,
+        "seconds": 0.8491940999992948,
+        "counts": {
+          "parentpairs": 35007,
+          "singleton_calls": 33940,
+          "LP_calls": 308,
+          "binary_calls": 759,
+          "sort_calls": 759,
+          "sort_entries": 1950,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 1950,
+          "cost_entries_read": 3900,
+          "matrix_snapshot_entries": 47858,
+          "marginal_entries_scanned": 75934
+        },
+        "layers": [
+          {
+            "calls": 179,
+            "sort_calls": 179,
+            "sort_entries": 438,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 438,
+            "cost_entries_read": 876,
+            "matrix_snapshot_entries": 12852
+          },
+          {
+            "calls": 220,
+            "sort_calls": 220,
+            "sort_entries": 468,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 468,
+            "cost_entries_read": 936,
+            "matrix_snapshot_entries": 11880
+          },
+          {
+            "calls": 312,
+            "sort_calls": 312,
+            "sort_entries": 768,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 768,
+            "cost_entries_read": 1536,
+            "matrix_snapshot_entries": 12317
+          },
+          {
+            "calls": 48,
+            "sort_calls": 48,
+            "sort_entries": 276,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 276,
+            "cost_entries_read": 552,
+            "matrix_snapshot_entries": 10368
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 440
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.6653345369377348e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 9.059419880941277e-14
+      },
+      "candidate": {
+        "mode": "binary_per_pair",
+        "root": 3.451266103254384,
+        "seconds": 0.8294254000002184,
+        "counts": {
+          "parentpairs": 35007,
+          "singleton_calls": 33940,
+          "LP_calls": 308,
+          "binary_calls": 759,
+          "sort_calls": 759,
+          "sort_entries": 1950,
+          "cache_hits": 0,
+          "cache_key_entries": 0,
+          "order_validation_entries": 1950,
+          "cost_entries_read": 3900,
+          "matrix_snapshot_entries": 47858,
+          "marginal_entries_scanned": 75934
+        },
+        "layers": [
+          {
+            "calls": 179,
+            "sort_calls": 179,
+            "sort_entries": 438,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 438,
+            "cost_entries_read": 876,
+            "matrix_snapshot_entries": 12852
+          },
+          {
+            "calls": 220,
+            "sort_calls": 220,
+            "sort_entries": 468,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 468,
+            "cost_entries_read": 936,
+            "matrix_snapshot_entries": 11880
+          },
+          {
+            "calls": 312,
+            "sort_calls": 312,
+            "sort_entries": 768,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 768,
+            "cost_entries_read": 1536,
+            "matrix_snapshot_entries": 12317
+          },
+          {
+            "calls": 48,
+            "sort_calls": 48,
+            "sort_entries": 276,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 276,
+            "cost_entries_read": 552,
+            "matrix_snapshot_entries": 10368
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 440
+          },
+          {
+            "calls": 0,
+            "sort_calls": 0,
+            "sort_entries": 0,
+            "cache_hits": 0,
+            "cache_key_entries": 0,
+            "order_validation_entries": 0,
+            "cost_entries_read": 0,
+            "matrix_snapshot_entries": 1
+          }
+        ],
+        "max_binary_marginal_error": 1.6653345369377348e-16,
+        "max_binary_dual_violation": 0.0,
+        "max_binary_numerical_gap": 9.059419880941277e-14
+      },
+      "dispatch": {
+        "check_calls": 308,
+        "accepted": 10,
+        "rejected": 298,
+        "adjacent_checks": 571,
+        "dyadic_entries": 1735,
+        "check_and_NW_seconds": 0.009524199994302762
+      },
+      "table_max_error": 4.440892098500626e-16,
+      "root_error": 0.0,
+      "actual_candidate_LP_calls": 298,
+      "general_LP_calls_avoided_fraction": 0.032467532467532464,
+      "candidate_over_control_seconds": 0.9767206343059933,
+      "status": "completed",
+      "counter_note": "candidate.counts.LP_calls counts general dispatches, actual LP calls are dispatch.rejected",
+      "opportunity_gate_passed": false
+    }
+  ],
+  "manifest_sha256": "e762e61bdb6bedd131b0e216fd563118c7b45f3fa0573707e18534cfe36ea1fa",
+  "both_cases_opportunity_gate_passed": false,
+  "total_seconds": 2.905557399999452
+}

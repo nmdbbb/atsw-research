@@ -1,0 +1,32 @@
+{
+  "schema": "support-scale-audit-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18
+    }
+  ],
+  "seed": 1000,
+  "shift": 0.0,
+  "T": 50,
+  "design": "posthoc structural extrapolation audit at frozen path counts4000/8000; one development seed/shift only; no cost-dependent solver output",
+  "method": "unique history and transition-code pairs give exact positive support counts without dense kernels or pair enumeration; compare against common_model on old T5n128 first",
+  "gate": "Binary-direct route survives support-coverage screen iff binary fraction among nonforced>=20% on both T50 cases. No savings/time/certificate claim from support counts.",
+  "deadline_seconds": 30,
+  "deadline_rule": "cooperative at each history/layer; no rerun/downsize",
+  "hashes": {
+    "probes/support_scale_audit.py": "ed1c787f01052abe2441c0b69d58d4aad256ce6df05838e682d67311eab4b808",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "frozen_design.json": "b322420cc9142f0a385ba3e4c2e46ee7fcaa46f0ccbaee30d64ea40fb37c6094",
+    "frozen_design_amendment_1.json": "c150f7025359ea2bf33a69c408429326635d48731ce4ab9f585d331c7b6d2fa2",
+    "runs/cycle_2/binary_transport_screen/results.json": "92df9f26768ecd6f61ceedf46a379fe57c5f683e91cfa963f8b3219689171f74"
+  }
+}
