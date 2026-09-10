@@ -1,0 +1,57 @@
+{
+ "id": "w2_external_knowledge_round1_20260910",
+ "date": "2026-09-10",
+ "type": "evidence_update",
+ "complements": "ledger/inbox/codex_orchestrator/direction_selection_proposal_20260910.json",
+ "supersedes_current_status_of": null,
+ "decision": "w2_round1_complete_novelty_survives_direction_proposal_unchanged",
+ "scientific_objective_achieved": false,
+ "document": "research/sota/EXTERNAL_KNOWLEDGE_20260910.md",
+ "novelty_check": {
+  "queries_run": 12,
+  "collision_found": false,
+  "verified_prior_art_identities": [
+   "doi:10.1145/1102351.1102423 BRTDP 2005",
+   "openalex:W4199186 Focused RTDP 2006",
+   "doi:10.1016/s0004-3702(01)00106-0 LAO* 2001",
+   "doi:10.1007/978-3-319-63387-9_8 interval iteration MDP 2017",
+   "doi:10.1016/s0004-3702(00)00047-3 bounded-parameter MDP 2000",
+   "doi:10.1023/a:1022635613229 prioritized sweeping 1993"
+  ],
+  "claim_wording_constraint": "transfer with nontrivial extension to bicausal OT (coupling-polytope subproblems, local dual feasibility, outward root propagation), not invention of interval refinement"
+ },
+ "w1_import": {
+  "technique": "safe postprocessing of approximate LP duals into rigorous bounds via directed rounding; O(n^2) for LPs with finite simple bounds",
+  "sources": [
+   "doi:10.1007/s10107-003-0433-3 Neumaier-Shcherbina 2004 (closed)",
+   "doi:10.1137/S1052623402416839 Jansson (closed)",
+   "doi:10.4230/dagsemproc.05391.6 Lurupa 2006 (OA)"
+  ],
+  "remaining_project_work": "outward propagation of local intervals through the Bellman recursion to the root, incl. normalization and tiny-mass conservation",
+  "access_blocker": "both primary papers closed access; implement only from a legitimate full text or an independently reviewed re-derivation for transportation LP"
+ },
+ "schmitzer_required_audit": {
+  "status": "done",
+  "source": "arXiv:1510.05466v2 full text",
+  "key_results": "Def 3.3 shielding condition; Prop 3.6 short-cuts; Cor 3.10 local-to-global optimality; Alg 4.1/4.6",
+  "overlap_verdict": "no claim collision: certifies global optimality of a single static OT via sparse work; our mechanism targets a root interval under partial local solving",
+  "self_declared_limits": "shield map needs geometric cost structure; overall complexity open"
+ },
+ "prior_art_citation_upgrade": "support-Monge dispatch now citable as Hoffman 1963 + Bein-Brucker-Park-Pathak 1995 (doi:10.1016/0166-218X(93)E0121-E, theorem-bearing abstract recovered; publisher full text still 403)",
+ "panel_additions_2026": [
+  "arXiv:2604.22453 adapted W barycenters of Gaussian processes",
+  "arXiv:2604.22159 adapted OT between filtered Gaussian processes",
+  "doi:10.1016/j.spa.2026.105032 probabilistic view on adapted W",
+  "doi:10.1214/25-aap2239 empirical martingale projections",
+  "doi:10.1214/26-ecp750 adapted T1 inequality",
+  "doi:10.3150/26-bej1985 bicausal OT for SDEs",
+  "arXiv:2608.13716 graph causal OT"
+ ],
+ "still_unread_closed_access": [
+  "doi:10.1007/s10287-025-00542-5 Kirui-Pflug-Pichler",
+  "doi:10.1007/s10107-003-0433-3 Neumaier-Shcherbina",
+  "doi:10.1137/S1052623402416839 Jansson"
+ ],
+ "limits": "lexical OpenAlex search only; no backward-citation closure; non-DOI venues unswept; absence of hits is not proof of absence",
+ "constraints_respected": "no experiment run, no hypothesis registered, no solver code modified"
+}
