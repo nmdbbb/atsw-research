@@ -1,0 +1,56 @@
+{
+ "id": "direction_selection_proposal_20260910",
+ "date": "2026-09-10",
+ "supersedes_current_status_of": "ledger/inbox/codex_orchestrator/structured_local_ot_cycle_close_20260910.json",
+ "decision": "propose_direction_gap_guided_joint_refinement_await_user_confirmation",
+ "status": "proposed_awaiting_user_confirmation",
+ "scientific_objective_achieved": false,
+ "document": "research/theory/direction_proposal_20260910.md",
+ "chosen_branch": "new_algorithmic_mechanism",
+ "mechanism_class": "anytime joint upper/lower refinement selected by exact occupation-residual gap attribution, with outward-rounded root certification as co-obligation",
+ "distinct_from_closed_routes": [
+  "lower-only residual priority on a fixed upper (failed -0.1598% gap shift, runs/cycle_2/residual_priority_screen)",
+  "occupation-reachability envelope headroom (H_B01C1 mechanism_headroom_falsified)",
+  "identical-support order cache, broad strict-Monge promotion, near-Monge 1e-10 rescue, shared SVD ordering (all closed at frozen gates)"
+ ],
+ "evidence_basis": {
+  "gap_concentration_T5": {
+   "fine_top16_fraction": 0.893983,
+   "fine_pairs_for_90pct": 17,
+   "fine_t0_pair_fraction": 0.4023,
+   "coarse_top16_fraction": 0.372279,
+   "coarse_pairs_for_90pct": 114,
+   "source": "runs/cycle_2/root_gap_decomposition/results.json"
+  },
+  "upper_obstruction": {
+   "fixed_upper_excess_over_reference_fine": 0.05178,
+   "improved_control_fine_width": 0.24161993,
+   "source": "research/theory/root_gap_priority_decision_20260910.md"
+  },
+  "target_scale_unknowns": "gap attribution spectrum never measured at T=50 / 4000-8000 paths; support census forbids extrapolating small-scale structure"
+ },
+ "preregistration_required_before_compute": [
+  "P1 gap-attribution census at T50 frozen path counts, budget cap declared before run",
+  "P2 joint-refinement micro-screen on archived T5 cases, three arms, same kernels"
+ ],
+ "frozen_stop_gates": [
+  "P1 diffuse: >20% of nonforced pairs needed for 90% gap on both representative cells with no early-horizon concentration",
+  "P2 upper not locally repairable: top-16 joint refinement cannot reduce fine upper excess below 2% from 5.178%",
+  "P2 no matched-budget win: <25% relative interval reduction at equal LP calls vs strengthened dispatch DP baseline",
+  "W1 rigor cost: outward-rounded interval more than 2x float64 interval at same budget kills the certified claim",
+  "W2 novelty collision: existing anytime certified nested-distance method with same selection mechanism"
+ ],
+ "co_obligations": [
+  "W1 outward-rounded root certification path (normalization, tiny-mass conservation, feasibility repair, error propagation)",
+  "W2 citation-closure sweep: anytime/interval/bounded value iteration x nested distance/bicausal OT, via existing OpenAlex pipeline"
+ ],
+ "fallback_branches": {
+  "limited_domain_result": "Gaussian/AR1 bias decomposition using Gunasingam-Wong oracle; activate only if main direction stops at gates 1-3 and user wants a short-horizon publishable scoped result",
+  "limitation_theorem": "activate after gate 1 or 2 failure, which itself defines the bounded-refinement mechanism class and supplies quantitative counterexamples"
+ },
+ "constraints_respected": [
+  "no hypothesis registered, no probe run, no grid opened, no solver code modified",
+  "all numbers cited from immutable cycle_2 records",
+  "failed gates must not be read as universal impossibility"
+ ]
+}
