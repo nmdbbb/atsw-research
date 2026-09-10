@@ -1,0 +1,40 @@
+{
+  "id": "relational_trial_01_20260910",
+  "date": "2026-09-10",
+  "type": "bounded_diagnostic_and_workflow_review",
+  "base_head": "3a6a1c7",
+  "scope_interpretation": "v3 used provisionally after user correction; task/guarantee choices not newly confirmed",
+  "decision": "close_literal_trie_universal_order_claim_only",
+  "trial_complete": true,
+  "scientific_objective_achieved": false,
+  "independent_review": "completed by relational_trial_review agent from analytic constraints",
+  "exact_proof_checks": "ranking inversion, scalar tie collision, ordinary vs bicausal same-tree cost",
+  "numerical_common_model_replays": 12,
+  "max_replay_error": 0,
+  "new_hypothesis_registered": false,
+  "performance_or_statistical_benchmark": false,
+  "scope_changed": false,
+  "next_decision": "Review intended relation and guarantee before another construction; do not auto-adopt deterministic top-K or reopen grid",
+  "artifacts": [
+    {
+      "path": "research/theory/relational_trial_01_packet_20260910.md",
+      "sha256": "1aca98889dee61ed893797c9c086b9045412cd230000bd60a5c5aa70650ae854"
+    },
+    {
+      "path": "research/theory/relational_trial_01_checks_20260910.json",
+      "sha256": "86b6e7acb37403bc7a501a26e9fcdf92bbf2ddf64d259ad0dcd6d7d4b54d6114"
+    },
+    {
+      "path": "research/theory/relational_trial_01_independent_review_20260910.md",
+      "sha256": "92ac8c2933b93062bdda1109226b7fc48596c3eb122dc458047283fa386049a0"
+    },
+    {
+      "path": "research/theory/relational_trial_01_verdict_20260910.md",
+      "sha256": "0b7cec67ba189f5368c95ccd9d6e851e235e53a2c0d3d96c45fc71211f073b5b"
+    },
+    {
+      "path": "tools/check_relational_trial_01.py",
+      "sha256": "99f4b58cb00a3c8cab5d5e55c213fb6ae3fbe7496e2dbc437ae07a08b1dfec39"
+    }
+  ]
+}

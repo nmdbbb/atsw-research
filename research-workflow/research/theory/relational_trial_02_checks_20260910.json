@@ -1,0 +1,138 @@
+{
+  "kind": "exact_analytic_baseline_checks",
+  "blind_preregistered": false,
+  "performance_or_statistical_evidence": false,
+  "source": "tools/check_relational_trial_02.py",
+  "source_sha256": "fd2d83944e7d5426d8220ccf0dd69e040038294220ac299f5c1c4afa58fc5adf",
+  "dependency": "tools/check_relational_trial_01.py",
+  "dependency_sha256": "99f4b58cb00a3c8cab5d5e55c213fb6ae3fbe7496e2dbc437ae07a08b1dfec39",
+  "depth_and_node_weight_formula_checks": 12,
+  "numeric_bound_checks": [
+    {
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "power": 1,
+      "lower": "1/16",
+      "exact": "3/16",
+      "upper": "5/8"
+    },
+    {
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "power": 2,
+      "lower": "1/128",
+      "exact": "5/128",
+      "upper": "55/128"
+    },
+    {
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "power": 1,
+      "lower": "1/16",
+      "exact": "1/16",
+      "upper": "3/8"
+    },
+    {
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "power": 2,
+      "lower": "1/128",
+      "exact": "1/128",
+      "upper": "9/32"
+    },
+    {
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "power": 1,
+      "lower": "1/4",
+      "exact": "1/4",
+      "upper": "3/8"
+    },
+    {
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "power": 2,
+      "lower": "1/8",
+      "exact": "1/8",
+      "upper": "9/32"
+    },
+    {
+      "pair": [
+        "B",
+        "C_low"
+      ],
+      "power": 1,
+      "lower": "1/8",
+      "exact": "1/4",
+      "upper": "5/8"
+    },
+    {
+      "pair": [
+        "B",
+        "C_low"
+      ],
+      "power": 2,
+      "lower": "1/64",
+      "exact": "1/16",
+      "upper": "55/128"
+    },
+    {
+      "pair": [
+        "B",
+        "C_high"
+      ],
+      "power": 1,
+      "lower": "5/16",
+      "exact": "7/16",
+      "upper": "5/8"
+    },
+    {
+      "pair": [
+        "B",
+        "C_high"
+      ],
+      "power": 2,
+      "lower": "17/128",
+      "exact": "29/128",
+      "upper": "55/128"
+    },
+    {
+      "pair": [
+        "C_low",
+        "C_high"
+      ],
+      "power": 1,
+      "lower": "3/16",
+      "exact": "3/16",
+      "upper": "3/8"
+    },
+    {
+      "pair": [
+        "C_low",
+        "C_high"
+      ],
+      "power": 2,
+      "lower": "9/128",
+      "exact": "9/128",
+      "upper": "9/32"
+    }
+  ],
+  "nonvacuous_separated_fixture": {
+    "near_upper": "1",
+    "far_lower": "3",
+    "certified_order": true
+  },
+  "limits": "Small explicit prefix laws only; compact k-window recursion reviewed on paper, not implemented here. No novelty, coverage or speed claim."
+}

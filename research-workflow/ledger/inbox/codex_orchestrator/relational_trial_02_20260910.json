@@ -1,0 +1,45 @@
+{
+  "id": "relational_trial_02_20260910",
+  "date": "2026-09-10",
+  "type": "conditional_order_theory_and_po_decision",
+  "user_choice": "mathematical conditional order preservation",
+  "decision": "retain_known_causal_prefix_baseline_no_candidate_promotion",
+  "scientific_objective_achieved": false,
+  "scope_lock_changed": false,
+  "hypothesis_registered": false,
+  "performance_grid_run": false,
+  "independent_review": {
+    "status": "written_review_recovered_before_usage_limit_no_final_full_packet_signoff",
+    "core_message_received": true,
+    "unreviewed_root_additions": [
+      "range/marginal bridge implementation and all final packet additions"
+    ]
+  },
+  "next_task": "bounded geometry-aware condition on divergence/reconvergence; see DECISION_ORDER_PRESERVATION_20260910.md",
+  "artifacts": [
+    {
+      "path": "DECISION_ORDER_PRESERVATION_20260910.md",
+      "sha256": "b0a63f5f04ad3a2f914b342fd0e74de9033d605536001ab1f561924055750997"
+    },
+    {
+      "path": "research/theory/relational_trial_02_packet_20260910.md",
+      "sha256": "ce0f346f2e26f39fb18658b0c192ac2c1903fe5882cb47f0927c176a3e459e09"
+    },
+    {
+      "path": "research/theory/relational_trial_02_independent_review_20260910.md",
+      "sha256": "00c7fc451f14c03c6dfc656cc696c4e751d4d33bd97462aecc97afe2de06a98a"
+    },
+    {
+      "path": "research/theory/relational_trial_02_verdict_20260910.md",
+      "sha256": "57af36bb897bd5ab0d56d0162d7e485dd7ebb9142da27af2af6dffbd68bb9020"
+    },
+    {
+      "path": "research/theory/relational_trial_02_checks_20260910.json",
+      "sha256": "16e12253a98b0311365b14fd3ae0122d87f81df2abbcea3c13c65ea64e84963d"
+    },
+    {
+      "path": "tools/check_relational_trial_02.py",
+      "sha256": "fd2d83944e7d5426d8220ccf0dd69e040038294220ac299f5c1c4afa58fc5adf"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-10",
-  "phase": "relational_scope_reframed_claim_gate_pending",
+  "phase": "conditional_order_baseline_checked_geometry_gate_pending",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -10,8 +10,8 @@
   },
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
-  "active_target": "Guaranteed ordering/top-K of trajectory sets under finite-model adapted OT; scientific weight before compute.",
-  "decision_record": "ledger/inbox/codex_orchestrator/scope_reframe_v3_20260910.json",
+  "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
+  "decision_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -26,15 +26,17 @@
     ]
   },
   "next_actions_in_order": [
-    "Read objective.json and SCOPE_REVISION_3.md",
-    "Prepare one bounded claim/prior-art/adversarial/work packet for shared-tree relational comparison",
-    "Independent review of scientific weight and guarantee before implementation",
-    "Only then freeze a probe with quantitative coverage, risk, ties, cost and budget"
+    "Read DECISION_ORDER_PRESERVATION_20260910.md and trial 02 verdict",
+    "One bounded geometry-aware prefix condition with divergence/reconvergence discriminator and input-only work table",
+    "Independent final review before any promoted implementation; prior reviewer hit usage limit after writing core review",
+    "Register a numerical probe only if the scientific-weight and nontrivial conditional-fixture gates pass"
   ],
-  "routing": "Root integrates; one independent reviewer for a concrete packet; implementer only after gate. No fixed quota.",
+  "routing": "Root PO decides from evidence; next independent review only after a concrete new packet and available capacity. No grid.",
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
   "v3_benchmarks_run": [],
   "background_research_running": false,
-  "push_authorized": true
+  "push_authorized": true,
+  "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
+  "last_completed_diagnostic": "Trial 02 rational checks and PO verdict; full final independent sign-off pending, no scientific success."
 }

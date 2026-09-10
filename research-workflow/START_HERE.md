@@ -1,3 +1,11 @@
+> Latest user selection (2026-09-10): **mathematical conditional order preservation**.
+> Read [PO decision and next task](DECISION_ORDER_PRESERVATION_20260910.md) first.
+> Top-K, complete ordering and fallback are not mandatory. Trial 01 is closed;
+> Trial 02 retains a known causal-prefix baseline and gives no candidate promotion.
+> The next task is the bounded geometry-aware condition described there, not a
+> repetition of the packet queue below. Core review was written before the reviewer
+> hit usage limit; full final sign-off on root additions remains pending.
+
 # Start here: relational scope v3
 
 Active contract: **tree-adapted-ot-relational-v3**. User authorized this reframing

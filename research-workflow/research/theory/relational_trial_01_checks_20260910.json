@@ -1,0 +1,150 @@
+{
+  "kind": "exact_arithmetic_analytic_counterexample_check",
+  "blind_preregistered": false,
+  "statistical_or_performance_evidence": false,
+  "source_sha256": "99f4b58cb00a3c8cab5d5e55c213fb6ae3fbe7496e2dbc437ae07a08b1dfec39",
+  "source": "tools/check_relational_trial_01.py",
+  "tree_edges": 7,
+  "tree_scores": {
+    "B": "2",
+    "C_low": "1",
+    "C_high": "1"
+  },
+  "adapted_absolute": {
+    "B": "3/16",
+    "C_low": "1/16",
+    "C_high": "1/4"
+  },
+  "adapted_squared": {
+    "B": "5/128",
+    "C_low": "1/128",
+    "C_high": "1/8"
+  },
+  "same_tree_cost": {
+    "ordinary": "2",
+    "bicausal": "5/2"
+  },
+  "numerical_common_model_replay": [
+    {
+      "k": 1,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "value": 0.1875,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 1,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "value": 0.0625,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 1,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "value": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 1,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "value": 0.0390625,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 1,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "value": 0.0078125,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 1,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "value": 0.125,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "value": 0.1875,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "value": 0.0625,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "absolute",
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "value": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "B"
+      ],
+      "value": 0.0390625,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "C_low"
+      ],
+      "value": 0.0078125,
+      "absolute_error": 0.0
+    },
+    {
+      "k": 2,
+      "cost": "squared",
+      "pair": [
+        "Q",
+        "C_high"
+      ],
+      "value": 0.125,
+      "absolute_error": 0.0
+    }
+  ],
+  "scope": "Unit/depth-weighted prefix trie; not all trees, learned weights or statistical ranking."
+}
