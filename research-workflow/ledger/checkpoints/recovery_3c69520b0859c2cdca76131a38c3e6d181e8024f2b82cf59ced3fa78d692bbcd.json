@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-10",
-  "phase": "reset_block_diagnostic_closed_macro_condition_review_pending",
+  "phase": "conditional_order_baseline_checked_geometry_gate_pending",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -11,7 +11,7 @@
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
   "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
-  "decision_record": "research/theory/geometry_condition_screen_01_verdict.json",
+  "decision_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -30,24 +30,20 @@
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-10",
     "reason": "User requested an evidence-based workflow improvement and persistent PO role at new-session startup.",
-    "stage": "closed",
+    "stage": "screening",
     "task_id": "geometry_condition_screen_01",
     "progress": {
-      "state": "complete",
+      "state": "in_progress",
       "constructions_started": 1,
       "substantive_repairs_used": 0,
-      "independent_reviews_assigned": 1,
+      "independent_reviews_assigned": 0,
       "evidence": [
-        "research/theory/geometry_condition_screen_01.md",
-        "research/theory/geometry_condition_screen_01_checks.json",
-        "tools/check_geometry_condition_screen_01.py",
-        "research/theory/geometry_condition_screen_01_review.md",
-        "research/theory/geometry_condition_screen_01_verdict.json"
+        "research/theory/geometry_condition_screen_01.md"
       ],
-      "note": "One construction and one independent review completed; zero repairs, zero registered probes. Do not reset/replay."
+      "note": "Testing one shared deterministic regeneration-block condition; one construction allowance reserved before execution."
     },
     "evidence_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
-    "next_action": "On continuation, PO defines a new bounded macro task on approximate future alignment from project_plan.next; do not rerun this completed exact-reset construction.",
+    "next_action": "One bounded geometry-aware condition on divergence/reconvergence, with input-only applicability and work accounting.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
@@ -61,8 +57,7 @@
       "limit_action": "Record verdict or inconclusive and checkpoint. PO may revise the next task budget only with new decision-changing evidence and written rationale.",
       "account_quota_remaining": "unknown; these are work limits, not a measured token allowance"
     },
-    "construction": "Restart prefix agreement only at certified common deterministic k-window reset states; shared block forest.",
-    "decision": "retain_scoped_reset_block_baseline_no_probe"
+    "construction": "Restart prefix agreement only at certified common deterministic k-window reset states; shared block forest."
   },
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
@@ -70,7 +65,7 @@
   "background_research_running": false,
   "push_authorized": true,
   "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
-  "last_completed_diagnostic": "geometry_condition_screen_01: four exact checks and independent version-bound proof review; retained baseline, no scientific promotion.",
+  "last_completed_diagnostic": "Trial 02 rational checks and PO verdict; full final independent sign-off pending, no scientific success.",
   "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
   "main_agent_role": "PO; delegated agents retain their assigned roles",
   "review_coverage": {
@@ -90,14 +85,7 @@
       "Full final packet sign-off after the reviewer usage-limit interruption"
     ],
     "blocks": "Promotion of pending claims or dependent implementation as independently reviewed/certified; does not block bounded screening of a new construction",
-    "next_review": "Request only decision-relevant pending claims and new changes, with exact artifact versions, when the investment gate is reached",
-    "current_diagnostic": {
-      "record": "research/theory/geometry_condition_screen_01_verdict.json",
-      "review_file": "research/theory/geometry_condition_screen_01_review.md",
-      "review_file_sha256": "166bc7758de054cb8692dad8a34f45715ef33b74c1356e6ff541ff819329747f",
-      "scope": "Reset-block finite-model bound and toy exact calculations; reviewed packet/checker/output hashes in record",
-      "pending": "Novelty, general prevalence, production performance and arithmetic not established; no investment proposed."
-    }
+    "next_review": "Request only decision-relevant pending claims and new changes, with exact artifact versions, when the investment gate is reached"
   },
   "workflow_maintenance": {
     "id": "adaptive_po_workflow_20260910",
@@ -114,7 +102,7 @@
   },
   "workflow_evolution": {
     "revision_id": "adaptive_po_20260910",
-    "state": "first_research_decision_observed_benefit_not_quantified",
+    "state": "adopted_pending_operational_evidence",
     "trigger": "User requests macro-first rearchitecture, project planning, risk handling and arbitrary quota interruption recovery.",
     "diagnosis": "Branch gates exist but architectural failure classification, rolling forecasts and safe persistent saves were incomplete.",
     "decision": "Integrate one macro review loop into WORKFLOW.md; add guarded checkpoint saving rather than a separate orchestration service.",
@@ -123,8 +111,7 @@
     "evaluate_at": "Next completed research decision or first interrupted-session recovery; record actual duplicate work, lost artifacts or wrong-branch incidents if observed.",
     "keep_if": "A decision is better supported or recovery avoids demonstrated repeated/lost work; do not infer quota savings from more records.",
     "revise_or_revert_if": "Rules cause redundant reading, unjustified blocking or architecture churn; simplify the specific rule while preserving scientific gates and historical evidence.",
-    "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured.",
-    "observed": "A positive toy/proof result was kept as baseline because significance was insufficient; no automatic grid. Next decision targets representation assumptions rather than micro-optimization. No causal quota-saving measurement."
+    "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured."
   },
   "project_plan": {
     "direction": "Substantive conditional preservation of finite-model adapted-OT ordering with cheap input-checkable conditions; shared trees remain candidates.",
@@ -133,14 +120,12 @@
       "task_ref": "workflow_route.task_id",
       "forecast": "One construction packet and finite discriminator, at most one justified repair and one investment review; limits, not measured effort.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
-      "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Completed reset condition screen; correctness/nonterminal fixture passed, central scientific-weight gate failed."
+      "elapsed_time_or_tokens_estimate": null
     },
     "next": {
-      "if_gate_passes": "For a new construction only, require a concrete claim and independent significance review before preregistering a probe.",
-      "if_structural_gate_fails": "Stop or change the proposed representation/condition; do not revive exact-reset baseline via micro-tuning.",
-      "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Seek an input-verifiable approximate future-alignment condition; compare its mathematical content and work with known geometric coupling/contraction bounds before any implementation."
+      "if_gate_passes": "Review concrete claims and relevant pending deltas; freeze and register a bounded numerical probe only after the investment gate.",
+      "if_structural_gate_fails": "PO evaluates representation/construction rearchitecture on the same target before any further micro-optimization; close only the tested construction.",
+      "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale."
     },
     "later": {
       "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
@@ -158,9 +143,9 @@
     {
       "id": "R_geometry",
       "owner": "PO",
-      "state": "exact_reset_subclass_resolved_general_geometry_open",
+      "state": "open",
       "impact": "Structural blocker for the prefix construction, not a refutation of every tree.",
-      "evidence": "research/theory/geometry_condition_screen_01_verdict.json",
+      "evidence": "research/theory/relational_trial_01_independent_review_20260910.md",
       "trigger": "Divergence/reconvergence discriminator still inverts or cannot resolve a meaningful conditional case.",
       "response": "Review representation/weight architecture before more kernel tuning; retain the same finite target.",
       "residual": "A useful cheap condition may not exist for the selected class.",
@@ -169,9 +154,9 @@
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "exact_reset_construction_closed_as_baseline",
+      "state": "open",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "research/theory/geometry_condition_screen_01_verdict.json",
+      "evidence": "research/theory/relational_trial_02_verdict_20260910.md",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
       "response": "Retain baseline; redirect to the unresolved representation-to-order bridge.",
       "residual": "Targeted source review is not an exhaustive novelty proof.",
@@ -212,13 +197,13 @@
     }
   ],
   "interruption_recovery": {
-    "state": "diagnostic_complete_checkpoint_before_git_sync",
-    "last_completed": "Version-bound independent review and final PO verdict saved.",
-    "current_intent": "Commit and push completed first screening step; no second research task started.",
-    "recover_by": "Read geometry_condition_screen_01_verdict.json and reconcile Git/remote before replay. Current task is complete; a new task requires a new ID and disposition.",
+    "state": "research_screen_in_progress",
+    "last_completed": "Read active task, decision and retained baseline; integrity pins pass.",
+    "current_intent": "Derive and check one reset-block upper bound on a finite divergence/reconvergence family; assess prior-art overlap.",
+    "recover_by": "Inspect geometry_condition_screen_01 packet and checker outputs before repeating work; construction allowance is already used.",
     "live_processes": [],
     "pending_agent_outputs": [],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "All decision-relevant derivations and limitations saved in packet/review/verdict."
+    "unsaved_reasoning": "No scientific result depends on unrecorded reasoning in this maintenance task."
   }
 }

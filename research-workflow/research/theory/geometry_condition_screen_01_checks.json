@@ -1,0 +1,80 @@
+{
+  "task_id": "geometry_condition_screen_01",
+  "kind": "finite_rational_diagnostic",
+  "preregistered": false,
+  "performance_or_coverage_claim": false,
+  "source_sha256": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46",
+  "checks": [
+    {
+      "k": 1,
+      "power": 1,
+      "reset_times": [
+        3,
+        4
+      ],
+      "exact_near": "3/16",
+      "exact_far": "1/2",
+      "marginal_near": "1/16",
+      "old_upper": "53/8",
+      "reset_upper": "1/4",
+      "far_lower": "1/2",
+      "old_resolves": false,
+      "reset_resolves": true,
+      "matched_edge_visits_old": 8,
+      "matched_edge_visits_reset": 8
+    },
+    {
+      "k": 1,
+      "power": 2,
+      "reset_times": [
+        3,
+        4
+      ],
+      "exact_near": "5/128",
+      "exact_far": "1/8",
+      "marginal_near": "1/128",
+      "old_upper": "3475/128",
+      "reset_upper": "7/128",
+      "far_lower": "1/8",
+      "old_resolves": false,
+      "reset_resolves": true,
+      "matched_edge_visits_old": 8,
+      "matched_edge_visits_reset": 8
+    },
+    {
+      "k": 2,
+      "power": 1,
+      "reset_times": [
+        4
+      ],
+      "exact_near": "3/16",
+      "exact_far": "1/2",
+      "marginal_near": "1/16",
+      "old_upper": "53/8",
+      "reset_upper": "1/4",
+      "far_lower": "1/2",
+      "old_resolves": false,
+      "reset_resolves": true,
+      "matched_edge_visits_old": 8,
+      "matched_edge_visits_reset": 8
+    },
+    {
+      "k": 2,
+      "power": 2,
+      "reset_times": [
+        4
+      ],
+      "exact_near": "5/128",
+      "exact_far": "1/8",
+      "marginal_near": "1/128",
+      "old_upper": "3475/128",
+      "reset_upper": "7/128",
+      "far_lower": "1/8",
+      "old_resolves": false,
+      "reset_resolves": true,
+      "matched_edge_visits_old": 8,
+      "matched_edge_visits_reset": 8
+    }
+  ],
+  "limits": "One chosen family, T=6, four paths per law. Full-history reference is evaluator only. No general fast implementation, novelty or population claim."
+}

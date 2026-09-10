@@ -1,0 +1,45 @@
+{
+  "id": "geometry_condition_screen_01",
+  "type": "completed_bounded_diagnostic",
+  "date": "2026-09-10",
+  "decision": "retain_scoped_reset_block_baseline_no_probe",
+  "reason": "A valid common deterministic full-state reset bound resolves a genuine conditional fixture, but supplies only elementary composition and no demonstrated substantive novelty or competitor advantage.",
+  "correctness": "Independent version-bound review accepts the stated finite-model reset bound and exact fixture values.",
+  "scientific_objective_achieved": false,
+  "hypothesis_registered": false,
+  "performance_grid_run": false,
+  "gate_results": {
+    "noncircular_lemma": true,
+    "conditional_fixture_beyond_retained_baseline": true,
+    "sparse_work_accounting": "given; no measured speed advantage",
+    "scientific_weight": "insufficient for central contribution",
+    "investment": "stop this construction as a central research candidate"
+  },
+  "checks": "One chosen T6/four-path family, k=1 and k=2, absolute and squared costs; four exact checks, not statistical replication.",
+  "artifacts": [
+    {
+      "path": "research/theory/geometry_condition_screen_01.md",
+      "sha256": "0e9aacc447056e3a302dc658e0970c09cd408cb930fdc021aee95fbcaebe6bb2"
+    },
+    {
+      "path": "research/theory/geometry_condition_screen_01_checks.json",
+      "sha256": "d269d309e3460dd72beddd20efed51acc764f276e4dc419cf3862f402392ea38"
+    },
+    {
+      "path": "tools/check_geometry_condition_screen_01.py",
+      "sha256": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46"
+    },
+    {
+      "path": "research/theory/geometry_condition_screen_01_review.md",
+      "sha256": "166bc7758de054cb8692dad8a34f45715ef33b74c1356e6ff541ff819329747f"
+    }
+  ],
+  "packet_status_note": "Packet bytes frozen before independent review; this verdict supersedes its pending-review status without changing the reviewed artifact.",
+  "review_limits": "No exhaustive external novelty audit or production arithmetic/performance certification. Earlier Trial 02 pending additions remain separately pending.",
+  "next_decision": "Macro screening of a cheap geometric condition for approximate future alignment, compared with standard coupling/contraction bounds; define a new bounded task only on continuation.",
+  "not_concluded": [
+    "No impossibility for other trees or approximate conditions",
+    "No population guarantee or useful coverage estimate",
+    "No SOTA or production speed claim"
+  ]
+}
