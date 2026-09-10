@@ -1,0 +1,73 @@
+{
+  "task_id": "signed_prefix_comparison_01",
+  "kind": "exact_constructed_diagnostic",
+  "preregistered": false,
+  "performance_or_coverage_claim": false,
+  "source_sha256": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020",
+  "results": [
+    {
+      "case": "positive",
+      "D_QA": "69/4",
+      "D_QB": "18",
+      "ordinary_QA": "35/4",
+      "ordinary_QB": "39/4",
+      "marginal_L_QA": "33/4",
+      "marginal_L_QB": "9",
+      "signed_interval": [
+        "3/4",
+        "7/4"
+      ],
+      "exact_gap": "3/4",
+      "full_markov_transport_calls": [
+        11,
+        11
+      ],
+      "signed_min_transport_calls": 1,
+      "candidate_map_edges_to_check": 12,
+      "maps_checked_on_full_laws": true
+    },
+    {
+      "case": "matched_marginals",
+      "D_QA": "1/4",
+      "D_QB": "9/4",
+      "ordinary_QA": "1/4",
+      "ordinary_QB": "5/4",
+      "marginal_L_QA": "1/4",
+      "marginal_L_QB": "1/4",
+      "signed_interval": [
+        "-2",
+        "2"
+      ],
+      "exact_gap": "2",
+      "full_markov_transport_calls": [
+        14,
+        14
+      ],
+      "signed_min_transport_calls": 1,
+      "candidate_map_edges_to_check": 12,
+      "maps_checked_on_full_laws": true
+    },
+    {
+      "case": "reversed_query_future",
+      "D_QA": "9/4",
+      "D_QB": "1/4",
+      "ordinary_QA": "5/4",
+      "ordinary_QB": "1/4",
+      "marginal_L_QA": "1/4",
+      "marginal_L_QB": "1/4",
+      "signed_interval": [
+        "-2",
+        "2"
+      ],
+      "exact_gap": "-2",
+      "full_markov_transport_calls": [
+        14,
+        14
+      ],
+      "signed_min_transport_calls": 1,
+      "candidate_map_edges_to_check": 12,
+      "maps_checked_on_full_laws": true
+    }
+  ],
+  "limits": "One analytic three-parameter family, no random experiment. Binary reference transport dispatch uses zero generic LP calls. Work counts exclude input-building and verification and are not end-to-end speed or comparison against strongest early stopping."
+}

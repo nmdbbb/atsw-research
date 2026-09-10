@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
-  "updated_on": "2026-09-11",
-  "phase": "constructive_cycle_complete_exact_subclass_baseline_retained",
+  "updated_on": "2026-09-10",
+  "phase": "signed_prefix_comparison_in_progress",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -11,7 +11,7 @@
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
   "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
-  "decision_record": "research/theory/conditional_offset_comparison_01_verdict.json",
+  "decision_record": "research/theory/order_architecture_compare_01_verdict.json",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -30,40 +30,36 @@
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-10",
     "reason": "User approved the project-level architecture comparison; completed within one packet, one repair and one review.",
-    "stage": "closed",
-    "task_id": "conditional_offset_comparison_01",
+    "stage": "construction",
+    "task_id": "signed_prefix_comparison_01",
     "progress": {
-      "state": "complete",
+      "state": "in_progress",
       "constructions_started": 1,
-      "substantive_repairs_used": 1,
+      "substantive_repairs_used": 0,
       "independent_reviews_assigned": 1,
       "evidence": [
-        "research/theory/conditional_offset_comparison_01.md",
-        "research/theory/conditional_offset_comparison_01_checks.json",
-        "research/theory/conditional_offset_comparison_01_review.md",
-        "research/theory/conditional_offset_comparison_01_verdict.json",
-        "tools/check_conditional_offset_comparison_01.py"
+        "research/theory/signed_prefix_comparison_01.md"
       ],
-      "note": "Two-construction cycle completed: signed-prefix obstruction led to conditional-offset factorization and actual k-window recognition. Final version-bound review accepted both proof and recognition; no central probe. One retained repair and one resumed reviewer assignment, counters unchanged."
+      "note": "One concrete construction and independent skeptical prior-art/theorem review reserved; no performance experiment."
     },
-    "evidence_record": "research/theory/conditional_offset_comparison_01_verdict.json",
-    "next_action": "Freeze these exact baselines. A next research construction must add a specific optimizer-aware or structured residual mechanism beyond exact common residual equality and standard independent interval bounds. Do not automatically launch another bound variant, broad survey or grid; PO must state the concrete new mechanism and decisive conditional falsifier before allocating the next task.",
+    "evidence_record": "research/theory/signed_prefix_comparison_01.md",
+    "next_action": "Derive signed-prefix comparison inequality, check an exact fresh-randomness fixture against full adapted and ordinary OT, audit nearest sensitivity results and charge topology verification before deciding probe.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
-    "review_limit": "Current conditional-offset packet/checker/output/dependencies reviewed at explicit hashes. Earlier Trial02 pending claims remain separately pending; no review inheritance.",
+    "review_limit": "Current corrected comparison independently reviewed at explicit hashes; earlier Trial 02 final root additions remain separately pending.",
     "work_budget": {
-      "purpose": "One conditional-offset theorem, one exact finite location-mixture family and assumption-breaking controls; one justified repair and one independent review. No automatic benchmark.",
+      "purpose": "One signed-prefix construction, one exact finite diagnostic family, one justified repair and one independent review; continue through integration and the resulting authorized gate.",
       "max_constructions": 1,
       "max_substantive_repairs": 1,
       "max_independent_review_assignments": 1,
-      "adversarial_family": "T3 finite centered-noise location mixtures with distinct residual laws, moment-matched candidates and reversed query conditional shifts.",
-      "limit_action": "Complete a concrete theorem/diagnostic/review and investment decision; do not expand to a generic mixture or approximate-noise theorem without new evidence.",
+      "adversarial_family": "Finite rational k=1 processes with fresh conditional randomness, invertibly relabelled candidate prefixes and identical latent suffix. Include a broken-bijection counterexample if necessary.",
+      "limit_action": "Close this construction with a concrete proof/counterexample and investment decision; do not replace it with another gap-only packet.",
       "account_quota_remaining": "unknown"
     },
-    "construction": "Condition on observable initial component; use centered conditional location laws to factor a common unknown adapted continuation cost before root OT.",
-    "decision": "retain_implemented_exact_conditional_order_baseline_no_central_probe",
-    "previous_task_disposition": "signed_prefix_comparison_01 completed and independently reviewed; verdict at research/theory/signed_prefix_comparison_01_verdict.json. Continue within user authorization using decision-changing evidence of moment blindness."
+    "construction": "Transport both candidate objectives onto the same bicausal feasible set via a verified adapted bijection; solve the signed cost difference only up to the last changed label.",
+    "decision": "pending",
+    "previous_task_disposition": "order_architecture_compare_01 closed at b76f8c5; no probe, corrected baselines retained. User explicitly requests execution beyond repeated gap diagnosis."
   },
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
@@ -71,7 +67,7 @@
   "background_research_running": false,
   "push_authorized": true,
   "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
-  "last_completed_diagnostic": "conditional_offset_comparison_01: exact common-residual order factorization plus implemented k-window recognizer, strict reversal fixtures and invalid-assumption rejection; retained limited baseline.",
+  "last_completed_diagnostic": "order_architecture_compare_01: corrected baseline comparison and exact score-order inversion reviewed; no central scientific candidate or probe.",
   "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
   "main_agent_role": "PO; delegated agents retain their assigned roles",
   "review_coverage": {
@@ -106,21 +102,6 @@
       "packet_sha256": "23a377d0e715b18de01b90405e3a9685c5433be53b8f859a4d89e7ab89f7d91e",
       "scope": "Corrected monotone and p=1 ordered-coupling arguments, uniform bound, exact finite arithmetic, signed-regret identity and scoped no-probe decision.",
       "pending": "New structural comparison lemma, adapted-specific discriminator, novelty and useful cost advantage remain open."
-    },
-    "signed_prefix": {
-      "record": "research/theory/signed_prefix_comparison_01_verdict.json",
-      "review_file": "research/theory/signed_prefix_comparison_01_review.md",
-      "review_sha256": "54ef5969da80b264b8ca34741dce926754bdc7c9fdb5a697f243dcdc091f3513",
-      "scope": "Signed bound, exact fresh-randomness examples, moment obstruction; unchanged-prefix claim only through s=1.",
-      "pending": "Conditional-offset successor not covered."
-    },
-    "conditional_offset": {
-      "record": "research/theory/conditional_offset_comparison_01_verdict.json",
-      "review_file": "research/theory/conditional_offset_comparison_01_review.md",
-      "review_sha256": "02317ca84144ac1f86d2c97707eff5e1ce0165ebafa18a28818ef1bdcc29ef1c",
-      "packet_sha256": "88ba1015a4279ede37108ef3a1a1abcd6a2fbcff27d2cd88b3879d8090c67f5a",
-      "scope": "Exact finite target theorem, supplied-model sufficient recognizer, two-component ranking, rational fixtures, rejection controls and limited investment assessment.",
-      "pending": "Central novelty, actual comparator performance, broad empirical coverage and floating arithmetic certification not established."
     }
   },
   "workflow_maintenance": {
@@ -138,17 +119,17 @@
   },
   "workflow_evolution": {
     "revision_id": "adaptive_po_20260910",
-    "state": "continuation_fix_exercised_on_two_constructions",
+    "state": "continuation_failure_repaired_evaluation_in_progress",
     "trigger": "User identified repeated gap-only conclusions and premature stops after continue.",
     "diagnosis": "PO treated per-task packet budget and checkpoint as turn-ending; workflow retained a historical reset next-task sentence.",
     "decision": "Remove stale queue pointer; require execution across internal checkpoints within authorization and a concrete construction after gap diagnosis.",
     "prior_version_commit": "307d833",
     "expected_effect": "Next research decision identifies the bottleneck level, avoids unrelated micro-work and resumes without resetting task allowance.",
-    "evaluate_at": "Next continuation should use these concrete outcomes without repeating closed screens. Observe whether checkpoint-as-stop or old queue recurrence returns; no quantified token-saving claim.",
+    "evaluate_at": "Next completed research decision or first interrupted-session recovery; record actual duplicate work, lost artifacts or wrong-branch incidents if observed.",
     "keep_if": "A decision is better supported or recovery avoids demonstrated repeated/lost work; do not infer quota savings from more records.",
     "revise_or_revert_if": "Rules cause redundant reading, unjustified blocking or architecture churn; simplify the specific rule while preserving scientific gates and historical evidence.",
     "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured.",
-    "observed": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle."
+    "observed": "Correction is now being exercised on signed_prefix_comparison_01; no claimed benefit before its result."
   },
   "project_plan": {
     "direction": "Substantive conditional preservation of finite-model adapted-OT ordering with cheap input-checkable conditions; shared trees remain candidates.",
@@ -158,14 +139,14 @@
       "forecast": "One construction packet and finite discriminator, at most one justified repair and one investment review; limits, not measured effort.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Completed two substantive constructions, not another gap-only screen. Second gives exact conditional order with supplied-model recognition; current investment stops at a limited implemented baseline."
+      "outcome": "Executing a concrete signed-cost construction after architecture comparison; completion of checkpoint is not a turn stop."
     },
     "next": {
-      "if_gate_passes": "Fund a separately specified substantive mechanism and frozen decisive probe after independent review; no blanket grid authorization.",
-      "if_structural_gate_fails": "Close that specific construction with evidence, retain existing exact baseline; no repeated gap-only or exact-equality variants.",
+      "if_gate_passes": "For a new construction only, require a concrete claim and independent significance review before preregistering a probe.",
+      "if_structural_gate_fails": "Close that construction or change its structural comparison mechanism; no further budget solely to refine an elementary envelope.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Freeze these exact baselines. A next research construction must add a specific optimizer-aware or structured residual mechanism beyond exact common residual equality and standard independent interval bounds. Do not automatically launch another bound variant, broad survey or grid; PO must state the concrete new mechanism and decisive conditional falsifier before allocating the next task.",
-      "assessment": "research/theory/conditional_offset_comparison_01_verdict.json"
+      "decision": "If a valid truncated comparison beats corrected baseline information with plausible charged work, assess probe; if it is only a generic sensitivity baseline or the matched solver resolves equally cheaply, stop investment with evidence.",
+      "assessment": "research/theory/order_architecture_compare_01_verdict.json"
     },
     "later": {
       "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
@@ -183,34 +164,34 @@
     {
       "id": "R_geometry",
       "owner": "PO",
-      "state": "exact_common_residual_subclass_resolved_broader_conditions_open",
+      "state": "contractive_score_inversion_demonstrated_general_comparison_open",
       "impact": "Structural blocker for the prefix construction, not a refutation of every tree.",
-      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
+      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
       "trigger": "Divergence/reconvergence discriminator still inverts or cannot resolve a meaningful conditional case.",
-      "response": "Use accepted exact subclass as baseline and retain conditional information in any extension; raw signed minimization is blind on matched moments.",
-      "residual": "Exact residual equality is restrictive; useful approximate extensions remain unproved.",
+      "response": "Review representation/weight architecture before more kernel tuning; retain the same finite target.",
+      "residual": "Contractivity alone does not justify KR score ordering; one toy failure does not exclude refined joint conditions.",
       "blocks": "Prototype investment without the geometry gate."
     },
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "implemented_exact_result_insufficient_central_weight",
+      "state": "baseline_architectures_screened_central_claim_open",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
+      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
-      "response": "Do not benchmark known-ingredient exact factorization solely to create significance; require a concrete additional mechanism.",
-      "residual": "Targeted prior-art assessment is not exhaustive novelty adjudication.",
+      "response": "Require a noncircular comparative mechanism beyond known coupling optimality and separate intervals before implementation.",
+      "residual": "Targeted source review is not an exhaustive novelty proof.",
       "blocks": "Paper-level claim and substantial implementation."
     },
     {
       "id": "R_cost",
       "owner": "PO",
-      "state": "recognizer_path_expansion_removed_total_advantage_unmeasured",
+      "state": "open",
       "impact": "Applicability/full-prefix expansion or exact reference work can consume the entire saving.",
-      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
+      "evidence": "research/theory/relational_trial_02_independent_review_20260910.md",
       "trigger": "Condition needs all path pairs/full continuation or weights cannot aggregate on the supplied representation.",
-      "response": "Charge K times reachable edges, normalized-window keys/sorting, root OT, model construction and exact arithmetic; strongest eligible early stopping remains unmeasured.",
-      "residual": "Many initial components, late rejection or large rational operands can consume saving.",
+      "response": "Charge all work; change representation or stop construction. Pilot a representative unit before large-run forecasts.",
+      "residual": "Small-case work may not extrapolate to long horizons.",
       "blocks": "Performance claim and large-run budget."
     },
     {
@@ -227,24 +208,26 @@
     {
       "id": "R_interruption",
       "owner": "PO",
-      "state": "review_refill_resumed_existing_assignment",
+      "state": "actual_review_interruption_reconciled",
       "impact": "Quota interruption can lose unwritten reasoning or leave execution outcome unknown.",
-      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
+      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
       "trigger": "Tool/agent response absent, malformed/stale checkpoint or uncertain running process.",
       "response": "Save intent and partial files early; use atomic guarded save; reconcile disk/process/Git before replay.",
-      "residual": "Saved artifacts survived these interruptions; unwritten work and simultaneous writers remain unprotected.",
+      "residual": "Written review survived this interruption; unwritten reasoning, simultaneous writers and storage failure remain unprotected.",
       "blocks": "Blind replay of expensive work or external side effects."
     }
   ],
   "interruption_recovery": {
-    "state": "cycle_completed_ready_for_sync",
-    "last_completed": "research/theory/conditional_offset_comparison_01_verdict.json",
-    "current_intent": "Completed research cycle; verify artifacts and synchronize authorized commit. No research process remains active.",
-    "recover_by": "Read actual Git state and the two verdicts; do not repeat accepted checks or resume the closed signed-prefix construction. New research task requires a concrete evidence-based construction within existing scope.",
+    "state": "construction_in_progress",
+    "last_completed": "research/theory/order_architecture_compare_01_verdict.json",
+    "current_intent": "Derive signed-prefix comparison inequality, check an exact fresh-randomness fixture against full adapted and ordinary OT, audit nearest sensitivity results and charge topology verification before deciding probe.",
+    "recover_by": "Read signed_prefix_comparison_01 packet and actual artifacts before replay; this task and one review are already reserved.",
     "live_processes": [],
-    "pending_agent_outputs": [],
+    "pending_agent_outputs": [
+      "research/theory/signed_prefix_comparison_01_review.md"
+    ],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "All results, failed-control repair, final reviews, model recognizer and PO investment decisions saved."
+    "unsaved_reasoning": "Intent and construction reserved; derivation and diagnostic will be saved incrementally."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

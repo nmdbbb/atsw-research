@@ -1,0 +1,62 @@
+{
+  "id": "conditional_offset_comparison_01",
+  "date": "2026-09-11",
+  "type": "completed_constructive_exact_subclass_screen",
+  "decision": "retain_implemented_exact_conditional_order_baseline_no_central_probe",
+  "scientific_objective_achieved": false,
+  "hypothesis_registered": false,
+  "benchmark_run": false,
+  "result": "On verified observable-component location mixtures with common centered candidate residual law, D(Q,X)=common residual AW2^2+OT of conditional mean paths. Exact order avoids the common unknown residual solve. A k-window kernel recognizer verifies sufficient conditions without path enumeration.",
+  "independent_review": "Completed version-bound proof, implementation and diagnostic review; model-level recognition delta accepted. The earlier missing-recognizer objection is closed.",
+  "artifacts": [
+    {
+      "path": "research/theory/conditional_offset_comparison_01.md",
+      "sha256": "88ba1015a4279ede37108ef3a1a1abcd6a2fbcff27d2cd88b3879d8090c67f5a"
+    },
+    {
+      "path": "research/theory/conditional_offset_comparison_01_checks.json",
+      "sha256": "cbad3d06f3471656dbc308b9c8036155e7550bd49cc0f76c98490ff63093200c"
+    },
+    {
+      "path": "tools/check_conditional_offset_comparison_01.py",
+      "sha256": "7c9fd87dcab12dbf465a9a280390bc6146c8ab260573bda8a682c9fd7ab61acf"
+    },
+    {
+      "path": "tools/check_signed_prefix_comparison_01.py",
+      "sha256": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020"
+    },
+    {
+      "path": "tools/check_geometry_condition_screen_01.py",
+      "sha256": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46"
+    },
+    {
+      "path": "research/theory/conditional_offset_comparison_01_review.md",
+      "sha256": "02317ca84144ac1f86d2c97707eff5e1ce0165ebafa18a28818ef1bdcc29ef1c"
+    }
+  ],
+  "gate_results": {
+    "finite_target_guarantee": "accepted on declared exact subclass; no population or arbitrary-input guarantee",
+    "conditional_discriminator": "matched-marginal candidates with reversed conditional query shifts; target gap +2/-2; ordinary versus adapted gap 20000",
+    "recognition": "implemented on valid exact k-window models, checked k1/k2 and rejection controls; no path enumeration inside recognizer",
+    "implementation_limits": "two positive initial components per law for implemented root ranking; theorem/recognizer admit more but root solver does not",
+    "work": "2 root binary transports and 72 propagation/signature edge visits on each fixture versus 42 full Markov reference transports; sorting/state work/model construction/rational bit costs additional",
+    "scientific_weight": "limited exact baseline; short derivation from established centering and bicausal DP plus conditional propagation; no independently substantiated central novelty",
+    "matched_performance": "unmeasured; no hypothetical comparator parity claimed",
+    "investment": "do not fund a performance/coverage grid of this exact-equality construction solely to manufacture significance"
+  },
+  "review_limitations": [
+    "Validity/normalization/window consistency of supplied model is a precondition, not validated for arbitrary dictionaries",
+    "Exact residual equality may be rare in independent reconstructions",
+    "No broad robustness, numerical floating certificate, useful empirical coverage or measured speed claim",
+    "Comparator using symbolic cancellation is conceptual, not an identified eligible implementation"
+  ],
+  "packet_status_note": "Final reviewed packet bytes remain fixed; this verdict supersedes pending-review/provisional wording.",
+  "cycle_result": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle.",
+  "process_limits": "One construction and one independent assignment in each task; signed-prefix used no substantive repair; conditional-offset used one fixture repair preserved as a control. Quota interruptions resumed existing review, not a replacement team.",
+  "next_investment_decision": "Freeze these exact baselines. A next research construction must add a specific optimizer-aware or structured residual mechanism beyond exact common residual equality and standard independent interval bounds. Do not automatically launch another bound variant, broad survey or grid; PO must state the concrete new mechanism and decisive conditional falsifier before allocating the next task.",
+  "not_concluded": [
+    "No completed v3 scientific objective",
+    "No SOTA or novel paper theorem claimed",
+    "No impossibility for approximate residual or other relational mechanisms"
+  ]
+}

@@ -125,7 +125,19 @@ Với hướng hiện tại, cổng sang prototype cần một lemma không vòn
 fixture có phụ thuộc điều kiện thực sự vượt baseline agreement + marginal/range,
 và bảng công việc tính cả kiểm điều kiện. Đây là điều kiện cấp ngân sách probe,
 chưa chứng minh novelty hay hoàn thành mục tiêu. Trial 02 giữ làm baseline;
-task kế tiếp kiểm trường hợp chuỗi tách rồi gần lại như PO decision đã ghi.
+task kế tiếp lấy từ checkpoint hiện hành, không từ hàng đợi lịch sử trong workflow.
+
+**Tiếp tục qua mốc nội bộ:** khi user yêu cầu chạy/tiếp tục, checkpoint, commit,
+review xong hoặc đóng một construction là mốc lưu trạng thái, không tự là điểm
+kết thúc lượt. PO tích hợp verdict rồi thực hiện bước phụ thuộc đã được cấp quyền
+nếu có căn cứ cụ thể. Giới hạn một packet áp vào task đó, không áp vào toàn lượt;
+chuyển task phải ghi disposition, lý do đầu tư và budget mới, không reset task cũ.
+Không dùng quy tắc này để mở biến thể vô hạn: sau một lần xác định nghẽn, bước
+nghiên cứu kế tiếp phải thử construction/phát biểu hoặc phép bác bỏ cụ thể, không
+chỉ viết lại cùng câu hỏi. Dừng khi có kết quả đáp ứng yêu cầu đang giao, cần lựa
+chọn user thật, gặp giới hạn tài nguyên/thực thi, hoặc không còn bước được biện
+minh sau khi đã thực hiện phép kiểm quyết định. Nêu rõ lý do dừng; giữ nguyên
+cổng correctness, novelty và preregistration trước những công việc phụ thuộc.
 
 ## Routing và ghi nhận trong cùng workflow
 

@@ -1,0 +1,35 @@
+{
+  "id": "signed_prefix_comparison_01",
+  "decision": "close_as_central_candidate_retain_auxiliary_bound_and_scoped_obstruction",
+  "type": "completed_exact_construction_screen",
+  "scientific_objective_achieved": false,
+  "probe_registered": false,
+  "artifacts": [
+    {
+      "path": "research/theory/signed_prefix_comparison_01.md",
+      "sha256": "aa42b8838ddd0b97f17fe5693d1cd41da2648c1ac9b353d70761545ec1a0eb79"
+    },
+    {
+      "path": "research/theory/signed_prefix_comparison_01_checks.json",
+      "sha256": "eac80c8450d4d6e899e9f122d3ebc24bc81c53a1632d3b02a88b2e6803a9f131"
+    },
+    {
+      "path": "research/theory/signed_prefix_comparison_01_review.md",
+      "sha256": "54ef5969da80b264b8ca34741dce926754bdc7c9fdb5a697f243dcdc091f3513"
+    },
+    {
+      "path": "tools/check_signed_prefix_comparison_01.py",
+      "sha256": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020"
+    }
+  ],
+  "result": "Correct signed-prefix bound; nonvacuous fresh-randomness example; theorem says interval contains zero whenever candidate timewise first two moments match under squared costs; true order reverses in explicit matched-marginal examples.",
+  "review_qualification": "Unchanged prefix laws means prefixes through s=1, not all longer prefixes. Final packet header pending review is superseded here.",
+  "investment": "Do not benchmark this unconditioned signed construction. It is a known sensitivity baseline with a proved blind class, not a paper-level negative result.",
+  "work": "1 lower signed transport versus 22 full Markov reference calls on positive fixture, excluding map/input checks; no strongest early-stopping or speed claim.",
+  "next_action": "Test conditional common-offset factorization before component optimization; it uses conditional future information discarded by raw signed minimization.",
+  "progress": {
+    "constructions_started": 1,
+    "substantive_repairs_used": 0,
+    "independent_reviews_assigned": 1
+  }
+}

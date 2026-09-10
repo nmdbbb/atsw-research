@@ -1,0 +1,93 @@
+{
+  "task_id": "conditional_offset_comparison_01",
+  "kind": "exact_constructed_diagnostic",
+  "preregistered": false,
+  "source_sha256": "7c9fd87dcab12dbf465a9a280390bc6146c8ab260573bda8a682c9fd7ab61acf",
+  "reference_dependency_sha256": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020",
+  "results": [
+    {
+      "query_shift_sign": 1,
+      "D_QA": "160001/4",
+      "D_QB": "160009/4",
+      "ordinary_QA": "80001/4",
+      "ordinary_QB": "80009/4",
+      "component_scores": [
+        "1/4",
+        "9/4"
+      ],
+      "exact_gap": "2",
+      "common_residual_reference_only": "40000",
+      "candidate_residual_transport_calls": 0,
+      "candidate_root_transport_calls": 2,
+      "supplied_path_coordinate_count": 72,
+      "model_recognition": [
+        {
+          "k": 1,
+          "gap": "2",
+          "propagation_and_signature_edge_visits": 72,
+          "path_enumeration_inside_recognizer": false
+        },
+        {
+          "k": 2,
+          "gap": "2",
+          "propagation_and_signature_edge_visits": 72,
+          "path_enumeration_inside_recognizer": false
+        }
+      ],
+      "full_markov_transport_calls": [
+        21,
+        21
+      ]
+    },
+    {
+      "query_shift_sign": -1,
+      "D_QA": "160009/4",
+      "D_QB": "160001/4",
+      "ordinary_QA": "80009/4",
+      "ordinary_QB": "80001/4",
+      "component_scores": [
+        "9/4",
+        "1/4"
+      ],
+      "exact_gap": "-2",
+      "common_residual_reference_only": "40000",
+      "candidate_residual_transport_calls": 0,
+      "candidate_root_transport_calls": 2,
+      "supplied_path_coordinate_count": 72,
+      "model_recognition": [
+        {
+          "k": 1,
+          "gap": "-2",
+          "propagation_and_signature_edge_visits": 72,
+          "path_enumeration_inside_recognizer": false
+        },
+        {
+          "k": 2,
+          "gap": "-2",
+          "propagation_and_signature_edge_visits": 72,
+          "path_enumeration_inside_recognizer": false
+        }
+      ],
+      "full_markov_transport_calls": [
+        21,
+        21
+      ]
+    }
+  ],
+  "assumption_controls": {
+    "equal_marginals_unequal_residual_law": "rejected; ignoring it reverses ordering",
+    "bad_B_exact_value": "9/4",
+    "component_dependent_residual": "rejected by path and k=1,2 model checks",
+    "unequal_initial_query_weights_gap": "1"
+  },
+  "initial_fixture_control": {
+    "late_noise_width": 1,
+    "adapted_equals_ordinary": [
+      "160001/4",
+      "160009/4"
+    ],
+    "repair": "Width 1 failed the intended adapted-specific evidence gate; width 4 introduces overlapping final supports. Both remain exact constructed cases, no blind confirmation."
+  },
+  "model_builder_dependency_sha256": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46",
+  "limits": "Model recognizer propagates conditional masses and compares centered k-window kernels without reconstructing paths. Fixture model construction, reference reconstruction and exact OT are diagnostic oracles, not free algorithm inputs. No empirical coverage, measured speed or novelty claim; validation on this finite family is not broad implementation certification."
+}
