@@ -1,0 +1,77 @@
+{
+  "id": "forced_transport_gate_20260910",
+  "date": "2026-09-10",
+  "purpose": "Test whether obvious forced couplings explain lower slack, then falsify avoidable forced-node propagation before building a solver.",
+  "prior_decision": "ledger/inbox/codex_orchestrator/domain_integration_gate_20260910.json",
+  "decision": "retain_forced_lower_reference_defer_expanded_solver",
+  "scientific_objective_achieved": false,
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Current naive forced-lower performance implementation and unsupported broad promotion of per-entry forced-frontier expansion only; not a universal impossibility theorem.",
+  "evidence": {
+    "screen_seconds": 1.6327665999997407,
+    "census_seconds": 0.21014589999685995,
+    "B16_reference_deficit_removed": [
+      0.21834377208597305,
+      0.34283689644837056
+    ],
+    "posthoc_root_widths": [
+      0.13733014270591296,
+      0.3141639146116137
+    ],
+    "LP_calls_old": [
+      76,
+      31
+    ],
+    "LP_calls_augmented": [
+      82,
+      70
+    ],
+    "direct_dynamic_incidences": [
+      646,
+      2730
+    ],
+    "compiled_demanded_incidences": [
+      709,
+      2080
+    ],
+    "limits": "T5/n128/one seed/shift/two selected cases; no outward certificate, no speed or novelty claim; combination with improved upper is posthoc."
+  },
+  "validation": {
+    "unit_tests_passed": 79,
+    "hand_DAG_checks_passed": 2,
+    "legacy_pins": {
+      "matching": 24,
+      "historical": 1
+    },
+    "independent_review": "Theorem, original-root induction and forced-lower implementation reviewed independently; census draft independently reviewed/executed by root."
+  },
+  "routing": {
+    "context": "fresh short packets, no full transcript fork",
+    "reviewer": {
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "status": "completed"
+    },
+    "census_drafter": {
+      "model": "gpt-5.6-sol",
+      "reasoning": "high",
+      "status": "interrupted_after_wait_source_recovered_root_completed"
+    },
+    "root": "bounded screen, integration, final census review/fixes/execution",
+    "measured_token_savings": null
+  },
+  "reopen_gate": "Require measured material dynamic-propagation cost on an actual repeated-update workload after static caching, include coefficient construction, and an independently justified root-gap improvement route.",
+  "automatic_large_grid_authorized": false,
+  "artifact_sha256": {
+    "adapters/forced_transport_lower.py": "4ffb94de228d099e0386813c28efcabad11b9698dfef72b14459eaad76023429",
+    "tests/test_forced_transport_lower.py": "444d0f2699130789aea0d40f54edbfbaec77ae6c3c5448d18e7178d3eb3ac7eb",
+    "probes/forced_transport_screen.py": "d28445b683f8c99ecf3cef94e2b7baa7830401093ee83fd41c397f90c240c211",
+    "runs/cycle_2/forced_transport_screen/manifest.json": "5547178d9b935886ccff13b263897661abe7d1c4fc0bd9ffc157c94796215d83",
+    "runs/cycle_2/forced_transport_screen/results.json": "1c09cff46a6b01602c623558fa250c0acf5a0b7489ca26d2c3b87147696bf79c",
+    "probes/forced_frontier_census.py": "fd54f4447d38f59d3aaed25e8d8cbef5cee3bf3267686957098e205de3d9cb46",
+    "runs/cycle_2/forced_frontier_census/manifest.json": "64a0f73735da0a27ec8fa7ca8b175e699163b344fc4397eff4b9447b97f2edb3",
+    "runs/cycle_2/forced_frontier_census/results.json": "05486d7e29901e341dc2eabc56b6d9817030c61a3879b8eca1a77f3ff95770c9",
+    "research/theory/forced_transport_review_20260910.md": "ee2458d85b72459e2037edd225bdd7b6003518bb18d728cdaa661a5691aab9cb",
+    "research/theory/forced_transport_decision_20260910.md": "7244199cae16b3c8491a8db1e6da052490f6f7d2d3ec49405845f88db2152558"
+  }
+}

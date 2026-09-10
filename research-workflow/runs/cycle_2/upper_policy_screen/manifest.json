@@ -1,0 +1,48 @@
+{
+  "schema": "upper-policy-improvement-screen-v1",
+  "frozen_before_execution": true,
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "budgets": [
+    4,
+    16
+  ],
+  "selection": "posthoc representative historical cases; exploratory not confirmation",
+  "deadline_seconds": 60,
+  "deadline_rule": "cooperative checks; finish current native operation then stop, never downsize",
+  "method": "independent single backward pass from stored SVD policy; initial occupation times local policy-minus-free-lower score; positive scores only; one extra root solve per budget; full policy reevaluation",
+  "checks": "marginals <=1e-8; pointwise and root upper nonincrease <=1e-8; forward objective equals backward root <=1e-8",
+  "reference": "historical float64 DP reused only after manifest/probe/generator/model identity checks; reference never used in selection",
+  "decision": "Measure whether few local solves repair upper barrier; no lower-cache work authorized by a mere upper decrease",
+  "nonclaims": [
+    "no root certificate",
+    "no speed or SOTA claim",
+    "no final-grid evidence",
+    "local free_lower uses U_next and is not a continuation lower certificate"
+  ],
+  "hashes": {
+    "probes/upper_policy_improvement_screen.py": "90add5c451af32fbf2a9fd909928a3565be18e8fe1766341daf816aac95f9caf",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "adapters/policy_pool_candidate.py": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf"
+  }
+}

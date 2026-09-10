@@ -1,0 +1,51 @@
+{
+  "schema": "sparse-same-policy-screen-v1",
+  "frozen_before_execution": true,
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "budget_seconds": 60,
+  "budget_rule": "cooperative check before each layer and each 128 pairs; finish current native operation; no downsize or rerun",
+  "dense_repeats": 1,
+  "sparse_repeats": 2,
+  "shared_dense_matrix_verification_repeats": 1,
+  "timing": "fresh same-run dense evaluate_policy; full sparse backward/root construction includes stage costs, original _orders, support preparation and coupling evaluation; excludes model generation, imports and independent verification",
+  "verification": "all tables/root on SAME prescribed dense continuation matrix and global orders; also two autonomous sparse backwards; at most six evenly spaced plans per layer plus root; independent tiny-flow/tie/nonDirac/normalization fixtures",
+  "gates": {
+    "value_absolute_tolerance": 1e-10,
+    "marginal_absolute_tolerance": 2e-12,
+    "same_orientation_plan_tolerance": 2e-12
+  },
+  "decision": "integrate only as development baseline if numerical equivalence and cheaper implementation supported; otherwise retain unintegrated",
+  "nonclaims": [
+    "not bytewise-identical policy",
+    "not full end-to-end certificate timing",
+    "not new tree mechanism",
+    "not speed/SOTA/held-out claim"
+  ],
+  "hashes": {
+    "probes/sparse_policy_equivalence_screen.py": "8256a03c789a1eb69ed7227c2ac662a690b05868a521cebdba5ad2ce04023cb3",
+    "adapters/sparse_ordered_policy.py": "6d2485ca34392dcc4dec205ed4c3020895b4cee7b17461ed9a8922d2d06aa267",
+    "adapters/policy_pool_candidate.py": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "runs/cycle_2/upper_policy_screen/manifest.json": "6c628f4bf709f785cf9ff0984a62963bacb37795fb60119ea6682190dab35c96",
+    "runs/cycle_2/upper_policy_screen/results.json": "f22aff461d9c63efc7e425fe576a00e1f7aeb0f160ccfc7995a97e950baf84cf"
+  }
+}

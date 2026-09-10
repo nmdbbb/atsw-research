@@ -1,0 +1,199 @@
+{
+  "id": "policy_upper_gap_audit_20260910",
+  "scope": "posthoc_existing_T5_128path_smoke_only_no_new_solves",
+  "source": "runs/cycle_2/policy_pool_common_smoke.json",
+  "source_sha256": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf",
+  "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+  "reference_kind": "float64_DP_not_outward_rounded",
+  "formula": "For fixed U and valid 0<L<=V, (U-L)/L >= (U-V)/V",
+  "epsilon": 0.005,
+  "cases": 16,
+  "fixed_upper_exceeds_target_cases": 16,
+  "floor_min": 0.010874511526566814,
+  "floor_median": 0.18823666519188392,
+  "floor_max": 0.4160049316696651,
+  "decision": "Defer lower-only reuse engineering on this incumbent; a feasible-upper improvement route is required first.",
+  "limits": [
+    "No general impossibility result for interval reuse or other policies.",
+    "The floor treats the numerical reference as V; it is not a rigorous numerical enclosure.",
+    "No hypothesis registration, new performance run or SOTA claim."
+  ],
+  "rows": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared",
+      "reference": 3.836142672185908,
+      "fixed_upper": 3.8778588498921485,
+      "conditional_relative_width_floor": 0.010874511526566814,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.1535806629989765
+    },
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "absolute",
+      "reference": 2.998445337330133,
+      "fixed_upper": 3.1005229376287815,
+      "conditional_relative_width_floor": 0.03404350882365599,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.05645478474175426
+    },
+    {
+      "process": "ar1",
+      "k": 2,
+      "delta": 0.5,
+      "cost": "squared",
+      "reference": 6.961485719277627,
+      "fixed_upper": 7.8141511821760234,
+      "conditional_relative_width_floor": 0.12248325964918802,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.5553943897150738
+    },
+    {
+      "process": "ar1",
+      "k": 2,
+      "delta": 0.5,
+      "cost": "absolute",
+      "reference": 4.161396352877261,
+      "fixed_upper": 4.500353419537266,
+      "conditional_relative_width_floor": 0.08145272353729165,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.24394622752552828
+    },
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.18,
+      "cost": "squared",
+      "reference": 5.05708204255971,
+      "fixed_upper": 6.102704966433635,
+      "conditional_relative_width_floor": 0.20676408155416612,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.4619773138624808
+    },
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.18,
+      "cost": "absolute",
+      "reference": 3.55215424258324,
+      "fixed_upper": 4.071245516437428,
+      "conditional_relative_width_floor": 0.14613421557862544,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.22965641064840883
+    },
+    {
+      "process": "ar1",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "squared",
+      "reference": 6.947079954241071,
+      "fixed_upper": 9.525617327008927,
+      "conditional_relative_width_floor": 0.3711685182482612,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.7896504637201759
+    },
+    {
+      "process": "ar1",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute",
+      "reference": 4.311640463789682,
+      "fixed_upper": 5.148594233630952,
+      "conditional_relative_width_floor": 0.19411492606357914,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.3141470050362059
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared",
+      "reference": 3.1504338713052067,
+      "fixed_upper": 3.9388174002030123,
+      "conditional_relative_width_floor": 0.2502460172481522,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.12131195866201609
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "absolute",
+      "reference": 2.356934631862426,
+      "fixed_upper": 3.1346297386761575,
+      "conditional_relative_width_floor": 0.3299604054776881,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.04239984910420337
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.5,
+      "cost": "squared",
+      "reference": 4.507639556255143,
+      "fixed_upper": 5.256831967706541,
+      "conditional_relative_width_floor": 0.16620503971125242,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.40078780705696043
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.5,
+      "cost": "absolute",
+      "reference": 3.102748247928945,
+      "fixed_upper": 3.5652078019278886,
+      "conditional_relative_width_floor": 0.14904836520579165,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.18822582730034804
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.18,
+      "cost": "squared",
+      "reference": 3.465105420327719,
+      "fixed_upper": 4.906606363939338,
+      "conditional_relative_width_floor": 0.4160049316696651,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.44651737648483253
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 1,
+      "delta": 0.18,
+      "cost": "absolute",
+      "reference": 2.808965784863472,
+      "fixed_upper": 3.4921353604779175,
+      "conditional_relative_width_floor": 0.24321035852262984,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.20683121866365867
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "squared",
+      "reference": 4.648467705263486,
+      "fixed_upper": 6.1696242470810425,
+      "conditional_relative_width_floor": 0.3272382725376671,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.7185260708973074
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute",
+      "reference": 3.451266103254384,
+      "fixed_upper": 4.080633482728209,
+      "conditional_relative_width_floor": 0.18235840432018868,
+      "exceeds_target": true,
+      "last_lower_relative_deficit": 0.30381418156218515
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sparse_policy_baseline_gate_20260910",
+  "scientific_objective_achieved": false,
+  "decision": "accept_sparse_kernel_as_numerical_development_baseline_end_microoptimization_cycle",
+  "validation": {
+    "tests_passed": 67,
+    "screen_status": "completed_numerical_equivalence_only",
+    "scope": "two selected T5 n128 seed1000 cases; one dense and two sparse timings; numerical full recurrence and fixed-matrix equivalence",
+    "formal_or_outward_certificate": false
+  },
+  "results": [
+    {
+      "case": {
+        "process": "ar1",
+        "k": 1,
+        "delta": 0.5,
+        "cost": "squared"
+      },
+      "dense_seconds": 0.057648099998914404,
+      "sparse_seconds": [
+        0.01942879999842262,
+        0.0199560000000929
+      ],
+      "ratios": [
+        2.9671467102237257,
+        2.888760272531872
+      ],
+      "root_absolute_error_max": 4.440892098500626e-16
+    },
+    {
+      "case": {
+        "process": "second_order_nonmonotone",
+        "k": 2,
+        "delta": 0.18,
+        "cost": "absolute"
+      },
+      "dense_seconds": 13.602814699999726,
+      "sparse_seconds": [
+        1.9062499000028765,
+        1.7805446999991545
+      ],
+      "ratios": [
+        7.135903167774172,
+        7.639692898474374
+      ],
+      "root_absolute_error_max": 0.0
+    }
+  ],
+  "remaining_gap": {
+    "kind": "posthoc numerical combination of old B16 lower and new B16 upper, not a timed combined solver or root certificate",
+    "coarse_relative_width": 0.18238880765820642,
+    "fine_relative_width": 0.5107804154076178
+  },
+  "next_step_filter": "No more kernel tuning or budget escalation without a root-gap prediction. Next bounded theory/diagnostic must address lower tightness and fine-case policy quality; identify omitted/shared computation beyond standard policy iteration before a new mechanism claim.",
+  "restrictions": [
+    "Historical adapters and frozen manifests remain unchanged.",
+    "Initializer timings are not end-to-end certificate speedups or SOTA.",
+    "No reopening H_D02 or lower-only interval cache on the old fixed-policy premise.",
+    "No large grid or scientific completion authorized by this result."
+  ],
+  "evidence": [
+    {
+      "path": "adapters/sparse_ordered_policy.py",
+      "sha256": "6d2485ca34392dcc4dec205ed4c3020895b4cee7b17461ed9a8922d2d06aa267"
+    },
+    {
+      "path": "tests/test_sparse_ordered_policy.py",
+      "sha256": "09815abfba62281c71b8cb580fa48a90cb9cba85099e016b7d9de6c53fa99493"
+    },
+    {
+      "path": "probes/sparse_policy_equivalence_screen.py",
+      "sha256": "8256a03c789a1eb69ed7227c2ac662a690b05868a521cebdba5ad2ce04023cb3"
+    },
+    {
+      "path": "runs/cycle_2/sparse_policy_screen/manifest.json",
+      "sha256": "07d739f2394a59cce9db22c4fe22f9905e6b06c6a29c0b88887723494e80fc07"
+    },
+    {
+      "path": "runs/cycle_2/sparse_policy_screen/results.json",
+      "sha256": "72dc74706a8945e2ee9a3f73c22b246a7d1e18c29458ba87681e42322da5eeb2"
+    },
+    {
+      "path": "research/theory/sparse_policy_verification_20260910.md",
+      "sha256": "dd2225297006e783d1293723d1a41fc8205431a9cfb402f3bb8f58b5296ef3dd"
+    }
+  ]
+}

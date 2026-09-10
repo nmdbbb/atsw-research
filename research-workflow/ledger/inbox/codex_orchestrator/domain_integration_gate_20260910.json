@@ -1,0 +1,49 @@
+{
+  "id": "domain_integration_gate_20260910",
+  "date": "2026-09-10",
+  "purpose": "Use imported domain knowledge to resolve estimand choice before further solver development.",
+  "imported_head": "790b55561f56c562322e30beae05be1ef510a7ac",
+  "prior_decision": "ledger/inbox/codex_orchestrator/sparse_policy_baseline_gate_20260910.json",
+  "decision": "retain_finite_solver_estimand_add_separate_population_audit",
+  "scientific_objective_achieved": false,
+  "new_hypothesis_registered": false,
+  "evidence": {
+    "rate_audit": "The rate is an upper-bound factor, not a noise floor; theorem objects and assumptions differ from the current pipeline.",
+    "smoothing_audit": "The cited fast-rate theorem requires exponential integrability, not just a qth moment; no unqualified small-bandwidth conclusion.",
+    "oracle_review": "Independent primary-source/formula/generator review passed bounded quadratic AR1 scope; five focused tests passed.",
+    "population_aw2_squared": {
+      "T5": 0.25551969317665985,
+      "T8": 0.5762261306857269,
+      "T50": 5.485216920503423
+    },
+    "archived_T5_128path_finite_to_population_range": [
+      15.013099869111443,
+      27.244419530766393
+    ],
+    "limits": "One seed/shift and four squared-AR1 cells; realized discrepancy only, no expected bias estimate or T50 empirical comparison."
+  },
+  "validation": {
+    "tests_passed": 76,
+    "hash_pins": {
+      "total": 25,
+      "matching": 24,
+      "historical": 1
+    },
+    "contract": "tree-adapted-ot-sota-v2"
+  },
+  "artifact_sha256": {
+    "research/sota/DOMAIN_RATE_AUDIT_20260910.md": "44eaab839678fc9365b60c23abcc06e93081873920a18fdd3795ccedb772fb9d",
+    "research/theory/GAUSSIAN_ORACLE_20260910.md": "46fe36159c2bc4de3c1ca66cf6bbbd59de589bbf016a635de4a1311dd69d1bb5",
+    "adapters/gaussian_population_oracle.py": "73b8565fa51c8526c6681005a8c88563d77937d97907076e464acd8267e26d27",
+    "tests/test_gaussian_population_oracle.py": "9bbcbf8070be832ff68fd3eff1d902722e00430fce2777ed39933f23da149130",
+    "probes/gaussian_population_audit.py": "8169303c0b89ca1442010c3e21ba9fd4e07c02a9a363f6259fd2571257c09c39",
+    "runs/cycle_2/gaussian_population_audit_20260910.json": "17ae2d201e021017027bde2f3c28b55f4afcd0e12e6a1cc7e562c71815ccf2cb"
+  },
+  "next_step": "Require a bounded mechanism argument predicting root-gap reduction and omitted/shared work before any new solver probe. Retain Gaussian oracle only as separate audit using privileged parameters.",
+  "not_authorized_by_this_evidence": [
+    "large development grid",
+    "smoothing estimand replacement",
+    "population certificate",
+    "SOTA promotion"
+  ]
+}

@@ -1,5 +1,7 @@
 # Tri thức domain — đọc toàn văn 7 công trình (2025–2026)
 
+> **Audit 2026-09-10:** Đọc [DOMAIN_RATE_AUDIT_20260910.md](DOMAIN_RATE_AUDIT_20260910.md) trước khi dùng các suy luận bên dưới để ra quyết định. Hệ số rate không chứng minh sàn nhiễu/bất khả nhận dạng; định lý compact/full-prefix/AW1 chưa khớp pipeline Gaussian/fixed-k/AW2². Định lý smooth fast-rate có điều kiện exponential moment, không chỉ moment bậc q. Các suy luận trái audit được rút lại; giữ phần gốc để truy lịch sử. [Oracle Gauss đã kiểm tra](../theory/GAUSSIAN_ORACLE_20260910.md) đo riêng discrepancy population. Giữ estimand solver hiện tại.
+
 Ngày đọc: 2026-09-09. Tải toàn văn từ arXiv và Project Euclid, trích bằng pypdfium2,
 **242 trang / 665k ký tự**. Mọi con số dưới đây đã đối chiếu ngược lại văn bản gốc bằng
 tìm kiếm chuỗi; chỗ nào chỉ từ trích xuất tự động thì ghi rõ.

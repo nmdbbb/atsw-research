@@ -1,0 +1,41 @@
+{
+  "schema": "forced-transport-screen-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "design": "posthoc two historical cases; freeze before new measurements",
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "budget_seconds": 60,
+  "budget_rule": "cooperative checks each 128 policy pairs and before/after each lower sweep; finish current call, no rerun or downsizing",
+  "method": "same sparse SVD upper/occupation; unchanged lower_sweep with only free_lower augmented on singleton-sided pairs; keep generic selection and floors",
+  "gate": "B0 lower lift >= 0.05 times archived reference on a case permits matched old B4-then-B16 schedule on that case only; reference is audit/gate only",
+  "stop": "One bounded screen. No higher budget, new hypothesis, cache mechanism or grid authorized.",
+  "claim": "Numerical baseline diagnostic; known unique-coupling identity; not novelty, outward certificate or timing superiority",
+  "hashes": {
+    "probes/forced_transport_screen.py": "d28445b683f8c99ecf3cef94e2b7baa7830401093ee83fd41c397f90c240c211",
+    "adapters/forced_transport_lower.py": "4ffb94de228d099e0386813c28efcabad11b9698dfef72b14459eaad76023429",
+    "adapters/policy_pool_candidate.py": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+    "adapters/sparse_ordered_policy.py": "6d2485ca34392dcc4dec205ed4c3020895b4cee7b17461ed9a8922d2d06aa267",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf",
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/upper_policy_screen/results.json": "f22aff461d9c63efc7e425fe576a00e1f7aeb0f160ccfc7995a97e950baf84cf",
+    "runs/cycle_2/upper_policy_screen/manifest.json": "6c628f4bf709f785cf9ff0984a62963bacb37795fb60119ea6682190dab35c96"
+  }
+}

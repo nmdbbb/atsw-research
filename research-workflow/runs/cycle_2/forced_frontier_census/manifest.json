@@ -1,0 +1,38 @@
+{
+  "schema": "forced-frontier-census-v1",
+  "frozen_before_run": true,
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "budget": {
+    "seconds": 20,
+    "union_input_entries": 1000000,
+    "rule": "cooperative; partial result on first hit; no downsize or retry"
+  },
+  "method": "node(t,i,j) is forced iff either positive transition support has size one; terminal zero has empty frontier; other nodes are unique boundary symbols; backward set unions compile first nonforced descendants",
+  "counts": "global forced transition support-product and dynamic incidences and union inputs; all-forced compiled nnz; unique forced values directly requested by nonforced parents or root; their forced dependency closure, direct incidences, and compiled nnz",
+  "declared_gate": "reject per-entry materialization footprint iff directly demanded compiled frontier nnz exceeds direct forced incidences of its dependency closure; otherwise candidate survives footprint gate only",
+  "dynamic_comparator": "also compare with required dynamic incidences: edges whose child frontier is nonempty; exact_dp skips singleton LPs and empty-frontier constants cache once",
+  "interpretation": "structural elementary variable elimination, not novelty; optimistic support footprint omits coefficients, constants, local OT feasibility, rounding, all read costs, solver work, and any performance or speed claim",
+  "hashes": {
+    "probes/forced_frontier_census.py": "fd54f4447d38f59d3aaed25e8d8cbef5cee3bf3267686957098e205de3d9cb46",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b"
+  }
+}

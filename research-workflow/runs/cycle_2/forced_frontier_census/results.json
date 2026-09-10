@@ -1,0 +1,248 @@
+{
+  "schema": "forced-frontier-census-results-v1",
+  "manifest_sha256": "64a0f73735da0a27ec8fa7ca8b175e699163b344fc4397eff4b9447b97f2edb3",
+  "status": "completed",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared",
+      "status": "completed",
+      "model_hashes": [
+        "c807df83706931a5bc142c9509d7bf5450144dcc357005609672111f3c349493",
+        "8281e8ab240e5c615435b6c427bd9ff5b14f7480b2465fbfb30cf4ad87eba572"
+      ],
+      "shapes": [
+        [
+          1,
+          1
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          16,
+          13
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "total_nodes": 972,
+      "total_forced_nodes": 429,
+      "total_nonforced_nodes": 543,
+      "boundary_symbols": 543,
+      "direct_forced_incidences_all": 1071,
+      "dynamic_forced_incidences_all": 646,
+      "union_input_entries": 709,
+      "compiled_frontier_nnz_all": 709,
+      "max_frontier_width": 15,
+      "per_layer": [
+        {
+          "layer": 0,
+          "forced_nodes": 0,
+          "nonforced_nodes": 1,
+          "direct_forced_incidences": 0,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        },
+        {
+          "layer": 1,
+          "forced_nodes": 33,
+          "nonforced_nodes": 99,
+          "direct_forced_incidences": 188,
+          "dynamic_forced_incidences": 188,
+          "union_input_entries": 223,
+          "compiled_frontier_nnz": 223,
+          "max_frontier_width": 15
+        },
+        {
+          "layer": 2,
+          "forced_nodes": 50,
+          "nonforced_nodes": 132,
+          "direct_forced_incidences": 260,
+          "dynamic_forced_incidences": 258,
+          "union_input_entries": 286,
+          "compiled_frontier_nnz": 286,
+          "max_frontier_width": 11
+        },
+        {
+          "layer": 3,
+          "forced_nodes": 56,
+          "nonforced_nodes": 168,
+          "direct_forced_incidences": 278,
+          "dynamic_forced_incidences": 200,
+          "union_input_entries": 200,
+          "compiled_frontier_nnz": 200,
+          "max_frontier_width": 10
+        },
+        {
+          "layer": 4,
+          "forced_nodes": 65,
+          "nonforced_nodes": 143,
+          "direct_forced_incidences": 345,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        },
+        {
+          "layer": 5,
+          "forced_nodes": 225,
+          "nonforced_nodes": 0,
+          "direct_forced_incidences": 0,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        }
+      ],
+      "root_first_boundary_width": 1,
+      "directly_demanded_forced_nodes": 384,
+      "directly_demanded_frontier_nnz": 709,
+      "demanded_forced_dependency_closure_nodes": 429,
+      "demanded_closure_direct_forced_incidences": 1071,
+      "demanded_closure_dynamic_forced_incidences": 646,
+      "demanded_closure_compiled_frontier_nnz": 709,
+      "gate_reject": false,
+      "dynamic_comparator_reject": true,
+      "all_edges_gate_is_optimistic": true,
+      "gate_verdict": "survives_footprint_gate_only"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute",
+      "status": "completed",
+      "model_hashes": [
+        "e0523787031c42a778602c0b04fcbf8dfca5e2a10196b7984063eab38d37f611",
+        "f99673fe26e53762f47d55bb979bdfd54f82eb849fdcfc9bbdc4c5a15fdb86fd"
+      ],
+      "shapes": [
+        [
+          1,
+          1
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          96,
+          108
+        ],
+        [
+          109,
+          113
+        ],
+        [
+          110,
+          108
+        ],
+        [
+          108,
+          119
+        ]
+      ],
+      "total_nodes": 47858,
+      "total_forced_nodes": 46791,
+      "total_nonforced_nodes": 1067,
+      "boundary_symbols": 1067,
+      "direct_forced_incidences_all": 45069,
+      "dynamic_forced_incidences_all": 2730,
+      "union_input_entries": 2930,
+      "compiled_frontier_nnz_all": 2930,
+      "max_frontier_width": 5,
+      "per_layer": [
+        {
+          "layer": 0,
+          "forced_nodes": 0,
+          "nonforced_nodes": 1,
+          "direct_forced_incidences": 0,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        },
+        {
+          "layer": 1,
+          "forced_nodes": 120,
+          "nonforced_nodes": 320,
+          "direct_forced_incidences": 616,
+          "dynamic_forced_incidences": 51,
+          "union_input_entries": 57,
+          "compiled_frontier_nnz": 57,
+          "max_frontier_width": 5
+        },
+        {
+          "layer": 2,
+          "forced_nodes": 10038,
+          "nonforced_nodes": 330,
+          "direct_forced_incidences": 14160,
+          "dynamic_forced_incidences": 1814,
+          "union_input_entries": 2008,
+          "compiled_frontier_nnz": 2008,
+          "max_frontier_width": 3
+        },
+        {
+          "layer": 3,
+          "forced_nodes": 12096,
+          "nonforced_nodes": 221,
+          "direct_forced_incidences": 15184,
+          "dynamic_forced_incidences": 865,
+          "union_input_entries": 865,
+          "compiled_frontier_nnz": 865,
+          "max_frontier_width": 2
+        },
+        {
+          "layer": 4,
+          "forced_nodes": 11685,
+          "nonforced_nodes": 195,
+          "direct_forced_incidences": 15109,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        },
+        {
+          "layer": 5,
+          "forced_nodes": 12852,
+          "nonforced_nodes": 0,
+          "direct_forced_incidences": 0,
+          "dynamic_forced_incidences": 0,
+          "union_input_entries": 0,
+          "compiled_frontier_nnz": 0,
+          "max_frontier_width": 0
+        }
+      ],
+      "root_first_boundary_width": 1,
+      "directly_demanded_forced_nodes": 12717,
+      "directly_demanded_frontier_nnz": 2080,
+      "demanded_forced_dependency_closure_nodes": 46791,
+      "demanded_closure_direct_forced_incidences": 45069,
+      "demanded_closure_dynamic_forced_incidences": 2730,
+      "demanded_closure_compiled_frontier_nnz": 2930,
+      "gate_reject": false,
+      "dynamic_comparator_reject": false,
+      "all_edges_gate_is_optimistic": true,
+      "gate_verdict": "survives_footprint_gate_only"
+    }
+  ],
+  "union_work_cap": 1000000,
+  "total_seconds": 0.21014589999685995,
+  "interpretation": "structural elementary variable elimination, not novelty; optimistic support footprint omits coefficients, constants, local OT feasibility, rounding, all read costs, solver work, and any performance or speed claim"
+}

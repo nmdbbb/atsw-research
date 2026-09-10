@@ -1,0 +1,51 @@
+{
+  "id": "upper_policy_gate_20260910",
+  "git_pull": {
+    "branch": "main",
+    "head": "597d796",
+    "result": "already_up_to_date"
+  },
+  "scientific_objective_achieved": false,
+  "decision": "defer_lower_only_interval_reuse_keep_upper_improvement_as_standard_baseline",
+  "findings": [
+    "Fixed upper blocks0.5% even with ideal lower on16/16 archived smoke cases.",
+    "Selected coarse upper excess1.087% ->0.080% atB16; fine18.236% ->5.178%.",
+    "Fine initial policy construction18.713s dominates the19.947s screen."
+  ],
+  "limits": [
+    "posthoc selected two-case numerical development screen",
+    "no root lower certificate or outward rounding",
+    "no SOTA or full-domain performance claim"
+  ],
+  "next_gate": "Verify an equivalent positive-support ordered policy implementation and same-run initialization timing before any wider search. This is capped engineering, not a new research mechanism.",
+  "evidence": [
+    {
+      "path": "runs/cycle_2/policy_upper_gap_audit_20260910.json",
+      "sha256": "ce6f8a29a8af98b07dd917f3d4791f9fa31aa6d478fc4b9860b655574cffc376"
+    },
+    {
+      "path": "research/theory/interval_reuse_decision_20260910.md",
+      "sha256": "e012e9025dd1924070f0fe402527f6314bf27eb48c73acf1902b7b717d29cc67"
+    },
+    {
+      "path": "research/theory/interval_reuse_skeptic_20260910.md",
+      "sha256": "5852a2de31a7e981a948bb5710c99acf85c331fb7d219c6b62c95852cc7ba703"
+    },
+    {
+      "path": "runs/cycle_2/upper_policy_screen/manifest.json",
+      "sha256": "6c628f4bf709f785cf9ff0984a62963bacb37795fb60119ea6682190dab35c96"
+    },
+    {
+      "path": "runs/cycle_2/upper_policy_screen/results.json",
+      "sha256": "f22aff461d9c63efc7e425fe576a00e1f7aeb0f160ccfc7995a97e950baf84cf"
+    },
+    {
+      "path": "research/theory/upper_policy_verification_20260910.md",
+      "sha256": "e3df4dc9cc87c10ccc5efc87025f7e6d2032b36cf0a511c4d56bacecb8bd97e9"
+    },
+    {
+      "path": "research/theory/upper_policy_decision_20260910.md",
+      "sha256": "d97dd1aa3b95900d69a87635e40cf03a2037cad7918c153cde4c4f0a41f0436a"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema": "gaussian-population-audit-v1",
+  "date": "2026-09-10",
+  "design": "posthoc diagnostic; source data existed before this question",
+  "source_hashes": {
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "adapters/gaussian_population_oracle.py": "73b8565fa51c8526c6681005a8c88563d77937d97907076e464acd8267e26d27",
+    "probes/gaussian_population_audit.py": "8169303c0b89ca1442010c3e21ba9fd4e07c02a9a363f6259fd2571257c09c39"
+  },
+  "formula_source": "https://arxiv.org/html/2404.06625v4#S1.Thmtheorem1",
+  "parameters": {
+    "left": {
+      "a": 0.7,
+      "sigma": 1.0
+    },
+    "right": {
+      "a": 0.55,
+      "sigma": 1.15
+    },
+    "initial_state": 0,
+    "cost": "sum squared differences over t=1..T"
+  },
+  "archived_coverage": {
+    "T": 5,
+    "paths_per_side": 128,
+    "seed": 1000,
+    "shift": 0.0
+  },
+  "population_values": {
+    "5": {
+      "aw2_squared": 0.25551969317665985,
+      "kr_squared": 0.25551969317665985,
+      "kr_gap": 0.0,
+      "innovation_column_products": [
+        1.85410161696875,
+        1.82883536875,
+        1.76320875,
+        1.5927499999999999,
+        1.15
+      ],
+      "kr_is_optimal_by_sign_condition": true
+    },
+    "8": {
+      "aw2_squared": 0.5762261306857269,
+      "kr_squared": 0.5762261306857269,
+      "kr_gap": 0.0,
+      "innovation_column_products": [
+        1.8690160716874493,
+        1.867574212175193,
+        1.8638291225329688,
+        1.85410161696875,
+        1.82883536875,
+        1.76320875,
+        1.5927499999999999,
+        1.15
+      ],
+      "kr_is_optimal_by_sign_condition": true
+    },
+    "50": {
+      "aw2_squared": 5.485216920503423,
+      "kr_squared": 5.485216920503423,
+      "kr_gap": 0.0,
+      "innovation_column_products": [
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869914,
+        1.8699186991869912,
+        1.8699186991869907,
+        1.8699186991869894,
+        1.8699186991869858,
+        1.8699186991869765,
+        1.8699186991869525,
+        1.8699186991868901,
+        1.869918699186728,
+        1.8699186991863068,
+        1.8699186991852128,
+        1.869918699182371,
+        1.8699186991749897,
+        1.8699186991558172,
+        1.8699186991060188,
+        1.869918698976672,
+        1.8699186986407066,
+        1.869918697768069,
+        1.8699186955014782,
+        1.8699186896142288,
+        1.8699186743226721,
+        1.8699186346043428,
+        1.8699185314398512,
+        1.869918263480133,
+        1.8699175674808648,
+        1.8699157596905578,
+        1.8699110641313188,
+        1.869898867873555,
+        1.869867189281961,
+        1.8697849072258723,
+        1.8695711875996681,
+        1.8690160716874493,
+        1.867574212175193,
+        1.8638291225329688,
+        1.85410161696875,
+        1.82883536875,
+        1.76320875,
+        1.5927499999999999,
+        1.15
+      ],
+      "kr_is_optimal_by_sign_condition": true
+    }
+  },
+  "rows": [
+    {
+      "k": 1,
+      "delta": 0.5,
+      "finite_float64_dp_value": 3.836142672185908,
+      "population_aw2_squared": 0.25551969317665985,
+      "signed_discrepancy": 3.5806229790092483,
+      "finite_to_population_ratio": 15.013099869111443
+    },
+    {
+      "k": 2,
+      "delta": 0.5,
+      "finite_float64_dp_value": 6.961485719277627,
+      "population_aw2_squared": 0.25551969317665985,
+      "signed_discrepancy": 6.705966026100968,
+      "finite_to_population_ratio": 27.244419530766393
+    },
+    {
+      "k": 1,
+      "delta": 0.18,
+      "finite_float64_dp_value": 5.05708204255971,
+      "population_aw2_squared": 0.25551969317665985,
+      "signed_discrepancy": 4.80156234938305,
+      "finite_to_population_ratio": 19.79135924785011
+    },
+    {
+      "k": 2,
+      "delta": 0.18,
+      "finite_float64_dp_value": 6.947079954241071,
+      "population_aw2_squared": 0.25551969317665985,
+      "signed_discrepancy": 6.691560261064411,
+      "finite_to_population_ratio": 27.188041234215305
+    }
+  ],
+  "limits": [
+    "True parameters enter audit only, never the paths-only candidate.",
+    "Finite-minus-population is one realized total pipeline discrepancy, not expected bias.",
+    "Sampling, quantization and window errors are not separated by this audit.",
+    "Population KR optimality does not certify the finite quantized model or SVD/NW policy.",
+    "Only T5 has archived comparisons here; T8/T50 are population formulas only.",
+    "Float64 formula evaluation is not an outward-rounded certificate; no absolute-cost or nonlinear-family oracle."
+  ],
+  "decision": "retain finite solver target; use oracle as separate population diagnostic; no large grid or smoothing promotion"
+}
