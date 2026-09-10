@@ -1,0 +1,50 @@
+{
+  "id": "root_gap_priority_gate_20260910",
+  "date": "2026-09-10",
+  "purpose": "Test concentration of remaining root gap and one computable local-residual ranking variant.",
+  "prior_decision": "ledger/inbox/codex_orchestrator/forced_transport_gate_20260910.json",
+  "decision": "reject_local_residual_priority_retain_improved_occupation_control",
+  "scientific_objective_achieved": false,
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Local-residual lower-selection variant on one selected fine T5/n128 case, no general impossibility claim.",
+  "evidence": {
+    "concentration_top16": [
+      0.37227943658802165,
+      0.8939831002986688
+    ],
+    "diagnostic_seconds": 2.7229425000000447,
+    "ablation_seconds": 2.0468490999996902,
+    "control_relative_width": 0.24161992952708153,
+    "variant_relative_width": 0.24209959895983352,
+    "value_gap_fraction_removed": -0.0015982800139816968,
+    "quality_gate_passed": false,
+    "selections_per_arm": 82,
+    "LP_calls_per_arm": 77,
+    "independent_control_error": 0.0,
+    "limits": "Float64 numeric enclosures only. OT component decomposition lacks local dual-gap verification; total cancels q. No novelty, outward certificate or speed claim."
+  },
+  "validation": {
+    "tests_passed": 79,
+    "legacy_pins": {
+      "matching": 24,
+      "historical": 1
+    },
+    "independent_review": "Algebra, decomposition bookkeeping, final score-only comparison and all source pins reviewed."
+  },
+  "next_gate": "Distinct mechanism addressing both upper policy quality and lower tightness, with falsifiable work/root-gap prediction. No further fixed-upper lower-only tuning or budget/grid escalation.",
+  "routing": {
+    "reviewer": "gpt-6-astra high; fresh narrow packet",
+    "implementation": "root",
+    "extra_agents": 0
+  },
+  "artifact_sha256": {
+    "probes/root_gap_decomposition.py": "bbb7b98654a39371a90fcb3ed741c9dce50651f80910c255f8635b15ed43e3af",
+    "probes/residual_priority_screen.py": "ac21bb2b60af8b4dee79fc0560779fb4bc087396f30238e8a21cb93f1a996106",
+    "runs/cycle_2/root_gap_decomposition/manifest.json": "9b7511cd50dd14bf7e4149644de6d403143972b14ea50b3c4c8d34363cfd3d78",
+    "runs/cycle_2/root_gap_decomposition/results.json": "7b86e26f5e50de0b24ba216dc484a06e7d3cafda7bdd7557fe5a9011caa9431b",
+    "runs/cycle_2/residual_priority_screen/manifest.json": "36ed7df195d631c270400293b5671c6c77bbea3ae7e3cb6730daa1a446d1bcd0",
+    "runs/cycle_2/residual_priority_screen/results.json": "8dd0400f67ac04d90f34bab2eec2a65f423ac8b1268dd4c6fc2dfa9855b2c01e",
+    "research/theory/root_gap_decomposition_review_20260910.md": "f8d257caed9d6b00a57207caa22d1d2693b0e263f24010715360e1b436037aaf",
+    "research/theory/root_gap_priority_decision_20260910.md": "5662b359a0b9cd627a3420bee6bb1a29cfa6fea8bee293f34f4c13c01411d557"
+  }
+}

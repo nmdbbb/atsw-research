@@ -1,0 +1,46 @@
+{
+  "schema": "root-gap-decomposition-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "design": "posthoc localization; new diagnostic design frozen before execution; no hypothesis registration",
+  "deadline_seconds": 60,
+  "deadline_rule": "cooperative before each layer/local solve and every128 initialization pairs, finish native operation; no rerun/downsize",
+  "method": "Reconstruct forced B4/B16 lower and independently improved B16 upper; same archived model/endpoints gates. Decompose occupied residual pi(c+Lnext)-L into q-L and pi(c+Lnext)-q, q=local numerical OT.",
+  "gate": "If top16 nonforced contributions explain at least80% of total root gap, permit design of one targeted-selection probe, not automatic run. Otherwise do not escalate local-repair budget on concentration premise.",
+  "nonclaims": [
+    "Attribution is not actual repair gain",
+    "policy regret is relative to lower surrogate, not true-value advantage",
+    "OT calls are privileged diagnostic cost, not free candidate information",
+    "No outward certificate, novelty, speed or full-domain claim"
+  ],
+  "hashes": {
+    "probes/root_gap_decomposition.py": "bbb7b98654a39371a90fcb3ed741c9dce50651f80910c255f8635b15ed43e3af",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "adapters/policy_pool_candidate.py": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+    "adapters/forced_transport_lower.py": "4ffb94de228d099e0386813c28efcabad11b9698dfef72b14459eaad76023429",
+    "adapters/sparse_ordered_policy.py": "6d2485ca34392dcc4dec205ed4c3020895b4cee7b17461ed9a8922d2d06aa267",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "probes/upper_policy_improvement_screen.py": "90add5c451af32fbf2a9fd909928a3565be18e8fe1766341daf816aac95f9caf",
+    "runs/cycle_2/forced_transport_screen/manifest.json": "5547178d9b935886ccff13b263897661abe7d1c4fc0bd9ffc157c94796215d83",
+    "runs/cycle_2/forced_transport_screen/results.json": "1c09cff46a6b01602c623558fa250c0acf5a0b7489ca26d2c3b87147696bf79c",
+    "runs/cycle_2/upper_policy_screen/manifest.json": "6c628f4bf709f785cf9ff0984a62963bacb37795fb60119ea6682190dab35c96",
+    "runs/cycle_2/upper_policy_screen/results.json": "f22aff461d9c63efc7e425fe576a00e1f7aeb0f160ccfc7995a97e950baf84cf"
+  }
+}

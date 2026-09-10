@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "case": {
+    "process": "second_order_nonmonotone",
+    "k": 2,
+    "delta": 0.18,
+    "cost": "absolute"
+  },
+  "arms": [
+    {
+      "local_residual_score": false,
+      "levels": [
+        {
+          "budget": 4,
+          "lower": 2.2486261717880605,
+          "relative_width": 0.6143128491048722
+        },
+        {
+          "budget": 16,
+          "lower": 2.923588801714535,
+          "relative_width": 0.24161992952708153
+        }
+      ],
+      "seconds": 0.43269199999986085,
+      "selected_calls": 82,
+      "LP_calls": 77,
+      "score_plan_pairs": 0,
+      "score_plan_edges": 0,
+      "min_signed_residual": 0.0
+    },
+    {
+      "local_residual_score": true,
+      "levels": [
+        {
+          "budget": 4,
+          "lower": 2.253719724936307,
+          "relative_width": 0.610664397079612
+        },
+        {
+          "budget": 16,
+          "lower": 2.9224597809956707,
+          "relative_width": 0.24209959895983352
+        }
+      ],
+      "seconds": 0.44565289999991364,
+      "selected_calls": 82,
+      "LP_calls": 77,
+      "score_plan_pairs": 2866,
+      "score_plan_edges": 5080,
+      "min_signed_residual": 0.0
+    }
+  ],
+  "manifest_sha256": "36ed7df195d631c270400293b5671c6c77bbea3ae7e3cb6730daa1a446d1bcd0",
+  "shared_setup_seconds": 0.7140896000000794,
+  "upper": 3.6299861219509655,
+  "model_hashes": [
+    "e0523787031c42a778602c0b04fcbf8dfca5e2a10196b7984063eab38d37f611",
+    "f99673fe26e53762f47d55bb979bdfd54f82eb849fdcfc9bbdc4c5a15fdb86fd"
+  ],
+  "independent_control_check_seconds": 0.4540434999998979,
+  "independent_control_error": 0.0,
+  "root_gap_fraction_removed": -0.0015982800139816968,
+  "quality_gate_passed": false,
+  "total_seconds": 2.0468490999996902
+}

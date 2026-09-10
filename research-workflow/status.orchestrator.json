@@ -1,8 +1,8 @@
 {
   "session": "codex_root_20260910",
   "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
-  "purpose": "Test whether obvious forced couplings explain lower slack, then falsify avoidable forced-node propagation before building a solver.",
-  "phase": "forced_baseline_audited_expansion_deferred_root_gap_open",
+  "purpose": "Test concentration of remaining root gap and one computable local-residual ranking variant.",
+  "phase": "root_gap_localized_priority_rejected_joint_mechanism_needed",
   "scientific_objective_achieved": false,
   "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
   "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
@@ -47,14 +47,22 @@
         "probes/forced_frontier_census.py",
         "runs/cycle_2/forced_frontier_census/"
       ]
+    },
+    "root_gap_decomposition_review": {
+      "status": "completed",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "owns": [
+        "research/theory/root_gap_decomposition_review_20260910.md"
+      ]
     }
   },
-  "known_blocker": "Posthoc combined numerical root widths remain13.73% coarse/31.42%fine. Forced correction increases LP/work. Coarse expansion worsens dynamic incidence; fine restricted23.81% reduction has no amortized cost evidence. No outward certificate or novel mechanism.",
-  "next_decision": "Require measured material dynamic-propagation cost on an actual repeated-update workload after static caching, include coefficient construction, and an independently justified root-gap improvement route.",
-  "decision_record": "ledger/inbox/codex_orchestrator/forced_transport_gate_20260910.json",
-  "decision": "retain_forced_lower_reference_defer_expanded_solver",
+  "known_blocker": "Fine improved-policy control numerical width24.162%; local-residual priority fails. Fixed fine upper alone5.178% above reference blocks0.5%. Need distinct joint upper/lower mechanism; no outward certificate or novelty established.",
+  "next_decision": "Distinct mechanism addressing both upper policy quality and lower tightness, with falsifiable work/root-gap prediction. No further fixed-upper lower-only tuning or budget/grid escalation.",
+  "decision_record": "ledger/inbox/codex_orchestrator/root_gap_priority_gate_20260910.json",
+  "decision": "reject_local_residual_priority_retain_improved_occupation_control",
   "research_outcome": "direction_stopped_evidence_based",
-  "outcome_scope": "Current naive forced-lower performance implementation and unsupported broad promotion of per-entry forced-frontier expansion only; not a universal impossibility theorem.",
+  "outcome_scope": "Local-residual lower-selection variant on one selected fine T5/n128 case, no general impossibility claim.",
   "automatic_large_grid_authorized_by_this_result": false,
   "updated_on": "2026-09-10",
   "git_pull": {
@@ -68,21 +76,12 @@
     "sparse_policy": "numerical equivalence passed; initializer about2.9x coarse and7.1-7.6x fine on two selected cases",
     "gaussian_oracle": "Independent review passed; T5 population 0.255519693; archived finite values 15.01-27.24 times population on 128 paths, one seed/shift.",
     "forced_transport": "Reference deficits reduced21.83%/34.28% but matched sweep cost increased; reference baseline only.",
-    "forced_frontier": "Direct dynamic links646/2730 versus compiled709/2080; expanded solver deferred."
+    "forced_frontier": "Direct dynamic links646/2730 versus compiled709/2080; expanded solver deferred.",
+    "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%."
   },
   "current_cycle_routing": {
-    "context": "fresh short packets, no full transcript fork",
-    "reviewer": {
-      "model": "gpt-6-astra",
-      "reasoning": "high",
-      "status": "completed"
-    },
-    "census_drafter": {
-      "model": "gpt-5.6-sol",
-      "reasoning": "high",
-      "status": "interrupted_after_wait_source_recovered_root_completed"
-    },
-    "root": "bounded screen, integration, final census review/fixes/execution",
-    "measured_token_savings": null
+    "reviewer": "gpt-6-astra high; fresh narrow packet",
+    "implementation": "root",
+    "extra_agents": 0
   }
 }
