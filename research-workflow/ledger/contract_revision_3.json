@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "contract_revision_3",
+  "authorized_on": "2026-09-10",
+  "authority": "User explicitly requested pull, reading changes and reframing scope after allowing approximate scores with guaranteed pairwise relationships and prioritizing scientific weight.",
+  "prior_results_known": true,
+  "blind_preregistration_claimed": false,
+  "previous_objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+  "previous_contract": {
+    "objective_sha256": "72f92ab104f9489ee97be10845f0f35f2216197698077581aacd432e2133f7fe",
+    "objective_id": "tree-adapted-ot-sota-v2"
+  },
+  "new_contract": {
+    "objective_id": "tree-adapted-ot-relational-v3",
+    "objective_sha256": "58324e8cb0dea0db8790a67a16f56c6ad38876a49aab95ff3e4471f5cf74e627"
+  },
+  "previous_objective_snapshot": "ledger/contracts/objective_v2.json",
+  "new_objective_snapshot": "ledger/contracts/objective_v3.json",
+  "imported_head": "56fd25b",
+  "changes": [
+    "Scientific-weight gate before implementation",
+    "Primary target becomes guaranteed ordering/top-K on finite-model adapted OT",
+    "Nontrivial coverage, ties, fallback and matched-decision cost are mandatory",
+    "Legacy 0.5% value solver contract is parked separately, not achieved",
+    "Imported interaction theory remains pending independent review"
+  ],
+  "preservation": "Existing preregistrations, runs, manifests, v1/v2 snapshots and imported theory remain unchanged. This is not a new blind preregistration or a proof review.",
+  "handoff": "SCOPE_REVISION_3.md",
+  "validator_boundary": "Legacy v1/v2 numerical checker rejects v3 as NOT_READY. No ranking validator or benchmark is claimed."
+}

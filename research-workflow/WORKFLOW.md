@@ -1,3 +1,24 @@
+# Active workflow: scope v3
+
+Read [SCOPE_REVISION_3.md](SCOPE_REVISION_3.md) and `objective.json` first.
+They supersede conflicting instructions below. The active objective is guaranteed
+relational comparison/top-K on finite-model adapted OT. Scientific significance
+is the first investment gate. Start with one bounded claim/counterexample/work
+packet, not three mandatory hypotheses, a W1 overhaul or a full solver grid.
+
+Require explicit correctness/risk, nontrivial coverage, ties/abstention/fallback,
+object-disjoint evaluation splits and matched-decision end-to-end costs. A shared
+tree and closed-form tree-Wasserstein alone do not certify bicausal ranking.
+Preserve historical evidence. The active checkpoint is `status.orchestrator.json`.
+
+The following is retained legacy solver guidance. Its 0.5%/full-grid requirements
+apply only to separately labelled v1/v2 solver claims using their snapshots;
+read its references to objective.json as that historical contract. Applicable
+integrity, preregistration, independent review and cost-accounting principles
+remain in force. For v3 task definitions, outcomes and next steps use scope v3.
+
+---
+
 # Workflow tìm thuật toán cây cho adapted OT
 
 Mục tiêu giữ nguyên về bài toán, được sửa đúng về đối thủ: **nhanh hơn SOTA phù hợp ở cùng độ chính xác/chứng nhận, hoặc chứng nhận chặt hơn ở cùng ngân sách tính toán**. POT chỉ là một baseline triển khai. “SOTA” trong workflow là tập phương pháp mạnh, tương thích và đã tái lập tại ngày đánh giá; không phải tên của một thư viện hay một paper được chọn thuận tiện.

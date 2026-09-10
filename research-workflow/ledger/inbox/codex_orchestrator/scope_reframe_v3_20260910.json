@@ -1,0 +1,18 @@
+{
+  "id": "scope_reframe_v3_20260910",
+  "date": "2026-09-10",
+  "decision": "adopt_relational_scope_with_scientific_weight_gate",
+  "revision": "ledger/contract_revision_3.json",
+  "analysis": "SCOPE_REVISION_3.md",
+  "imported_commits": [
+    "8e447b0",
+    "56fd25b"
+  ],
+  "theory_status": "awaiting_independent_review_no_global_impossibility_claim",
+  "scientific_objective_achieved": false,
+  "legacy_solver_objective_achieved": false,
+  "next_action": "Prepare one concrete shared-tree ranking claim, prior-art map, information-timing counterexample and work table before implementation or preregistration.",
+  "new_probe_registered": false,
+  "new_benchmark_run": false,
+  "old_status_snapshot": "ledger/checkpoints/status_orchestrator_pre_v3.json"
+}

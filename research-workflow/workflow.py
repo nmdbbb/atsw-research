@@ -186,6 +186,12 @@ def check_report(report, config, evidence_root=None):
     per task; unresolved eligibility must remain an open comparison issue.
     A timeout needs a reviewed censoring analysis; this simple screen rejects it.
     """
+    if config.get("schema_version", 1) >= 3:
+        return {"status": "NOT_READY", "scientific_success": False,
+                "errors": ["The legacy solver screen does not validate relational scope v3. "
+                           "Freeze a decision protocol and obtain independent guarantee review first."],
+                "diagnostics": [],
+                "notice": "No ranking, risk, coverage or scientific-completion claim is validated."}
     errors, diagnostics = [], []
     defaults = config["engineering_defaults"]
     route = report.get("route")
@@ -303,7 +309,9 @@ def main():
             result = initialize(ROOT)
         elif args.command == "status":
             result = {"contract": verify_contract(ROOT),
-                      "checkpoint": read_json(ROOT / "status.json"),
+                      "checkpoint_source": "status.orchestrator.json" if (ROOT / "status.orchestrator.json").exists() else "status.json",
+                      "checkpoint": read_json(ROOT / "status.orchestrator.json") if (ROOT / "status.orchestrator.json").exists() else read_json(ROOT / "status.json"),
+                      "legacy_checkpoint_source": "status.json",
                       "registered": sorted(p.stem for p in (ROOT / "ledger/preregistered").glob("*.json"))}
         elif args.command == "register":
             result = register(ROOT, args.path)

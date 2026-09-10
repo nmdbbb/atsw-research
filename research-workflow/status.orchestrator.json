@@ -1,119 +1,40 @@
 {
-  "session": "codex_root_20260910",
-  "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
-  "purpose": "Close the bounded structured-local-OT cycle after independent review.",
-  "phase": "structured_local_ot_bounded_cycle_complete",
-  "scientific_objective_achieved": false,
-  "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
-  "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
-  "agents": {
-    "sparse_policy_kernel": {
-      "status": "bounded_artifacts_delivered",
-      "owns": [
-        "adapters/sparse_ordered_policy.py",
-        "tests/test_sparse_ordered_policy.py"
-      ],
-      "question": "Can identical ordered NW couplings be built without full dense matrices per parent?"
-    },
-    "sparse_policy_verify": {
-      "status": "bounded_artifacts_delivered",
-      "owns": [
-        "probes/sparse_policy_equivalence_screen.py",
-        "runs/cycle_2/sparse_policy_screen/",
-        "research/theory/sparse_policy_verification_20260910.md"
-      ],
-      "question": "Does numerical policy equivalence hold and is measured initializer cost materially reduced?"
-    },
-    "domain_rate_audit": {
-      "status": "bounded_artifacts_and_oracle_review_delivered",
-      "owns": [
-        "research/sota/DOMAIN_RATE_AUDIT_20260910.md"
-      ],
-      "question": "Do rate and smoothing theorems justify changing estimand; does Gaussian oracle match source and generator?"
-    },
-    "forced_transport_review": {
-      "status": "completed",
-      "model": "gpt-6-astra",
-      "reasoning_effort": "high",
-      "owns": [
-        "research/theory/forced_transport_review_20260910.md"
-      ]
-    },
-    "forced_frontier_census": {
-      "status": "interrupted_draft_recovered_completed_by_root",
-      "model": "gpt-5.6-sol",
-      "reasoning_effort": "high",
-      "owns": [
-        "probes/forced_frontier_census.py",
-        "runs/cycle_2/forced_frontier_census/"
-      ]
-    },
-    "root_gap_decomposition_review": {
-      "status": "completed",
-      "model": "gpt-6-astra",
-      "reasoning_effort": "high",
-      "owns": [
-        "research/theory/root_gap_decomposition_review_20260910.md"
-      ]
-    },
-    "binary_transport_review": {
-      "status": "prior_reviews_completed_latest_permutation_task_usage_limit",
-      "model": "gpt-6-astra",
-      "reasoning_effort": "high",
-      "owns": [
-        "research/theory/binary_transport_review_20260910.md"
-      ]
-    },
-    "permuted_monge_final_review": {
-      "status": "completed",
-      "model": "gpt-6-astra",
-      "reasoning_effort": "high",
-      "owns": [
-        "research/theory/permuted_monge_final_review_20260910.md"
-      ]
-    }
-  },
-  "known_blocker": "No execution/quota blocker for this completed cycle. Original root certificate and distinct shared-work novelty remain unachieved.",
-  "next_decision": "Distinct mechanism on general supports with charged detection/maintenance and original-root upper/lower control, compared against retained structured numerical baselines; no automatic grid expansion.",
-  "decision_record": "ledger/inbox/codex_orchestrator/structured_local_ot_cycle_close_20260910.json",
-  "decision": "close_bounded_cycle_reject_screened_shared_SVD_route",
-  "research_outcome": "direction_stopped_evidence_based",
-  "outcome_scope": "Tested structured local transport/order-reuse routes; no universal impossibility theorem or full-domain scientific completion.",
-  "automatic_large_grid_authorized_by_this_result": false,
+  "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-10",
-  "git_pull": {
-    "branch": "main",
-    "head": "790b555",
-    "previous_head": "597d796",
-    "result": "fast_forward_local_research_preserved"
+  "phase": "relational_scope_reframed_claim_gate_pending",
+  "scope_revision": {
+    "id": "contract_revision_3",
+    "objective_id": "tree-adapted-ot-relational-v3",
+    "objective_sha256": "58324e8cb0dea0db8790a67a16f56c6ad38876a49aab95ff3e4471f5cf74e627",
+    "status": "received_and_applied"
   },
-  "bounded_cycle_results": {
-    "tests_passed": 85,
-    "sparse_policy": "numerical equivalence passed; initializer about2.9x coarse and7.1-7.6x fine on two selected cases",
-    "gaussian_oracle": "Independent review passed; T5 population 0.255519693; archived finite values 15.01-27.24 times population on 128 paths, one seed/shift.",
-    "forced_transport": "Reference deficits reduced21.83%/34.28% but matched sweep cost increased; reference baseline only.",
-    "forced_frontier": "Direct dynamic links646/2730 versus compiled709/2080; expanded solver deferred.",
-    "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%.",
-    "structured_local_OT": "Binary direct eliminates132/759 LPs; strict Monge adds247/10 avoided LPs on two tiny cases; cache and broad gates fail.",
-    "support_scale": "T50 frozen n binary fractions10.23%/27.62% amongnonforced; one seedshift support audit only.",
-    "permuted_monge": "Independently reviewed: actual LP164/298 -> shared164/293 -> plusprivate161/287; failed20%shared gate; screen closed without rerun."
+  "scientific_objective_achieved": false,
+  "legacy_solver_objective_achieved": false,
+  "active_target": "Guaranteed ordering/top-K of trajectory sets under finite-model adapted OT; scientific weight before compute.",
+  "decision_record": "ledger/inbox/codex_orchestrator/scope_reframe_v3_20260910.json",
+  "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
+  "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
+  "imported_head": "56fd25b",
+  "imported_theory": {
+    "record": "ledger/inbox/codex_orchestrator/theory_round_theorist_20260910.json",
+    "status": "awaiting_independent_review",
+    "investment": "parked; no implementation or grid",
+    "open_questions": [
+      "conditional one-step TV claim vs global impossibility",
+      "generator vs empirical kernels",
+      "factor 2 and work counts"
+    ]
   },
-  "current_cycle_routing": {
-    "reviewer": "gpt-6-astra high fresh narrow packet",
-    "root": "validation and integration",
-    "benchmark_rerun": false
-  },
-  "execution_stop": {
-    "reason": "bounded_cycle_complete_evidence_based",
-    "quota_pause_resolved": true,
-    "further_research_started": false,
-    "push_authorized": true,
-    "background_research_running": false
-  },
-  "bounded_cycle": {
-    "id": "structured_local_ot_20260910",
-    "status": "complete",
-    "independent_review": "completed",
-    "unresolved_closure_items": []
-  }
+  "next_actions_in_order": [
+    "Read objective.json and SCOPE_REVISION_3.md",
+    "Prepare one bounded claim/prior-art/adversarial/work packet for shared-tree relational comparison",
+    "Independent review of scientific weight and guarantee before implementation",
+    "Only then freeze a probe with quantitative coverage, risk, ties, cost and budget"
+  ],
+  "routing": "Root integrates; one independent reviewer for a concrete packet; implementer only after gate. No fixed quota.",
+  "automatic_large_grid_authorized": false,
+  "v3_hypotheses_registered": [],
+  "v3_benchmarks_run": [],
+  "background_research_running": false,
+  "push_authorized": true
 }

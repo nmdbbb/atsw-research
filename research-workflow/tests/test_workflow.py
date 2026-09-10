@@ -14,7 +14,8 @@ spec.loader.exec_module(wf)
 
 class ScreeningTests(unittest.TestCase):
     def setUp(self):
-        self.config = wf.read_json(ROOT / "objective.json")
+        # These adversarial fixtures exercise the unchanged legacy solver contract.
+        self.config = wf.read_json(ROOT / "ledger/contracts/objective_v2.json")
         self.config["engineering_defaults"]["confirmation_seeds_per_task"] = 1
         self.config["engineering_defaults"]["timing_repeats"] = 1
         self.report = {"route": "speed", "split": "confirmation", "comparison_issues": [],
@@ -33,6 +34,17 @@ class ScreeningTests(unittest.TestCase):
         result = self.screen()
         self.assertEqual(result["errors"], [])
         self.assertFalse(result["scientific_success"])
+
+    def test_legacy_passing_report_cannot_validate_relational_scope(self):
+        self.assertEqual(self.screen()["errors"], [])
+        relational = wf.read_json(ROOT / "ledger/contracts/objective_v3.json")
+        for route in ("speed", "quality", "ranking"):
+            with self.subTest(route=route):
+                report = {**self.report, "route": route}
+                result = wf.check_report(report, relational)
+                self.assertEqual(result["status"], "NOT_READY")
+                self.assertTrue(result["errors"])
+                self.assertFalse(result["scientific_success"])
 
     def test_missing_expensive_cell_blocks(self):
         self.report["rows"] = [r for r in self.report["rows"] if not (r["task"]["k"] == 2 and r["task"]["delta"] == 0.18)]
