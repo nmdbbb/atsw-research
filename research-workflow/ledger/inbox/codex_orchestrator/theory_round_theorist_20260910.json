@@ -1,0 +1,51 @@
+{
+ "id": "theory_round_theorist_20260910",
+ "date": "2026-09-10",
+ "type": "theory_round_output_1_and_3",
+ "complements": "ledger/inbox/codex_orchestrator/direction_revision_gate_20260910.json",
+ "decision": "theorist_lane_delivered_negative_result_pending_independent_skeptic",
+ "status": "awaiting_independent_review",
+ "scientific_objective_achieved": false,
+ "document": "research/theory/theory_round_statement_20260910.md",
+ "lane": {
+  "role": "theorist",
+  "independence": "fresh context, own workspace, context bundle only; did not review its own work",
+  "wall_seconds": 3559,
+  "skeptic_lane": "not yet dispatched"
+ },
+ "positive_results_proved": {
+  "additive_split_invariance": "adding f(x)+g(y) to the cost shifts the OT value by <p,f>+<q,g> and leaves the optimal-coupling set unchanged (declared not novel; toy check error 5.0e-16)",
+  "error_propagation": "local OT value 1-Lipschitz in sup-norm at fixed marginals; backward Bellman monotone and sup-norm nonexpansive; certified interaction error propagates additively with coefficient 1 (conditional on outward rounding the project does not yet have)",
+  "proposition_4_1_one_step": "|second difference of V_t| <= 2 min( TV(P_t(x),P_t(x')) Lam_X(N), TV(Q_t(y),Q_t(y')) Lam_Y(N) ), N = c+R; constant 2 attained by an explicit 2x2 example",
+  "theorem_4_2_4_4_conditional": "osc2(V_t) <= min_Z 2 delta_t^Z (Lam_Z(c_{t+1}) + osc2(V_{t+1})); contracts iff 2*(mixing coefficient) < 1; Wasserstein variant with W_1-Dobrushin alpha_t"
+ },
+ "lemma_outcome": "failed",
+ "refutation": {
+  "proposition_4_3": "delta_t = 1 EXACTLY for k >= 2 by the k-window encoding (the first retained component at t+1 is the deterministic cell index at t, so successor supports are disjoint); unconditional, generator-independent, not curable by more data",
+  "tv_route_verdict": "degenerates to a bound worse than the trivial a priori bound; contributes nothing on this model class",
+  "w1_route_refuted_by_frozen_generators": {
+   "AR1_alpha": [0.7, 0.55],
+   "SON_alpha_root_corrected": 1.9462,
+   "SON_alpha_as_reported_by_lane": 1.3148,
+   "threshold_required": "alpha < 0.5 (i.e. 2 alpha < 1)"
+  },
+  "budget_arithmetic": "even granting kappa = 0.5, required lookahead tau = 12..17 at T=50 against per-layer budget 0.005*2.923588801715/50 = 2.9235888e-4; a depth-12 subtree per node replaces one shared table per layer, so shorter lookahead is MORE work"
+ },
+ "root_corrections": [
+  "second-order generator law was misread by the lane (generators.py omitted from bundle by root); correct law b=0.55 c=0.95 w=1.7 d=-0.45 sigma=0.7 gives sup|dm/dnow| = |b+d| + c*w = 1.715 and |dm/dold| = 0.45, hence best weighted-metric alpha = 1.9462 at w* = 0.2312 -- refutation is STRONGER than reported",
+  "AR1 coefficients confirmed correct; both families' coefficients come from generator mean maps, not from build_window_model empirical kernels at frozen sample sizes (empirical alpha_t at T=50 unmeasured)"
+ ],
+ "no_deployment_conditions_triggered": [
+  "bound too wide for the 0.5% target",
+  "shorter lookahead is not less work given existing per-layer table sharing"
+ ],
+ "outcome_class_candidate": "direction_stopped_evidence_based for the interaction-compression mechanism as posed; NOT a universal impossibility theorem and NOT a negative-result paper until independently reviewed",
+ "pending_skeptic_obligations": [
+  "counterexample 1: fast-mixing marginals with persistent interaction",
+  "counterexample 2: second-order family, two k=2 windows with identical current coordinate and opposite next-step laws",
+  "counterexample 3: explicit omitted-entries table (shorter lookahead vs per-layer sharing)",
+  "attack Proposition 4.3 for over-generalization: does a different equivalent state representation evade the encoding-level obstruction while preserving the same finite-model target?",
+  "check whether the k=1 delta_t = 1 claim (generic argument + toy) is being read as unconditional"
+ ],
+ "constraints_respected": "no benchmark run, no registered probe, no frozen grid opened, nothing written into runs/, no novelty claim"
+}
