@@ -1,0 +1,59 @@
+{
+  "id": "residual_robustness_01",
+  "date": "2026-09-11",
+  "type": "completed_exact_robustness_screen",
+  "decision": "retain_scale_aware_two_witness_certificate_no_standalone_central_probe",
+  "scientific_objective_achieved": false,
+  "hypothesis_registered": false,
+  "benchmark_run": false,
+  "retrospective": "Prior exact-offset result was valid but large cancelled constant is arbitrarily scalable, exact equality was untested under perturbation, and k2 checks on the same Markov family did not demonstrate genuine second-order usefulness.",
+  "result": "Exact gap is 2-4sigma*epsilon+epsilon^2; reversal threshold is 2/(2sigma+sqrt(4sigma^2-2)). For any positive absolute residual tolerance, sufficiently large noise scale can reverse the naive mean-score ordering. This is a scoped construction result, not impossibility of all robust comparisons.",
+  "constructive_result": "Metric stability with two validated feasible residual couplings gives a sound rational strict-order certificate without querying the exact residual OT value. A query witness improves the conservative moment-only radius in the supplied family.",
+  "exact_controls": {
+    "sigma_100_epsilon_0_001": "gap1.600001; both certificates assert A closer",
+    "sigma_100_epsilon_0_002": "gap1.200004; moment bound unresolved, two-witness bound asserts A closer",
+    "sigma_100_epsilon_0_005": "gap0.000025; two-witness bound still asserts A closer",
+    "sigma_100_epsilon_0_01": "gap-1.9999; naive score wrong, both certificates unresolved",
+    "exact_tie": "sigma201/40, epsilon1/10; strict certificates abstain"
+  },
+  "gate_results": {
+    "guarantee": "independent review accepts finite-family proof and general metric sufficient inequality",
+    "target_fidelity": "actual k1/k2 reconstruction equality verified on controls; no general k2 usefulness claim",
+    "numerics": "exact rational witness cost and squared comparison; no floating certificate",
+    "novelty": "standard metric stability is exactly saturated; no new optimizer-aware theorem",
+    "work": "two supplied maps checked on residual path dictionaries; no scalable general witness discovery or measured matched-comparator advantage",
+    "investment": "retain supporting certificate and limitation; stop standalone robustness or triangle-bound variants as central candidates"
+  },
+  "artifacts": [
+    {
+      "path": "research/theory/residual_robustness_01.md",
+      "sha256": "203999fd7b8988bda6e50bd71867d833527bb33f82e82b5ac167870b59a5761a"
+    },
+    {
+      "path": "research/theory/residual_robustness_01_checks.json",
+      "sha256": "2020c47b31e8f08bdd3072f7213d2a13158dd7c8d5deb58e711f8da37fbd509c"
+    },
+    {
+      "path": "tools/check_residual_robustness_01.py",
+      "sha256": "336425800d2f6ec0825ec9350e293b66855ca1a0bb7303639719b46120af7706"
+    },
+    {
+      "path": "research/theory/residual_robustness_01_review.md",
+      "sha256": "46b2699093862d10b5e0dd010c6df0e0ca7d007844c0810f1e78af6a1e7141ac"
+    }
+  ],
+  "reference_dependencies": {
+    "check_signed_prefix_comparison_01.py": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020",
+    "check_geometry_condition_screen_01.py": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46",
+    "check_conditional_offset_comparison_01.py": "7c9fd87dcab12dbf465a9a280390bc6146c8ab260573bda8a682c9fd7ab61acf"
+  },
+  "review_scope": "Final packet, checker, output and listed dependencies at recorded hashes; no outstanding mathematical objection in declared scope. Earlier pending claims retain their own review status.",
+  "packet_status_note": "This verdict supersedes pending-review/provisional wording in the frozen packet without modifying accepted bytes.",
+  "next_decision": "Any successor must specify a scalable witness-construction mechanism on non-identical residual models, its actual coupling-policy comparator and a genuinely conditional discriminator before task allocation. No more algebraic variants of the saturated bound or automatic grid. This is a possible research investment, not a new completion requirement.",
+  "not_concluded": [
+    "No v3 completion or population guarantee",
+    "No publication-level general impossibility",
+    "No empirical coverage or runtime advantage",
+    "No robust acceptance from residual tolerance alone"
+  ]
+}

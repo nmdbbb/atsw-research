@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-11",
-  "phase": "robustness_cycle_complete_supporting_certificate_retained",
+  "phase": "constructive_cycle_complete_exact_subclass_baseline_retained",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -11,7 +11,7 @@
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
   "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
-  "decision_record": "research/theory/residual_robustness_01_verdict.json",
+  "decision_record": "research/theory/conditional_offset_comparison_01_verdict.json",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -31,39 +31,39 @@
     "updated_on": "2026-09-10",
     "reason": "User approved the project-level architecture comparison; completed within one packet, one repair and one review.",
     "stage": "closed",
-    "task_id": "residual_robustness_01",
+    "task_id": "conditional_offset_comparison_01",
     "progress": {
       "state": "complete",
       "constructions_started": 1,
-      "substantive_repairs_used": 0,
+      "substantive_repairs_used": 1,
       "independent_reviews_assigned": 1,
       "evidence": [
-        "research/theory/residual_robustness_01.md",
-        "research/theory/residual_robustness_01_checks.json",
-        "tools/check_residual_robustness_01.py",
-        "research/theory/residual_robustness_01_review.md",
-        "research/theory/residual_robustness_01_verdict.json"
+        "research/theory/conditional_offset_comparison_01.md",
+        "research/theory/conditional_offset_comparison_01_checks.json",
+        "research/theory/conditional_offset_comparison_01_review.md",
+        "research/theory/conditional_offset_comparison_01_verdict.json",
+        "tools/check_conditional_offset_comparison_01.py"
       ],
-      "note": "Exact noise-dependent threshold and two-witness certificate completed and independently reviewed. Six rational controls, no random sweep, no substantive repair; no general witness-discovery or central probe."
+      "note": "Two-construction cycle completed: signed-prefix obstruction led to conditional-offset factorization and actual k-window recognition. Final version-bound review accepted both proof and recognition; no central probe. One retained repair and one resumed reviewer assignment, counters unchanged."
     },
-    "evidence_record": "research/theory/residual_robustness_01_verdict.json",
-    "next_action": "Any successor must specify a scalable witness-construction mechanism on non-identical residual models, its actual coupling-policy comparator and a genuinely conditional discriminator before task allocation. No more algebraic variants of the saturated bound or automatic grid. This is a possible research investment, not a new completion requirement.",
+    "evidence_record": "research/theory/conditional_offset_comparison_01_verdict.json",
+    "next_action": "Freeze these exact baselines. A next research construction must add a specific optimizer-aware or structured residual mechanism beyond exact common residual equality and standard independent interval bounds. Do not automatically launch another bound variant, broad survey or grid; PO must state the concrete new mechanism and decisive conditional falsifier before allocating the next task.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
     "review_limit": "Current conditional-offset packet/checker/output/dependencies reviewed at explicit hashes. Earlier Trial02 pending claims remain separately pending; no review inheritance.",
     "work_budget": {
-      "purpose": "One robustness construction and parameterized exact failure/success family, one justified repair, one independent review; integrate result before selecting any successor.",
+      "purpose": "One conditional-offset theorem, one exact finite location-mixture family and assumption-breaking controls; one justified repair and one independent review. No automatic benchmark.",
       "max_constructions": 1,
       "max_substantive_repairs": 1,
       "max_independent_review_assignments": 1,
-      "adversarial_family": "Three-time observable-component location mixtures with centered sign innovations; perturb only candidate residual first coordinate while preserving component means and conditional tail labels.",
-      "limit_action": "Record a quantitative keep/stop decision. Do not run a grid or infer a publication-level negative result from this particular family.",
+      "adversarial_family": "T3 finite centered-noise location mixtures with distinct residual laws, moment-matched candidates and reversed query conditional shifts.",
+      "limit_action": "Complete a concrete theorem/diagnostic/review and investment decision; do not expand to a generic mixture or approximate-noise theorem without new evidence.",
       "account_quota_remaining": "unknown"
     },
-    "construction": "Quantify robustness of common-offset ranking under a candidate residual perturbation: exact conditional counterexample and optimizer-aware threshold, not tolerance matching without an error proof.",
-    "decision": "retain_scale_aware_two_witness_certificate_no_standalone_central_probe",
-    "previous_task_disposition": "conditional_offset_comparison_01 completed at 5150afe; exact subclass baseline retained, no central probe. User requests retrospective and actual continuation."
+    "construction": "Condition on observable initial component; use centered conditional location laws to factor a common unknown adapted continuation cost before root OT.",
+    "decision": "retain_implemented_exact_conditional_order_baseline_no_central_probe",
+    "previous_task_disposition": "signed_prefix_comparison_01 completed and independently reviewed; verdict at research/theory/signed_prefix_comparison_01_verdict.json. Continue within user authorization using decision-changing evidence of moment blindness."
   },
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
@@ -71,7 +71,7 @@
   "background_research_running": false,
   "push_authorized": true,
   "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
-  "last_completed_diagnostic": "residual_robustness_01: sharp scaled tolerance failure and sound two-witness certificate through positive near-tie; known metric-stability baseline retained.",
+  "last_completed_diagnostic": "conditional_offset_comparison_01: exact common-residual order factorization plus implemented k-window recognizer, strict reversal fixtures and invalid-assumption rejection; retained limited baseline.",
   "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
   "main_agent_role": "PO; delegated agents retain their assigned roles",
   "review_coverage": {
@@ -121,14 +121,6 @@
       "packet_sha256": "88ba1015a4279ede37108ef3a1a1abcd6a2fbcff27d2cd88b3879d8090c67f5a",
       "scope": "Exact finite target theorem, supplied-model sufficient recognizer, two-component ranking, rational fixtures, rejection controls and limited investment assessment.",
       "pending": "Central novelty, actual comparator performance, broad empirical coverage and floating arithmetic certification not established."
-    },
-    "residual_robustness": {
-      "record": "research/theory/residual_robustness_01_verdict.json",
-      "review_file": "research/theory/residual_robustness_01_review.md",
-      "review_sha256": "46b2699093862d10b5e0dd010c6df0e0ca7d007844c0810f1e78af6a1e7141ac",
-      "packet_sha256": "203999fd7b8988bda6e50bd71867d833527bb33f82e82b5ac167870b59a5761a",
-      "scope": "Exact residual identities, scoped tolerance obstruction, scale-aware bound, two supplied witness maps and six rational controls.",
-      "pending": "Witness discovery on general compact models, broad usefulness, significance and comparator performance remain unestablished."
     }
   },
   "workflow_maintenance": {
@@ -166,14 +158,14 @@
       "forecast": "One construction packet and finite discriminator, at most one justified repair and one investment review; limits, not measured effort.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Retrospective followed by quantitative perturbation theorem and implemented safe certificate; not a gap-only analysis. Supports approximate candidate residuals with validated witnesses, but no central new metric theorem."
+      "outcome": "Completed two substantive constructions, not another gap-only screen. Second gives exact conditional order with supplied-model recognition; current investment stops at a limited implemented baseline."
     },
     "next": {
       "if_gate_passes": "Fund a separately specified substantive mechanism and frozen decisive probe after independent review; no blanket grid authorization.",
-      "if_structural_gate_fails": "Stop the specified witness mechanism with measured or mathematical evidence; do not fund more variants of saturated metric stability.",
+      "if_structural_gate_fails": "Close that specific construction with evidence, retain existing exact baseline; no repeated gap-only or exact-equality variants.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Any successor must specify a scalable witness-construction mechanism on non-identical residual models, its actual coupling-policy comparator and a genuinely conditional discriminator before task allocation. No more algebraic variants of the saturated bound or automatic grid. This is a possible research investment, not a new completion requirement.",
-      "assessment": "research/theory/residual_robustness_01_verdict.json"
+      "decision": "Freeze these exact baselines. A next research construction must add a specific optimizer-aware or structured residual mechanism beyond exact common residual equality and standard independent interval bounds. Do not automatically launch another bound variant, broad survey or grid; PO must state the concrete new mechanism and decisive conditional falsifier before allocating the next task.",
+      "assessment": "research/theory/conditional_offset_comparison_01_verdict.json"
     },
     "later": {
       "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
@@ -191,34 +183,34 @@
     {
       "id": "R_geometry",
       "owner": "PO",
-      "state": "scale_free_approximate_matching_refuted_scale_aware_certificate_available",
+      "state": "exact_common_residual_subclass_resolved_broader_conditions_open",
       "impact": "Structural blocker for the prefix construction, not a refutation of every tree.",
-      "evidence": "research/theory/residual_robustness_01_verdict.json",
+      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
       "trigger": "Divergence/reconvergence discriminator still inverts or cannot resolve a meaningful conditional case.",
       "response": "Use accepted exact subclass as baseline and retain conditional information in any extension; raw signed minimization is blind on matched moments.",
-      "residual": "Query-dependent noise scale and witness cost control resolution; uncertified cases remain unresolved.",
+      "residual": "Exact residual equality is restrictive; useful approximate extensions remain unproved.",
       "blocks": "Prototype investment without the geometry gate."
     },
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "robustness_bound_matches_sharp_known_metric_stability",
+      "state": "implemented_exact_result_insufficient_central_weight",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "research/theory/residual_robustness_01_verdict.json",
+      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
-      "response": "No standalone robustness probe; a distinct witness-construction algorithm would require its own significance assessment.",
+      "response": "Do not benchmark known-ingredient exact factorization solely to create significance; require a concrete additional mechanism.",
       "residual": "Targeted prior-art assessment is not exhaustive novelty adjudication.",
       "blocks": "Paper-level claim and substantial implementation."
     },
     {
       "id": "R_cost",
       "owner": "PO",
-      "state": "supplied_witness_costs_valid_general_discovery_cost_open",
+      "state": "recognizer_path_expansion_removed_total_advantage_unmeasured",
       "impact": "Applicability/full-prefix expansion or exact reference work can consume the entire saving.",
-      "evidence": "research/theory/residual_robustness_01_verdict.json",
+      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
       "trigger": "Condition needs all path pairs/full continuation or weights cannot aggregate on the supplied representation.",
       "response": "Charge K times reachable edges, normalized-window keys/sorting, root OT, model construction and exact arithmetic; strongest eligible early stopping remains unmeasured.",
-      "residual": "Residual path dictionary verification may expand compact models; supplied maps are not a general discovery implementation.",
+      "residual": "Many initial components, late rejection or large rational operands can consume saving.",
       "blocks": "Performance claim and large-run budget."
     },
     {
@@ -245,14 +237,14 @@
     }
   ],
   "interruption_recovery": {
-    "state": "cycle_complete_ready_for_sync",
-    "last_completed": "research/theory/residual_robustness_01_verdict.json",
-    "current_intent": "Research cycle complete; verify final records and synchronize authorized commit. No live research task.",
-    "recover_by": "Use actual Git state and residual_robustness_01 verdict; do not repeat completed reviews or supply diagnostic exact radius as free candidate information.",
+    "state": "cycle_completed_ready_for_sync",
+    "last_completed": "research/theory/conditional_offset_comparison_01_verdict.json",
+    "current_intent": "Completed research cycle; verify artifacts and synchronize authorized commit. No research process remains active.",
+    "recover_by": "Read actual Git state and the two verdicts; do not repeat accepted checks or resume the closed signed-prefix construction. New research task requires a concrete evidence-based construction within existing scope.",
     "live_processes": [],
     "pending_agent_outputs": [],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "Retrospective, proof, controls, witness verification, independent review and investment decision saved."
+    "unsaved_reasoning": "All results, failed-control repair, final reviews, model recognizer and PO investment decisions saved."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

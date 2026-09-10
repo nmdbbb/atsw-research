@@ -1,0 +1,116 @@
+{
+  "task_id": "residual_robustness_01",
+  "kind": "exact_algebraic_diagnostic",
+  "preregistered": false,
+  "source_sha256": "336425800d2f6ec0825ec9350e293b66855ca1a0bb7303639719b46120af7706",
+  "dependency_sha256": {
+    "check_signed_prefix_comparison_01.py": "23181ec7c2bf701f9bed89cb4630f92393a42bf2a37b12cc77f146d3cfc74020",
+    "check_geometry_condition_screen_01.py": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46",
+    "check_conditional_offset_comparison_01.py": "7c9fd87dcab12dbf465a9a280390bc6146c8ab260573bda8a682c9fd7ab61acf"
+  },
+  "results": [
+    {
+      "case": "exact",
+      "sigma": "100",
+      "epsilon": "0",
+      "input_moment_radius_squared": "660000",
+      "verified_query_witness_cost": "40000",
+      "verified_residual_witness_cost": "0",
+      "mean_score_gap": "2",
+      "exact_target_gap": "2",
+      "moment_certificate": "A_closer",
+      "two_witness_certificate": "A_closer",
+      "naive_score_wrong": false,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "certified_small",
+      "sigma": "100",
+      "epsilon": "1/1000",
+      "input_moment_radius_squared": "660000",
+      "verified_query_witness_cost": "40000",
+      "verified_residual_witness_cost": "1/1000000",
+      "mean_score_gap": "2",
+      "exact_target_gap": "1600001/1000000",
+      "moment_certificate": "A_closer",
+      "two_witness_certificate": "A_closer",
+      "naive_score_wrong": false,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "conservative_abstention",
+      "sigma": "100",
+      "epsilon": "1/500",
+      "input_moment_radius_squared": "660000",
+      "verified_query_witness_cost": "40000",
+      "verified_residual_witness_cost": "1/250000",
+      "mean_score_gap": "2",
+      "exact_target_gap": "300001/250000",
+      "moment_certificate": "unresolved",
+      "two_witness_certificate": "A_closer",
+      "naive_score_wrong": false,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "near_boundary_witness",
+      "sigma": "100",
+      "epsilon": "1/200",
+      "input_moment_radius_squared": "660000",
+      "verified_query_witness_cost": "40000",
+      "verified_residual_witness_cost": "1/40000",
+      "mean_score_gap": "2",
+      "exact_target_gap": "1/40000",
+      "moment_certificate": "unresolved",
+      "two_witness_certificate": "A_closer",
+      "naive_score_wrong": false,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "wrong_naive_order",
+      "sigma": "100",
+      "epsilon": "1/100",
+      "input_moment_radius_squared": "660000",
+      "verified_query_witness_cost": "40000",
+      "verified_residual_witness_cost": "1/10000",
+      "mean_score_gap": "2",
+      "exact_target_gap": "-19999/10000",
+      "moment_certificate": "unresolved",
+      "two_witness_certificate": "unresolved",
+      "naive_score_wrong": true,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "exact_tie",
+      "sigma": "201/40",
+      "epsilon": "1/10",
+      "input_moment_radius_squared": "1333233/800",
+      "verified_query_witness_cost": "40401/400",
+      "verified_residual_witness_cost": "1/100",
+      "mean_score_gap": "2",
+      "exact_target_gap": "0",
+      "moment_certificate": "unresolved",
+      "two_witness_certificate": "unresolved",
+      "naive_score_wrong": false,
+      "model_law_checks": [
+        1,
+        2
+      ]
+    }
+  ],
+  "limits": "One finite Markov family and declared rational controls. Model checks on k2 do not establish genuinely second-order usefulness. Both witnesses are supplied and exact path pushforwards verified; scalable model-level witness discovery, floating certification, broad coverage and speed are not implemented/claimed. Exact reference solves are diagnostic, not inputs to either certificate."
+}
