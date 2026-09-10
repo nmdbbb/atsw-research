@@ -1,8 +1,8 @@
 {
   "session": "codex_root_20260910",
   "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
-  "purpose": "Strengthen the exact numerical baseline and screen structural skipping on general supports.",
-  "phase": "quota_checkpoint_permuted_monge_independent_review_pending",
+  "purpose": "Close the bounded structured-local-OT cycle after independent review.",
+  "phase": "structured_local_ot_bounded_cycle_complete",
   "scientific_objective_achieved": false,
   "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
   "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
@@ -63,14 +63,22 @@
       "owns": [
         "research/theory/binary_transport_review_20260910.md"
       ]
+    },
+    "permuted_monge_final_review": {
+      "status": "completed",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "owns": [
+        "research/theory/permuted_monge_final_review_20260910.md"
+      ]
     }
   },
-  "known_blocker": "Reviewer usage limit; last permuted-Monge screen provisional. Original root certificate and novelty gates remain open.",
-  "next_decision": "Verify pins/tests, then independent read-only review of permuted_monge_screen.py and frozen artifacts; rerun only for concrete defect. No grid expansion.",
-  "decision_record": "ledger/inbox/codex_orchestrator/permuted_monge_quota_checkpoint_20260910.json",
-  "decision": "stop_research_on_reviewer_usage_limit_publish_checkpoint",
-  "research_outcome": null,
-  "outcome_scope": "Execution pause; last new screen independently unreviewed. Previous scoped stop decisions retained.",
+  "known_blocker": "No execution/quota blocker for this completed cycle. Original root certificate and distinct shared-work novelty remain unachieved.",
+  "next_decision": "Distinct mechanism on general supports with charged detection/maintenance and original-root upper/lower control, compared against retained structured numerical baselines; no automatic grid expansion.",
+  "decision_record": "ledger/inbox/codex_orchestrator/structured_local_ot_cycle_close_20260910.json",
+  "decision": "close_bounded_cycle_reject_screened_shared_SVD_route",
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Tested structured local transport/order-reuse routes; no universal impossibility theorem or full-domain scientific completion.",
   "automatic_large_grid_authorized_by_this_result": false,
   "updated_on": "2026-09-10",
   "git_pull": {
@@ -88,17 +96,24 @@
     "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%.",
     "structured_local_OT": "Binary direct eliminates132/759 LPs; strict Monge adds247/10 avoided LPs on two tiny cases; cache and broad gates fail.",
     "support_scale": "T50 frozen n binary fractions10.23%/27.62% amongnonforced; one seedshift support audit only.",
-    "permuted_monge": "Provisional: LP164/298 -> shared164/293 -> plusprivate161/287; failed20%shared gate; independent review pending."
+    "permuted_monge": "Independently reviewed: actual LP164/298 -> shared164/293 -> plusprivate161/287; failed20%shared gate; screen closed without rerun."
   },
   "current_cycle_routing": {
-    "reviewer": "gpt-6-astra high; fresh narrow packet",
-    "implementation": "root",
-    "extra_agents": 0
+    "reviewer": "gpt-6-astra high fresh narrow packet",
+    "root": "validation and integration",
+    "benchmark_rerun": false
   },
   "execution_stop": {
-    "reason": "reviewer_usage_limit",
+    "reason": "bounded_cycle_complete_evidence_based",
+    "quota_pause_resolved": true,
     "further_research_started": false,
     "push_authorized": true,
-    "exact_account_quota_remaining": "not_observable"
+    "background_research_running": false
+  },
+  "bounded_cycle": {
+    "id": "structured_local_ot_20260910",
+    "status": "complete",
+    "independent_review": "completed",
+    "unresolved_closure_items": []
   }
 }

@@ -1,0 +1,65 @@
+{
+  "id": "structured_local_ot_cycle_close_20260910",
+  "date": "2026-09-10",
+  "supersedes_current_status_of": "ledger/inbox/codex_orchestrator/permuted_monge_quota_checkpoint_20260910.json",
+  "decision": "close_bounded_cycle_reject_screened_shared_SVD_route",
+  "bounded_cycle": {
+    "id": "structured_local_ot_20260910",
+    "status": "complete",
+    "independent_review": "completed",
+    "unresolved_closure_items": []
+  },
+  "scientific_objective_achieved": false,
+  "research_outcome": "direction_stopped_evidence_based",
+  "outcome_scope": "Tested structured local transport/order-reuse routes; no universal impossibility theorem or full-domain scientific completion.",
+  "evidence": {
+    "actual_LP_identity": [
+      164,
+      298
+    ],
+    "actual_LP_shared": [
+      164,
+      293
+    ],
+    "actual_LP_shared_plus_private": [
+      161,
+      287
+    ],
+    "shared_saved_fraction": [
+      0.0,
+      0.016778523489932886
+    ],
+    "frozen_gate_fraction": 0.2,
+    "shared_gate_passed": false,
+    "max_table_error": 8.881784197001252e-16
+  },
+  "validation": {
+    "unit_tests_passed": 85,
+    "legacy_pins": {
+      "matching": 24,
+      "historical": 1
+    },
+    "final_screen_source_pins": 12,
+    "independent_verdict": "approve scoped failed-gate conclusion; no concrete defect requiring rerun",
+    "benchmark_rerun": false
+  },
+  "numerical_limits": [
+    "float64 NW/marginal arithmetic, no outward root interval",
+    "tiny interior masses and extreme cost arithmetic limitations retained",
+    "archived cases have singleton initial laws",
+    "single fixed-order timings are descriptive",
+    "general-dispatch count is not actual LP count"
+  ],
+  "next_cycle_gate": "Distinct mechanism on general supports with charged detection/maintenance and original-root upper/lower control, compared against retained structured numerical baselines; no automatic grid expansion.",
+  "routing": {
+    "reviewer": "gpt-6-astra high, fresh bounded packet",
+    "root": "integrity checks and integration"
+  },
+  "artifact_sha256": {
+    "research/theory/permuted_monge_final_review_20260910.md": "0890c907f7ac984f064cff7b1bb741e428757b140dd5c1c8d4dda82c298fcad7",
+    "research/theory/structured_local_ot_cycle_close_20260910.md": "917fe70f3f10f21197192f983cb09836e06fd04e094bad790032cfd6909dfd5c",
+    "probes/permuted_monge_screen.py": "7609ccc106a5d2f71b8530bfcb2ffcbe669b11b97f7424f3f1d1bf7b2d9de192",
+    "runs/cycle_2/permuted_monge_screen/manifest.json": "ff5cac8107ffcc8ef8bbef64fafb2b15ea3c50bcd7c653e2f2a83c0d3316b9f6",
+    "runs/cycle_2/permuted_monge_screen/results.json": "9fdde79ae92d7fc4fd88a090f9ed62dde552180460a3e774ffed77480ead887c"
+  }
+}
