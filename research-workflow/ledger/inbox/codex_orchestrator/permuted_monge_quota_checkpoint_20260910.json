@@ -1,0 +1,36 @@
+{
+  "id": "permuted_monge_quota_checkpoint_20260910",
+  "date": "2026-09-10",
+  "prior_decision": "ledger/inbox/codex_orchestrator/structured_local_ot_gate_20260910.json",
+  "decision": "stop_research_on_reviewer_usage_limit_publish_checkpoint",
+  "scientific_objective_achieved": false,
+  "research_outcome": null,
+  "outcome_scope": "Execution pause; last new screen independently unreviewed. Previous scoped stop decisions retained.",
+  "review_status": "pending_independent_review_agent_usage_limit",
+  "reviewer_failure": "Explicit usage-limit error; no alternate-model/quota workaround attempted.",
+  "evidence": {
+    "status": "provisional",
+    "LP_identity": [
+      164,
+      298
+    ],
+    "LP_shared": [
+      164,
+      293
+    ],
+    "LP_shared_plus_private": [
+      161,
+      287
+    ],
+    "shared_both_gate_passed": false,
+    "table_equivalence": "within1e-8",
+    "timing": "single fixed-order exploratory repeats, no speed claim"
+  },
+  "resume": "Verify pins/tests, then independent read-only review of permuted_monge_screen.py and frozen artifacts; rerun only for concrete defect. No grid expansion.",
+  "artifact_sha256": {
+    "probes/permuted_monge_screen.py": "7609ccc106a5d2f71b8530bfcb2ffcbe669b11b97f7424f3f1d1bf7b2d9de192",
+    "runs/cycle_2/permuted_monge_screen/manifest.json": "ff5cac8107ffcc8ef8bbef64fafb2b15ea3c50bcd7c653e2f2a83c0d3316b9f6",
+    "runs/cycle_2/permuted_monge_screen/results.json": "9fdde79ae92d7fc4fd88a090f9ed62dde552180460a3e774ffed77480ead887c",
+    "research/theory/permuted_monge_checkpoint_20260910.md": "dd0d25d5edf50df0fb6f91ca2a170206075600327e05e3cc31b2be31296ec226"
+  }
+}

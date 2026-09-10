@@ -2,7 +2,7 @@
   "session": "codex_root_20260910",
   "user_authorized_role": "Coordinate agents and project autonomously; report decision-changing results only.",
   "purpose": "Strengthen the exact numerical baseline and screen structural skipping on general supports.",
-  "phase": "structured_local_baselines_verified_general_support_mechanism_open",
+  "phase": "quota_checkpoint_permuted_monge_independent_review_pending",
   "scientific_objective_achieved": false,
   "decision_rule": "No performance promotion before sound acceptance; no dynamic-comparator build before evidence of rescue opportunities on real recurrence updates.",
   "shared_file_policy": "Agents write disjoint new files only; preserve historical code/records and use ledger inbox for integration while external session ownership is unresolved.",
@@ -57,7 +57,7 @@
       ]
     },
     "binary_transport_review": {
-      "status": "completed",
+      "status": "prior_reviews_completed_latest_permutation_task_usage_limit",
       "model": "gpt-6-astra",
       "reasoning_effort": "high",
       "owns": [
@@ -65,12 +65,12 @@
       ]
     }
   },
-  "known_blocker": "No outward root certificate or novel shared-work mechanism. Binary/Monge gates fail broad promotion; sample-scale audit reduces apparent sparse-support opportunity.",
-  "next_decision": "Require work savings on still-general support pairs with original-root upper/lower control; benchmark against strengthened directbinary/Monge baselines.",
-  "decision_record": "ledger/inbox/codex_orchestrator/structured_local_ot_gate_20260910.json",
-  "decision": "retain_structured_numerical_baselines_reject_screened_broad_reuse",
-  "research_outcome": "direction_stopped_evidence_based",
-  "outcome_scope": "Identical-support binary order cache, broad strict Monge dispatch promotion, and near-Monge 1e-10 relaxation; no impossibility theorem.",
+  "known_blocker": "Reviewer usage limit; last permuted-Monge screen provisional. Original root certificate and novelty gates remain open.",
+  "next_decision": "Verify pins/tests, then independent read-only review of permuted_monge_screen.py and frozen artifacts; rerun only for concrete defect. No grid expansion.",
+  "decision_record": "ledger/inbox/codex_orchestrator/permuted_monge_quota_checkpoint_20260910.json",
+  "decision": "stop_research_on_reviewer_usage_limit_publish_checkpoint",
+  "research_outcome": null,
+  "outcome_scope": "Execution pause; last new screen independently unreviewed. Previous scoped stop decisions retained.",
   "automatic_large_grid_authorized_by_this_result": false,
   "updated_on": "2026-09-10",
   "git_pull": {
@@ -87,11 +87,18 @@
     "forced_frontier": "Direct dynamic links646/2730 versus compiled709/2080; expanded solver deferred.",
     "root_gap_priority": "Fine concentration89.4% in16nodes but ranking variant fails; improved-occupation control gap24.162% vs variant24.210%.",
     "structured_local_OT": "Binary direct eliminates132/759 LPs; strict Monge adds247/10 avoided LPs on two tiny cases; cache and broad gates fail.",
-    "support_scale": "T50 frozen n binary fractions10.23%/27.62% amongnonforced; one seedshift support audit only."
+    "support_scale": "T50 frozen n binary fractions10.23%/27.62% amongnonforced; one seedshift support audit only.",
+    "permuted_monge": "Provisional: LP164/298 -> shared164/293 -> plusprivate161/287; failed20%shared gate; independent review pending."
   },
   "current_cycle_routing": {
     "reviewer": "gpt-6-astra high; fresh narrow packet",
     "implementation": "root",
     "extra_agents": 0
+  },
+  "execution_stop": {
+    "reason": "reviewer_usage_limit",
+    "further_research_started": false,
+    "push_authorized": true,
+    "exact_account_quota_remaining": "not_observable"
   }
 }

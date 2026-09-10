@@ -1,0 +1,52 @@
+{
+  "schema": "permuted-monge-screen-v1",
+  "cases": [
+    {
+      "process": "ar1",
+      "k": 1,
+      "delta": 0.5,
+      "cost": "squared"
+    },
+    {
+      "process": "second_order_nonmonotone",
+      "k": 2,
+      "delta": 0.18,
+      "cost": "absolute"
+    }
+  ],
+  "T": 5,
+  "paths_per_side": 128,
+  "seed": 1000,
+  "shift": 0.0,
+  "modes": [
+    "identity",
+    "shared_SVD",
+    "shared_then_local_SVD"
+  ],
+  "design": "posthoc original-order failures known; freeze before new order evaluation",
+  "method": "Same directbinary exact numerical DP. Identity Monge first. For failed general supports, test restricted full-layer SVD order and its reversed-right orientation; final arm additionally tests local SVD two orientations. Fraction-exact check before NW, else identical LP.",
+  "gate": "shared_SVD avoids >=20% of identity baseline remaining LP on EACH case; otherwise reject shared-order research premise on this screen. Local improvements remain private-work baseline only.",
+  "deadline_seconds": 60,
+  "deadline_rule": "cooperative each layer/128parentpairs and general dispatch; finish nativeoperation no repeat/downsize",
+  "checks": "all DP tables and roots match identity arm and archived roots within1e-8",
+  "accounting": "includes global SVD each layer, rank construction, support extraction/reordering, exact checks, private SVDs, snapshots/root; separate SVD/check counts and times; support-order source not free",
+  "nonclaims": [
+    "No new Monge theorem or SVD-policy novelty",
+    "NW floating tiny-mass limitation retained",
+    "No outward root certificate or statistical speed claim"
+  ],
+  "hashes": {
+    "probes/binary_transport_screen.py": "d780314feb52ace5aa19a71250733b2dca2b5d063d4b54a7d60ee1b5cf40faee",
+    "adapters/binary_transport.py": "45955db3cf7a156650b16f95c09d706f70886cffae55aea8d224a47599b00cba",
+    "adapters/common_model.py": "4e4b3971c6fda889bda46583606f200b9dc13cac2f7f177fc705cfca0d96ef74",
+    "generators.py": "40869dc36eaa66e7cc09e216089294beb1dda343427f5b3e28cac3d16b37de0b",
+    "probes/policy_pool_common_smoke.py": "5d117d343c895fc3e8b0d94f2dadd7be563ff6ef6648928d1d3124eb37ffd38b",
+    "runs/cycle_2/policy_pool_smoke_manifest.json": "27b004683da32c631a28ef40829ed13a2b6e7895002e64f74610220d482243b2",
+    "runs/cycle_2/policy_pool_common_smoke.json": "61587ff9f83c5ec21be5ce5e4901951164ff9292c614acf1bfecb2e2f0898ebf",
+    "probes/permuted_monge_screen.py": "7609ccc106a5d2f71b8530bfcb2ffcbe669b11b97f7424f3f1d1bf7b2d9de192",
+    "adapters/support_monge.py": "2bd2d190526532c2d3ad65c77f390c80b54f60ca5386db7e495175bcafe1210c",
+    "adapters/policy_pool_candidate.py": "fd1987a1e93e604029c4de155c8229e14f3c0ccc320bd834027db67cd5b99008",
+    "runs/cycle_2/support_monge_screen/manifest.json": "e762e61bdb6bedd131b0e216fd563118c7b45f3fa0573707e18534cfe36ea1fa",
+    "runs/cycle_2/support_monge_screen/results.json": "af60ba98d4873ce3dd670a2c6d9e8c1579fbb11e2a0604bad6992cd6d707d6d9"
+  }
+}
