@@ -1,0 +1,32 @@
+{
+ "id": "direction_revision_gate_20260910",
+ "date": "2026-09-10",
+ "supersedes_current_status_of": "ledger/inbox/codex_orchestrator/direction_selection_proposal_20260910.json",
+ "decision": "adopt_advisor_revision_continuation_interaction_compression_theory_round_first",
+ "scientific_objective_achieved": false,
+ "documents": [
+  "research/theory/direction_revision_20260910.md",
+  "research/sota/MOULOS_BACKHOFF_AUDIT_20260910.md"
+ ],
+ "advisor_feedback_audit": {
+  "claim_1": "Moulos arXiv:2010.06831 makes bicausal-OT-as-MDP (Bellman, VI, optimality) explicit prior art; VERIFIED at theorem level (Thm 1, Lemma 3); setting is finite S, stationary kernels, infinite horizon, discounted or beta=1",
+  "claim_2": "Backhoff et al. arXiv:2002.07261 Thm 6.1: Markov d=1 rate N^(-1/3), exponent T-independent, constants T-dependent; VERIFIED verbatim incl. Remark 6.2; assumptions: compact support [0,1]^d, Lipschitz kernels",
+  "kr_near_optimality": "seminar-level only; candidate identities pinned (arXiv:2312.16515, arXiv:2209.03243), NOT audited"
+ },
+ "changes": {
+  "joint_refinement": "demoted to execution tool + comparison baseline; its gap-concentration evidence and 5 frozen stop-gates remain valid for later execution rounds",
+  "new_primary": "bounded theory round: compress the interaction part R_t of continuation values with certification for the ORIGINAL finite model, before W1/P1/grid",
+  "estimand": "forced-smoothing argument removed by Backhoff Thm 6.1 as stated; three-way fork recorded; no switch now"
+ },
+ "theory_round_outputs_required": [
+  "candidate mathematical statement: structural condition -> certified root error via additive-interaction split; lemma target: Dobrushin-type control of R_t span for finite-horizon undiscounted inhomogeneous kernels under OPTIMIZED coupling",
+  "adversarial counterexamples: fast-mixing marginals with persistent interaction; second-order family with opposite next-state laws; explicit omitted-entries table",
+  "work table: detection/maintenance/certification cost vs strengthened dispatch baselines"
+ ],
+ "no_deployment_conditions": [
+  "provable only in the closed-form Gaussian case",
+  "checking the condition requires the full continuation",
+  "bound too wide for the 0.5% target"
+ ],
+ "constraints_respected": "no experiment run, no hypothesis registered, no scope change, no solver code modified"
+}
