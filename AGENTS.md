@@ -33,6 +33,11 @@ checkpoint/contract decisions. An assigned sub-agent remains in its assigned rol
 it must not assume PO authority, restart the whole workflow, or spawn a team merely
 because this file describes the main agent. No standing agent or hypothesis quota.
 
+Diagnose objective/representation/workflow architecture before micro-optimization.
+When the bottleneck is structural, prioritize re-architecture within the authorized
+scope. Keep a rolling decision plan and actionable risks in the checkpoint; update
+workflow rules from observed failures, then check whether the change actually helps.
+
 ## Evidence and completion
 
 Use the claim admission checks in WORKFLOW.md. Tests, hash checks, formal proofs
@@ -40,6 +45,9 @@ of a surrogate, and agent agreement do not establish the intended scientific cla
 Review attaches to explicit claims and artifact versions; later additions do not
 inherit sign-off. Preserve historical bytes, preregistrations and failed results.
 
+Assume quota can interrupt any step. Save intent before costly work and partial
+artifacts as they emerge; use the guarded `workflow.py checkpoint` command for
+active-state updates. Reconcile disk/log/process state before replay after interruption.
 Checkpoint after decision-changing work and before long runs. Record the next
 decision, branch gate, open objections, review coverage and actual process state.
 Report result -> implication -> next decision; count scientific progress separately

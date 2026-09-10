@@ -39,6 +39,56 @@ PO xét trước: **nếu bước này thành công hoàn hảo, nó có gỡ m�
 chặn mục tiêu không?** Nếu chỉ làm đẹp baseline hoặc bỏ qua nghẽn khác đã biết,
 giữ làm công cụ phụ hoặc chọn câu hỏi khác. Không chọn hướng chỉ vì khớp code có sẵn.
 
+## Tiến hóa workflow và định hướng: vĩ mô trước vi mô
+
+PO đánh giá lại hướng khi có bằng chứng đổi quyết định, trước tăng ngân sách hay
+promotion, hoặc khi sửa nhỏ liên tiếp không gỡ nghẽn. Không tái kiến trúc chỉ vì
+một bug hay một lượt đo nhiễu; nhưng một sai lệch target/filtration hoặc nghẽn
+cấu trúc đã xác nhận đủ để dừng đầu tư phụ thuộc vào nó ngay.
+
+| Tầng nguyên nhân | Dấu hiệu kích hoạt | Quyết định ưu tiên |
+|---|---|---|
+| Mục tiêu / claim | Kết quả dù tốt nhất vẫn không có sức nặng; giả thiết nguồn không phủ đối tượng; user đổi ưu tiên | Kiểm lại luận điểm đóng góp và domain; đề xuất amendment nếu thật sự cần đổi target/guarantee |
+| Biểu diễn / thuật toán | Mất thông tin cần giữ thứ tự; điều kiện đòi giải OT đầy đủ; chi phí chuyển biểu diễn xóa savings; cải lower không gỡ upper | Ưu tiên thay representation, decomposition hoặc cơ chế trên cùng target; một diagnostic so trực tiếp với kiến trúc đang dùng |
+| Workflow / điều phối | Lặp review, tiếp tục task sai, ngân sách reset, candidate tự được promotion, mất bằng chứng khi ngắt | Sửa quyền sở hữu/trạng thái/cổng/handoff gây lỗi; giữ những cổng toán đang có ích |
+| Implementation | Bug định vị được, code không thực hiện thuật toán đã nêu, overhead sau khi cơ chế sống sót | Sửa tối thiểu và kiểm đúng lỗi; chỉ tối ưu hằng số khi tác động mục tiêu đã rõ |
+
+**Chu kỳ tiến hóa:** ghi triệu chứng + evidence → xác định tầng nguyên nhân →
+so giữ kiến trúc/sửa cục bộ/tái kiến trúc bằng giá trị khoa học, rủi ro và công
+chuyển đổi → chọn một thay đổi → thử tại quyết định liên quan kế tiếp → giữ,
+sửa hoặc hoàn tác phần quy trình nếu không hữu ích. Ghi `workflow_evolution`
+trong checkpoint: trigger, rationale, thay đổi, kỳ vọng quan sát được, điều kiện
+review lại và đường về phiên bản trước. Git giữ lịch sử; không thêm sổ trùng lặp.
+
+Khi nguyên nhân thuộc vĩ mô, đóng băng tối ưu vi mô không liên quan. PO được
+tái kiến trúc workflow/biểu diễn trong scope đã giao; sửa quy trình không tự
+cho quyền hạ tiêu chí khoa học, bỏ review độc lập hay sửa đăng ký sau kết quả.
+Một thay đổi workflow chỉ được coi hữu ích khi giảm sai quyết định, việc lặp
+hoặc công bỏ phí quan sát được. Nhiều file mới không là tiến bộ. Không mở vòng
+“tối ưu workflow” vô hạn: sửa chỗ chặn rồi trở về câu hỏi nghiên cứu.
+
+## Kế hoạch dự tính và xử lý rủi ro
+
+`project_plan` giữ ba chân trời; chi tiết hiện tại nằm ở `workflow_route`, không
+chép lại hàng đợi. **Now:** một quyết định đang được cấp công. **Next:** nhánh
+nếu bằng chứng đạt/không đạt. **Later:** mốc xác nhận đóng góp, chỉ cấp ngân sách
+khi các phụ thuộc đã qua. Mốc là evidence/gate, không là cam kết ngày có định lý.
+
+Mỗi dự tính ghi đơn vị công, căn cứ, mức chắc chắn và điều gì có thể làm nó đổi.
+Khi chưa có pilot, dự tính bằng số packet/đối chứng/review; thời gian, tokens và
+compute chưa đo ghi unknown. Trước run lớn, đo một đơn vị đại diện để ước lượng
+khoảng chi phí, kèm giả thiết scaling và checkpoint từng phần. Trần budget có
+thể cấp được khác với dự báo sẽ tốn bao nhiêu. Không suy ra “còn quota” từ việc
+lệnh trước vừa chạy được; không tiêu hết ngân sách cho đủ kế hoạch.
+
+Risk register chỉ giữ rủi ro có thể đổi quyết định. Mỗi mục có owner, bằng chứng
+hoặc giả định, tác động, tín hiệu kích hoạt, biện pháp, rủi ro còn lại và bước
+tiếp bị chặn. Không bịa xác suất. Rà lại khi có evidence mới, nhận external
+update, trước promotion/chạy đắt hoặc đổi kiến trúc; không đọc mọi mục mỗi tool.
+Lỗi correctness/scope chặn claim phụ thuộc; rủi ro novelty/chi phí chặn đầu tư
+lớn; quota chặn thực thi và cần phục hồi, không là kết luận toán. Rủi ro trở
+thành sự cố thì ghi actual outcome; chỉ đóng khi evidence cho thấy đã xử lý.
+
 ## Luồng điều phối và cổng đầu tư
 
 ```text
@@ -182,6 +232,47 @@ toàn suite khi code/dependency/ledger liên quan thay đổi hoặc có nghi v�
 Trước khi kết thúc: lưu kết quả đang có, handoff phần thiếu và Git state; commit/
 push nếu đã được cho phép, xác minh remote trước khi báo đồng bộ. Không chờ đến
 trần quota mới ghi bằng chứng; không hứa quan sát quota khi công cụ không có số đó.
+
+## Checkpoint khi phiên có thể ngắt bất kỳ lúc nào
+
+Đơn vị phục hồi là một bước nhỏ có đầu ra trên đĩa. Trước đọc/chứng minh dài,
+giao agent hoặc chạy tool đắt: lưu task ID, intent, budget đã dành/dùng, artifact
+sẽ ghi và bước phục hồi nếu chưa nhận được phản hồi. Trong khi làm, ghi từng
+bổ đề, source note hoặc output hữu ích với nhãn partial/unreviewed; không giữ
+toàn bộ kết quả chỉ trong chat hoặc chờ cuối vòng mới viết. Sub-agent ghi vào
+file được giao, root tích hợp checkpoint. Mốc checkpoint theo công việc có ý
+nghĩa, không theo phần trăm quota không quan sát được.
+
+Lưu trạng thái bằng **`workflow.py checkpoint`**, không ghi đè trực tiếp file
+active. Lệnh nhận JSON đề xuất riêng và hash checkpoint đã đọc (từ `status`):
+
+```text
+python research-workflow/workflow.py checkpoint PATH_TO_PROPOSED_JSON --expected-sha256 HASH_FROM_STATUS
+```
+
+Công cụ kiểm contract/ledger, giữ các trường/top-level types hiện có, cấm reset
+counter cùng task và đổi completion flags, yêu cầu disposition khi chuyển task.
+Nó lưu byte bản trước vào `ledger/checkpoints/recovery_<sha256>.json`, flush/fsync
+file tạm cùng filesystem rồi replace active nguyên tử. Bản trước là snapshot
+khôi phục, không là sự kiện khoa học mới. PO là người ghi duy nhất: hash guard
+không phải khóa phân tán cho nhiều phiên cùng ghi. Lệnh không kiểm tính đúng của
+claim, không tự chạy task và không bảo đảm durability khi máy/ổ đĩa hỏng.
+
+**Mở lại sau ngắt:** đọc active trước. Nếu JSON/contract không hợp lệ, kiểm Git
+và snapshot có hash đúng, so artifact rồi phục hồi có chủ đích; không tự quay về
+bản cũ chỉ vì command chưa trả lời. Save có thể đã thành công trước khi mất phản
+hồi. Đối chiếu task ID, counters, output, manifest và tiến trình (ID kèm thời
+điểm/command/log, tránh nhầm PID tái sử dụng). Không có log không đồng nghĩa task
+chưa chạy. Ghi unknown/unreconciled khi chưa rõ; không replay solve đắt hoặc hành
+động có side effect cho tới khi biết cần làm gì. Review dở vẫn là review dở.
+
+Commit phần công việc nhất quán tại mốc quyết định và push trong quyền đã có;
+work-in-progress phải được gắn nhãn, kiểm không chứa output rác/secret. Push fail
+thì giữ commit cục bộ và ghi việc đồng bộ còn thiếu. Sau crash, Git status và
+remote HEAD là nguồn xác minh; không tin cờ “đã push” cũ. Checkpoint cục bộ giảm
+mất công khi quota ngắt, push bảo vệ thêm khỏi mất máy. Vẫn có thể mất phần suy
+nghĩ chưa ghi của bước hiện tại; không hứa khôi phục tuyệt đối hay tự push sau
+khi phiên đã bị cắt.
 
 Giữ nguyên hash, snapshot và preregistration lịch sử. Công cụ `check-report` chỉ
 sàng số liệu solver v1/v2 và trả NOT_READY cho v3; không dùng nó xác nhận ranking.

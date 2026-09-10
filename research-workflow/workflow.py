@@ -11,9 +11,11 @@ import hashlib
 import itertools
 import json
 import math
+import os
 import re
 import statistics
 import sys
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -90,6 +92,92 @@ def initialize(root):
     write_new(lockpath, lock)
     append_event(root, "contract_frozen", lock)
     return lock
+
+
+def save_checkpoint(root, path, expected_sha256):
+    """Single-writer PO save: validate, snapshot old bytes, atomically replace.
+
+    This guards stale sessions and partial writes, not scientific semantics or
+    simultaneous writers. Root must serialize saves. Recovery snapshots never
+    authorize automatic replay of tasks or external side effects.
+    """
+    root, path = Path(root), Path(path)
+    lock = verify_contract(root)
+    active = root / "status.orchestrator.json"
+    if path.resolve() == active.resolve():
+        raise ValueError("Stage the proposed checkpoint in a separate file")
+    old_bytes = active.read_bytes()
+    old_hash = hashlib.sha256(old_bytes).hexdigest()
+    if old_hash != expected_sha256:
+        raise ValueError("Stale checkpoint: reread active state; do not overwrite newer work")
+    old, candidate = json.loads(old_bytes), read_json(path)
+    if not isinstance(candidate, dict):
+        raise ValueError("Checkpoint must be a JSON object")
+    for key, value in old.items():
+        if key not in candidate or (value is not None and type(candidate[key]) is not type(value)):
+            raise ValueError(f"Preserve existing checkpoint field and type: {key}")
+    if isinstance(old.get("review_coverage"), dict):
+        if not old["review_coverage"].keys() <= candidate["review_coverage"].keys():
+            raise ValueError("Preserve review coverage fields; record resolved claims explicitly")
+    for key in ("scope_revision", "workflow_route"):
+        if not isinstance(candidate.get(key), dict):
+            raise ValueError(f"Checkpoint missing object: {key}")
+    # Serialize before any mutation: reject malformed/nonfinite payloads.
+    new_bytes = (json.dumps(candidate, ensure_ascii=False, indent=2,
+                           allow_nan=False) + "\n").encode("utf-8")
+    for key in ("objective_id", "objective_sha256"):
+        if candidate["scope_revision"][key] != lock[key]:
+            raise ValueError("Checkpoint scope must match the verified contract")
+    for key in ("scientific_objective_achieved", "legacy_solver_objective_achieved"):
+        if not isinstance(candidate.get(key), bool) or candidate[key] != old.get(key):
+            raise ValueError("Checkpoint save cannot change scientific completion flags")
+    route, old_route = candidate["workflow_route"], old["workflow_route"]
+    for key in ("task_id", "stage", "next_action", "work_budget", "progress"):
+        if not route.get(key):
+            raise ValueError(f"Checkpoint route missing {key}")
+    for key in ("task_id", "stage", "next_action"):
+        if not isinstance(route[key], str) or not route[key].strip():
+            raise ValueError(f"Checkpoint route requires a nonempty string: {key}")
+    if not isinstance(route["progress"], dict) or not isinstance(route["work_budget"], dict):
+        raise ValueError("Progress and work_budget must be objects")
+    for key in ("constructions_started", "substantive_repairs_used", "independent_reviews_assigned"):
+        value = route["progress"][key]
+        if isinstance(value, bool) or not isinstance(value, int) or value < 0:
+            raise ValueError(f"Invalid progress counter: {key}")
+        if route["task_id"] == old_route["task_id"] and value < old_route["progress"][key]:
+            raise ValueError(f"Cannot reset progress for the same task: {key}")
+    if route["task_id"] != old_route["task_id"]:
+        disposition = route.get("previous_task_disposition")
+        if not isinstance(disposition, str) or not disposition.strip():
+            raise ValueError("Changing tasks requires previous_task_disposition with evidence/reason")
+    backup = root / "ledger/checkpoints" / ("recovery_" + old_hash + ".json")
+    backup.parent.mkdir(parents=True, exist_ok=True)
+    if backup.exists():
+        if backup.read_bytes() != old_bytes:
+            raise ValueError("Existing recovery snapshot differs from its content hash")
+    else:
+        _atomic_replace_bytes(backup, old_bytes)
+    if digest(active) != old_hash:
+        raise ValueError("Checkpoint changed during save; reread active state")
+    _atomic_replace_bytes(active, new_bytes)
+    return {"saved": str(active), "checkpoint_sha256": digest(active),
+            "previous_snapshot": str(backup), "scientific_validation": False}
+
+
+def _atomic_replace_bytes(path, data):
+    """Write beside the destination so replacement stays on one filesystem."""
+    staged = None
+    try:
+        with tempfile.NamedTemporaryFile(prefix=".checkpoint-", suffix=".tmp",
+                                         dir=path.parent, delete=False) as f:
+            staged = Path(f.name)
+            f.write(data)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(staged, path)
+    finally:
+        if staged is not None:
+            staged.unlink(missing_ok=True)
 
 
 def validate_hypothesis(h):
@@ -299,6 +387,9 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("init")
     sub.add_parser("status")
+    checkpoint = sub.add_parser("checkpoint")
+    checkpoint.add_argument("path", type=Path)
+    checkpoint.add_argument("--expected-sha256", required=True)
     reg = sub.add_parser("register")
     reg.add_argument("path", type=Path)
     check = sub.add_parser("check-report")
@@ -311,8 +402,11 @@ def main():
             result = {"contract": verify_contract(ROOT),
                       "checkpoint_source": "status.orchestrator.json" if (ROOT / "status.orchestrator.json").exists() else "status.json",
                       "checkpoint": read_json(ROOT / "status.orchestrator.json") if (ROOT / "status.orchestrator.json").exists() else read_json(ROOT / "status.json"),
+                      "checkpoint_sha256": digest(ROOT / "status.orchestrator.json") if (ROOT / "status.orchestrator.json").exists() else None,
                       "legacy_checkpoint_source": "status.json",
                       "registered": sorted(p.stem for p in (ROOT / "ledger/preregistered").glob("*.json"))}
+        elif args.command == "checkpoint":
+            result = save_checkpoint(ROOT, args.path, args.expected_sha256)
         elif args.command == "register":
             result = register(ROOT, args.path)
         else:

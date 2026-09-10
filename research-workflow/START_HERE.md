@@ -17,6 +17,10 @@ Agent chính nói chuyện với user giữ vai **PO / research orchestrator**, 
 4. Đọc workflow chính, `workflow_route` và evidence liên quan next action.
    [Audit các lỗi đã gặp](research/workflows/po_workflow_audit_20260910.md) là bản
    đồ tra cứu khi cần; không phải yêu cầu đọc mọi paper/review lại từ đầu.
+5. Nếu phiên trước bị ngắt, hòa giải `interruption_recovery`, progress, file/log
+   và Git trước khi chạy lại. Đọc `project_plan`, rủi ro đang kích hoạt và
+   `workflow_evolution`; ưu tiên tái kiến trúc khi evidence chỉ nguyên nhân vĩ mô.
+   Kế hoạch có điều kiện, không tự kích hoạt toàn bộ các mốc về sau.
 
 Phân biệt rõ: chỉ thị user mới nhất > hướng dẫn repo. Trong repo, objective khóa
 nghĩa mục tiêu, lựa chọn user có record làm rõ yêu cầu, checkpoint giữ trạng thái,
@@ -47,6 +51,9 @@ hữu hạn; chỉ hỏi lựa chọn mục tiêu/guarantee hoặc cam kết m�
 Kết thúc: kết quả -> ý nghĩa đối với mục tiêu -> quyết định tiếp. Ghi checkpoint
 sau quyết định quan trọng, không chờ hết quota. Nói rõ phần nào numerical,
 reviewed, pending; không dùng số tests hay agent đồng thuận làm chứng minh.
+Bắt đầu bước tốn công bằng lưu intent; ghi kết quả từng phần trên đĩa. Dùng
+`workflow.py checkpoint` với hash từ `status` để lưu active an toàn; đọc quy trình
+phục hồi trong WORKFLOW.md. Không reset ngân sách hoặc replay mù sau ngắt.
 Báo Git/process state đúng thực tế. Không có nghiên cứu chạy nền chỉ vì đã có workflow.
 
 ## Kiểm tra khởi động, từ gốc repo

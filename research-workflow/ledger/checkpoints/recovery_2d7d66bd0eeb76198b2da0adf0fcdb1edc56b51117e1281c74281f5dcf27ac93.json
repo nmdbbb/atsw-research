@@ -1,0 +1,97 @@
+{
+  "session": "codex_root_20260910_scope_v3",
+  "updated_on": "2026-09-10",
+  "phase": "conditional_order_baseline_checked_geometry_gate_pending",
+  "scope_revision": {
+    "id": "contract_revision_3",
+    "objective_id": "tree-adapted-ot-relational-v3",
+    "objective_sha256": "58324e8cb0dea0db8790a67a16f56c6ad38876a49aab95ff3e4471f5cf74e627",
+    "status": "received_and_applied"
+  },
+  "scientific_objective_achieved": false,
+  "legacy_solver_objective_achieved": false,
+  "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
+  "decision_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
+  "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
+  "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
+  "imported_head": "56fd25b",
+  "imported_theory": {
+    "record": "ledger/inbox/codex_orchestrator/theory_round_theorist_20260910.json",
+    "status": "awaiting_independent_review",
+    "investment": "parked; no implementation or grid",
+    "open_questions": [
+      "conditional one-step TV claim vs global impossibility",
+      "generator vs empirical kernels",
+      "factor 2 and work counts"
+    ]
+  },
+  "routing": "Use WORKFLOW.md; current task and budget live only in workflow_route. Root owns PO decisions and shared integration.",
+  "workflow_route": {
+    "policy": "WORKFLOW.md",
+    "updated_on": "2026-09-10",
+    "reason": "User requested an evidence-based workflow improvement and persistent PO role at new-session startup.",
+    "stage": "screening",
+    "task_id": "geometry_condition_screen_01",
+    "progress": {
+      "state": "not_started",
+      "constructions_started": 0,
+      "substantive_repairs_used": 0,
+      "independent_reviews_assigned": 0,
+      "evidence": [],
+      "note": "Current turn improves workflow only. Update usage before task execution; a new session must not reset it."
+    },
+    "evidence_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
+    "next_action": "One bounded geometry-aware condition on divergence/reconvergence, with input-only applicability and work accounting.",
+    "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
+    "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
+    "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
+    "review_limit": "Trial 02 core review was written before usage limit; final root additions lack full independent sign-off.",
+    "work_budget": {
+      "purpose": "Decide whether one geometry-aware construction merits investment review; no benchmark or production kernel.",
+      "max_constructions": 1,
+      "adversarial_family": "One finite, genuinely conditional divergence/reconvergence family; algebraic cases only, no seed/grid sweep.",
+      "max_substantive_repairs": 1,
+      "max_independent_review_assignments": 1,
+      "limit_action": "Record verdict or inconclusive and checkpoint. PO may revise the next task budget only with new decision-changing evidence and written rationale.",
+      "account_quota_remaining": "unknown; these are work limits, not a measured token allowance"
+    }
+  },
+  "automatic_large_grid_authorized": false,
+  "v3_hypotheses_registered": [],
+  "v3_benchmarks_run": [],
+  "background_research_running": false,
+  "push_authorized": true,
+  "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
+  "last_completed_diagnostic": "Trial 02 rational checks and PO verdict; full final independent sign-off pending, no scientific success.",
+  "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
+  "main_agent_role": "PO; delegated agents retain their assigned roles",
+  "review_coverage": {
+    "record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
+    "review_file": "research/theory/relational_trial_02_independent_review_20260910.md",
+    "review_file_sha256": "00c7fc451f14c03c6dfc656cc696c4e751d4d33bd97462aecc97afe2de06a98a",
+    "packet": "research/theory/relational_trial_02_packet_20260910.md",
+    "packet_final_sha256": "ce0f346f2e26f39fb18658b0c192ac2c1903fe5882cb47f0927c176a3e459e09",
+    "packet_revision_actually_reviewed": "unknown; final hash is for identification, not retrospective review attestation",
+    "written_review_covers": [
+      "Causal prefix agreement formula and known prior-art overlap",
+      "Uniform cost-distortion conditional ordering implication",
+      "Compact suffix aggregation qualification and representation costs"
+    ],
+    "pending": [
+      "Final root range/marginal bridge additions and implementation",
+      "Full final packet sign-off after the reviewer usage-limit interruption"
+    ],
+    "blocks": "Promotion of pending claims or dependent implementation as independently reviewed/certified; does not block bounded screening of a new construction",
+    "next_review": "Request only decision-relevant pending claims and new changes, with exact artifact versions, when the investment gate is reached"
+  },
+  "workflow_maintenance": {
+    "id": "adaptive_po_workflow_20260910",
+    "state": "in_progress",
+    "request": "Macro-first workflow evolution, project direction, rolling plans, risk handling and interruption-safe checkpoints",
+    "completed": [
+      "Read current workflow and checkpoint"
+    ],
+    "next_action": "Add macro review/rolling plan/risk rules and a guarded atomic checkpoint command; validate before commit/push",
+    "research_task_started": false
+  }
+}
