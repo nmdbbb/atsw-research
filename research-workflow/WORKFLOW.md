@@ -1,21 +1,78 @@
-# Active workflow: scope v3
+# Workflow chính: scope v3 và điều kiện rẽ nhánh
 
-Read [SCOPE_REVISION_3.md](SCOPE_REVISION_3.md) and `objective.json` first.
-They supersede conflicting instructions below. The active objective is guaranteed
-relational comparison/top-K on finite-model adapted OT. Scientific significance
-is the first investment gate. Start with one bounded claim/counterexample/work
-packet, not three mandatory hypotheses, a W1 overhaul or a full solver grid.
+Cập nhật 2026-09-10 theo yêu cầu user: cải tiến workflow hiện có bằng điều kiện
+rẽ nhánh. Mọi vòng dùng chung quy trình này, checkpoint và sổ bằng chứng.
+Đọc `objective.json`, [scope v3](SCOPE_REVISION_3.md) và
+[lựa chọn mới nhất của user](DECISION_ORDER_PRESERVATION_20260910.md).
+Đích đang chọn là **giữ thứ tự dưới điều kiện toán học trên mô hình hữu hạn**;
+top-K, thứ tự đầy đủ và fallback không bắt buộc. Sức nặng khoa học đứng trước
+đầu tư triển khai. Các trạng thái dưới đây là quyết định của orchestrator;
+`workflow.py` không tự gọi agent hoặc tự đánh giá chứng minh.
 
-Require explicit correctness/risk, nontrivial coverage, ties/abstention/fallback,
-object-disjoint evaluation splits and matched-decision end-to-end costs. A shared
-tree and closed-form tree-Wasserstein alone do not certify bicausal ranking.
-Preserve historical evidence. The active checkpoint is `status.orchestrator.json`.
+## Luồng điều phối và cổng đầu tư
 
-The following is retained legacy solver guidance. Its 0.5%/full-grid requirements
-apply only to separately labelled v1/v2 solver claims using their snapshots;
-read its references to objective.json as that historical contract. Applicable
-integrity, preregistration, independent review and cost-accounting principles
-remain in force. For v3 task definitions, outcomes and next steps use scope v3.
+```text
+Checkpoint + câu hỏi quyết định
+  → Sàng lọc có giới hạn
+      ├─ Sai / trùng kết quả đã biết / không còn đóng góp đáng theo → đóng nhánh hoặc giữ baseline
+      ├─ Chưa phân biệt được → một phép kiểm bổ sung có lý do, hoặc checkpoint
+      └─ Có cơ chế và đóng góp khả dĩ → review độc lập
+          ├─ Phản đối chưa giải quyết → quay lại sàng lọc, rút claim hoặc checkpoint
+          └─ Đủ cơ sở đầu tư → khai trước probe → triển khai và kiểm nhỏ
+              ├─ Code sai → sửa cùng hypothesis, ghi implementation_invalid
+              ├─ Prediction bị bác → ghi falsified và đóng nhánh
+              ├─ Chưa kết luận → chỉ chạy tiếp nếu có phép đo thay đổi quyết định
+              └─ Sống sót → đóng băng candidate/protocol → xác nhận độc lập
+                  → phân loại kết quả theo hợp đồng đang áp dụng
+```
+
+| Bước | Điều kiện vào và đầu ra tối thiểu | Điều kiện chuyển tiếp |
+|---|---|---|
+| Sàng lọc | Một câu hỏi, claim/điều kiện cụ thể, prior art gần nhất, phép bác bỏ rẻ nhất và giới hạn công việc | Có cơ chế khả dĩ và phần đóng góp còn lại; đã kiểm phản ví dụ trực tiếp và chi phí kiểm điều kiện |
+| Review đầu tư | Reviewer nhận định nghĩa, bằng chứng, phản đối và phần chưa biết của packet | Không còn phản đối chặn probe; nêu rõ điều gì đã chứng minh, điều gì còn conjecture và oracle nào sẽ phân biệt |
+| Probe | Đăng ký hypothesis bằng `workflow.py register` trước thực nghiệm đo prediction; đóng băng oracle, ngưỡng, dữ liệu và ngân sách | Độ đúng phù hợp mức claim, tín hiệu vượt baseline và công việc thực sự tránh được đủ để đầu tư tiếp |
+| Xác nhận | Candidate, comparator và protocol đóng băng; dữ liệu held-out chưa dùng chọn hướng | Review độc lập về guarantee/implementation, chi phí đầy đủ, coverage và các cổng hoàn thành của scope đang áp dụng |
+
+**Ranh giới sàng lọc/probe:** phép tính đại số, phản ví dụ hữu hạn và script oracle
+nhỏ phục vụ kiểm một phát biểu được làm trước đăng ký. Ghi rõ là diagnostic,
+đầu vào đã xem và giới hạn; không dùng chúng như xác nhận mù hay số đo coverage,
+hiệu năng hoặc thắng SOTA. Khi bắt đầu đo prediction bằng mẫu, seed hoặc sweep
+để quyết định hiệu quả thực nghiệm, phải khai trước. Không đổi tên benchmark
+thành diagnostic để bỏ qua cổng. Không bắt một diagnostic phải có định lý mới
+hoàn chỉnh; cổng sức nặng chặn đầu tư lớn, không chặn phép kiểm cần để ra quyết định.
+
+Với hướng hiện tại, cổng sang prototype cần một lemma không vòng tròn, một
+fixture có phụ thuộc điều kiện thực sự vượt baseline agreement + marginal/range,
+và bảng công việc tính cả kiểm điều kiện. Đây là điều kiện cấp ngân sách probe,
+chưa chứng minh novelty hay hoàn thành mục tiêu. Trial 02 giữ làm baseline;
+task kế tiếp kiểm trường hợp chuỗi tách rồi gần lại như PO decision đã ghi.
+
+## Routing và ghi nhận trong cùng workflow
+
+- Orchestrator trước mỗi task ghi: mục tiêu được phục vụ, điều chưa biết, kết quả
+  nào đổi quyết định và phép kiểm rẻ nhất. Task không trả lời được thì chưa cấp.
+- Mặc định root làm sàng lọc; một reviewer độc lập khi có packet cụ thể. Chỉ giao
+  implementer sau cổng đầu tư. Bốn vai trò ở hướng dẫn cũ là năng lực có thể dùng,
+  không phải bốn agent luôn hoạt động; không có quota ba hypothesis mỗi vòng.
+- Giao agent đúng file/định nghĩa cần đọc, tái sử dụng kết quả đã có và chỉ tra cứu
+  phần tri thức còn thiếu. Dùng script cho phép tính lặp. Không lặp review/test
+  nếu không có thay đổi, lỗi hoặc phản đối chưa giải quyết làm căn cứ.
+- Một packet giữ bằng chứng; verdict và checkpoint trỏ về packet. SOURCE_NOTE,
+  OBJECTION/RESOLUTION và ARTIFACT/VERDICT áp dụng khi có trao đổi tương ứng,
+  không phải nghĩa vụ tạo thêm agent hay chép cùng nội dung nhiều lần.
+- Người viết không tự phê duyệt guarantee để nâng claim. Review bị gián đoạn
+  ghi rõ phạm vi đã review và phần còn thiếu; không vượt cổng do hết quota.
+- Active checkpoint là `status.orchestrator.json`: ghi bước đang ở, bằng chứng,
+  điều kiện chuyển tiếp, blocker và một next action. `status.json` là lịch sử.
+  Thiếu tài nguyên dẫn tới checkpoint; sai một construction chỉ đóng construction
+  đó, không chứng minh bất khả thi cho cả lớp. Không tự chuyển sang ranking thống kê.
+
+Giữ nguyên hash, snapshot và preregistration lịch sử. Công cụ `check-report` chỉ
+sàng số liệu solver v1/v2 và trả NOT_READY cho v3; không dùng nó xác nhận ranking.
+Các nguyên tắc độc lập, khai trước, giữ target, tính đủ chi phí và held-out ở dưới
+vẫn áp dụng theo claim. Phần còn lại là hướng dẫn solver lịch sử: ngưỡng 0.5%,
+toàn grid và kết luận hoàn thành solver chỉ áp dụng hợp đồng v1/v2 tương ứng.
+Các mô tả lịch chạy/đội hình xung đột được thay bằng luồng rẽ nhánh phía trên.
 
 ---
 

@@ -2,8 +2,9 @@
 > Read [PO decision and next task](DECISION_ORDER_PRESERVATION_20260910.md) first.
 > Top-K, complete ordering and fallback are not mandatory. Trial 01 is closed;
 > Trial 02 retains a known causal-prefix baseline and gives no candidate promotion.
-> The next task is the bounded geometry-aware condition described there, not a
-> repetition of the packet queue below. Core review was written before the reviewer
+> Continue through the screening branch of the [main workflow](WORKFLOW.md).
+> The next task is the bounded geometry-aware condition described there.
+> Core review was written before the reviewer
 > hit usage limit; full final sign-off on root additions remains pending.
 
 # Start here: relational scope v3
@@ -35,11 +36,14 @@ Read in order:
 4. [Imported theory record](ledger/inbox/codex_orchestrator/theory_round_theorist_20260910.json)
    and its linked statement only as needed: independent skeptic review is pending.
 
-Prepare ONE bounded packet: proposed successful claim, nearest prior art,
-conditional-information mechanism, adversarial information-timing example, and
-work accounting. No automatic P1/P2, W1 overhaul, hypothesis registration or grid.
-After scientific-weight and guarantee review, freeze a small decisive protocol
-with coverage/risk, ties, fallback, cost thresholds, splits and budget.
+Use the conditional branches in [WORKFLOW.md](WORKFLOW.md) as the single routing
+policy: screening -> independent investment review -> preregistered probe ->
+implementation/confirmation, with stop, repair and inconclusive exits.
+Continue the geometry-aware condition task from the current checkpoint; do not
+restart completed trials. A small algebraic/counterexample diagnostic may precede
+registration. Numerical prediction probes require registration before execution.
+After the investment gate, freeze the decision protocol with coverage, ties,
+unresolved cases, costs, splits and budget; specify fallback only if used.
 
 Use agents only for concrete decision-changing work: one independent reviewer
 when the packet exists, then an implementer if warranted. Do not invent a quota

@@ -31,7 +31,19 @@
     "Independent final review before any promoted implementation; prior reviewer hit usage limit after writing core review",
     "Register a numerical probe only if the scientific-weight and nontrivial conditional-fixture gates pass"
   ],
-  "routing": "Root PO decides from evidence; next independent review only after a concrete new packet and available capacity. No grid.",
+  "routing": "Follow WORKFLOW.md conditional branches in the main workflow; root screens, one independent reviewer for a concrete packet, implementation only after the investment gate. No grid.",
+  "workflow_route": {
+    "policy": "WORKFLOW.md",
+    "updated_on": "2026-09-10",
+    "reason": "User requested conditional branching within the existing workflow, not a separate diagnostic workflow.",
+    "stage": "screening",
+    "evidence_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
+    "next_action": "One bounded geometry-aware condition on divergence/reconvergence, with input-only applicability and work accounting.",
+    "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
+    "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
+    "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
+    "review_limit": "Trial 02 core review was written before usage limit; final root additions lack full independent sign-off."
+  },
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
   "v3_benchmarks_run": [],
