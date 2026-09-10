@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-10",
-  "phase": "architecture_comparison_complete_no_candidate_promoted",
+  "phase": "order_architecture_comparison_in_progress",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -11,7 +11,7 @@
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
   "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
-  "decision_record": "research/theory/order_architecture_compare_01_verdict.json",
+  "decision_record": "research/theory/geometry_condition_screen_01_verdict.json",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -29,40 +29,38 @@
   "workflow_route": {
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-10",
-    "reason": "User approved the project-level architecture comparison; completed within one packet, one repair and one review.",
-    "stage": "closed",
+    "reason": "User requested an evidence-based workflow improvement and persistent PO role at new-session startup.",
+    "stage": "independent_review",
     "task_id": "order_architecture_compare_01",
     "progress": {
-      "state": "complete",
+      "state": "in_progress",
       "constructions_started": 1,
-      "substantive_repairs_used": 1,
+      "substantive_repairs_used": 0,
       "independent_reviews_assigned": 1,
       "evidence": [
         "research/theory/order_architecture_compare_01.md",
         "research/theory/order_architecture_compare_01_checks.json",
-        "tools/check_order_architecture_compare_01.py",
-        "research/theory/order_architecture_compare_01_review.md",
-        "research/theory/order_architecture_compare_01_verdict.json"
+        "tools/check_order_architecture_compare_01.py"
       ],
-      "note": "One exact discriminator, one p=1 correction, one complete version-bound review recovered from disk after quota interruption; no repeated review and no probe."
+      "note": "One comparative packet reserved; two routes on one family, not two funded prototypes."
     },
-    "evidence_record": "research/theory/order_architecture_compare_01_verdict.json",
-    "next_action": "Screen one explicit structural comparison of relative optimization effects on finite Markov processes with fresh conditional randomness; retain only if noncircular, beyond corrected baselines and plausibly cheaper than two complete dynamic transports. Define the next bounded task before execution; do not reopen this completed comparison.",
+    "evidence_record": "ledger/inbox/codex_orchestrator/relational_trial_02_20260910.json",
+    "next_action": "Compare direct-order structure and approximate-future coupling bounds on the same finite process family; decide central contribution before implementation.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
-    "review_limit": "Current corrected comparison independently reviewed at explicit hashes; earlier Trial 02 final root additions remain separately pending.",
+    "review_limit": "Trial 02 core review was written before usage limit; final root additions lack full independent sign-off.",
     "work_budget": {
       "purpose": "One comparative theory/prior-art packet with at most one reviewer and one justified repair; no benchmark.",
       "max_constructions": 1,
-      "adversarial_family": "One finite scalar k=1 Markov family, increasing core plus one contractive sign-reversal boundary; randomness only at first draw, so not an adapted-specific investment fixture.",
+      "adversarial_family": "One finite scalar Markov family with conditional innovations and nonexpansive dynamics; both routes share target and inputs.",
       "max_substantive_repairs": 1,
       "max_independent_review_assignments": 1,
       "limit_action": "Record verdict or inconclusive and checkpoint. PO may revise the next task budget only with new decision-changing evidence and written rationale.",
       "account_quota_remaining": "unknown; these are work limits, not a measured token allowance"
     },
     "construction": "Architecture comparison, not a promoted algorithm",
-    "decision": "retain_corrected_baselines_no_probe_prioritize_direct_comparison_question",
+    "decision": "pending",
     "previous_task_disposition": "geometry_condition_screen_01 completed as scoped baseline/no probe; see research/theory/geometry_condition_screen_01_verdict.json"
   },
   "automatic_large_grid_authorized": false,
@@ -71,7 +69,7 @@
   "background_research_running": false,
   "push_authorized": true,
   "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
-  "last_completed_diagnostic": "order_architecture_compare_01: corrected baseline comparison and exact score-order inversion reviewed; no central scientific candidate or probe.",
+  "last_completed_diagnostic": "geometry_condition_screen_01: four exact checks and independent version-bound proof review; retained baseline, no scientific promotion.",
   "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
   "main_agent_role": "PO; delegated agents retain their assigned roles",
   "review_coverage": {
@@ -98,14 +96,6 @@
       "review_file_sha256": "166bc7758de054cb8692dad8a34f45715ef33b74c1356e6ff541ff819329747f",
       "scope": "Reset-block finite-model bound and toy exact calculations; reviewed packet/checker/output hashes in record",
       "pending": "Novelty, general prevalence, production performance and arithmetic not established; no investment proposed."
-    },
-    "architecture_comparison": {
-      "record": "research/theory/order_architecture_compare_01_verdict.json",
-      "review_file": "research/theory/order_architecture_compare_01_review.md",
-      "review_file_sha256": "5e013fa4f9b76eb4704148dae33793a54a68a35b9ddc56c6c89d9b8e269d281f",
-      "packet_sha256": "23a377d0e715b18de01b90405e3a9685c5433be53b8f859a4d89e7ab89f7d91e",
-      "scope": "Corrected monotone and p=1 ordered-coupling arguments, uniform bound, exact finite arithmetic, signed-regret identity and scoped no-probe decision.",
-      "pending": "New structural comparison lemma, adapted-specific discriminator, novelty and useful cost advantage remain open."
     }
   },
   "workflow_maintenance": {
@@ -123,7 +113,7 @@
   },
   "workflow_evolution": {
     "revision_id": "adaptive_po_20260910",
-    "state": "architecture_gate_and_interruption_recovery_observed",
+    "state": "first_research_decision_observed_benefit_not_quantified",
     "trigger": "User requests macro-first rearchitecture, project planning, risk handling and arbitrary quota interruption recovery.",
     "diagnosis": "Branch gates exist but architectural failure classification, rolling forecasts and safe persistent saves were incomplete.",
     "decision": "Integrate one macro review loop into WORKFLOW.md; add guarded checkpoint saving rather than a separate orchestration service.",
@@ -133,7 +123,7 @@
     "keep_if": "A decision is better supported or recovery avoids demonstrated repeated/lost work; do not infer quota savings from more records.",
     "revise_or_revert_if": "Rules cause redundant reading, unjustified blocking or architecture churn; simplify the specific rule while preserving scientific gates and historical evidence.",
     "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured.",
-    "observed": "Comparison prevented automatic promotion of known bounds. Independent review caught an overbroad p=1 exclusion. After quota interruption the completed written review was found and hash-verified, avoiding a duplicate assignment; no quantitative token-saving claim."
+    "observed": "First diagnostic passed correctness but not significance. Project review identifies a risk of repeatedly producing elementary value bounds after moving to an ordering objective; next investment compares architectures, without adding another workflow framework."
   },
   "project_plan": {
     "direction": "Substantive conditional preservation of finite-model adapted-OT ordering with cheap input-checkable conditions; shared trees remain candidates.",
@@ -143,14 +133,14 @@
       "forecast": "One construction packet and finite discriminator, at most one justified repair and one investment review; limits, not measured effort.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Architecture comparison complete: valid baselines and exact order inversion, no promoted central contribution."
+      "outcome": "Completed reset condition screen; correctness/nonterminal fixture passed, central scientific-weight gate failed."
     },
     "next": {
       "if_gate_passes": "For a new construction only, require a concrete claim and independent significance review before preregistering a probe.",
-      "if_structural_gate_fails": "Close that construction or change its structural comparison mechanism; no further budget solely to refine an elementary envelope.",
+      "if_structural_gate_fails": "Stop or change the proposed representation/condition; do not revive exact-reset baseline via micro-tuning.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Screen one explicit structural comparison of relative optimization effects on finite Markov processes with fresh conditional randomness; retain only if noncircular, beyond corrected baselines and plausibly cheaper than two complete dynamic transports.",
-      "assessment": "research/theory/order_architecture_compare_01_verdict.json"
+      "decision": "Before selecting another construction, compare direct conditional order reasoning with approximate-future alignment bounds on the same meaningful finite class; require credible central contribution and charged applicability.",
+      "assessment": "PROJECT_REVIEW_20260910.md; no new research task started during this retrospective."
     },
     "later": {
       "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
@@ -168,22 +158,22 @@
     {
       "id": "R_geometry",
       "owner": "PO",
-      "state": "contractive_score_inversion_demonstrated_general_comparison_open",
+      "state": "exact_reset_subclass_resolved_general_geometry_open",
       "impact": "Structural blocker for the prefix construction, not a refutation of every tree.",
-      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
+      "evidence": "research/theory/geometry_condition_screen_01_verdict.json",
       "trigger": "Divergence/reconvergence discriminator still inverts or cannot resolve a meaningful conditional case.",
       "response": "Review representation/weight architecture before more kernel tuning; retain the same finite target.",
-      "residual": "Contractivity alone does not justify KR score ordering; one toy failure does not exclude refined joint conditions.",
+      "residual": "A useful cheap condition may not exist for the selected class.",
       "blocks": "Prototype investment without the geometry gate."
     },
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "baseline_architectures_screened_central_claim_open",
+      "state": "exact_reset_construction_closed_as_baseline",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
+      "evidence": "research/theory/geometry_condition_screen_01_verdict.json",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
-      "response": "Require a noncircular comparative mechanism beyond known coupling optimality and separate intervals before implementation.",
+      "response": "Retain baseline; redirect to the unresolved representation-to-order bridge.",
       "residual": "Targeted source review is not an exhaustive novelty proof.",
       "blocks": "Paper-level claim and substantial implementation."
     },
@@ -212,24 +202,26 @@
     {
       "id": "R_interruption",
       "owner": "PO",
-      "state": "actual_review_interruption_reconciled",
+      "state": "mitigation_tested_residual_risk_open",
       "impact": "Quota interruption can lose unwritten reasoning or leave execution outcome unknown.",
-      "evidence": "research/theory/order_architecture_compare_01_verdict.json",
+      "evidence": "tests/test_checkpoint.py",
       "trigger": "Tool/agent response absent, malformed/stale checkpoint or uncertain running process.",
       "response": "Save intent and partial files early; use atomic guarded save; reconcile disk/process/Git before replay.",
-      "residual": "Written review survived this interruption; unwritten reasoning, simultaneous writers and storage failure remain unprotected.",
+      "residual": "Current unwritten reasoning, simultaneous writers and machine/storage failure remain outside guarantees.",
       "blocks": "Blind replay of expensive work or external side effects."
     }
   ],
   "interruption_recovery": {
-    "state": "completed_cycle_checkpoint",
-    "last_completed": "research/theory/order_architecture_compare_01_verdict.json",
-    "current_intent": "No research process running; next bounded structural-comparison question is recorded in workflow_route.next_action.",
-    "recover_by": "Read the final verdict and accepted written review. Do not rerun this completed comparison or reset its counters. Check Git synchronization from actual HEAD/remote.",
+    "state": "architecture_comparison_in_progress",
+    "last_completed": "Project-level gate assessment and next investment decision recorded in PROJECT_REVIEW_20260910.md.",
+    "current_intent": "Compare direct-order structure and approximate-future coupling bounds on the same finite process family; decide central contribution before implementation.",
+    "recover_by": "Read order_architecture_compare_01.md before repeating work. Task allowance already reserved.",
     "live_processes": [],
-    "pending_agent_outputs": [],
+    "pending_agent_outputs": [
+      "research/theory/order_architecture_compare_01_review.md"
+    ],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "Decision-relevant results, correction, review and next gate saved."
+    "unsaved_reasoning": "Comparative proof, exact discriminator, cost limitations and provisional verdict saved; independent review reserved but not yet returned."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

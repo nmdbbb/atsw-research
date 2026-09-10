@@ -1,0 +1,52 @@
+{
+  "id": "order_architecture_compare_01",
+  "type": "completed_bounded_architecture_comparison",
+  "date": "2026-09-10",
+  "decision": "retain_corrected_baselines_no_probe_prioritize_direct_comparison_question",
+  "reason": "Known monotone/ordered-coupling arguments and uniform future bounds do not yet yield a substantive new conditional-order mechanism. One exact contractive sign-reversal example separates true order from KR score order.",
+  "correctness": "Independent written review accepts the corrected packet and exact diagnostic at the hashes below. The substantive p=1 objection was resolved within the same review.",
+  "scientific_objective_achieved": false,
+  "hypothesis_registered": false,
+  "performance_grid_run": false,
+  "gate_results": {
+    "baseline_mathematics": "accepted with explicit p=1 ordered-coupling exception",
+    "exact_discriminator": "passed for one two-path family and p=1,2",
+    "adapted_specific_contribution": "not established; ordinary and bicausal path coupling sets coincide in this fixture",
+    "scientific_weight": "no central candidate admitted",
+    "saved_work": "operation costs qualified; no demonstrated advantage",
+    "investment": "no prototype, probe, grid or micro-tuning"
+  },
+  "artifacts": [
+    {
+      "path": "research/theory/order_architecture_compare_01.md",
+      "sha256": "23a377d0e715b18de01b90405e3a9685c5433be53b8f859a4d89e7ab89f7d91e"
+    },
+    {
+      "path": "research/theory/order_architecture_compare_01_checks.json",
+      "sha256": "11467bbd902af5beb8c9f4dcf816bb414d8ed13943dbaed46f0a3fee54081d58"
+    },
+    {
+      "path": "tools/check_order_architecture_compare_01.py",
+      "sha256": "767f56351702f93611eb878e64c7623bd73564eb0d5df91327e2560abb6d02b2"
+    },
+    {
+      "path": "research/theory/order_architecture_compare_01_review.md",
+      "sha256": "5e013fa4f9b76eb4704148dae33793a54a68a35b9ddc56c6c89d9b8e269d281f"
+    }
+  ],
+  "packet_status_note": "Packet frozen before final written review. This verdict supersedes its awaiting-review header without changing accepted bytes.",
+  "review_limits": "No exhaustive novelty audit, general k-window result, production arithmetic, useful coverage or speed claim. Earlier Trial 02 pending claims remain pending.",
+  "interruption_resolution": "Reviewer final response failed at usage limit, but its complete final version-bound review was already on disk. Root verified the artifact and hashes after user refill; no repeated review assignment.",
+  "next_decision": "Screen one explicit structural comparison of relative optimization effects on finite Markov processes with fresh conditional randomness; retain only if noncircular, beyond corrected baselines and plausibly cheaper than two complete dynamic transports.",
+  "next_task_gate": {
+    "budget": "One construction packet, one exact finite family, at most one justified repair and one independent review; no automatic probe. Reserve new task ID before starting.",
+    "success": "Input-checkable comparison lemma and an exact conditional discriminator adding information beyond retained baselines, with charged work.",
+    "stop": "Known optimality corollary, renamed separate value bounds, exact unknown regrets, or no plausible work advantage. Record a scoped stop, not general impossibility."
+  },
+  "not_concluded": [
+    "No dominance theorem for direct methods over all coupling envelopes",
+    "No impossibility of conditional order preservation",
+    "No novel theorem or paper-level candidate",
+    "No population or performance guarantee"
+  ]
+}

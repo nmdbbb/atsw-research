@@ -1,0 +1,39 @@
+{
+  "task_id": "order_architecture_compare_01",
+  "kind": "finite_rational_algebraic_diagnostic",
+  "preregistered": false,
+  "coverage_or_speed_claim": false,
+  "rho": "9/10",
+  "horizon": 4,
+  "paths_per_law": 2,
+  "source_sha256": "767f56351702f93611eb878e64c7623bd73564eb0d5df91327e2560abb6d02b2",
+  "checks": [
+    {
+      "power": 1,
+      "near_exact": "2",
+      "near_kr": "2439/500",
+      "far_exact_and_kr": "9/2",
+      "uniform_coupling_upper_near": "2439/500",
+      "kr_order_reversed": true,
+      "bound_separation_unresolved": true,
+      "positive_ordered_core_exact_near": "1",
+      "signed_score_gap": "-189/500",
+      "near_regret": "1439/500",
+      "exact_distance_gap": "5/2"
+    },
+    {
+      "power": 2,
+      "near_exact": "4",
+      "near_kr": "1997541/250000",
+      "far_exact_and_kr": "81/16",
+      "uniform_coupling_upper_near": "1997541/250000",
+      "kr_order_reversed": true,
+      "bound_separation_unresolved": true,
+      "positive_ordered_core_exact_near": "1/4",
+      "signed_score_gap": "-182979/62500",
+      "near_regret": "997541/250000",
+      "exact_distance_gap": "17/16"
+    }
+  ],
+  "limits": "Ordered core and one sign-reversal boundary of one k=1 family. No stochastic continuation after the first draw; ordinary and bicausal feasible path couplings coincide here. No population, arbitrary k=2, novelty, coverage or performance conclusion."
+}
