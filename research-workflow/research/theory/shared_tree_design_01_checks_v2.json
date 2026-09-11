@@ -1,0 +1,553 @@
+﻿{
+  "task": "shared_tree_design_01",
+  "kind": "fixed_exact_diagnostic_not_benchmark",
+  "bank": "pair_min",
+  "topology": "feature_mst",
+  "source_sha256": "5f572f5039ade7961d41873fe1d0c2b24d20fc77a4ac6b048bb9d7b472b70cd6",
+  "power": 1,
+  "preregistered": false,
+  "coverage_or_runtime_claim": false,
+  "results": [
+    {
+      "family": "reconvergence",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "11/16",
+          "exact": "11/16",
+          "upper": "17/16",
+          "reference_ot_calls": 14,
+          "ordinary": "9/16",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 14,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 13,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "A_closer",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 48,
+        "tree_ot_calls": 46,
+        "tree_nodes_visited": 213,
+        "distribution_entries_read": 106,
+        "feature_edge_reads": 274,
+        "lower_distance_evaluations": 115,
+        "exact_ot_calls": 0,
+        "pooled_states": 31,
+        "input_transition_entries": 31
+      },
+      "evaluator_conditional_pairs": 60,
+      "graph_sizes": [
+        {
+          "time": 6,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 5,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 4,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 3,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 4,
+          "weighted_edges": 6,
+          "complete_graph_edges": 6
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        4,
+        6,
+        3,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "reconvergence",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "11/16",
+          "exact": "11/16",
+          "upper": "17/16",
+          "reference_ot_calls": 17,
+          "ordinary": "9/16",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 17,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 16,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "A_closer",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 55,
+        "tree_ot_calls": 53,
+        "tree_nodes_visited": 273,
+        "distribution_entries_read": 120,
+        "feature_edge_reads": 316,
+        "lower_distance_evaluations": 130,
+        "exact_ot_calls": 0,
+        "pooled_states": 34,
+        "input_transition_entries": 34
+      },
+      "evaluator_conditional_pairs": 72,
+      "graph_sizes": [
+        {
+          "time": 6,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 5,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 4,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 10,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 4,
+          "weighted_edges": 6,
+          "complete_graph_edges": 6
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        4,
+        6,
+        6,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 256
+        },
+        "AQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "5/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 256
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "7/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 35,
+        "tree_ot_calls": 33,
+        "tree_nodes_visited": 189,
+        "distribution_entries_read": 107,
+        "feature_edge_reads": 260,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 26
+      },
+      "evaluator_conditional_pairs": 48,
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 14,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 22,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "3",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "4",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 54,
+        "tree_ot_calls": 48,
+        "tree_nodes_visited": 447,
+        "distribution_entries_read": 132,
+        "feature_edge_reads": 280,
+        "lower_distance_evaluations": 113,
+        "exact_ot_calls": 0,
+        "pooled_states": 29,
+        "input_transition_entries": 28
+      },
+      "evaluator_conditional_pairs": 108,
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 10,
+          "weighted_edges": 9,
+          "complete_graph_edges": 45
+        },
+        {
+          "time": 2,
+          "nodes": 10,
+          "weighted_edges": 27,
+          "complete_graph_edges": 45
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        10,
+        10
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": false,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 20,
+        "tree_ot_calls": 18,
+        "tree_nodes_visited": 66,
+        "distribution_entries_read": 44,
+        "feature_edge_reads": 156,
+        "lower_distance_evaluations": 66,
+        "exact_ot_calls": 0,
+        "pooled_states": 18,
+        "input_transition_entries": 18
+      },
+      "evaluator_conditional_pairs": 36,
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 3,
+          "weighted_edges": 2,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 11,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 2,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        3,
+        6
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "2",
+          "reference_ot_calls": 10,
+          "ordinary": "2",
+          "evaluator_assignment_states": 4
+        },
+        "BQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "B_closer",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 35,
+        "tree_ot_calls": 33,
+        "tree_nodes_visited": 189,
+        "distribution_entries_read": 81,
+        "feature_edge_reads": 200,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 20
+      },
+      "evaluator_conditional_pairs": 48,
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 12,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "limits": "Three hand-selected families, k1/k2, exact binary-row references. Candidate supports general rational finite rows; audit reference is binary only. Dense tree scans; no sparse traversal or online insertion claim."
+}

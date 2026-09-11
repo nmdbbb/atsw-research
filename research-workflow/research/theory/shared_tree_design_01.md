@@ -230,3 +230,40 @@ verdict on the concrete algorithm. Probe admission remains a separate gate.
 Counter limitations: reported arithmetic counters do not individually count
 sorting, root feature expectations, scalar operations within a distance, pair-min
 creation or rational bit growth. They expose work, not a complete runtime model.
+
+## Repair 2 result and implementation gate
+
+`shared_tree_design_01_checks_v2.json` records all exact intervals after the
+feature-neighbor MST upgrade. Both reconvergence controls now assert A closer:
+U(Q,A)=5/16<L(Q,B)=1/2. The genuine-k2 decision is retained with bounds exact
+on its three pairs. Timing k1 still has U(Q,A)=5/2>=L(Q,B)=2, and timing k2 is
+a true tie. These are chosen construction controls, not a measured coverage rate.
+The v2 runtime still uses dense tree scans (213/273 visited nodes for the two
+reconvergence controls and189 for genuine-k2). No speed claim is admitted.
+
+The same reviewer admits implementing an exact **virtual-tree transport**
+primitive: build Euler ancestry and binary-lifting LCA indexes once per tree;
+for a transport query use vertices with nonzero signed mass plus their LCAs;
+compress paths with constant imbalance and sum compressed edge length times
+absolute subtree imbalance. Dropped off-Steiner branches have zero flow. Use
+Euler ancestry, never distance equality, because zero-length edges are allowed.
+Index cost O(N log N), query cost O(s log s+s log N) for signed-support size s,
+plus reading both input distributions even when their difference cancels.
+No Bellman value or exact label is needed. Dense equality checks are evaluator
+work and must be switchable off for the candidate.
+
+This is an implementation of the same exact primitive, not a third mathematical
+or topology repair. It addresses the structural quadratic transport-build cost.
+For F feature coordinates, the candidate graph has degree at most3+2F: a median
+tree has degree at most3 and each sorted coordinate contributes at most2.
+Therefore all edge queries together read O(F E_t) transition entries, with
+transport work O(F E_t log N_next). Include root queries separately. Current
+median construction sorts recursively, costing O(F N log N+N log-squared N)
+as an upper bound for fixed feature width, plus feature generation, graph/MST
+sorting and indexes; do not advertise a linear total algorithm. F and anchor
+count are fixed in this version. Rational bit complexity remains additional.
+
+Implementation check: dense and virtual values must agree on every queried
+edge/root in the same six controls, zero imbalance, singleton tree, and zero
+length edges. Store evaluator visits separately from candidate virtual visits.
+No further tree tuning or benchmark is funded in this cycle.

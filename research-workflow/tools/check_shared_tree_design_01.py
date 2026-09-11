@@ -6,6 +6,7 @@ Version 0 deliberately uses a small anchor bank, no all-pairs transport table.
 from fractions import Fraction as F
 from functools import lru_cache
 from itertools import product, combinations
+from math import lcm
 from pathlib import Path
 import hashlib
 import json
@@ -74,9 +75,34 @@ def median_topology(nodes, features):
     return build(list(nodes)), edges
 
 
+def feature_graph(nodes, features, median_edges):
+    """At most (feature_count+1)*(N-1) edges, before deduplication."""
+    links = {tuple(sorted(edge)) for edge in median_edges}
+    for j in range(len(features[nodes[0]])):
+        ordered = sorted(nodes, key=lambda s: (features[s][j], s))
+        links.update(tuple(sorted(edge)) for edge in zip(ordered, ordered[1:]))
+    return sorted(links)
+
+
+def spanning_tree(nodes, weighted_edges):
+    parent = {s: s for s in nodes}
+    def find(s):
+        while parent[s] != s:
+            parent[s] = parent[parent[s]]; s = parent[s]
+        return s
+    chosen = []
+    for a, b, w in sorted(weighted_edges, key=lambda edge: (edge[2], edge[0], edge[1])):
+        x, y = find(a), find(b)
+        if x != y:
+            chosen.append((a, b, w)); parent[x] = y
+    assert len(chosen) == len(nodes)-1
+    return chosen
+
+
 class SharedTrees:
-    def __init__(self, models, anchor_count=4, bank='anchors'):
+    def __init__(self, models, anchor_count=4, bank='anchors', topology='median'):
         assert bank in ('anchors', 'pair_min')
+        assert topology in ('median', 'feature_mst')
         self.models, self.bank = models, bank
         self.T = len(next(iter(models.values()))[1])
         assert all(len(m[1]) == self.T for m in models.values())
@@ -90,6 +116,7 @@ class SharedTrees:
                          lower_distance_evaluations=0, exact_ot_calls=0,
                          pooled_states=sum(map(len, self.nodes)),
                          input_transition_entries=sum(len(row) for layer in self.rows for row in layer.values()))
+        self.graph_sizes = []
         self.trees, self.probes, self.ell = {}, {}, {}
         for t in range(self.T, -1, -1):
             nodes = self.nodes[t]
@@ -114,13 +141,19 @@ class SharedTrees:
                 root = ordered[0]; links = list(zip(ordered, ordered[1:]))
             else:
                 root, links = median_topology(nodes, features)
+                if topology == 'feature_mst':
+                    links = feature_graph(nodes, features, links)
+            self.graph_sizes.append(dict(time=t, nodes=len(nodes), weighted_edges=len(links),
+                                         complete_graph_edges=len(nodes)*(len(nodes)-1)//2))
             edges = []
             for a, b in links:
                 w = abs(a[1][-1]-b[1][-1]) if t else F(0)
                 if t != self.T:
                     w += self.trees[t+1].ot(self.rows[t][a], self.rows[t][b])
                 edges.append((a, b, w))
-            self.work['tree_edges_built'] += len(edges)
+            self.work['tree_edges_built'] += len(edges)  # Includes discarded candidates.
+            if topology == 'feature_mst' and t != self.T:
+                edges = spanning_tree(nodes, edges)
             self.trees[t] = Tree(nodes, root, edges, self.work)
             # Deterministic farthest-first anchors in a computable lower metric.
             anchors = [root]
@@ -181,18 +214,37 @@ def fixtures():
     }
 
 
-def run(bank='anchors'):
+def ordinary_reference(a, b):
+    """Evaluator-only rational uniform expansion plus exact assignment DP."""
+    n = lcm(*(p.denominator for law in (a, b) for p in law.values()))
+    x = [s for s, p in a.items() for _ in range(int(p*n))]
+    y = [s for s, p in b.items() for _ in range(int(p*n))]
+    assert len(x) == len(y) == n and n <= 8
+    costs = [[sum((abs(u-v) for u, v in zip(s[1:], r[1:])), F(0)) for r in y] for s in x]
+    @lru_cache(None)
+    def solve(mask):
+        i = mask.bit_count()
+        if i == n:
+            return F(0)
+        return min(costs[i][j]+solve(mask | (1 << j)) for j in range(n) if not mask & (1 << j))
+    return solve(0)/n, solve.cache_info().currsize
+
+
+def run(bank='anchors', topology='median'):
     results = []
     for family, laws in fixtures().items():
         for k in (1, 2):
             models = {name: model(law, k) for name, law in laws.items()}
-            candidate = SharedTrees(models, bank=bank)
+            candidate = SharedTrees(models, bank=bank, topology=topology)
             pairs = {}
             for left, right in combinations(sorted(models), 2):
                 low, up = candidate.bounds(left, right)
                 value, calls, future = exact_reference(models, left, right)
                 assert low <= value <= up, (family, k, left, right, low, value, up)
-                pairs[left+right] = dict(lower=str(low), exact=str(value), upper=str(up), reference_ot_calls=calls)
+                ordinary, states = ordinary_reference(reconstructed(*models[left]), reconstructed(*models[right]))
+                assert ordinary <= value
+                pairs[left+right] = dict(lower=str(low), exact=str(value), upper=str(up), reference_ot_calls=calls,
+                                        ordinary=str(ordinary), evaluator_assignment_states=states)
             candidate_work = dict(candidate.work)  # Before all evaluator-only checks.
             # Audit every layer's domination and probe Lipschitz property. This
             # can be quadratic, but is evaluator work and never candidate input.
@@ -215,13 +267,14 @@ def run(bank='anchors'):
                 {x: sum(m for path, m in laws['Q'].items() if path[t] == x)
                  for x in {path[t] for path in laws['Q']}}
                 for law in laws.values() for t in range(len(next(iter(law)))))
-            results.append(dict(family=family, k=k, bank=bank, pairs=pairs, query_order=verdict,
+            results.append(dict(family=family, k=k, bank=bank, topology=topology, pairs=pairs, query_order=verdict,
                                 all_time_marginals_equal=marginals_equal,
                                 reconstruction_equals_supplied_paths={name: reconstructed(*m) == laws[name] for name, m in models.items()},
                                 candidate_work=candidate_work, evaluator_conditional_pairs=audit_pairs,
+                                graph_sizes=candidate.graph_sizes,
                                 state_counts=[len(layer) for layer in candidate.nodes]))
     return dict(task='shared_tree_design_01',kind='fixed_exact_diagnostic_not_benchmark',
-                bank=bank,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                bank=bank,topology=topology,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 power=1,preregistered=False,coverage_or_runtime_claim=False,results=results,
                 limits='Three hand-selected families, k1/k2, exact binary-row references. Candidate supports general rational finite rows; audit reference is binary only. Dense tree scans; no sparse traversal or online insertion claim.')
 
@@ -229,5 +282,6 @@ def run(bank='anchors'):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(); parser.add_argument('--bank', choices=['anchors', 'pair_min'], default='anchors')
+    parser.add_argument('--topology', choices=['median', 'feature_mst'], default='median')
     args = parser.parse_args()
-    print(json.dumps(run(args.bank), indent=2))
+    print(json.dumps(run(args.bank, args.topology), indent=2))
