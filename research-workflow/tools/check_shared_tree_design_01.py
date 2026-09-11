@@ -16,8 +16,9 @@ from check_geometry_condition_screen_01 import fixture as reset_fixture
 
 
 class Tree:
-    def __init__(self, nodes, root, edges, work):
+    def __init__(self, nodes, root, edges, work, engine='dense', audit_dense=False):
         self.nodes, self.root, self.work = tuple(nodes), root, work
+        self.engine, self.audit_dense = engine, audit_dense
         adjacent = {s: [] for s in nodes}
         for a, b, w in edges:
             assert w >= 0
@@ -30,12 +31,37 @@ class Tree:
                 if child not in self.parent:
                     self.parent[child] = (s, w); stack.append(child)
         assert len(self.order) == len(nodes) and len(edges) == len(nodes)-1
+        if engine == 'virtual':
+            self.tin = {s: i for i, s in enumerate(self.order)}
+            sizes = {s: 1 for s in nodes}; self.root_distance = {}
+            for s in self.order:
+                par, length = self.parent[s]
+                self.root_distance[s] = (self.root_distance[par] if par is not None else F(0))+length
+            for s in reversed(self.order):
+                par, _ = self.parent[s]
+                if par is not None:
+                    sizes[par] += sizes[s]
+            self.tout = {s: self.tin[s]+sizes[s] for s in nodes}
+            self.up = [{s: (self.parent[s][0] if self.parent[s][0] is not None else root) for s in nodes}]
+            for _ in range(1, len(nodes).bit_length()):
+                last = self.up[-1]; self.up.append({s: last[last[s]] for s in nodes})
+            self.work['tree_index_entries'] += len(nodes)*len(self.up)
 
     def ot(self, a, b):
-        """Exact dense subtree imbalance; charge every visit, including zero mass."""
+        """Exact subtree imbalance; dense audits are evaluator-only and optional."""
         self.work['tree_ot_calls'] += 1
-        self.work['tree_nodes_visited'] += len(self.nodes)
         self.work['distribution_entries_read'] += len(a)+len(b)
+        if self.engine == 'virtual':
+            value = self._virtual(a, b)
+            if self.audit_dense:
+                assert value == self._dense(a, b)
+                self.work['evaluator_dense_audit_nodes'] += len(self.nodes)
+                self.work['evaluator_dense_audit_queries'] += 1
+            return value
+        self.work['tree_nodes_visited'] += len(self.nodes)
+        return self._dense(a, b)
+
+    def _dense(self, a, b):
         mass = {s: a.get(s, F(0))-b.get(s, F(0)) for s in self.nodes}
         value = F(0)
         for s in reversed(self.order):
@@ -43,6 +69,51 @@ class Tree:
             if par is not None:
                 value += length*abs(mass[s]); mass[par] += mass[s]
         assert mass[self.root] == 0
+        return value
+
+    def ancestor(self, a, b):
+        return self.tin[a] <= self.tin[b] < self.tout[a]
+
+    def lca(self, a, b):
+        self.work['lca_queries'] += 1
+        if self.ancestor(a, b):
+            return a
+        if self.ancestor(b, a):
+            return b
+        for table in reversed(self.up):
+            self.work['lca_table_lookups'] += 1
+            parent = table[a]
+            if not self.ancestor(parent, b):
+                a = parent
+        return self.up[0][a]
+
+    def _virtual(self, a, b):
+        mass = dict(a)
+        for s, probability in b.items():
+            mass[s] = mass.get(s, F(0))-probability
+        assert sum(mass.values(), F(0)) == 0
+        mass = {s: p for s, p in mass.items() if p}
+        self.work['signed_support_entries'] += len(mass)
+        if not mass:
+            return F(0)
+        ordered = sorted(mass, key=self.tin.__getitem__)
+        vertices = set(ordered); vertices.add(self.root)
+        vertices.update(self.lca(a, b) for a, b in zip(ordered, ordered[1:]))
+        vertices = sorted(vertices, key=self.tin.__getitem__)
+        self.work['virtual_nodes_visited'] += len(vertices)
+        stack, parent = [], {}
+        for s in vertices:
+            while stack and not self.ancestor(stack[-1], s):
+                stack.pop()
+            if stack:
+                parent[s] = stack[-1]
+            stack.append(s)
+        flow = {s: mass.get(s, F(0)) for s in vertices}; value = F(0)
+        for s in reversed(vertices[1:]):
+            par = parent[s]
+            value += abs(flow[s])*(self.root_distance[s]-self.root_distance[par])
+            flow[par] += flow[s]
+        assert vertices[0] == self.root and flow[self.root] == 0
         return value
 
     def distance(self, a, b):
@@ -100,9 +171,10 @@ def spanning_tree(nodes, weighted_edges):
 
 
 class SharedTrees:
-    def __init__(self, models, anchor_count=4, bank='anchors', topology='median'):
+    def __init__(self, models, anchor_count=4, bank='anchors', topology='median', engine='dense', audit_dense=False):
         assert bank in ('anchors', 'pair_min')
         assert topology in ('median', 'feature_mst')
+        assert engine in ('dense', 'virtual')
         self.models, self.bank = models, bank
         self.T = len(next(iter(models.values()))[1])
         assert all(len(m[1]) == self.T for m in models.values())
@@ -116,6 +188,9 @@ class SharedTrees:
                          lower_distance_evaluations=0, exact_ot_calls=0,
                          pooled_states=sum(map(len, self.nodes)),
                          input_transition_entries=sum(len(row) for layer in self.rows for row in layer.values()))
+        self.work.update(tree_index_entries=0, signed_support_entries=0,
+                         virtual_nodes_visited=0, lca_queries=0, lca_table_lookups=0,
+                         evaluator_dense_audit_nodes=0, evaluator_dense_audit_queries=0)
         self.graph_sizes = []
         self.trees, self.probes, self.ell = {}, {}, {}
         for t in range(self.T, -1, -1):
@@ -154,7 +229,7 @@ class SharedTrees:
             self.work['tree_edges_built'] += len(edges)  # Includes discarded candidates.
             if topology == 'feature_mst' and t != self.T:
                 edges = spanning_tree(nodes, edges)
-            self.trees[t] = Tree(nodes, root, edges, self.work)
+            self.trees[t] = Tree(nodes, root, edges, self.work, engine, audit_dense)
             # Deterministic farthest-first anchors in a computable lower metric.
             anchors = [root]
             distances = {s: [lower(s, root)] for s in nodes}
@@ -230,12 +305,12 @@ def ordinary_reference(a, b):
     return solve(0)/n, solve.cache_info().currsize
 
 
-def run(bank='anchors', topology='median'):
+def run(bank='anchors', topology='median', engine='dense'):
     results = []
     for family, laws in fixtures().items():
         for k in (1, 2):
             models = {name: model(law, k) for name, law in laws.items()}
-            candidate = SharedTrees(models, bank=bank, topology=topology)
+            candidate = SharedTrees(models, bank=bank, topology=topology, engine=engine, audit_dense=(engine == 'virtual'))
             pairs = {}
             for left, right in combinations(sorted(models), 2):
                 low, up = candidate.bounds(left, right)
@@ -245,7 +320,8 @@ def run(bank='anchors', topology='median'):
                 assert ordinary <= value
                 pairs[left+right] = dict(lower=str(low), exact=str(value), upper=str(up), reference_ot_calls=calls,
                                         ordinary=str(ordinary), evaluator_assignment_states=states)
-            candidate_work = dict(candidate.work)  # Before all evaluator-only checks.
+            candidate_work = dict(candidate.work)  # Before further evaluator-only checks.
+            dense_audit = {key: candidate_work.pop(key) for key in ('evaluator_dense_audit_nodes', 'evaluator_dense_audit_queries')}
             # Audit every layer's domination and probe Lipschitz property. This
             # can be quadratic, but is evaluator work and never candidate input.
             audit_pairs = 0
@@ -267,21 +343,23 @@ def run(bank='anchors', topology='median'):
                 {x: sum(m for path, m in laws['Q'].items() if path[t] == x)
                  for x in {path[t] for path in laws['Q']}}
                 for law in laws.values() for t in range(len(next(iter(law)))))
-            results.append(dict(family=family, k=k, bank=bank, topology=topology, pairs=pairs, query_order=verdict,
+            results.append(dict(family=family, k=k, bank=bank, topology=topology, engine=engine, pairs=pairs, query_order=verdict,
                                 all_time_marginals_equal=marginals_equal,
                                 reconstruction_equals_supplied_paths={name: reconstructed(*m) == laws[name] for name, m in models.items()},
                                 candidate_work=candidate_work, evaluator_conditional_pairs=audit_pairs,
+                                evaluator_dense_audit=dense_audit,
                                 graph_sizes=candidate.graph_sizes,
                                 state_counts=[len(layer) for layer in candidate.nodes]))
     return dict(task='shared_tree_design_01',kind='fixed_exact_diagnostic_not_benchmark',
-                bank=bank,topology=topology,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                bank=bank,topology=topology,engine=engine,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 power=1,preregistered=False,coverage_or_runtime_claim=False,results=results,
-                limits='Three hand-selected families, k1/k2, exact binary-row references. Candidate supports general rational finite rows; audit reference is binary only. Dense tree scans; no sparse traversal or online insertion claim.')
+                limits='Three hand-selected families, k1/k2, exact binary-row references. Candidate supports valid rational finite rows; audit reference is binary only. Cost counters are partial, bit growth and sorting not fully counted. No runtime, coverage or online insertion claim.')
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(); parser.add_argument('--bank', choices=['anchors', 'pair_min'], default='anchors')
     parser.add_argument('--topology', choices=['median', 'feature_mst'], default='median')
+    parser.add_argument('--engine', choices=['dense', 'virtual'], default='dense')
     args = parser.parse_args()
-    print(json.dumps(run(args.bank, args.topology), indent=2))
+    print(json.dumps(run(args.bank, args.topology, args.engine), indent=2))

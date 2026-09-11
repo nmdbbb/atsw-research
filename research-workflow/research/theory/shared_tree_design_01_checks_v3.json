@@ -1,0 +1,614 @@
+﻿{
+  "task": "shared_tree_design_01",
+  "kind": "fixed_exact_diagnostic_not_benchmark",
+  "bank": "pair_min",
+  "topology": "feature_mst",
+  "engine": "virtual",
+  "source_sha256": "bacbc4b51336b44779d0dc23792c864fe392c720a3611e0ecfcf928323fbfc11",
+  "power": 1,
+  "preregistered": false,
+  "coverage_or_runtime_claim": false,
+  "results": [
+    {
+      "family": "reconvergence",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "11/16",
+          "exact": "11/16",
+          "upper": "17/16",
+          "reference_ot_calls": 14,
+          "ordinary": "9/16",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 14,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 13,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "A_closer",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 48,
+        "tree_ot_calls": 46,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 106,
+        "feature_edge_reads": 274,
+        "lower_distance_evaluations": 115,
+        "exact_ot_calls": 0,
+        "pooled_states": 31,
+        "input_transition_entries": 31,
+        "tree_index_entries": 84,
+        "signed_support_entries": 100,
+        "virtual_nodes_visited": 123,
+        "lca_queries": 57,
+        "lca_table_lookups": 29
+      },
+      "evaluator_conditional_pairs": 60,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 213,
+        "evaluator_dense_audit_queries": 46
+      },
+      "graph_sizes": [
+        {
+          "time": 6,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 5,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 4,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 3,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 4,
+          "weighted_edges": 6,
+          "complete_graph_edges": 6
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        4,
+        6,
+        3,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "reconvergence",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "11/16",
+          "exact": "11/16",
+          "upper": "17/16",
+          "reference_ot_calls": 17,
+          "ordinary": "9/16",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 17,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 16,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "A_closer",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 55,
+        "tree_ot_calls": 53,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 120,
+        "feature_edge_reads": 316,
+        "lower_distance_evaluations": 130,
+        "exact_ot_calls": 0,
+        "pooled_states": 34,
+        "input_transition_entries": 34,
+        "tree_index_entries": 96,
+        "signed_support_entries": 114,
+        "virtual_nodes_visited": 147,
+        "lca_queries": 64,
+        "lca_table_lookups": 38
+      },
+      "evaluator_conditional_pairs": 72,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 273,
+        "evaluator_dense_audit_queries": 53
+      },
+      "graph_sizes": [
+        {
+          "time": 6,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 5,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 4,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 10,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 4,
+          "weighted_edges": 6,
+          "complete_graph_edges": 6
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        4,
+        6,
+        6,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 256
+        },
+        "AQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "5/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 256
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "7/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 35,
+        "tree_ot_calls": 33,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 107,
+        "feature_edge_reads": 260,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 26,
+        "tree_index_entries": 60,
+        "signed_support_entries": 91,
+        "virtual_nodes_visited": 106,
+        "lca_queries": 62,
+        "lca_table_lookups": 50
+      },
+      "evaluator_conditional_pairs": 48,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 189,
+        "evaluator_dense_audit_queries": 33
+      },
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 13,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 14,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 22,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "3",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "4",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 54,
+        "tree_ot_calls": 48,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 132,
+        "feature_edge_reads": 280,
+        "lower_distance_evaluations": 113,
+        "exact_ot_calls": 0,
+        "pooled_states": 29,
+        "input_transition_entries": 28,
+        "tree_index_entries": 104,
+        "signed_support_entries": 128,
+        "virtual_nodes_visited": 164,
+        "lca_queries": 82,
+        "lca_table_lookups": 72
+      },
+      "evaluator_conditional_pairs": 108,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 447,
+        "evaluator_dense_audit_queries": 48
+      },
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 10,
+          "weighted_edges": 9,
+          "complete_graph_edges": 45
+        },
+        {
+          "time": 2,
+          "nodes": 10,
+          "weighted_edges": 27,
+          "complete_graph_edges": 45
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        10,
+        10
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 1,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": false,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 20,
+        "tree_ot_calls": 18,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 44,
+        "feature_edge_reads": 156,
+        "lower_distance_evaluations": 66,
+        "exact_ot_calls": 0,
+        "pooled_states": 18,
+        "input_transition_entries": 18,
+        "tree_index_entries": 48,
+        "signed_support_entries": 38,
+        "virtual_nodes_visited": 43,
+        "lca_queries": 23,
+        "lca_table_lookups": 15
+      },
+      "evaluator_conditional_pairs": 36,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 66,
+        "evaluator_dense_audit_queries": 18
+      },
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 3,
+          "weighted_edges": 2,
+          "complete_graph_edges": 3
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 11,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 2,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        3,
+        6
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 2,
+      "bank": "pair_min",
+      "topology": "feature_mst",
+      "engine": "virtual",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "2",
+          "reference_ot_calls": 10,
+          "ordinary": "2",
+          "evaluator_assignment_states": 4
+        },
+        "BQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      },
+      "query_order": "B_closer",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 35,
+        "tree_ot_calls": 33,
+        "tree_nodes_visited": 0,
+        "distribution_entries_read": 81,
+        "feature_edge_reads": 200,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 20,
+        "tree_index_entries": 60,
+        "signed_support_entries": 77,
+        "virtual_nodes_visited": 96,
+        "lca_queries": 45,
+        "lca_table_lookups": 20
+      },
+      "evaluator_conditional_pairs": 48,
+      "evaluator_dense_audit": {
+        "evaluator_dense_audit_nodes": 189,
+        "evaluator_dense_audit_queries": 33
+      },
+      "graph_sizes": [
+        {
+          "time": 3,
+          "nodes": 6,
+          "weighted_edges": 5,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 2,
+          "nodes": 6,
+          "weighted_edges": 12,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 1,
+          "nodes": 6,
+          "weighted_edges": 15,
+          "complete_graph_edges": 15
+        },
+        {
+          "time": 0,
+          "nodes": 3,
+          "weighted_edges": 3,
+          "complete_graph_edges": 3
+        }
+      ],
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "limits": "Three hand-selected families, k1/k2, exact binary-row references. Candidate supports valid rational finite rows; audit reference is binary only. Cost counters are partial, bit growth and sorting not fully counted. No runtime, coverage or online insertion claim."
+}
