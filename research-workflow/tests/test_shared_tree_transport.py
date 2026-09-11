@@ -4,8 +4,8 @@ from pathlib import Path
 import sys
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from check_shared_tree_design_01 import Tree
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from adapters.shared_conditional_tree import Tree
 
 
 class VirtualTreeTransportTests(unittest.TestCase):

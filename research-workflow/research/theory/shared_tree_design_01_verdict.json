@@ -1,0 +1,226 @@
+{
+  "id": "shared_tree_design_01",
+  "date": "2026-09-11",
+  "decision": "retain_active_tree_algorithm_admit_bounded_probe_design",
+  "scientific_objective_achieved": false,
+  "legacy_solver_objective_achieved": false,
+  "hypothesis_registered": false,
+  "benchmark_run": false,
+  "authority": "User explicitly requested upgrading the shared tree and algorithm rather than more unrelated supporting constructions; refill resumed the same interrupted reviewer.",
+  "target": "Absolute-cost finite rational k-window AW1; times1..T, coupled initial marginals. Transductive batch. No population or squared-cost claim.",
+  "completed": [
+    "Reusable shared conditional-state tree algorithm in adapters, separate from evaluator",
+    "Pair-min probes repair singleton-anchor blindness",
+    "Feature-neighbor MST repairs observed conditional tree detours",
+    "Exact virtual-tree primitive removes dense scan term with indexes and input-support costs included",
+    "Same independent reviewer completed after refill; no replacement or reset"
+  ],
+  "result": [
+    {
+      "family": "reconvergence",
+      "k": 1,
+      "query_order": "A_closer",
+      "query_intervals": {
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 14,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 13,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      }
+    },
+    {
+      "family": "reconvergence",
+      "k": 2,
+      "query_order": "A_closer",
+      "query_intervals": {
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "5/16",
+          "reference_ot_calls": 17,
+          "ordinary": "1/16",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "1/2",
+          "exact": "1/2",
+          "upper": "3/4",
+          "reference_ot_calls": 16,
+          "ordinary": "1/2",
+          "evaluator_assignment_states": 16
+        }
+      }
+    },
+    {
+      "family": "information_timing",
+      "k": 1,
+      "query_order": "unresolved",
+      "query_intervals": {
+        "AQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "5/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 256
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "7/2",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      }
+    },
+    {
+      "family": "information_timing",
+      "k": 2,
+      "query_order": "unresolved",
+      "query_intervals": {
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "3",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "4",
+          "reference_ot_calls": 14,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      }
+    },
+    {
+      "family": "genuine_k2",
+      "k": 1,
+      "query_order": "unresolved",
+      "query_intervals": {
+        "AQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        },
+        "BQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7,
+          "ordinary": "0",
+          "evaluator_assignment_states": 16
+        }
+      }
+    },
+    {
+      "family": "genuine_k2",
+      "k": 2,
+      "query_order": "B_closer",
+      "query_intervals": {
+        "AQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "2",
+          "reference_ot_calls": 10,
+          "ordinary": "2",
+          "evaluator_assignment_states": 4
+        },
+        "BQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10,
+          "ordinary": "1",
+          "evaluator_assignment_states": 16
+        }
+      }
+    }
+  ],
+  "validation": {
+    "root_pair_intervals": 18,
+    "conditional_pairs": 372,
+    "dense_virtual_equalities": 231,
+    "unit_tests": 96,
+    "hash_pins": {
+      "total": 26,
+      "matching": 24,
+      "historical": 2
+    },
+    "meaning": "Correctness/version checks; not coverage, speed or scientific completion."
+  },
+  "admission": {
+    "guarantee": "Independent reviewer admits both finite-target certificate inductions and repairs.",
+    "mechanism": "O(F E_t log N_next) selected-edge sparse transport work for fixed feature width, plus indexes, recursive sorting, features, root queries and rational bit costs.",
+    "empirical": "Three hand-selected families with k1/k2 controls; no held-out rate or runtime advantage.",
+    "novelty": "Not established for full algorithm; known proof ingredients are disclosed. Review admits a bounded next investment, not publication novelty."
+  },
+  "budget": {
+    "constructions": 1,
+    "substantive_repairs": 2,
+    "initial_repair_limit": 1,
+    "extension_reason": "First repair succeeded and exposed specific upper tree stretch; extension saved before topology repair.",
+    "independent_review_assignments": 1,
+    "refill": "Same reviewer resumed once; no repeated completed research."
+  },
+  "artifacts": [
+    {
+      "path": "research/theory/shared_tree_design_01.md",
+      "sha256": "8f5f8161a7e12338e0ec70b565a078e396a639f7a829699058141f8df1000483"
+    },
+    {
+      "path": "adapters/shared_conditional_tree.py",
+      "sha256": "e222239de4e4b4918deb37995ffc05e22c343069a4af8939b2b9c9ca5f4cd75a"
+    },
+    {
+      "path": "tools/check_shared_tree_design_01.py",
+      "sha256": "e5d498d3efee7e52051e583aedb1c8026346a8675e220d1d3808c0fbbeea036b"
+    },
+    {
+      "path": "research/theory/shared_tree_design_01_checks_final.json",
+      "sha256": "373e96eb16f1bbaca48a3906452002fda75e5c91583be27672745473d6c0fbb8"
+    },
+    {
+      "path": "research/theory/shared_tree_design_01_review.md",
+      "sha256": "8c81be8678c723c63cb8516db8d3909a18e54db6c73c20ee4a5c8c96fae6a6d1"
+    },
+    {
+      "path": "tests/test_shared_tree_transport.py",
+      "sha256": "e66e6848839402088995edf1a3bd860d8210a8a86aa7a37eeeaff2d2367a084d"
+    },
+    {
+      "path": "tools/check_geometry_condition_screen_01.py",
+      "sha256": "b6bed1f47a70fe63ae37e6c6d147442be4e055ba0cb18894bc3bc590730cbd46"
+    }
+  ],
+  "historical_sources": {
+    "v0_v1": "7d09c40",
+    "v2": "4dc91d3",
+    "v3_before_module_split": "10c4bee"
+  },
+  "next_decision": "Design and freeze one small cost/decision probe for this exact tree candidate against eligible early-stopping baselines, including all build/index/query costs and unresolved timing controls. Preregister before sampling or scaling. No further tuning of these six controls or broad benchmark.",
+  "limits": [
+    "One strict timing order remains unresolved; true ties remain unasserted",
+    "No production float/common_model integration or free query insertion",
+    "Small graphs can be complete; no measured runtime or break-even advantage",
+    "No universal useful coverage, novelty, SOTA or objective completion"
+  ]
+}

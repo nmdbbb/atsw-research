@@ -30,11 +30,15 @@ PO nêu đúng chỗ xung đột và xử lý theo quyền đã có; không tự
 ## Trạng thái nghiên cứu để định hướng đọc
 
 Target là adapted OT trên mô hình k-window hữu hạn đã khai, không phải population
-hay nhãn ứng dụng. Sức nặng khoa học đứng trước tối ưu code. Cây chung là ứng viên.
-Trial 01 đóng diagnostic cho một construction cụ thể. Trial 02 giữ công thức
-causal-prefix đã biết làm baseline; chưa promotion, chưa đăng ký probe v3.
-Review core Trial 02 đã được ghi trước usage limit; các bổ sung cuối chưa có đầy
-đủ sign-off. Đọc phạm vi chính xác tại `review_coverage` trong checkpoint.
+hay nhãn ứng dụng. Sức nặng khoa học đứng trước tối ưu code. Theo chỉ thị user,
+đầu tư hiện tại là **nâng cấp cây chung và thuật toán của nó**:
+[thiết kế](research/theory/shared_tree_design_01.md),
+[candidate chạy được](adapters/shared_conditional_tree.py). Bản đầu dùng AW1,
+cây trạng thái điều kiện, chặn hai phía và phép tính cây thưa chính xác.
+Đã có diagnostic hữu hạn; chưa có probe v3, thắng tốc độ hay claim SOTA.
+Không quay lại chuỗi lemma phụ; task tiếp theo vẫn lấy từ checkpoint.
+Review cũ, gồm các bổ sung Trial 02 còn pending, giữ phạm vi riêng trong
+`review_coverage`; không thừa kế sign-off giữa các phiên bản.
 
 **Task hiện tại chỉ lấy từ `workflow_route.next_action`**, cùng budget và gate.
 Không tiếp tục hàng đợi H_D02 trong `status.json` lịch sử hoặc prompt cũ trong

@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-11",
-  "phase": "shared_tree_candidate_construction_complete",
+  "phase": "shared_tree_design_in_progress",
   "scope_revision": {
     "id": "contract_revision_3",
     "objective_id": "tree-adapted-ot-relational-v3",
@@ -11,7 +11,7 @@
   "scientific_objective_achieved": false,
   "legacy_solver_objective_achieved": false,
   "active_target": "User-selected mathematical conditional order preservation; top-K/full ordering/fallback are not mandatory.",
-  "decision_record": "research/theory/shared_tree_design_01_verdict.json",
+  "decision_record": "research/theory/shared_tree_design_01.md",
   "previous_checkpoint": "ledger/checkpoints/status_orchestrator_pre_v3.json",
   "legacy_checkpoint": "status.json (historical; not an instruction to resume H_D02)",
   "imported_head": "56fd25b",
@@ -30,10 +30,10 @@
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-11",
     "reason": "User explicitly requests designing/upgrading the shared tree and its algorithm; stop drifting through unrelated supporting constructions.",
-    "stage": "construction_complete",
+    "stage": "screening",
     "task_id": "shared_tree_design_01",
     "progress": {
-      "state": "complete",
+      "state": "in_progress",
       "constructions_started": 1,
       "substantive_repairs_used": 2,
       "independent_reviews_assigned": 1,
@@ -42,25 +42,18 @@
         "tools/check_shared_tree_design_01.py",
         "research/theory/shared_tree_design_01_checks_v0.json",
         "research/theory/shared_tree_design_01_checks_v1.json",
-        "research/theory/shared_tree_design_01_audit.json",
-        "research/theory/shared_tree_design_01_checks_v2.json",
-        "adapters/shared_conditional_tree.py",
-        "research/theory/shared_tree_design_01_checks_v3.json",
-        "research/theory/shared_tree_design_01_checks_final.json",
-        "tests/test_shared_tree_transport.py",
-        "research/theory/shared_tree_design_01_review.md",
-        "research/theory/shared_tree_design_01_verdict.json"
+        "research/theory/shared_tree_design_01_audit.json"
       ],
-      "note": "One tree architecture built; two evidence-based repairs; exact sparse implementation; same reviewer final delta completed after refill. Active research candidate, no benchmark or novelty claim."
+      "note": "Repair1 exact checks complete; now start bounded topology repair2 after evidence-based budget extension (no reset). Same reviewer active."
     },
-    "evidence_record": "research/theory/shared_tree_design_01_verdict.json",
-    "next_action": "Design and freeze one small cost/decision probe for this exact tree candidate against eligible early-stopping baselines, including all build/index/query costs and unresolved timing controls. Preregister before sampling or scaling. No further tuning of these six controls or broad benchmark.",
+    "evidence_record": "research/theory/shared_tree_design_01.md",
+    "next_action": "Construct MST on the bounded feature-neighbor candidate graph; run same exact controls and version-specific review; no further tuning in this cycle.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
-    "review_limit": "Final tree design/candidate/evaluator/results/tests/dependency accepted at exact hashes in shared_tree_design_01_verdict.json; earlier pending claims remain separately pending.",
+    "review_limit": "One version-specific review of this construction; no inheritance from previous packets.",
     "work_budget": {
-      "purpose": "One executable shared-tree design, three fixed families, two repairs after recorded evidence-based extension, one reviewer; cycle complete.",
+      "purpose": "One executable shared-tree design, three fixed finite adversarial families, one justified repair and one independent review.",
       "max_constructions": 1,
       "max_substantive_repairs": 2,
       "max_independent_review_assignments": 1,
@@ -69,7 +62,7 @@
       "extension_reason": "Pair-min repair resolves genuine k2 and remaining strict failures are localized to upper tree detours. User asks tree algorithm upgrades; fund one sparse feature-neighbor MST repair on existing controls, no new family or agent."
     },
     "construction": "Shared conditional-state trees with recursive tree-OT upper and conditional Lipschitz probe lower on the finite AW1 target.",
-    "decision": "retain_active_tree_algorithm_admit_bounded_probe_design",
+    "decision": "execute_one_tree_design",
     "previous_task_disposition": "residual_robustness_01 closed at 8d44f00; retained baseline. Its proposed witness-only successor is superseded by current user tree-design direction."
   },
   "automatic_large_grid_authorized": false,
@@ -78,7 +71,7 @@
   "background_research_running": false,
   "push_authorized": true,
   "latest_user_selection": "DECISION_ORDER_PRESERVATION_20260910.md",
-  "last_completed_diagnostic": "shared_tree_design_01: working conditional tree with reviewed two-sided AW1 certificates, topology/probe repairs and exact sparse transport; three strict controls certified, one strict control unresolved, two tie controls.",
+  "last_completed_diagnostic": "residual_robustness_01: sharp scaled tolerance failure and sound two-witness certificate through positive near-tie; known metric-stability baseline retained.",
   "latest_workflow_audit": "research/workflows/po_workflow_audit_20260910.md",
   "main_agent_role": "PO; delegated agents retain their assigned roles",
   "review_coverage": {
@@ -136,15 +129,6 @@
       "packet_sha256": "203999fd7b8988bda6e50bd71867d833527bb33f82e82b5ac167870b59a5761a",
       "scope": "Exact residual identities, scoped tolerance obstruction, scale-aware bound, two supplied witness maps and six rational controls.",
       "pending": "Witness discovery on general compact models, broad usefulness, significance and comparator performance remain unestablished."
-    },
-    "shared_tree_design": {
-      "record": "research/theory/shared_tree_design_01_verdict.json",
-      "review_file": "research/theory/shared_tree_design_01_review.md",
-      "review_sha256": "8c81be8678c723c63cb8516db8d3909a18e54db6c73c20ee4a5c8c96fae6a6d1",
-      "packet_sha256": "8f5f8161a7e12338e0ec70b565a078e396a639f7a829699058141f8df1000483",
-      "candidate_sha256": "e222239de4e4b4918deb37995ffc05e22c343069a4af8939b2b9c9ca5f4cd75a",
-      "scope": "Finite AW1 certificate inductions, repaired tree/probes, sparse primitive and operation bound, final exact-version diagnostics.",
-      "pending": "Full algorithm novelty, held-out cost/coverage, production float integration, long-horizon usefulness and squared costs not established."
     }
   },
   "workflow_maintenance": {
@@ -172,24 +156,24 @@
     "keep_if": "A decision is better supported or recovery avoids demonstrated repeated/lost work; do not infer quota savings from more records.",
     "revise_or_revert_if": "Rules cause redundant reading, unjustified blocking or architecture churn; simplify the specific rule while preserving scientific gates and historical evidence.",
     "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured.",
-    "observed": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle. User later redirected to concrete tree upgrades; this cycle built the candidate, repaired observed defects and completed sparse implementation before closure, instead of opening unrelated algebraic branches."
+    "observed": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle."
   },
   "project_plan": {
     "direction": "Prioritize the shared conditional-state tree and its algorithm under unchanged v3 order guarantee.",
     "priority": "Resolve claim/representation/workflow architecture before local speed tuning when the diagnosed blocker is structural.",
     "now": {
       "task_ref": "workflow_route.task_id",
-      "forecast": "Construction cycle complete; next authorized investment is one bounded probe protocol design.",
+      "forecast": "One construction packet and finite discriminator, at most one justified repair and one investment review; limits, not measured effort.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Tree algorithm candidate implemented and independently reviewed; exact diagnostics and sparse primitive complete."
+      "outcome": "Active tree design; no result yet."
     },
     "next": {
-      "if_gate_passes": "Preregister the bounded cost/coverage probe only after its input/guarantee/comparator/margin/budget are frozen.",
-      "if_structural_gate_fails": "Keep or stop this algorithm based on measured total cost and coverage; do not drift to unrelated supporting lemma chains.",
+      "if_gate_passes": "Fund a separately specified substantive mechanism and frozen decisive probe after independent review; no blanket grid authorization.",
+      "if_structural_gate_fails": "Stop the specified witness mechanism with measured or mathematical evidence; do not fund more variants of saturated metric stability.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Design and freeze one small cost/decision probe for this exact tree candidate against eligible early-stopping baselines, including all build/index/query costs and unresolved timing controls. Preregister before sampling or scaling. No further tuning of these six controls or broad benchmark.",
-      "assessment": "research/theory/shared_tree_design_01_verdict.json"
+      "decision": "Improve the same tree/probe mechanism according to diagnostic evidence and cost before funding any empirical probe.",
+      "assessment": "research/theory/residual_robustness_01_verdict.json"
     },
     "later": {
       "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
@@ -207,68 +191,70 @@
     {
       "id": "R_geometry",
       "owner": "PO",
-      "state": "tree_stretch_improved_one_strict_timing_control_unresolved",
+      "state": "scale_free_approximate_matching_refuted_scale_aware_certificate_available",
       "impact": "Structural blocker for the prefix construction, not a refutation of every tree.",
-      "evidence": "research/theory/shared_tree_design_01_verdict.json",
+      "evidence": "research/theory/residual_robustness_01_verdict.json",
       "trigger": "Divergence/reconvergence discriminator still inverts or cannot resolve a meaningful conditional case.",
-      "response": "Keep the unresolved timing control visible; freeze candidate before measuring coverage.",
-      "residual": "No uniform distortion or long-horizon usefulness bound.",
+      "response": "Use accepted exact subclass as baseline and retain conditional information in any extension; raw signed minimization is blind on matched moments.",
+      "residual": "Query-dependent noise scale and witness cost control resolution; uncertified cases remain unresolved.",
       "blocks": "Prototype investment without the geometry gate."
     },
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "complete_algorithm_novelty_open_bounded_investment_admitted",
+      "state": "robustness_bound_matches_sharp_known_metric_stability",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "research/theory/shared_tree_design_01_review.md",
+      "evidence": "research/theory/residual_robustness_01_verdict.json",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
-      "response": "Assess overlap of the complete tree/probe/sparse mechanism before publication-level claims; known lemmas alone neither establish nor refute novelty.",
-      "residual": "No SOTA or novelty claim admitted.",
+      "response": "No standalone robustness probe; a distinct witness-construction algorithm would require its own significance assessment.",
+      "residual": "Targeted prior-art assessment is not exhaustive novelty adjudication.",
       "blocks": "Paper-level claim and substantial implementation."
     },
     {
       "id": "R_cost",
       "owner": "PO",
-      "state": "sparse_operation_bound_reviewed_runtime_break_even_open",
+      "state": "supplied_witness_costs_valid_general_discovery_cost_open",
       "impact": "Applicability/full-prefix expansion or exact reference work can consume the entire saving.",
-      "evidence": "research/theory/shared_tree_design_01_review.md",
+      "evidence": "research/theory/residual_robustness_01_verdict.json",
       "trigger": "Condition needs all path pairs/full continuation or weights cannot aggregate on the supplied representation.",
-      "response": "Charge feature/topology/index/model build, root queries, exact arithmetic and comparator early stopping in the frozen probe.",
-      "residual": "Sparse visits and LCA/index entries are different units; current counters do not establish runtime superiority.",
+      "response": "Charge K times reachable edges, normalized-window keys/sorting, root OT, model construction and exact arithmetic; strongest eligible early stopping remains unmeasured.",
+      "residual": "Residual path dictionary verification may expand compact models; supplied maps are not a general discovery implementation.",
       "blocks": "Performance claim and large-run budget."
     },
     {
       "id": "R_review",
       "owner": "PO with independent reviewer",
-      "state": "current_tree_version_reviewed_historical_pending_retained",
+      "state": "open",
       "impact": "Wrong-object or unreviewed arithmetic can invalidate the guarantee.",
-      "evidence": "research/theory/shared_tree_design_01_verdict.json",
+      "evidence": "review_coverage in this checkpoint",
       "trigger": "New claim depends on unreviewed root additions or treats float/local evidence as a root certificate.",
       "response": "Check target/filtration/units and version-specific missing proof/numerics; block dependent promotion.",
-      "residual": "Future edits and empirical or float claims require their own coverage.",
+      "residual": "Tests and checkpoint guards do not validate research semantics.",
       "blocks": "Independent/certified promotion of affected claims."
     },
     {
       "id": "R_interruption",
       "owner": "PO",
-      "state": "same_reviewer_resumed_and_completed_after_refill",
+      "state": "review_refill_resumed_existing_assignment",
       "impact": "Quota interruption can lose unwritten reasoning or leave execution outcome unknown.",
-      "evidence": "research/theory/shared_tree_design_01_review.md",
+      "evidence": "research/theory/conditional_offset_comparison_01_verdict.json",
       "trigger": "Tool/agent response absent, malformed/stale checkpoint or uncertain running process.",
       "response": "Save intent and partial files early; use atomic guarded save; reconcile disk/process/Git before replay.",
-      "residual": "No quota telemetry; unwritten work and concurrent writers remain risks.",
+      "residual": "Saved artifacts survived these interruptions; unwritten work and simultaneous writers remain unprotected.",
       "blocks": "Blind replay of expensive work or external side effects."
     }
   ],
   "interruption_recovery": {
-    "state": "tree_cycle_complete_ready_for_sync",
-    "last_completed": "research/theory/shared_tree_design_01_verdict.json",
-    "current_intent": "Validate final records and synchronize authorized commits. Next research is frozen probe design, not repeating completed tree construction.",
+    "state": "tree_design_in_progress",
+    "last_completed": "research/theory/residual_robustness_01_verdict.json",
+    "current_intent": "Construct MST on the bounded feature-neighbor candidate graph; run same exact controls and version-specific review; no further tuning in this cycle.",
     "recover_by": "Use actual Git state and residual_robustness_01 verdict; do not repeat completed reviews or supply diagnostic exact radius as free candidate information.",
     "live_processes": [],
-    "pending_agent_outputs": [],
+    "pending_agent_outputs": [
+      "shared_tree_design_review"
+    ],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "None required for this construction cycle; design, source versions, checks, review, verdict and next decision saved."
+    "unsaved_reasoning": "v0/v1 and fixed-upper ablation saved; sparse graph repair specified before execution."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

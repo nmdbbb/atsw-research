@@ -267,3 +267,62 @@ Implementation check: dense and virtual values must agree on every queried
 edge/root in the same six controls, zero imbalance, singleton tree, and zero
 length edges. Store evaluator visits separately from candidate virtual visits.
 No further tree tuning or benchmark is funded in this cycle.
+
+## Final executable candidate and cycle result
+
+The reusable algorithm is `adapters/shared_conditional_tree.py`; the separate
+`tools/check_shared_tree_design_01.py` owns fixtures/references only. Instantiate
+`SharedTrees(models)` for the repaired pair-min / feature-MST / virtual-transport
+defaults, then call `bounds('Q','A')`. Candidate dense audits default to false.
+The model dictionary contains valid rational state masses and kernels as in the
+finite diagnostic model builder. This is not yet an adapter for arbitrary
+floating common_model arrays or a production solver. Model construction is charged
+separately from the counters of this rational candidate.
+
+Reproduce the final exact diagnostic:
+
+```powershell
+python research-workflow/tools/check_shared_tree_design_01.py --bank pair_min --topology feature_mst --engine virtual
+python -m unittest discover -s research-workflow/tests -q
+```
+
+`shared_tree_design_01_checks_final.json` records final code/dependency hashes.
+Historical source for v0/v1 is commit7d09c40; v2 source is4dc91d3; v3 virtual
+source before candidate/evaluator separation is10c4bee. Their saved results
+remain unchanged. The final candidate and evaluator separation preserves all
+v3 interval values and decisions; the candidate defaults select the repaired
+version, while the diagnostic CLI requires explicit options to compare versions.
+
+| Fixed control | v0 | pair-min v1 | topology v2 / virtual final |
+|---|---|---|---|
+| Reconvergence, k1 and k2 | unresolved | unresolved | A closer:5/16<1/2 |
+| Genuine second-order, k2 | unresolved | B closer:1<2 | B closer:1<2 |
+| Information timing, k1 | unresolved | unresolved | unresolved; true1<2 |
+| Information timing, k2 | unresolved | unresolved | unresolved; true tie2=2 |
+| Second-order fixture after k1 reconstruction | unresolved | unresolved | unresolved; all true distances0 |
+
+The virtual primitive agrees exactly with dense transport on **231** selected
+edge/root queries across these six controls, and the test suite passes96 tests,
+including the new zero-edge/root/interior-mass primitive tests. These are
+correctness checks, not scientific completion. On reconvergence the lower3/16
+for Q,A exceeds ordinary path OT1/16, so the conditional bank does capture an
+adapted distinction there. The successful genuine-k2 order by itself would not
+establish that distinction; its ordinary and adapted pair values coincide.
+
+Virtual visits reduce the actual traversed set but bring index/LCA work: for
+example the timing-k2 control uses164 virtual nodes in48 queries versus447
+dense audit nodes, plus104 index entries and72 LCA table lookups. These units
+are different; subtracting them or turning the ratio into a speedup is invalid.
+Some small candidate graphs are complete. No held-out coverage, runtime win,
+long-horizon guarantee of usefulness, or SOTA claim has been obtained.
+
+**PO investment:** retain this as the active tree algorithm candidate, not just
+another supporting lemma. The cycle has built the object the user requested,
+repaired two observed defects, and implemented the sparse exact primitive.
+The next decision concerns this candidate's total cost and useful decision
+coverage versus eligible early-stopping baselines on a frozen small probe.
+Freeze that probe before sampling/scaling; do not keep retuning these six
+controls or silently exclude the unresolved timing case. A publication-level
+novelty assessment remains open, especially overlap with recursive transport
+embeddings and bisimulation approximation; the current review can admit a
+bounded next investment without asserting novelty or completion.
