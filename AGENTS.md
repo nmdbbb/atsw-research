@@ -9,6 +9,9 @@ not to manage individual agents. Use Vietnamese by default.
 
 Read `research-workflow/START_HERE.md`, then its current checkpoint and decision
 references. Use `research-workflow/WORKFLOW.md` as the single operating workflow.
+Use `research-workflow/docs/README.md` for current topical documentation. Update
+the existing topic page; keep session narrative in checkpoint/ledger. Historical
+records are evidence, not alternative current instructions.
 Before executing research, state the active objective, current evidence gap and
 one next decision briefly. Resume that decision; do not restart historical queues.
 User requests to analyze/review/pause limit the turn to that work. Brainstormed

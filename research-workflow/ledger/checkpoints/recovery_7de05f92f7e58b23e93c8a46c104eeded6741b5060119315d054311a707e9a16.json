@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-11",
-  "phase": "documentation_consolidated",
+  "phase": "scope_v4_toolkit_deliveries_saved",
   "scope_revision": {
     "id": "contract_revision_4",
     "objective_id": "adapted-ot-reusable-representations-v4",
@@ -29,41 +29,41 @@
   "workflow_route": {
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-11",
-    "reason": "User requests unified topical documentation and domain knowledge, eliminating session-style narrative and competing current documents.",
+    "reason": "User explicitly authorizes saving outcome-led positioning, collecting comparison tools and defining deliverables.",
     "stage": "complete",
-    "task_id": "documentation_consolidation",
+    "task_id": "scope_v4_delivery_and_toolkit",
     "progress": {
       "state": "complete",
       "constructions_started": 0,
       "substantive_repairs_used": 0,
+      "scope_revisions_started": 1,
+      "source_collection_assignments": 1,
       "independent_reviews_assigned": 1,
-      "synthesis_assignments": 2,
       "evidence": [
-        "docs/README.md",
-        "docs/SCOPE.md",
-        "docs/KNOWLEDGE.md",
-        "docs/METHOD.md",
-        "docs/EVIDENCE.md",
-        "docs/BENCHMARKS.md",
-        "WORKFLOW.md",
-        "docs/catalog.json"
+        "SCOPE_REVISION_4.md",
+        "ledger/contract_revision_4.json",
+        "research/workflows/scope_v4_contract_review.md",
+        "research/sota/comparison_toolkit_v4.md",
+        "research/sota/comparison_toolkit_v4.json"
       ],
-      "note": "Topical synthesis and documentation consistency check complete; historical evidence and contract unchanged."
+      "note": "One authorized amendment and contract review complete; source collector resumed after quota and completed, 4 pinned checkouts and NestedOT vendor validation; no research probe or external source execution."
     },
-    "evidence_record": "docs/README.md",
+    "evidence_record": "SCOPE_REVISION_4.md",
     "next_action": "Execute one D1-D2 packet for the reusable conditional-tree candidate: choose a scientifically meaningful parameterized process family with genuine information timing/conditional dependence; formulate a quantitative representation-distortion/bound-sharpness versus decision-margin claim; compare nearest WL/OTM/tree results and perform one finite decisive calculation or counterexample. Reuse existing proofs, then decide upgrade/retain/replace tree before preregistered performance probe.",
-    "advance_when": "Documentation task complete. Next research continuation executes the retained D1-D2 structural-claim decision.",
+    "advance_when": "Next task: a specific nontrivial structural claim and decisive discriminator justify construction/refinement or probe. This preparation task is complete, not a scientific delivery.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
-    "review_limit": "Bounded documentation consistency check completed; three omissions repaired. No new mathematical sign-off or scientific completion.",
+    "review_limit": "scope_v4_contract_review.md approves contract consistency at explicit hashes only; all historical mathematical review coverage retained.",
     "work_budget": {
-      "purpose": "One documentation consolidation across owned project docs, two bounded topical synthesis tasks and focused consistency checks; no research experiments or scope changes.",
-      "max_synthesis_assignments": 2,
-      "quota_remaining": "unknown"
+      "purpose": "Completed: one scope amendment, one source collection, five research deliveries and one contract review. No benchmark or dependency installation.",
+      "max_scope_revisions": 1,
+      "max_source_collections": 1,
+      "max_independent_reviews": 1,
+      "account_quota_remaining": "unknown"
     },
     "construction": "Current shared-tree candidate retained as an investment; objective is reusable adapted-OT representations, not this fixed architecture.",
-    "decision": "use_stable_topical_documents_and_single_workflow",
-    "previous_task_disposition": "scope_v4_delivery_and_toolkit complete at 772304d; substantive D1-D2 next action retained in documentation_resume_research_action."
+    "decision": "v4_scope_applied_sources_collected_deliveries_defined",
+    "previous_task_disposition": "shared_tree_design_01 complete and pushed at 0b039c7. Probe deferred until alignment with approved scientific positioning; evidence and review unchanged."
   },
   "automatic_large_grid_authorized": false,
   "v3_hypotheses_registered": [],
@@ -162,35 +162,35 @@
     "research_task_started": false
   },
   "workflow_evolution": {
-    "revision_id": "topical_documentation",
-    "state": "consolidated_validated",
-    "trigger": "Overlapping guides and session narratives obscured current knowledge and authority.",
-    "diagnosis": "Topics, execution state and evidence history shared the same reading layer.",
-    "decision": "Stable topical pages, one workflow, canonical entrypoints, archived source guides and evidence catalog.",
-    "prior_version_commit": "772304d",
-    "expected_effect": "Readers find one current answer per topic and use checkpoint for the next task.",
-    "evaluate_at": "Next research continuation: use canonical topic and saved action without reopening historical queues.",
+    "revision_id": "adaptive_po_20260910",
+    "state": "continuation_fix_exercised_on_two_constructions",
+    "trigger": "User identified repeated gap-only conclusions and premature stops after continue.",
+    "diagnosis": "PO treated per-task packet budget and checkpoint as turn-ending; workflow retained a historical reset next-task sentence.",
+    "decision": "Remove stale queue pointer; require execution across internal checkpoints within authorization and a concrete construction after gap diagnosis.",
+    "prior_version_commit": "307d833",
+    "expected_effect": "Next research decision identifies the bottleneck level, avoids unrelated micro-work and resumes without resetting task allowance.",
+    "evaluate_at": "Next continuation should use these concrete outcomes without repeating closed screens. Observe whether checkpoint-as-stop or old queue recurrence returns; no quantified token-saving claim.",
     "keep_if": "A decision is better supported or recovery avoids demonstrated repeated/lost work; do not infer quota savings from more records.",
     "revise_or_revert_if": "Rules cause redundant reading, unjustified blocking or architecture churn; simplify the specific rule while preserving scientific gates and historical evidence.",
-    "technical_validation": "Current-document links, catalog coverage, archived guide hashes and contract/ledger integrity checked.",
-    "observed": "Five conflicting operational guides replaced by redirects; workflow and entrypoint shortened; domain corrections integrated as current statements. Reader/token savings not measured."
+    "technical_validation": "93 tests passed, including save failure before replace, response loss after replace, stale overwrite and dropped handoff guards. Operational benefit remains unmeasured.",
+    "observed": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle. User later redirected to concrete tree upgrades; this cycle built the candidate, repaired observed defects and completed sparse implementation before closure, instead of opening unrelated algebraic branches."
   },
   "project_plan": {
     "direction": "Substantive reusable adapted-OT representations: quantitative representation size / guarantee sharpness / total decision cost; tree is current replaceable architecture.",
     "priority": "Resolve claim/representation/workflow architecture before local speed tuning when the diagnosed blocker is structural.",
     "now": {
       "task_ref": "workflow_route.task_id",
-      "forecast": "Documentation consolidation complete.",
+      "forecast": "Scope/toolkit/delivery preparation complete.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "One canonical document per topic, five operational redirects, full Markdown role catalog. Scientific next decision preserved."
+      "outcome": "Reviewed v4 contract active; D1-D5 defined, sources pinned. No new theorem, novelty, speed or coverage result."
     },
     "next": {
       "if_gate_passes": "Freeze a single bounded prediction and matched-target comparison protocol; preregister before sampling/scaling.",
       "if_structural_gate_fails": "Upgrade or replace tree using the concrete falsifier; stop local tuning that cannot change the quantitative scientific claim.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
       "decision": "Execute one D1-D2 packet for the reusable conditional-tree candidate: choose a scientifically meaningful parameterized process family with genuine information timing/conditional dependence; formulate a quantitative representation-distortion/bound-sharpness versus decision-margin claim; compare nearest WL/OTM/tree results and perform one finite decisive calculation or counterexample. Reuse existing proofs, then decide upgrade/retain/replace tree before preregistered performance probe.",
-      "assessment": "docs/EVIDENCE.md",
+      "assessment": "SCOPE_REVISION_4.md",
       "forecast": {
         "work_units": "One claim packet, one finite decisive check, one delta review if the claim remains plausible.",
         "confidence": "bounded work allocation, not a prediction of theorem success",
@@ -279,20 +279,20 @@
     }
   ],
   "interruption_recovery": {
-    "state": "documentation_complete_ready_for_sync",
-    "last_completed": "docs/catalog.json",
-    "current_intent": "Commit and push coherent documentation; substantive research action retained for research continuation.",
-    "recover_by": "Verify Git and remote. Current docs are indexed at docs/README.md; do not regenerate synthesis or repeat completed source collection.",
+    "state": "scope_toolkit_complete_ready_for_git_sync",
+    "last_completed": "research/sota/comparison_toolkit_v4.json",
+    "current_intent": "Commit and push coherent scope/toolkit/checkpoint package; next research decision saved, not executed.",
+    "recover_by": "Verify actual Git/remote state and v4 lock. Toolkit sources are ignored local cache; restore exact commits from manifest if absent. Do not repeat completed source collection or contract review.",
     "live_processes": [],
     "pending_agent_outputs": [],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "No required unsaved documentation work."
+    "unsaved_reasoning": "No required unsaved work for scope/toolkit task; next D1-D2 packet is planned, not executed."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md",
   "v4_hypotheses_registered": 0,
   "v4_benchmarks_run": 0,
   "delivery_status": {
-    "record": "docs/SCOPE.md",
+    "record": "SCOPE_REVISION_4.md",
     "D1": "open_claim_domain_and_novelty",
     "D2": "partial_existing_tree_proof_no_quantitative_structural_tradeoff",
     "D3": "partial_candidate_no_measured_total_cost_advantage",
@@ -310,17 +310,5 @@
     "downloaded_checkouts": 4,
     "installed_or_benchmarked_this_task": false,
     "cache_tracked": false
-  },
-  "documentation_resume_research_action": "Execute one D1-D2 packet for the reusable conditional-tree candidate: choose a scientifically meaningful parameterized process family with genuine information timing/conditional dependence; formulate a quantitative representation-distortion/bound-sharpness versus decision-margin claim; compare nearest WL/OTM/tree results and perform one finite decisive calculation or counterexample. Reuse existing proofs, then decide upgrade/retain/replace tree before preregistered performance probe.",
-  "documentation": {
-    "index": "docs/README.md",
-    "scope": "docs/SCOPE.md",
-    "knowledge": "docs/KNOWLEDGE.md",
-    "method": "docs/METHOD.md",
-    "evidence": "docs/EVIDENCE.md",
-    "benchmarks": "docs/BENCHMARKS.md",
-    "workflow": "WORKFLOW.md",
-    "catalog": "docs/catalog.json",
-    "policy": "Update topic pages in place; checkpoint/ledger hold execution history; frozen records remain evidence at original paths."
   }
 }

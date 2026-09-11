@@ -1,0 +1,46 @@
+{
+  "role": "Historical source snapshots; current operational authority is WORKFLOW.md.",
+  "source_commit": "772304d7441e67414cce67626f5964533c33f01c",
+  "records": [
+    {
+      "original_path": "README.md",
+      "archived_path": "docs/archive/guides/README.md",
+      "sha256": "0edcb1bb849359664d7a171f70e99cb356a7f1630df70c86ea6ed1495efb4a8d"
+    },
+    {
+      "original_path": "START_HERE.md",
+      "archived_path": "docs/archive/guides/START_HERE.md",
+      "sha256": "4516c4d2e3ec5bc89f454d1f64eb6b20f92883c1799f34b9e665bf3fbb3f258d"
+    },
+    {
+      "original_path": "WORKFLOW.md",
+      "archived_path": "docs/archive/guides/WORKFLOW.md",
+      "sha256": "cd4754705f7456d4065fcc62c8883c0a867a10c8d3106807af666578302da6bb"
+    },
+    {
+      "original_path": "CONCURRENCY.md",
+      "archived_path": "docs/archive/guides/CONCURRENCY.md",
+      "sha256": "592b9210087cacf22618d5b77ec3778848b0578d0bfc466ae8adc7d16268bea4"
+    },
+    {
+      "original_path": "MODEL_ROUTING.md",
+      "archived_path": "docs/archive/guides/MODEL_ROUTING.md",
+      "sha256": "3680a6641cfd2fcb2413fbeeac7f4858255c28a8f38f63b282ea83e1a215c391"
+    },
+    {
+      "original_path": "CLAUDE_ROUTING.md",
+      "archived_path": "docs/archive/guides/CLAUDE_ROUTING.md",
+      "sha256": "28e488ee06f6178132c76e37c94f988cf52168aa81fbb9ec2b92a0830a1a2b5c"
+    },
+    {
+      "original_path": "REPORT_FORMAT.md",
+      "archived_path": "docs/archive/guides/REPORT_FORMAT.md",
+      "sha256": "660a8fd20715e46c6e30e3d13663b31d01b36f2653f5bc1f5fe74d649b9c1a3f"
+    },
+    {
+      "original_path": "LEDGER_PORTABILITY.md",
+      "archived_path": "docs/archive/guides/LEDGER_PORTABILITY.md",
+      "sha256": "cdd2d46d6d3e3f115546d5724c69157753165ae637ca16bcc3e0851bc5d7f6d3"
+    }
+  ]
+}

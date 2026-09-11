@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "purpose": "Current topical authority and classification of project-owned Markdown. Records and snapshots are evidence, not live instructions.",
+  "paths_relative_to": "repository root",
+  "excluded_sources": [
+    "research-workflow/inputs/",
+    "research-workflow/third_party/",
+    "research-workflow/.cache/"
+  ],
+  "update_policy": "Update topic pages in place; update this index when project Markdown paths are added or retired. Preserve frozen evidence paths and hashes.",
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "role": "current",
+      "topic": "role_instructions",
+      "current_reference": "AGENTS.md"
+    },
+    {
+      "path": "README.md",
+      "role": "current",
+      "topic": "entrypoint",
+      "current_reference": "README.md"
+    },
+    {
+      "path": "deck-source/README.md",
+      "role": "presentation_source",
+      "topic": "presentation",
+      "current_reference": "deck-source/README.md"
+    },
+    {
+      "path": "research-workflow/BRIEFING_20260910.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/CLAUDE_ROUTING.md",
+      "role": "redirect",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/CONCURRENCY.md",
+      "role": "redirect",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/DECISION_ORDER_PRESERVATION_20260910.md",
+      "role": "historical_evidence",
+      "topic": "scope",
+      "current_reference": "research-workflow/docs/SCOPE.md"
+    },
+    {
+      "path": "research-workflow/HANDOVER.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/LEDGER_PORTABILITY.md",
+      "role": "redirect",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/MODEL_ROUTING.md",
+      "role": "redirect",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/PROJECT_REVIEW_20260910.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/README.md",
+      "role": "current",
+      "topic": "entrypoint",
+      "current_reference": "research-workflow/README.md"
+    },
+    {
+      "path": "research-workflow/REPORT_FORMAT.md",
+      "role": "redirect",
+      "topic": "operations",
+      "current_reference": "research-workflow/docs/BENCHMARKS.md"
+    },
+    {
+      "path": "research-workflow/SCOPE_REVISION_2.md",
+      "role": "historical_evidence",
+      "topic": "scope",
+      "current_reference": "research-workflow/docs/SCOPE.md"
+    },
+    {
+      "path": "research-workflow/SCOPE_REVISION_3.md",
+      "role": "historical_evidence",
+      "topic": "scope",
+      "current_reference": "research-workflow/docs/SCOPE.md"
+    },
+    {
+      "path": "research-workflow/SCOPE_REVISION_4.md",
+      "role": "historical_evidence",
+      "topic": "scope",
+      "current_reference": "research-workflow/docs/SCOPE.md"
+    },
+    {
+      "path": "research-workflow/START_HERE.md",
+      "role": "current",
+      "topic": "entrypoint",
+      "current_reference": "research-workflow/START_HERE.md"
+    },
+    {
+      "path": "research-workflow/WORKFLOW.md",
+      "role": "current",
+      "topic": "workflow",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/BENCHMARKS.md",
+      "role": "current",
+      "topic": "benchmarks",
+      "current_reference": "research-workflow/docs/BENCHMARKS.md"
+    },
+    {
+      "path": "research-workflow/docs/EVIDENCE.md",
+      "role": "current",
+      "topic": "evidence_summary",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/docs/KNOWLEDGE.md",
+      "role": "current",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/docs/METHOD.md",
+      "role": "current",
+      "topic": "method",
+      "current_reference": "research-workflow/docs/METHOD.md"
+    },
+    {
+      "path": "research-workflow/docs/README.md",
+      "role": "current",
+      "topic": "index",
+      "current_reference": "research-workflow/docs/README.md"
+    },
+    {
+      "path": "research-workflow/docs/SCOPE.md",
+      "role": "current",
+      "topic": "scope",
+      "current_reference": "research-workflow/docs/SCOPE.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/README.md",
+      "role": "current",
+      "topic": "archive_index",
+      "current_reference": "research-workflow/docs/archive/README.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/CLAUDE_ROUTING.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/CONCURRENCY.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/LEDGER_PORTABILITY.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/MODEL_ROUTING.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/README.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/REPORT_FORMAT.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/START_HERE.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/docs/archive/guides/WORKFLOW.md",
+      "role": "archived_guide",
+      "topic": "operations",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/A/H_C01_theorem_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/A/H_C02_theorem_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/B/H_C01_prior_art_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/B/H_C02_prior_art_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/B/H_D01_prior_art_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/C/H_C01_probe_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/ledger/inbox/C/H_C02_probe_review.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/panel_prompts/H_C01_REVIEW.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/BASELINES.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/BENCHMARKS.md"
+    },
+    {
+      "path": "research-workflow/research/sota/CROSS_DOMAIN_MAP_20260910.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/DOMAIN_KNOWLEDGE.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/DOMAIN_RATE_AUDIT_20260910.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/EXTERNAL_KNOWLEDGE_20260910.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/MOULOS_BACKHOFF_AUDIT_20260910.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/comparison_toolkit_v4.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/BENCHMARKS.md"
+    },
+    {
+      "path": "research-workflow/research/sota/notes.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/pnot_limitations.B.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/sota/pnot_result_review.md",
+      "role": "historical_evidence",
+      "topic": "knowledge",
+      "current_reference": "research-workflow/docs/KNOWLEDGE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/GAUSSIAN_ORACLE_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/HD02_independent_audit_20260909.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/HD02_opportunity_decision.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/binary_transport_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/block_bounds_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/block_bounds_verdict.C.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/conditional_offset_comparison_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/conditional_offset_comparison_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/direction_proposal_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/direction_revision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/forced_transport_decision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/forced_transport_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/geometry_condition_screen_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/geometry_condition_screen_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/interval_reuse_decision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/interval_reuse_skeptic_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/notes.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/order_architecture_compare_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/order_architecture_compare_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/permuted_monge_checkpoint_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/permuted_monge_final_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/quotient_review_v1.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_01_independent_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_01_packet_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_01_verdict_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_02_independent_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_02_packet_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/relational_trial_02_verdict_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/residual_robustness_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/residual_robustness_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/root_gap_decomposition_review_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/root_gap_priority_decision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/shared_tree_design_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/shared_tree_design_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/signed_prefix_comparison_01.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/signed_prefix_comparison_01_review.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/sparse_policy_verification_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/structured_local_ot_cycle_close_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/structured_local_ot_decision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/theory_round_statement_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/upper_policy_decision_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/theory/upper_policy_verification_20260910.md",
+      "role": "historical_evidence",
+      "topic": "method_evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/research/workflows/legacy_solver_workflow_v2.md",
+      "role": "historical_evidence",
+      "topic": "workflow",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/research/workflows/notes.md",
+      "role": "historical_evidence",
+      "topic": "workflow",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/research/workflows/po_workflow_audit_20260910.md",
+      "role": "historical_evidence",
+      "topic": "workflow",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/research/workflows/scope_v4_contract_review.md",
+      "role": "historical_evidence",
+      "topic": "workflow",
+      "current_reference": "research-workflow/WORKFLOW.md"
+    },
+    {
+      "path": "research-workflow/runs/cycle_1/H_A01_verdict.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/runs/cycle_2/H_B01C1_verdict.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    },
+    {
+      "path": "research-workflow/runs/cycle_2/policy_pool_smoke_verdict.md",
+      "role": "historical_evidence",
+      "topic": "evidence",
+      "current_reference": "research-workflow/docs/EVIDENCE.md"
+    }
+  ]
+}

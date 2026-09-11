@@ -1,22 +1,16 @@
-# atsw-research
+# ATSW research
 
-Hai phần công việc quanh adapted optimal transport và thuật toán cây.
+Biểu diễn tái sử dụng cho các quá trình ngẫu nhiên, hướng tới so sánh adapted OT
+có bảo đảm toán học và lợi ích tổng chi phí.
 
-## [`research-workflow/`](research-workflow/)
+[Đọc tài liệu dự án](research-workflow/docs/README.md) ·
+[Bắt đầu phiên PO](research-workflow/START_HERE.md) ·
+[Quy trình nghiên cứu](research-workflow/WORKFLOW.md)
 
-Workflow nghiên cứu thuật toán cây hướng tới SOTA: hợp đồng mục tiêu, đăng ký giả thuyết trước khi chạy, ledger trao đổi giữa các agent, và log của từng chu kỳ.
+Phương pháp đang phát triển là cây trạng thái điều kiện dùng chung. Mục tiêu,
+kiến thức domain, thuật toán, bằng chứng và protocol có trang chuyên đề riêng
+trong danh mục; trạng thái công việc lấy từ checkpoint.
 
-- [`WORKFLOW.md`](research-workflow/WORKFLOW.md) — quy trình đầy đủ
-- [`START_HERE.md`](research-workflow/START_HERE.md) — điểm vào để agent tiếp tục thực thi
-- [`objective.json`](research-workflow/objective.json) — hợp đồng mục tiêu đã khóa
-- [`inputs/atsw_repo/`](research-workflow/inputs/atsw_repo/) — repo nguồn giữ nguyên gốc, không sửa
-
-## [`deck-source/`](deck-source/)
-
-Nguồn của deck ATSW 55 slide. Chạy `python deck-source/build.py` từ thư mục gốc để ghép thành `atsw-deck-de-hieu.html` — một file HTML tự chứa, mở trực tiếp bằng trình duyệt, không cần mạng.
-
-Chi tiết ở [`deck-source/README.md`](deck-source/README.md).
-
-## Trạng thái
-
-Đây là nghiên cứu đang tiến hành. Các kết quả trong `runs/` và `hypotheses/` là log của quá trình, không phải kết luận đã được kiểm chứng độc lập. Điều kiện dừng và phạm vi hiệu lực của từng phán quyết được ghi trong chính file phán quyết đó.
+research-workflow/ chứa code và evidence nghiên cứu. inputs/atsw_repo/ bên trong
+là nguồn nhập lưu nguyên bản. [deck-source/](deck-source/README.md) là nguồn dựng
+deck minh họa, có vòng đời riêng; tài liệu nghiên cứu là nguồn tham chiếu hiện hành.
