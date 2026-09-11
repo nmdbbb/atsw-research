@@ -13,7 +13,8 @@ Agent chính nói chuyện với user giữ vai **PO / research orchestrator**, 
    dưới. Checkpoint hiện hành là [status.orchestrator.json](status.orchestrator.json).
 3. Đọc lựa chọn user được trường `latest_user_selection` trỏ tới. Lựa chọn hiện
    tại: **giữ thứ tự dưới điều kiện toán học**; top-K, thứ tự đầy đủ và fallback
-   không bắt buộc. Scope v3 vẫn khóa; v2 chỉ áp dụng claim solver riêng.
+   không bắt buộc. [Scope v4](SCOPE_REVISION_4.md) là mục tiêu hiện hành;
+   v2 chỉ áp dụng claim solver riêng, v3 giữ làm lịch sử.
 4. Đọc workflow chính, `workflow_route` và evidence liên quan next action.
    [Audit các lỗi đã gặp](research/workflows/po_workflow_audit_20260910.md) là bản
    đồ tra cứu khi cần; không phải yêu cầu đọc mọi paper/review lại từ đầu.
@@ -29,20 +30,25 @@ PO nêu đúng chỗ xung đột và xử lý theo quyền đã có; không tự
 
 ## Trạng thái nghiên cứu để định hướng đọc
 
-Target là adapted OT trên mô hình k-window hữu hạn đã khai, không phải population
-hay nhãn ứng dụng. Sức nặng khoa học đứng trước tối ưu code. Theo chỉ thị user,
-đầu tư hiện tại là **nâng cấp cây chung và thuật toán của nó**:
+Mục tiêu là **biểu diễn tái sử dụng để chứng nhận quan hệ adapted OT với tổng
+chi phí thấp hơn**, có kết quả về đánh đổi kích thước/độ sắc/chi phí. Đối tượng
+và năm delivery nằm trong [scope v4](SCOPE_REVISION_4.md); prototype hữu hạn
+không đặt trần đề tài, cũng không tự có certificate population. Sức nặng khoa
+học đứng trước tối ưu code. Kiến trúc đang đầu tư là **cây chung và thuật toán**:
 [thiết kế](research/theory/shared_tree_design_01.md),
 [candidate chạy được](adapters/shared_conditional_tree.py). Bản đầu dùng AW1,
 cây trạng thái điều kiện, chặn hai phía và phép tính cây thưa chính xác.
 Đã có diagnostic hữu hạn; chưa có probe v3, thắng tốc độ hay claim SOTA.
-Không quay lại chuỗi lemma phụ; task tiếp theo vẫn lấy từ checkpoint.
+Nâng cấp hoặc thay cây theo claim cần đạt. Công cụ đối chiếu và mức sẵn sàng ở
+[toolkit v4](research/sota/comparison_toolkit_v4.md). Không quay lại chuỗi lemma
+phụ; task tiếp theo vẫn lấy từ checkpoint.
 Review cũ, gồm các bổ sung Trial 02 còn pending, giữ phạm vi riêng trong
 `review_coverage`; không thừa kế sign-off giữa các phiên bản.
 
 **Task hiện tại chỉ lấy từ `workflow_route.next_action`**, cùng budget và gate.
 Không tiếp tục hàng đợi H_D02 trong `status.json` lịch sử hoặc prompt cũ trong
-briefing/scope revision. V3 và mục tiêu solver v2 đều chưa đạt.
+briefing/scope revision. Mục tiêu v4 và mục tiêu solver v2 đều chưa đạt;
+chuyển scope không hoàn thành hồi tố v3.
 
 ## Cách PO mở và kết thúc lượt
 
@@ -70,7 +76,7 @@ python research-workflow/tools/verify_hash_pins.py
 `status` kiểm contract/ledger và đọc checkpoint, không tự validate toán.
 Hash scanner hiện quét events/preregistered/runs; evidence inbox chịu lực cần
 kiểm hash trực tiếp. Giữ nguyên byte của file lịch sử đã ghim.
-`check-report` chỉ sàng số solver v1/v2 và trả NOT_READY cho v3.
+`check-report` chỉ sàng số solver v1/v2 và trả NOT_READY cho schema từ v3 trở lên.
 
 Khi code/dependency/ledger liên quan đổi hoặc cần xác minh checkout nhập mới:
 

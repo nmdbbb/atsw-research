@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "contract_revision_4",
+  "authorized_on": "2026-09-11",
+  "authority": "User explicitly requests saving the outcome-led scope, collecting comparison tools and defining deliveries, after rejecting positioning constrained by existing prototypes.",
+  "prior_results_known": true,
+  "blind_preregistration_claimed": false,
+  "previous_objective_sha256": "58324e8cb0dea0db8790a67a16f56c6ad38876a49aab95ff3e4471f5cf74e627",
+  "previous_contract": {
+    "objective_id": "tree-adapted-ot-relational-v3",
+    "objective_sha256": "58324e8cb0dea0db8790a67a16f56c6ad38876a49aab95ff3e4471f5cf74e627"
+  },
+  "new_contract": {
+    "objective_id": "adapted-ot-reusable-representations-v4",
+    "objective_sha256": "77a842967a6f94c53d4c9974d124310c34ee7821ab9e8db3a042286d9f6236ce"
+  },
+  "previous_objective_snapshot": "ledger/contracts/objective_v3.json",
+  "new_objective_snapshot": "ledger/contracts/objective_v4.json",
+  "changes": [
+    "Reusable representations and quantitative size/sharpness/decision-cost tradeoff define the positive objective",
+    "Prototype restrictions are not project scope caps; current executable certificates remain finite-model only",
+    "Deterministic partial ordering retained; top-K/full ranking/fallback optional",
+    "D1-D5 explicit positive deliveries and separate reviewed limitation-theorem outcome",
+    "Matched-target baseline fairness and complete source-readiness distinctions"
+  ],
+  "preservation": "All historical snapshots, evidence and preregistrations remain unchanged. No completion or scientific proof is admitted by this amendment.",
+  "handoff": "SCOPE_REVISION_4.md",
+  "scope_sha256": "c536371a22450e1b9d77acb939b8ef7f59c6f99518d40f54fadac3326440b5b6",
+  "review": "research/workflows/scope_v4_contract_review.md",
+  "review_sha256": "a39d7ba53b37a1fae13dc249edb23f83a6ce7be764980d0cfd8d274f980753be",
+  "review_scope": "Contract consistency only; final objective snapshot and scope reviewed. No scientific claim or toolkit implementation sign-off."
+}

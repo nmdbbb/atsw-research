@@ -1,10 +1,12 @@
-# Workflow chính: PO, scope v3 và điều kiện rẽ nhánh
+# Workflow chính: PO, scope hiện hành và điều kiện rẽ nhánh
 
 Cập nhật 2026-09-10 theo yêu cầu user: cải tiến workflow hiện có bằng điều kiện
 rẽ nhánh. Mọi vòng dùng chung quy trình này, checkpoint và sổ bằng chứng.
-Đọc `objective.json`, [scope v3](SCOPE_REVISION_3.md) và
-[lựa chọn mới nhất của user](DECISION_ORDER_PRESERVATION_20260910.md).
-Đích đang chọn là **giữ thứ tự dưới điều kiện toán học trên mô hình hữu hạn**;
+Scope cập nhật 2026-09-11: đọc `objective.json`, [scope v4](SCOPE_REVISION_4.md)
+và lựa chọn user được checkpoint trỏ tới. Lựa chọn deterministic trong
+[decision trước](DECISION_ORDER_PRESERVATION_20260910.md) được giữ.
+Đích là **biểu diễn tái sử dụng cho adapted OT và giữ thứ tự dưới điều kiện
+toán học**; bước thực thi đầu tiên trên mô hình hữu hạn không đặt trần đề tài;
 top-K, thứ tự đầy đủ và fallback không bắt buộc. Sức nặng khoa học đứng trước
 đầu tư triển khai. Các trạng thái dưới đây là quyết định của orchestrator;
 `workflow.py` không tự gọi agent hoặc tự đánh giá chứng minh.
@@ -121,11 +123,12 @@ hiệu năng hoặc thắng SOTA. Khi bắt đầu đo prediction bằng mẫu, 
 thành diagnostic để bỏ qua cổng. Không bắt một diagnostic phải có định lý mới
 hoàn chỉnh; cổng sức nặng chặn đầu tư lớn, không chặn phép kiểm cần để ra quyết định.
 
-Với hướng hiện tại, cổng sang prototype cần một lemma không vòng tròn, một
-fixture có phụ thuộc điều kiện thực sự vượt baseline agreement + marginal/range,
-và bảng công việc tính cả kiểm điều kiện. Đây là điều kiện cấp ngân sách probe,
-chưa chứng minh novelty hay hoàn thành mục tiêu. Trial 02 giữ làm baseline;
-task kế tiếp lấy từ checkpoint hiện hành, không từ hàng đợi lịch sử trong workflow.
+Với v4, dùng D1–D5 trong scope làm cổng kết quả: claim trên miền có ý nghĩa,
+bảo đảm định lượng, cơ chế tái sử dụng có tính đủ công, xác nhận so sánh và gói
+nghiên cứu tái lập. Cổng prototype/fixture cũ chỉ là evidence development đã có;
+không giới hạn claim mới vào những fixture sống sót. Không đòi theorem hoàn chỉnh
+trước diagnostic rẻ để phân biệt conjecture. Trial 02 giữ làm baseline; task
+tiếp theo lấy từ checkpoint hiện hành, không từ hàng đợi lịch sử trong workflow.
 
 **Tiếp tục qua mốc nội bộ:** khi user yêu cầu chạy/tiếp tục, checkpoint, commit,
 review xong hoặc đóng một construction là mốc lưu trạng thái, không tự là điểm
@@ -287,7 +290,8 @@ nghĩ chưa ghi của bước hiện tại; không hứa khôi phục tuyệt đ
 khi phiên đã bị cắt.
 
 Giữ nguyên hash, snapshot và preregistration lịch sử. Công cụ `check-report` chỉ
-sàng số liệu solver v1/v2 và trả NOT_READY cho v3; không dùng nó xác nhận ranking.
+sàng số liệu solver v1/v2 và trả NOT_READY cho schema từ v3 trở lên; không dùng
+nó xác nhận ranking.
 Các nguyên tắc độc lập, khai trước, giữ target, tính đủ chi phí và held-out trong
 tài liệu tham chiếu vẫn áp dụng theo claim. Hướng dẫn solver lịch sử: ngưỡng 0.5%,
 toàn grid và kết luận hoàn thành solver chỉ áp dụng hợp đồng v1/v2 tương ứng.

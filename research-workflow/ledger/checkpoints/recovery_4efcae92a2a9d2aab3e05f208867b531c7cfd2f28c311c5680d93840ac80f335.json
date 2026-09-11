@@ -1,7 +1,7 @@
 {
   "session": "codex_root_20260910_scope_v3",
   "updated_on": "2026-09-11",
-  "phase": "scope_v4_toolkit_deliveries_saved",
+  "phase": "scope_v4_applied_toolkit_integration",
   "scope_revision": {
     "id": "contract_revision_4",
     "objective_id": "adapted-ot-reusable-representations-v4",
@@ -30,39 +30,31 @@
     "policy": "WORKFLOW.md",
     "updated_on": "2026-09-11",
     "reason": "User explicitly authorizes saving outcome-led positioning, collecting comparison tools and defining deliverables.",
-    "stage": "complete",
+    "stage": "toolkit_integration",
     "task_id": "scope_v4_delivery_and_toolkit",
     "progress": {
-      "state": "complete",
+      "state": "in_progress",
       "constructions_started": 0,
       "substantive_repairs_used": 0,
       "scope_revisions_started": 1,
       "source_collection_assignments": 1,
-      "independent_reviews_assigned": 1,
-      "evidence": [
-        "SCOPE_REVISION_4.md",
-        "ledger/contract_revision_4.json",
-        "research/workflows/scope_v4_contract_review.md",
-        "research/sota/comparison_toolkit_v4.md",
-        "research/sota/comparison_toolkit_v4.json"
-      ],
-      "note": "One authorized amendment and contract review complete; source collector resumed after quota and completed, 4 pinned checkouts and NestedOT vendor validation; no research probe or external source execution."
+      "independent_reviews_assigned": 1
     },
-    "evidence_record": "SCOPE_REVISION_4.md",
-    "next_action": "Execute one D1-D2 packet for the reusable conditional-tree candidate: choose a scientifically meaningful parameterized process family with genuine information timing/conditional dependence; formulate a quantitative representation-distortion/bound-sharpness versus decision-margin claim; compare nearest WL/OTM/tree results and perform one finite decisive calculation or counterexample. Reuse existing proofs, then decide upgrade/retain/replace tree before preregistered performance probe.",
-    "advance_when": "Next task: a specific nontrivial structural claim and decisive discriminator justify construction/refinement or probe. This preparation task is complete, not a scientific delivery.",
+    "evidence_record": "ledger/contract_revision_4.json",
+    "next_action": "Finish pinned source manifest and verification, then save next D1-D2 tree structural-claim task without executing the research probe.",
+    "advance_when": "Scope and objective consistent, pinned toolkit complete and honest about readiness, deliveries and next research decision recorded.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
     "review_limit": "scope_v4_contract_review.md approves contract consistency at explicit hashes only; all historical mathematical review coverage retained.",
     "work_budget": {
-      "purpose": "Completed: one scope amendment, one source collection, five research deliveries and one contract review. No benchmark or dependency installation.",
+      "purpose": "One scope amendment, one source collection, one deliverable plan and one bounded scope review; no benchmark or dependency installation.",
       "max_scope_revisions": 1,
       "max_source_collections": 1,
       "max_independent_reviews": 1,
       "account_quota_remaining": "unknown"
     },
-    "construction": "Current shared-tree candidate retained as an investment; objective is reusable adapted-OT representations, not this fixed architecture.",
-    "decision": "v4_scope_applied_sources_collected_deliveries_defined",
+    "construction": "Shared conditional-state trees with recursive tree-OT upper and conditional Lipschitz probe lower on the finite AW1 target.",
+    "decision": "adopt_outcome_led_v4_scope_preserve_tree_as_candidate",
     "previous_task_disposition": "shared_tree_design_01 complete and pushed at 0b039c7. Probe deferred until alignment with approved scientific positioning; evidence and review unchanged."
   },
   "automatic_large_grid_authorized": false,
@@ -176,35 +168,29 @@
     "observed": "User requested analysis then continued workflow. Removed stale reset queue and checkpoint-as-turn-stop interpretation; executed signed-prefix proof/failure/review, closed it, started a different justified conditional-offset construction, implemented its model recognizer and obtained final delta review before ending cycle. User later redirected to concrete tree upgrades; this cycle built the candidate, repaired observed defects and completed sparse implementation before closure, instead of opening unrelated algebraic branches."
   },
   "project_plan": {
-    "direction": "Substantive reusable adapted-OT representations: quantitative representation size / guarantee sharpness / total decision cost; tree is current replaceable architecture.",
+    "direction": "Prioritize the shared conditional-state tree and its algorithm under unchanged v3 order guarantee.",
     "priority": "Resolve claim/representation/workflow architecture before local speed tuning when the diagnosed blocker is structural.",
     "now": {
       "task_ref": "workflow_route.task_id",
-      "forecast": "Scope/toolkit/delivery preparation complete.",
+      "forecast": "Construction cycle complete; next authorized investment is one bounded probe protocol design.",
       "estimate_confidence": "low; no runtime/token pilot for this theorem search",
       "elapsed_time_or_tokens_estimate": null,
-      "outcome": "Reviewed v4 contract active; D1-D5 defined, sources pinned. No new theorem, novelty, speed or coverage result."
+      "outcome": "Tree algorithm candidate implemented and independently reviewed; exact diagnostics and sparse primitive complete."
     },
     "next": {
-      "if_gate_passes": "Freeze a single bounded prediction and matched-target comparison protocol; preregister before sampling/scaling.",
-      "if_structural_gate_fails": "Upgrade or replace tree using the concrete falsifier; stop local tuning that cannot change the quantitative scientific claim.",
+      "if_gate_passes": "Preregister the bounded cost/coverage probe only after its input/guarantee/comparator/margin/budget are frozen.",
+      "if_structural_gate_fails": "Keep or stop this algorithm based on measured total cost and coverage; do not drift to unrelated supporting lemma chains.",
       "if_inconclusive": "Identify one decision-changing missing check within remaining allowance, or checkpoint; revise budget only with evidence and rationale.",
-      "decision": "Execute one D1-D2 packet for the reusable conditional-tree candidate: choose a scientifically meaningful parameterized process family with genuine information timing/conditional dependence; formulate a quantitative representation-distortion/bound-sharpness versus decision-margin claim; compare nearest WL/OTM/tree results and perform one finite decisive calculation or counterexample. Reuse existing proofs, then decide upgrade/retain/replace tree before preregistered performance probe.",
-      "assessment": "SCOPE_REVISION_4.md",
-      "forecast": {
-        "work_units": "One claim packet, one finite decisive check, one delta review if the claim remains plausible.",
-        "confidence": "bounded work allocation, not a prediction of theorem success",
-        "runtime_tokens": "unknown"
-      }
+      "decision": "Design and freeze one small cost/decision probe for this exact tree candidate against eligible early-stopping baselines, including all build/index/query costs and unresolved timing controls. Preregister before sampling or scaling. No further tuning of these six controls or broad benchmark.",
+      "assessment": "research/theory/shared_tree_design_01_verdict.json"
     },
     "later": {
-      "milestone": "D1-D5 positive research delivery or separately labelled substantive reviewed limitation result under objective v4.",
+      "milestone": "Reviewed guarantee and useful matched-guarantee/coverage cost advantage on a declared domain.",
       "dependencies": [
-        "Meaningful structural domain and nearest-prior-art differentiation",
-        "Quantitative correct-target guarantee",
-        "Reusable algorithm with avoided work and complete costs",
-        "Frozen probe and held-out confirmation",
-        "Reproducible report and explicit limitations"
+        "Noncircular mathematical bridge",
+        "Novelty/significance assessment",
+        "Cost of applicability and representation",
+        "Frozen probe followed by independent confirmation"
       ],
       "authorization": "Conditional plan only; no automatic grid or production implementation."
     },
@@ -225,11 +211,11 @@
     {
       "id": "R_novelty",
       "owner": "PO with independent reviewer",
-      "state": "quantitative_representation_contribution_open",
+      "state": "complete_algorithm_novelty_open_bounded_investment_admitted",
       "impact": "Correct supporting mathematics may have no central scientific contribution.",
-      "evidence": "SCOPE_REVISION_4.md",
+      "evidence": "research/theory/shared_tree_design_01_review.md",
       "trigger": "Successful claim reduces to agreement formula or standard bound separation.",
-      "response": "Compare proposed structural tradeoff with WL/OTM/bisimulation and ordinary tree-OT; pick domain by scientific relevance, not existing fixture success.",
+      "response": "Assess overlap of the complete tree/probe/sparse mechanism before publication-level claims; known lemmas alone neither establish nor refute novelty.",
       "residual": "No SOTA or novelty claim admitted.",
       "blocks": "Paper-level claim and substantial implementation."
     },
@@ -258,57 +244,26 @@
     {
       "id": "R_interruption",
       "owner": "PO",
-      "state": "resumed_source_collector_completed_manifest_saved",
+      "state": "same_reviewer_resumed_and_completed_after_refill",
       "impact": "Quota interruption can lose unwritten reasoning or leave execution outcome unknown.",
-      "evidence": "research/sota/comparison_toolkit_v4.json",
+      "evidence": "research/theory/shared_tree_design_01_review.md",
       "trigger": "Tool/agent response absent, malformed/stale checkpoint or uncertain running process.",
       "response": "Save intent and partial files early; use atomic guarded save; reconcile disk/process/Git before replay.",
       "residual": "No quota telemetry; unwritten work and concurrent writers remain risks.",
       "blocks": "Blind replay of expensive work or external side effects."
-    },
-    {
-      "id": "R_baseline_readiness_v4",
-      "owner": "PO",
-      "state": "sources_collected_adapters_not_yet_eligible",
-      "evidence": "research/sota/comparison_toolkit_v4.md",
-      "impact": "Terminal/discounted costs, missing numerical certificates or runtime dependencies can invalidate comparison or waste setup effort.",
-      "trigger": "Before selecting a comparator or installing its environment.",
-      "response": "Choose minimal same-target adapter; freeze filtration/cost/root and charge certification; retain strong numerical track and disclose omissions.",
-      "residual": "Sources are not benchmark-ready; license/runtime details recorded.",
-      "blocks": "Unqualified comparative/SOTA claims."
     }
   ],
   "interruption_recovery": {
-    "state": "scope_toolkit_complete_ready_for_git_sync",
-    "last_completed": "research/sota/comparison_toolkit_v4.json",
-    "current_intent": "Commit and push coherent scope/toolkit/checkpoint package; next research decision saved, not executed.",
-    "recover_by": "Verify actual Git/remote state and v4 lock. Toolkit sources are ignored local cache; restore exact commits from manifest if absent. Do not repeat completed source collection or contract review.",
+    "state": "scope_v4_applied_manifest_pending",
+    "last_completed": "ledger/contract_revision_4.json",
+    "current_intent": "Finish pinned source manifest and verification, then save next D1-D2 tree structural-claim task without executing the research probe.",
+    "recover_by": "Verify active v4 contract and ledger first. Do not replay amendment. Finish existing toolkit and checks; preserve old theory reviews.",
     "live_processes": [],
-    "pending_agent_outputs": [],
+    "pending_agent_outputs": [
+      "comparison_toolkit_collection"
+    ],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "No required unsaved work for scope/toolkit task; next D1-D2 packet is planned, not executed."
+    "unsaved_reasoning": "None required for this construction cycle; design, source versions, checks, review, verdict and next decision saved."
   },
-  "latest_project_review": "PROJECT_REVIEW_20260910.md",
-  "v4_hypotheses_registered": 0,
-  "v4_benchmarks_run": 0,
-  "delivery_status": {
-    "record": "SCOPE_REVISION_4.md",
-    "D1": "open_claim_domain_and_novelty",
-    "D2": "partial_existing_tree_proof_no_quantitative_structural_tradeoff",
-    "D3": "partial_candidate_no_measured_total_cost_advantage",
-    "D4": "not_started_no_v4_preregistered_probe",
-    "D5": "not_started",
-    "preparation_completed": [
-      "reviewed_scope",
-      "pinned_source_toolkit",
-      "delivery_acceptance_definitions"
-    ]
-  },
-  "comparison_toolkit": {
-    "record": "research/sota/comparison_toolkit_v4.json",
-    "sha256": "2f5edcc26e97b2f84869285afbf1138fce6cfa73e470d1fe3ddeacd90c03e249",
-    "downloaded_checkouts": 4,
-    "installed_or_benchmarked_this_task": false,
-    "cache_tracked": false
-  }
+  "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

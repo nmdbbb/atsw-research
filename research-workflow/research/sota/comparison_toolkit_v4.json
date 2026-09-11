@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "toolkit_version": "v4",
+  "collected_date": "2026-09-11",
+  "status": "source_collection_complete_no_experiment",
+  "scope_binding": {
+    "objective_id": "adapted-ot-reusable-representations-v4",
+    "objective_sha256": "77a842967a6f94c53d4c9974d124310c34ee7821ab9e8db3a042286d9f6236ce",
+    "scope_record": "SCOPE_REVISION_4.md",
+    "collection_is_scientific_validation": false
+  },
+  "task_limits": {
+    "new_upstream_checkouts": 4,
+    "downloaded_code_execution": false,
+    "dependency_installation": false,
+    "benchmarks": false,
+    "scientific_claims": false
+  },
+  "downloaded_checkouts": [
+    {
+      "repo": "YusuLab/ot_markov_distances",
+      "paper": "https://arxiv.org/abs/2302.08621v2",
+      "role": "optional_WL_discounted_novelty_and_kernel_source",
+      "license": {
+        "declared": "Cecill-B",
+        "evidence": "pyproject.toml",
+        "license_text_present": false
+      },
+      "dependencies": [
+        "Python ^3.10",
+        "Torch ^2.0.0",
+        "NetworkX ^3.1",
+        "poetry-core (build)",
+        "POT ^0.8.2 (tests only)"
+      ],
+      "api": [
+        "wl_k",
+        "wl_k_sparse",
+        "discounted_wl_k",
+        "discounted_wl_infty"
+      ],
+      "eligibility": "Not directly finite additive bicausal target: terminal WL recursion or discounted recursion, stationary defaults; explicit cost/initial-law/filtration bridge needed.",
+      "readiness_objections": [
+        "No LICENSE text in checkout despite declared license",
+        "Torch environment not installed or verified",
+        "Changing WL recursion to additive DP creates a new adapter whose cost and correctness must be charged"
+      ],
+      "path": "research-workflow/.cache/comparison_sources/YusuLab__ot_markov_distances",
+      "url": "https://github.com/YusuLab/ot_markov_distances.git",
+      "commit": "6f5e34958c795e32b27f452f5f8e30d9cbdb0d4e",
+      "git_tree": "a788b5954da75ffad316447b85b284add662d2b1",
+      "git_status_porcelain": "",
+      "tracked_file_count": 37,
+      "tracked_bytes": 8671180,
+      "inventory_path": "research-workflow/.cache/comparison_sources/YusuLab__ot_markov_distances.inventory.json",
+      "inventory_sha256": "243c75cdf6f403f85d4bab132952cf335ebdcfe5ede85479712045df5abd0301",
+      "inspected_artifacts": [
+        {
+          "path": "README.rst",
+          "sha256": "096fc13cefb56d65af736c448d2df2adaf4a6b9c85a4ffc272ef0ae014b9bf55"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "f4f96e94dc4600bbb5591a2528cce86976aa609c496e329fd6eea8b468e93e99"
+        },
+        {
+          "path": "ot_markov_distances/wl.py",
+          "sha256": "0202edc7657a819bfac1ab6f9644299979d3516315e558b64a0ef0210210e4d5"
+        },
+        {
+          "path": "ot_markov_distances/discounted_wl.py",
+          "sha256": "0a0e062d93b9dcc3291229e67d179a26c662da8c15efde64c8bec45f1c7a2c6a"
+        }
+      ],
+      "downloaded": true,
+      "inspected": true,
+      "installed_this_task": false,
+      "executed_this_task": false,
+      "tested_this_task": false,
+      "benchmark_ready": false
+    },
+    {
+      "repo": "lttam/TreeWasserstein",
+      "paper": "https://arxiv.org/abs/1902.00342v3",
+      "role": "ordinary_tree_ablation",
+      "license": {
+        "declared": null,
+        "evidence": "No license file in checkout or bundled zip inventory",
+        "license_text_present": false
+      },
+      "dependencies": [
+        "MATLAB",
+        "knnsearch functionality",
+        "FIGTree k-center MEX; included Linux/macOS binaries"
+      ],
+      "api": [
+        "BuildTreeMetric_HighDim_V2",
+        "TreeMapping"
+      ],
+      "eligibility": "Ordinary tree measure distance; heuristic adapted-order ablation until separate mathematical bridge.",
+      "readiness_objections": [
+        "Reuse/redistribution permission not established",
+        "No Windows MEX or MEX C++ implementation seen",
+        "Bundled binaries were downloaded but never executed"
+      ],
+      "path": "research-workflow/.cache/comparison_sources/lttam__TreeWasserstein",
+      "url": "https://github.com/lttam/TreeWasserstein.git",
+      "commit": "540f84e1ff55dda0e91f778496d10bdc0abfcd2f",
+      "git_tree": "81bd8843185b0aa384f71083886b804a9ce99d8b",
+      "git_status_porcelain": "",
+      "tracked_file_count": 11,
+      "tracked_bytes": 143926261,
+      "inventory_path": "research-workflow/.cache/comparison_sources/lttam__TreeWasserstein.inventory.json",
+      "inventory_sha256": "3151cd652b15af5296d82a55f762e40639806a1801d23e3b8f217804832e671f",
+      "inspected_artifacts": [
+        {
+          "path": "readme.rtf",
+          "sha256": "4aace214d97ee111a0c5383ca592c10039b1db5c6eba3531d74dd7885f656eea"
+        },
+        {
+          "path": "TreeMapping.m",
+          "sha256": "0b0bb35de018d2e795f6edf98fa52644b29efc467750a025c8aa36d479c19edb"
+        },
+        {
+          "path": "BuildTreeMetric_HighDim_V2.m",
+          "sha256": "e37931d95751917df881fcd55d747d2eb551fe7e129a7bdbcf45fb4c6d8d498e"
+        },
+        {
+          "path": "figtreeKCenterClustering.m",
+          "sha256": "c97a4f799659c7589db6115bf7111ab8f62cfe7daff8e243abd10ba3e07541ec"
+        },
+        {
+          "path": "TreeWasserstein_v0.1.zip",
+          "sha256": "68aa2abf4ad90c6e2b178b557b3f1529d6fbc8b284aa4483aac18db412648b72"
+        }
+      ],
+      "downloaded": true,
+      "inspected": true,
+      "installed_this_task": false,
+      "executed_this_task": false,
+      "tested_this_task": false,
+      "benchmark_ready": false
+    },
+    {
+      "repo": "BenoitTran/END",
+      "paper": "https://arxiv.org/abs/2107.09864v1",
+      "role": "nested_sinkhorn_and_DP_source",
+      "license": {
+        "declared": "MIT",
+        "evidence": "LICENSE",
+        "license_text_present": true
+      },
+      "dependencies": [
+        "Julia notebook metadata 1.5.2",
+        "JuMP",
+        "ScenTrees",
+        "LinearAlgebra",
+        "OptimalTransport",
+        "Tulip",
+        "Statistics"
+      ],
+      "api": [
+        "nested_distance",
+        "entropic_nested_distance"
+      ],
+      "eligibility": "Potential same-target after correcting or validating path-cost/r/root semantics and constructing certified unregularized-target adapter.",
+      "readiness_objections": [
+        "No Project.toml/Manifest.toml pin",
+        "Default path Euclidean norm with r=1 is not additive stage L1",
+        "epsilon>0 branch marked WIP and uses negative gamma in sinkhorn2",
+        "No ready per-instance deterministic certificate established by this inspection"
+      ],
+      "path": "research-workflow/.cache/comparison_sources/BenoitTran__END",
+      "url": "https://github.com/BenoitTran/END.git",
+      "commit": "359691f8db4b105098f1b2223b8adf14edbcde55",
+      "git_tree": "4bd9d521861593a9ae6ea28366f00e38987016ff",
+      "git_status_porcelain": "",
+      "tracked_file_count": 3,
+      "tracked_bytes": 414053,
+      "inventory_path": "research-workflow/.cache/comparison_sources/BenoitTran__END.inventory.json",
+      "inventory_sha256": "94a738e4be3b44652b2a07e4dc2ee066eef8c39c28342d84c86b878551fd4fc8",
+      "inspected_artifacts": [
+        {
+          "path": "README.md",
+          "sha256": "de3c260aace77d99134350bbedda78778932f1fbec5fce44c48dbb30ab97db46"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "0dd567cac49d118eef624d4aaf530d856acba426735fd322400d61df12d2efde"
+        },
+        {
+          "path": "EntropicNestedDistance.ipynb",
+          "sha256": "22edb28620f024dc2f3121c146f324229c9aa3b13dcb59eedb527b8f4196d467"
+        }
+      ],
+      "downloaded": true,
+      "inspected": true,
+      "installed_this_task": false,
+      "executed_this_task": false,
+      "tested_this_task": false,
+      "benchmark_ready": false
+    },
+    {
+      "repo": "dan-mim/Nested_tree_reduction",
+      "paper": "https://dan-mim.github.io/files/reduction_tree.pdf",
+      "role": "workload_generation_reduction_and_representation_novelty",
+      "license": {
+        "declared": "MIT",
+        "evidence": "LICENSE",
+        "license_text_present": true,
+        "metadata_conflict": "setup.py classifier says Other/Proprietary License"
+      },
+      "dependencies": [
+        "setup.py: numpy>=1.26.4, scipy>=1.11.4, casadi>=3.6.5, pyopticontrol>=3.0, pystocoptim>=1.0",
+        "imports: mpi4py/MPI, networkx, numba, matplotlib",
+        "requirements.txt is conda win-64 Python 3.13.5 export, not pip requirements"
+      ],
+      "api": [
+        "KP_reduction",
+        "generate_uniform_tree",
+        "nested_distance",
+        "reduce_scenarios_forward_selection"
+      ],
+      "eligibility": "Workload and representation source; routine distance uses squared path L2 and needs cost/root/filtration validation for direct comparison.",
+      "readiness_objections": [
+        "README core.py/metrics.py layout does not match checkout",
+        "Package __init__ imports MPI-dependent reduction",
+        "Distance normalization divides by maximum cost; zero-cost handling and rounding/swapped-marginal fallback need audit",
+        "Reduction changes law; charge conversion and bound error to original target if used as representation"
+      ],
+      "path": "research-workflow/.cache/comparison_sources/dan-mim__Nested_tree_reduction",
+      "url": "https://github.com/dan-mim/Nested_tree_reduction.git",
+      "commit": "03d792d0d7b4ce00bf85cf29cc16401d00c45910",
+      "git_tree": "7c2b4f2c4d191d0098c646838b30ea83e3aa153a",
+      "git_status_porcelain": "",
+      "tracked_file_count": 49,
+      "tracked_bytes": 1221309,
+      "inventory_path": "research-workflow/.cache/comparison_sources/dan-mim__Nested_tree_reduction.inventory.json",
+      "inventory_sha256": "366efc8c72dad1e36b7cc11cfb578cb2e85e085a57467388d68b890384226018",
+      "inspected_artifacts": [
+        {
+          "path": "README.md",
+          "sha256": "a83fe6c51991fd15a423df394d2689ebeb990280af70eee35516a7694309b168"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "36cc8567c1ec1910d00f8974a96b0b583ee99f5c08fb2e37c894f413f8e6a2ea"
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "cb8bfd9e88736fe9e79c069389472629209fbb88562baf81de56506b2a197692"
+        },
+        {
+          "path": "setup.py",
+          "sha256": "b59b372cadd19179041fe3d90aa4c7a005f4d19de84948fa222823f966b9c575"
+        },
+        {
+          "path": "pyreductree/__init__.py",
+          "sha256": "5fc2ee3575bfefb579bc531117c4d55c9535c30126d11a6756fd54fc63c5b222"
+        },
+        {
+          "path": "pyreductree/NestedDistance.py",
+          "sha256": "84b45f06fec0b8a17a153e9e98242544d3002bf97cddcfb1ab47c18a2058aff8"
+        },
+        {
+          "path": "pyreductree/tree_reduction_MPI.py",
+          "sha256": "4ec9b207c073f64a04bca16917a179e1945d701d98f3457aa67f2d6a1955751f"
+        },
+        {
+          "path": "pyreductree/create_homogenous_filtrations_and_trees.py",
+          "sha256": "28750881b1595c14409145650e1f938b99933200b466883b9bcad1b343497d01"
+        },
+        {
+          "path": "pyreductree/MAM.py",
+          "sha256": "1a3b795c662fc293f46263e0c6f4a7ed1c470b1bc09a74deeb2d7475547c2b1f"
+        }
+      ],
+      "downloaded": true,
+      "inspected": true,
+      "installed_this_task": false,
+      "executed_this_task": false,
+      "tested_this_task": false,
+      "benchmark_ready": false
+    }
+  ],
+  "vendor_validation": {
+    "repo": "justinhou95/NestedOT",
+    "path": "research-workflow/third_party/nestedot",
+    "commit": "9f85f18fb32b67f9ba1112cf38a97f4f98c57d8a",
+    "archive_path": "research-workflow/.cache/comparison_sources/NestedOT-9f85f18fb32b67f9ba1112cf38a97f4f98c57d8a.zip",
+    "archive_url": "https://codeload.github.com/justinhou95/NestedOT/zip/9f85f18fb32b67f9ba1112cf38a97f4f98c57d8a",
+    "archive_sha256": "d226523bed07cc0483497c4fe61f4284f590970ce5a053bbdd5439b240a54b7f",
+    "upstream_file_count": 434,
+    "matching_files": 434,
+    "missing_files": 0,
+    "different_files": 0,
+    "validation_log_path": "research-workflow/.cache/comparison_sources/nestedot_vendor_comparison.json",
+    "validation_log_sha256": "0a31cae32f4d2187cda0ace12e31c204b7eb457b81912d015d3cc6b57eda7197",
+    "license": "Apache-2.0 project; bundled dependencies retain own notices",
+    "inspected_artifacts": [
+      {
+        "path": "AUDIT_PROVENANCE.json",
+        "sha256": "7f51b47a6a6f06cb4dade0b10897bca487106edfedf8966edb3879aec9c20820"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "README.md",
+        "sha256": "ba17590feee71735f5b2678675d586c41018a1544574ccc7a9bdcb1a448d29f6"
+      },
+      {
+        "path": "setup.py",
+        "sha256": "5aa5909cad9629fb70053210da210fe3d8e72bfdad5fec40a62b83a7aefd490a"
+      },
+      {
+        "path": "pnot/solver.py",
+        "sha256": "67de106e2d9d2edbf632fc9ef9765df6cd62cc5b6e619022ae17903a67442850"
+      },
+      {
+        "path": "src/solver.cpp",
+        "sha256": "a0339a0bc5b516d1a99dfac47826a8f5016caaf7cabb7ecc1fc65c32d92ce1d2"
+      }
+    ],
+    "dependencies": [
+      "C++ compiler/OpenMP",
+      "pybind11/setuptools",
+      "NumPy",
+      "tqdm",
+      "POT"
+    ],
+    "eligibility": "Retain historical k=1 predefined-root eligibility. Arbitrary k/root or certified decision eligibility not newly granted. Wrapper may silently switch C++ to Python.",
+    "installed_this_task": false,
+    "executed_this_task": false,
+    "tested_this_task": false
+  },
+  "minimum_experiment_panel": [
+    {
+      "id": "strong_dp_early_stop",
+      "required": true,
+      "same_target_required": true,
+      "certificate_adapter_required": true,
+      "status": "use existing exact sources only after target and early-stop/certificate qualification"
+    },
+    {
+      "id": "certified_nested_sinkhorn",
+      "required_when_adapter_ready": true,
+      "same_target_required": true,
+      "certificate_adapter_required": true,
+      "status": "adapter readiness not established by source collection",
+      "theory_url": "https://link.springer.com/article/10.1007/s10287-021-00415-7"
+    },
+    {
+      "id": "cheap_marginal_lower_feasible_upper",
+      "required": true,
+      "same_target_required": true,
+      "status": "implement/validate additive marginal lower plus bicausal feasible upper and arithmetic"
+    },
+    {
+      "id": "ordinary_tree_ablation",
+      "required": true,
+      "same_target_certificate": false,
+      "status": "heuristic comparison; no automatic adapted-order guarantee"
+    },
+    {
+      "id": "sharing_disabled_candidate",
+      "required": true,
+      "same_target_required": true,
+      "status": "define disabled reuse and charge repeated build; same candidate mathematics"
+    }
+  ],
+  "comparison_rules": {
+    "target": "same finite law, filtration, additive stage cost, root and units for direct comparator",
+    "decision": "strict order only with certified separated intervals; overlap abstains; ties by contract",
+    "numerical_vs_certified": "Report numerical speed independently of deterministic decision time and coverage",
+    "costs": [
+      "build",
+      "representation conversion",
+      "applicability check",
+      "calibration",
+      "query",
+      "update",
+      "feasibility repair",
+      "regularization bias",
+      "arithmetic checks",
+      "fallback if used"
+    ],
+    "missing_certificate_api": "means adapter unavailable, not mathematical impossibility",
+    "other_frameworks": "optional novelty threats or contingent comparators; not every framework needs a mandatory adapter"
+  },
+  "existing_local_leads_not_revalidated": [
+    "research-workflow/adapters/common_model.py",
+    "research-workflow/adapters/nested_sinkhorn_comparator.D.py",
+    "research-workflow/adapters/shared_conditional_tree.py",
+    "AOTNumerics/POT historical records in research-workflow/research/sota/baselines.json"
+  ],
+  "primary_links_verified_with_web": [
+    {
+      "url": "https://github.com/YusuLab/ot_markov_distances",
+      "kind": "upstream repository"
+    },
+    {
+      "url": "https://github.com/lttam/TreeWasserstein",
+      "kind": "upstream repository"
+    },
+    {
+      "url": "https://github.com/BenoitTran/END",
+      "kind": "upstream repository"
+    },
+    {
+      "url": "https://github.com/dan-mim/Nested_tree_reduction",
+      "kind": "upstream repository"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.08621v2",
+      "kind": "primary paper identity; no full theorem review in this task"
+    },
+    {
+      "url": "https://arxiv.org/abs/1902.00342v3",
+      "kind": "primary paper identity; no full theorem review in this task"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.09864v1",
+      "kind": "primary paper identity; no full theorem review in this task"
+    },
+    {
+      "url": "https://dan-mim.github.io/files/reduction_tree.pdf",
+      "kind": "primary paper identity; no full theorem review in this task"
+    },
+    {
+      "url": "https://github.com/justinhou95/NestedOT/tree/9f85f18fb32b67f9ba1112cf38a97f4f98c57d8a",
+      "kind": "pinned upstream"
+    },
+    {
+      "url": "https://arxiv.org/abs/2509.06702",
+      "kind": "primary paper identity"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.05005",
+      "kind": "primary paper identity"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10287-021-00415-7",
+      "kind": "primary paper identity"
+    }
+  ],
+  "restoration": {
+    "instructions": "comparison_toolkit_v4.md#ph?c-h?i-sau-fresh-clone",
+    "cache_tracked": false,
+    "clean_upstream_sources_modified": false,
+    "checkout_method": [
+      "git -c core.autocrlf=false init PATH",
+      "git -C PATH remote add origin URL",
+      "git -C PATH fetch --depth 1 origin COMMIT",
+      "git -C PATH -c core.autocrlf=false checkout --detach FETCH_HEAD",
+      "git -C PATH rev-parse HEAD",
+      "git -C PATH status --porcelain"
+    ],
+    "provenance_note": "Git commit plus tree object and selected file hashes persist in this manifest. Full inventories and downloaded sources remain ignored local cache. No promise that upstream will retain Git objects forever."
+  }
+}

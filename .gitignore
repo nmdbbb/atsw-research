@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+research-workflow/.cache/comparison_sources/
 *.py[cod]
 .venv/
 venv/
