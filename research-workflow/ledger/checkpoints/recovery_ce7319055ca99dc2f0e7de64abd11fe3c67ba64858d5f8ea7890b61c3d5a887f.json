@@ -35,19 +35,17 @@
     "progress": {
       "state": "in_progress",
       "constructions_started": 1,
-      "substantive_repairs_used": 2,
+      "substantive_repairs_used": 1,
       "independent_reviews_assigned": 1,
       "evidence": [
         "research/theory/shared_tree_design_01.md",
         "tools/check_shared_tree_design_01.py",
-        "research/theory/shared_tree_design_01_checks_v0.json",
-        "research/theory/shared_tree_design_01_checks_v1.json",
-        "research/theory/shared_tree_design_01_audit.json"
+        "research/theory/shared_tree_design_01_checks_v0.json"
       ],
-      "note": "Repair1 exact checks complete; now start bounded topology repair2 after evidence-based budget extension (no reset). Same reviewer active."
+      "note": "Version0 intervals valid but orders unresolved. Genuine k2 has U(Q,B)=1 and L(Q,A)=0 for true distances1 and2. Activate distance-to-pair-of-anchors probes, one substantive repair; same independent reviewer active."
     },
     "evidence_record": "research/theory/shared_tree_design_01.md",
-    "next_action": "Construct MST on the bounded feature-neighbor candidate graph; run same exact controls and version-specific review; no further tuning in this cycle.",
+    "next_action": "Run pair-min probe repair on the same three fixed families; retain initial results, obtain exact-version review, and decide next tree upgrade from observed bottleneck.",
     "advance_when": "A concrete packet supports a noncircular lemma, a genuinely conditional discriminator beyond the retained baseline and plausible saved work; obtain independent investment review before preregistering a probe.",
     "if_inconclusive": "One cheaper decision-changing check with an explicit work limit, or checkpoint with the missing evidence.",
     "if_rejected": "Stop this construction or retain it as a known baseline; preserve the open research question and evidence.",
@@ -55,11 +53,10 @@
     "work_budget": {
       "purpose": "One executable shared-tree design, three fixed finite adversarial families, one justified repair and one independent review.",
       "max_constructions": 1,
-      "max_substantive_repairs": 2,
+      "max_substantive_repairs": 1,
       "max_independent_review_assignments": 1,
       "limit_action": "Record concrete tree/probe refinement decision; no unrelated algebraic successor or automatic grid.",
-      "account_quota_remaining": "unknown",
-      "extension_reason": "Pair-min repair resolves genuine k2 and remaining strict failures are localized to upper tree detours. User asks tree algorithm upgrades; fund one sparse feature-neighbor MST repair on existing controls, no new family or agent."
+      "account_quota_remaining": "unknown"
     },
     "construction": "Shared conditional-state trees with recursive tree-OT upper and conditional Lipschitz probe lower on the finite AW1 target.",
     "decision": "execute_one_tree_design",
@@ -247,14 +244,14 @@
   "interruption_recovery": {
     "state": "tree_design_in_progress",
     "last_completed": "research/theory/residual_robustness_01_verdict.json",
-    "current_intent": "Construct MST on the bounded feature-neighbor candidate graph; run same exact controls and version-specific review; no further tuning in this cycle.",
+    "current_intent": "Run pair-min probe repair on the same three fixed families; retain initial results, obtain exact-version review, and decide next tree upgrade from observed bottleneck.",
     "recover_by": "Use actual Git state and residual_robustness_01 verdict; do not repeat completed reviews or supply diagnostic exact radius as free candidate information.",
     "live_processes": [],
     "pending_agent_outputs": [
       "shared_tree_design_review"
     ],
     "quota_remaining": "unknown",
-    "unsaved_reasoning": "v0/v1 and fixed-upper ablation saved; sparse graph repair specified before execution."
+    "unsaved_reasoning": "Version0 and repair proof saved; review in progress."
   },
   "latest_project_review": "PROJECT_REVIEW_20260910.md"
 }

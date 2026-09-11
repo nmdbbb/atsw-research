@@ -1,0 +1,318 @@
+﻿{
+  "task": "shared_tree_design_01",
+  "kind": "fixed_exact_diagnostic_not_benchmark",
+  "bank": "anchors",
+  "source_sha256": "807d5f42c6800d0dd01cd8c42ac05a36d56462f5e452a11f72c4088f27a33862",
+  "power": 1,
+  "preregistered": false,
+  "coverage_or_runtime_claim": false,
+  "results": [
+    {
+      "family": "reconvergence",
+      "k": 1,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "7/16",
+          "exact": "11/16",
+          "upper": "99/16",
+          "reference_ot_calls": 14
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "31/16",
+          "reference_ot_calls": 14
+        },
+        "BQ": {
+          "lower": "1/4",
+          "exact": "1/2",
+          "upper": "17/4",
+          "reference_ot_calls": 13
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 24,
+        "tree_ot_calls": 22,
+        "tree_nodes_visited": 98,
+        "distribution_entries_read": 51,
+        "feature_edge_reads": 115,
+        "lower_distance_evaluations": 115,
+        "exact_ot_calls": 0,
+        "pooled_states": 31,
+        "input_transition_entries": 31
+      },
+      "evaluator_conditional_pairs": 60,
+      "state_counts": [
+        3,
+        4,
+        6,
+        3,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "reconvergence",
+      "k": 2,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "7/16",
+          "exact": "11/16",
+          "upper": "107/16",
+          "reference_ot_calls": 17
+        },
+        "AQ": {
+          "lower": "3/16",
+          "exact": "3/16",
+          "upper": "31/16",
+          "reference_ot_calls": 17
+        },
+        "BQ": {
+          "lower": "1/4",
+          "exact": "1/2",
+          "upper": "19/4",
+          "reference_ot_calls": 16
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": false,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 27,
+        "tree_ot_calls": 25,
+        "tree_nodes_visited": 122,
+        "distribution_entries_read": 57,
+        "feature_edge_reads": 130,
+        "lower_distance_evaluations": 130,
+        "exact_ot_calls": 0,
+        "pooled_states": 34,
+        "input_transition_entries": 34
+      },
+      "evaluator_conditional_pairs": 72,
+      "state_counts": [
+        3,
+        4,
+        6,
+        6,
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 1,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10
+        },
+        "AQ": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "5/2",
+          "reference_ot_calls": 10
+        },
+        "BQ": {
+          "lower": "2",
+          "exact": "2",
+          "upper": "7/2",
+          "reference_ot_calls": 10
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 17,
+        "tree_ot_calls": 15,
+        "tree_nodes_visited": 81,
+        "distribution_entries_read": 49,
+        "feature_edge_reads": 104,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 26
+      },
+      "evaluator_conditional_pairs": 48,
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "family": "information_timing",
+      "k": 2,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "1",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 22
+        },
+        "AQ": {
+          "lower": "1",
+          "exact": "2",
+          "upper": "5",
+          "reference_ot_calls": 14
+        },
+        "BQ": {
+          "lower": "1",
+          "exact": "2",
+          "upper": "4",
+          "reference_ot_calls": 14
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 25,
+        "tree_ot_calls": 19,
+        "tree_nodes_visited": 161,
+        "distribution_entries_read": 52,
+        "feature_edge_reads": 112,
+        "lower_distance_evaluations": 113,
+        "exact_ot_calls": 0,
+        "pooled_states": 29,
+        "input_transition_entries": 28
+      },
+      "evaluator_conditional_pairs": 108,
+      "state_counts": [
+        3,
+        6,
+        10,
+        10
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 1,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7
+        },
+        "AQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7
+        },
+        "BQ": {
+          "lower": "0",
+          "exact": "0",
+          "upper": "0",
+          "reference_ot_calls": 7
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": false,
+        "A": false,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 14,
+        "tree_ot_calls": 12,
+        "tree_nodes_visited": 48,
+        "distribution_entries_read": 32,
+        "feature_edge_reads": 66,
+        "lower_distance_evaluations": 66,
+        "exact_ot_calls": 0,
+        "pooled_states": 18,
+        "input_transition_entries": 18
+      },
+      "evaluator_conditional_pairs": 36,
+      "state_counts": [
+        3,
+        6,
+        3,
+        6
+      ]
+    },
+    {
+      "family": "genuine_k2",
+      "k": 2,
+      "bank": "anchors",
+      "pairs": {
+        "AB": {
+          "lower": "0",
+          "exact": "1",
+          "upper": "3",
+          "reference_ot_calls": 10
+        },
+        "AQ": {
+          "lower": "0",
+          "exact": "2",
+          "upper": "4",
+          "reference_ot_calls": 10
+        },
+        "BQ": {
+          "lower": "0",
+          "exact": "1",
+          "upper": "1",
+          "reference_ot_calls": 10
+        }
+      },
+      "query_order": "unresolved",
+      "all_time_marginals_equal": true,
+      "reconstruction_equals_supplied_paths": {
+        "Q": true,
+        "A": true,
+        "B": true
+      },
+      "candidate_work": {
+        "tree_edges_built": 17,
+        "tree_ot_calls": 15,
+        "tree_nodes_visited": 81,
+        "distribution_entries_read": 37,
+        "feature_edge_reads": 80,
+        "lower_distance_evaluations": 81,
+        "exact_ot_calls": 0,
+        "pooled_states": 21,
+        "input_transition_entries": 20
+      },
+      "evaluator_conditional_pairs": 48,
+      "state_counts": [
+        3,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "limits": "Three hand-selected families, k1/k2, exact binary-row references. Candidate supports general rational finite rows; audit reference is binary only. Dense tree scans; no sparse traversal or online insertion claim."
+}
